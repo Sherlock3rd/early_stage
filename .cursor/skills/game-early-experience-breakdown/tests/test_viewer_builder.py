@@ -70,6 +70,59 @@ class ViewerBuilderTests(unittest.TestCase):
             self.assertTrue((output / "screenshots").is_dir())
             self.assertFalse(any(path.name.startswith(".viewer-build-") for path in root.iterdir()))
 
+    def test_named_dataset_build_isolated_data_and_screenshot_paths(self):
+        with tempfile.TemporaryDirectory(prefix="独立数据-") as directory:
+            root = Path(directory)
+            analysis, _ = self.make_input(root)
+            output = root / "viewer"
+
+            build_viewer.build_package(analysis, output, dataset_id="sanbing")
+
+            data_path = output / "data" / "sanbing.json"
+            self.assertTrue(data_path.is_file())
+            self.assertFalse((output / "data.json").exists())
+            written = json.loads(data_path.read_text(encoding="utf-8"))
+            self.assertTrue(
+                written["slices"][0]["main_frame"]["path"].startswith(
+                    "screenshots/sanbing/"
+                )
+            )
+            self.assertTrue((output / "screenshots" / "sanbing").is_dir())
+            index = (output / "index.html").read_text(encoding="utf-8")
+            self.assertIn(
+                '<meta name="analysis-data-file" content="data/sanbing.json">',
+                index,
+            )
+
+    def test_named_dataset_rejects_unsafe_identifier(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            analysis, _ = self.make_input(root)
+
+            with self.assertRaisesRegex(ValueError, "dataset|数据集"):
+                build_viewer.build_package(
+                    analysis, root / "viewer", dataset_id="../shared"
+                )
+
+    def test_named_dataset_build_preserves_existing_isolated_datasets(self):
+        with tempfile.TemporaryDirectory(prefix="共享查看器-") as directory:
+            root = Path(directory)
+            frost_analysis, _ = self.make_input(root / "frost")
+            sanbing_analysis, _ = self.make_input(root / "sanbing")
+            output = root / "viewer"
+
+            build_viewer.build_package(
+                frost_analysis, output, dataset_id="frost"
+            )
+            build_viewer.build_package(
+                sanbing_analysis, output, dataset_id="sanbing"
+            )
+
+            self.assertTrue((output / "data" / "frost.json").is_file())
+            self.assertTrue((output / "data" / "sanbing.json").is_file())
+            self.assertTrue((output / "screenshots" / "frost").is_dir())
+            self.assertTrue((output / "screenshots" / "sanbing").is_dir())
+
     def test_data_json_is_normalized_input_with_rebased_image_paths(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -1320,6 +1373,23 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             ")"
         )
         self.assertEqual({"hidden": False, "message": "file blocked"}, visible)
+
+    def test_dataset_query_selects_isolated_json_without_path_injection(self):
+        result = self.run_node(
+            "({"
+            "selected:viewer.resolveAnalysisDataPath('?dataset=sanbing','data/frost.json'),"
+            "fallback:viewer.resolveAnalysisDataPath('','data/frost.json'),"
+            "unsafe:viewer.resolveAnalysisDataPath('?dataset=../secret','data/frost.json')"
+            "})"
+        )
+        self.assertEqual(
+            {
+                "selected": "data/sanbing.json",
+                "fallback": "data/frost.json",
+                "unsafe": "data/frost.json",
+            },
+            result,
+        )
 
     def test_image_markup_has_visible_load_failure_fallback(self):
         markup = self.run_node(

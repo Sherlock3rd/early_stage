@@ -8,6 +8,7 @@ import copy
 import hashlib
 import json
 import os
+import re
 import shutil
 import tempfile
 import uuid
@@ -28,6 +29,7 @@ WINDOWS_RESERVED_NAMES = {
     *(f"COM{index}" for index in range(1, 10)),
     *(f"LPT{index}" for index in range(1, 10)),
 }
+DATASET_ID_PATTERN = re.compile(r"^[a-z0-9][a-z0-9-]{0,63}$")
 
 
 def _image_format(path: Path) -> str | None:
@@ -84,7 +86,10 @@ def _iter_frame_references(data: dict[str, Any]):
 
 
 def _prepare_images(
-    data: dict[str, Any], source_root: Path, package_root: Path
+    data: dict[str, Any],
+    source_root: Path,
+    package_root: Path,
+    screenshot_prefix: str = "screenshots",
 ) -> dict[str, Any]:
     normalized = copy.deepcopy(data)
     source_root = source_root.resolve()
@@ -114,10 +119,10 @@ def _prepare_images(
                 f"截图格式或魔数无效（仅支持 PNG/JPEG/GIF/WebP）: {raw_path}"
             )
 
-        output_path = f"screenshots/{browser_path}"
+        output_path = f"{screenshot_prefix}/{browser_path}"
         container[key] = output_path
         if browser_path not in copied:
-            destination = package_root / "screenshots"
+            destination = package_root.joinpath(*screenshot_prefix.split("/"))
             destination = destination.joinpath(*parts)
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, destination)
@@ -125,13 +130,25 @@ def _prepare_images(
     return normalized
 
 
-def _render_index() -> str:
+def _render_index(data_file: str = "data.json") -> str:
     template = (ASSETS_DIR / "viewer.html").read_text(encoding="utf-8")
     css = (ASSETS_DIR / "viewer.css").read_text(encoding="utf-8")
     javascript = (ASSETS_DIR / "viewer.js").read_text(encoding="utf-8")
-    return template.replace("/*__VIEWER_CSS__*/", css).replace(
-        "/*__VIEWER_JS__*/", javascript
+    return (
+        template.replace("__ANALYSIS_DATA_FILE__", data_file)
+        .replace("/*__VIEWER_CSS__*/", css)
+        .replace("/*__VIEWER_JS__*/", javascript)
     )
+
+
+def _validated_dataset_id(dataset_id: str | None) -> str | None:
+    if dataset_id is None:
+        return None
+    if not DATASET_ID_PATTERN.fullmatch(dataset_id):
+        raise ValueError(
+            "数据集 dataset-id 只能使用小写字母、数字和连字符，且最长 64 字符"
+        )
+    return dataset_id
 
 
 def _absolute(path: Path) -> Path:
@@ -316,7 +333,11 @@ def _validate_output_separation(
             raise ValueError(f"输出目录包含源截图路径，存在输入删除风险: {container[key]}")
 
 
-def build_package(analysis_path: str | Path, output_dir: str | Path) -> dict[str, Any]:
+def build_package(
+    analysis_path: str | Path,
+    output_dir: str | Path,
+    dataset_id: str | None = None,
+) -> dict[str, Any]:
     """Validate analysis and atomically build an offline viewer package."""
     analysis_path = _absolute(Path(analysis_path))
     output_dir = _absolute(Path(output_dir))
@@ -327,6 +348,11 @@ def build_package(analysis_path: str | Path, output_dir: str | Path) -> dict[str
         raise ValueError(f"输出路径已存在且不是目录: {output_dir}")
 
     data = loads_and_validate(analysis_path.read_text(encoding="utf-8"))
+    dataset_id = _validated_dataset_id(dataset_id)
+    data_file = f"data/{dataset_id}.json" if dataset_id else "data.json"
+    screenshot_prefix = (
+        f"screenshots/{dataset_id}" if dataset_id else "screenshots"
+    )
     _validate_output_separation(analysis_path, data, output_dir)
     output_dir.parent.mkdir(parents=True, exist_ok=True)
     staged = Path(
@@ -334,12 +360,24 @@ def build_package(analysis_path: str | Path, output_dir: str | Path) -> dict[str
     )
     committed = False
     try:
-        normalized = _prepare_images(data, analysis_path.parent, staged)
-        (staged / "data.json").write_text(
+        if dataset_id and output_dir.exists():
+            shutil.copytree(output_dir, staged, dirs_exist_ok=True)
+            selected_screenshots = staged / "screenshots" / dataset_id
+            if selected_screenshots.exists():
+                shutil.rmtree(selected_screenshots)
+        normalized = _prepare_images(
+            data,
+            analysis_path.parent,
+            staged,
+            screenshot_prefix=screenshot_prefix,
+        )
+        data_path = staged.joinpath(*data_file.split("/"))
+        data_path.parent.mkdir(parents=True, exist_ok=True)
+        data_path.write_text(
             dumps_analysis(normalized), encoding="utf-8", newline=""
         )
         (staged / "index.html").write_text(
-            _render_index(), encoding="utf-8", newline=""
+            _render_index(data_file), encoding="utf-8", newline=""
         )
         _commit_directory(staged, output_dir)
         committed = True
@@ -357,9 +395,13 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="构建可移动的游戏前期体验拆解查看器")
     parser.add_argument("analysis", help="统一格式 analysis.json")
     parser.add_argument("--output-dir", required=True, help="查看器包输出目录")
+    parser.add_argument(
+        "--dataset-id",
+        help="独立数据集标识；提供后输出 data/<id>.json 与 screenshots/<id>/",
+    )
     args = parser.parse_args(argv)
     try:
-        build_package(args.analysis, args.output_dir)
+        build_package(args.analysis, args.output_dir, dataset_id=args.dataset_id)
         return 0
     except (
         OSError,

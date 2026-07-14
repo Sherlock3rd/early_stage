@@ -621,7 +621,16 @@ class AnalysisModelTests(unittest.TestCase):
             / "analysis.final.validated.json"
         )
         if not frost_path.exists():
-            frost_path = ROOT.parents[2] / "data.json"
+            frost_path = ROOT.parents[2] / "data" / "frost.json"
+        if not frost_path.exists():
+            frost_path = (
+                ROOT.parents[2]
+                / "artifacts"
+                / "frost-early-experience"
+                / "viewer"
+                / "data"
+                / "frost.json"
+            )
         data = json.loads(frost_path.read_text(encoding="utf-8"))
         self.assertEqual(1500, data["global_loops"]["scope"]["end"])
         micro_loops = [

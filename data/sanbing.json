@@ -1,0 +1,3794 @@
+{
+  "video": {
+    "path": "asset/recordings/三冰录屏.mp4",
+    "duration_seconds": 2606.0333333333333
+  },
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-000-evidence-01-000015000.jpg",
+          "timestamp": 15.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-000-evidence-02-000045000.jpg",
+          "timestamp": 45.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "救助居民并建立最初温饱条件",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 接纳阿牛兄妹，围炉安顿",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T0 求生安置 (接纳→取暖)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "模拟聚落初始区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "阿牛介绍自己和妹妹小果，感谢主公相助并加入据点。\n目的：用被救居民建立主公身份和最初责任。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening-survival",
+        "name": "P1. 雪地立足 (Snowfield Landing)",
+        "start": 0.0,
+        "end": 240.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-000-evidence-01-000015000.jpg",
+          "note": "00:15 画面显示：接纳阿牛兄妹，围炉安顿。"
+        }
+      ],
+      "open_questions": [
+        "录屏未显示明确版本号。"
+      ]
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-001-evidence-01-000075000.jpg",
+          "timestamp": 75.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-001-evidence-02-000105000.jpg",
+          "timestamp": 105.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "救助居民并建立最初温饱条件",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 修复灶厨并开始供餐",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T1 建筑生产 (修复→供餐)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "厨房/锅灶生产",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 3\n厨房 Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "小果发现废弃灶厨，推动修复厨房解决温饱。\n目的：把人物困境转为建设与生产教学。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening-survival",
+        "name": "P1. 雪地立足 (Snowfield Landing)",
+        "start": 0.0,
+        "end": 240.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-001-evidence-01-000075000.jpg",
+          "note": "01:15 画面显示：修复灶厨并开始供餐。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-002-evidence-01-000120000.jpg",
+          "timestamp": 120.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-002-evidence-02-000135000.jpg",
+          "timestamp": 135.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-002-evidence-03-000165000.jpg",
+          "timestamp": 165.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "救助居民并建立最初温饱条件",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级民居，解决居民饥饿",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 建筑生产 (升级→居民恢复)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "民居床位升级",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 6\n民居甲 Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "小果发现村民没有进食；李二表示众人已撑不住，只求一口食物。\n目的：将饥饿危机具象化，强化供餐与住房升级动机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening-survival",
+        "name": "P1. 雪地立足 (Snowfield Landing)",
+        "start": 0.0,
+        "end": 240.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-002-evidence-01-000120000.jpg",
+          "note": "02:00 画面显示：升级民居，解决居民饥饿。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-003-evidence-01-000180000.jpg",
+          "timestamp": 180.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-003-evidence-02-000225000.jpg",
+          "timestamp": 225.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "救助居民并建立最初温饱条件",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 采集木材并升级建筑",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 资源建设 (采集→升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "资源采集",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "模拟聚落扩展区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 6\n居民 4/4",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "居民开始采集木材并建设聚落。\n目的：把短期救急转为长期生存。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening-survival",
+        "name": "P1. 雪地立足 (Snowfield Landing)",
+        "start": 0.0,
+        "end": 240.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-003-evidence-01-000180000.jpg",
+          "note": "03:00 画面显示：采集木材并升级建筑。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-004-main-000270000.jpg",
+        "timestamp": 270.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-004-evidence-01-000240000.jpg",
+          "timestamp": 240.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-004-evidence-02-000255000.jpg",
+          "timestamp": 255.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-004-evidence-03-000285000.jpg",
+          "timestamp": 285.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 应对“风雪欲来”民心事件",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 民心事件 (危机→任务→奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "民心任务、政令技能",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 13/20",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "众人刚获得喘息，章节切至“风雪欲来”，暴风雪倒计时出现。\n目的：以即将到来的风雪建立阶段时限和持续压力。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-004-evidence-01-000240000.jpg",
+          "note": "04:00 画面显示：应对“风雪欲来”民心事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级伐木场并补足资源",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T2 资源建设 (补资源→升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 13\n战力 280",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-005-main-000330000.jpg",
+          "note": "05:30 画面显示：升级伐木场并补足资源。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-006-evidence-01-000375000.jpg",
+          "timestamp": 375.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-006-evidence-02-000405000.jpg",
+          "timestamp": 405.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 完成“邀友同行”引导",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T4 邀友活动 (分享→助力)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "邀友同行",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-006-evidence-01-000375000.jpg",
+          "note": "06:15 画面显示：完成“邀友同行”引导。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-007-evidence-01-000420000.jpg",
+          "timestamp": 420.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-007-evidence-02-000435000.jpg",
+          "timestamp": 435.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-007-evidence-03-000465000.jpg",
+          "timestamp": 465.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成民心任务并领取物资",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T3 民心事件 (完成→结算)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 15\n战力 29,820",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-007-evidence-01-000420000.jpg",
+          "note": "07:00 画面显示：完成民心任务并领取物资。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级煤矿生产",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T5 生产建筑 (升级→增产)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "煤矿生产",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 16\n战力 29,940\n煤矿 Lv.2",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-008-main-000510000.jpg",
+          "note": "08:30 画面显示：升级煤矿生产。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 将厨房升级至3级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 厨房 (升级→供给提升)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 16\n战力 30,930\n厨房 Lv.3",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-009-main-000570000.jpg",
+          "note": "09:30 画面显示：将厨房升级至3级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成“逆风破雪”民心任务",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T3 民心事件 (逆风破雪→奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 16\n战力 31,230",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-010-main-000630000.jpg",
+          "note": "10:30 画面显示：完成“逆风破雪”民心任务。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-011-evidence-01-000675000.jpg",
+          "timestamp": 675.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-011-evidence-02-000705000.jpg",
+          "timestamp": 705.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-011-evidence-03-000715000.jpg",
+          "timestamp": 715.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在倒计时压力下扩建生产并准备迎接暴风雪",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 暴风雪来临，寻找大夫",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T6 风雪危机 (预警→事件兑现)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "暴风雪事件",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "暴风雪到来；居民仍在寻找大夫，阿牛因严寒身体不适。\n目的：兑现倒计时威胁，把建设压力升级为救人危机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "blizzard-preparation",
+        "name": "P2. 风雪备战 (Blizzard Preparation)",
+        "start": 240.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "暴风雪兑现倒计时威胁，阿牛身体不适，形成前期生存剧情高点。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-011-evidence-01-000675000.jpg",
+          "note": "11:15 画面显示：暴风雪来临，寻找大夫。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-012-evidence-01-000720000.jpg",
+          "timestamp": 720.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-012-evidence-02-000750000.jpg",
+          "timestamp": 750.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-012-evidence-03-000779000.jpg",
+          "timestamp": 779.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "以战斗收复失地并建立自动战斗认知",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 收复第2块失地",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T7 失地讨伐 (出征→战斗→结算)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "失地讨伐、战斗结算、普通招募",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "失地讨伐雪原",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "招募货币 1\n元宝 2,322",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "为守住据点并取得救援资源，队伍出征收复第2块失地。\n目的：把聚落危机转为外部战斗动机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "lost-land-expedition",
+        "name": "P3. 失地远征 (Lost Land Expedition)",
+        "start": 720.0,
+        "end": 960.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标明确、连续战斗且技能与结算反馈密集。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-012-evidence-01-000720000.jpg",
+          "note": "12:00 画面显示：收复第2块失地。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-013-evidence-01-000795000.jpg",
+          "timestamp": 795.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-013-evidence-02-000810000.jpg",
+          "timestamp": 810.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-013-evidence-03-000825000.jpg",
+          "timestamp": 825.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "以战斗收复失地并建立自动战斗认知",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 学习自动战斗与技能释放",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T8 自动战斗 (技能→胜负)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "自动战斗、倍速、技能释放",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "队伍战力 2.6万",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "队伍继续迎击雪原敌军。\n目的：用连续冲突建立自动战斗和技能教学。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "lost-land-expedition",
+        "name": "P3. 失地远征 (Lost Land Expedition)",
+        "start": 720.0,
+        "end": 960.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-013-evidence-01-000795000.jpg",
+          "note": "13:15 画面显示：学习自动战斗与技能释放。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-014-evidence-01-000840000.jpg",
+          "timestamp": 840.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-014-evidence-02-000855000.jpg",
+          "timestamp": 855.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-014-evidence-03-000885000.jpg",
+          "timestamp": 885.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "以战斗收复失地并建立自动战斗认知",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 收复第5块失地并邀请勇将",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T7 失地讨伐 (推进→招募动机)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "战力 50,939",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "蔡文姬认可队伍讨伐贼将，并邀请勇将加入阵营。\n目的：把战斗胜利转成名将加入和持续征战期待。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "lost-land-expedition",
+        "name": "P3. 失地远征 (Lost Land Expedition)",
+        "start": 720.0,
+        "end": 960.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-014-evidence-01-000840000.jpg",
+          "note": "14:00 画面显示：收复第5块失地并邀请勇将。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-015-evidence-01-000900000.jpg",
+          "timestamp": 900.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-015-evidence-02-000930000.jpg",
+          "timestamp": 930.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-015-evidence-03-000945000.jpg",
+          "timestamp": 945.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "以战斗收复失地并建立自动战斗认知",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 挑战黄邵",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T7 失地讨伐 (挑战→结算)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "队伍战力 3.1万",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "队伍正面挑战黄邵，战斗压力明显提高。\n目的：用首个具名强敌抬高远征冲突。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "lost-land-expedition",
+        "name": "P3. 失地远征 (Lost Land Expedition)",
+        "start": 720.0,
+        "end": 960.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标明确、连续战斗且技能与结算反馈密集。"
+      },
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-015-evidence-01-000900000.jpg",
+          "note": "15:00 画面显示：挑战黄邵。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-016-evidence-01-000960000.jpg",
+          "timestamp": 960.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-016-evidence-02-000990000.jpg",
+          "timestamp": 990.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-016-evidence-03-001005000.jpg",
+          "timestamp": 1005.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "扩建居民设施并把名将纳入成长线",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 建造民居丙",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T9 聚落扩建 (解锁→建造)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "商城、首充、民居丙",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 22\n战力 58,406\n火炉 Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "settlement-and-recruitment",
+        "name": "P4. 扩建纳将 (Expansion & Recruitment)",
+        "start": 960.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-016-evidence-01-000960000.jpg",
+          "note": "16:00 画面显示：建造民居丙。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "扩建居民设施并把名将纳入成长线",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 将猎人小屋升级至4级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T9 聚落扩建 (升级→入住)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "武将入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 22\n战力 58,926",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "settlement-and-recruitment",
+        "name": "P4. 扩建纳将 (Expansion & Recruitment)",
+        "start": 960.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-017-main-001050000.jpg",
+          "note": "17:30 画面显示：将猎人小屋升级至4级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "扩建居民设施并把名将纳入成长线",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成猎人小屋升级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T9 聚落扩建 (完成→奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 23\n战力 59,346",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "settlement-and-recruitment",
+        "name": "P4. 扩建纳将 (Expansion & Recruitment)",
+        "start": 960.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-018-main-001110000.jpg",
+          "note": "18:30 画面显示：完成猎人小屋升级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-019-evidence-01-001140000.jpg",
+          "timestamp": 1140.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-019-evidence-02-001170000.jpg",
+          "timestamp": 1170.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-019-evidence-03-001190000.jpg",
+          "timestamp": 1190.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "扩建居民设施并把名将纳入成长线",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级火炉并招募貂蝉",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T10 武将招募 (剧情→结契)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "貂蝉招募",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 23\n火炉 Lv.4",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "貂蝉以“生死与共，此生不弃”结契追随主公。\n目的：用角色承诺强化招募奖励与队伍归属。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "settlement-and-recruitment",
+        "name": "P4. 扩建纳将 (Expansion & Recruitment)",
+        "start": 960.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-019-evidence-01-001140000.jpg",
+          "note": "19:00 画面显示：升级火炉并招募貂蝉。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-020-evidence-01-001200000.jpg",
+          "timestamp": 1200.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-020-evidence-02-001230000.jpg",
+          "timestamp": 1230.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-020-evidence-03-001255000.jpg",
+          "timestamp": 1255.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过招募、培养和编队连续推进讨伐关卡",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续收复失地",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T7 失地讨伐 (推进→解锁)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "招募系统、行囊、信函",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 25\n战力 66,166",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "收复失地继续推进，主城外围仍有敌军威胁。\n目的：维持建设与征战交替推进的长期目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "formation-progression",
+        "name": "P5. 编队推关 (Formation Progression)",
+        "start": 1200.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-020-evidence-01-001200000.jpg",
+          "note": "20:00 画面显示：继续收复失地。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-021-evidence-01-001260000.jpg",
+          "timestamp": 1260.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-021-evidence-02-001290000.jpg",
+          "timestamp": 1290.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-021-evidence-03-001305000.jpg",
+          "timestamp": 1305.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过招募、培养和编队连续推进讨伐关卡",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进火炉等级并培养武将",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T10 武将养成 (招募→培养)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "武将培养、主线任务面板",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 25\n火炉 Lv.5",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "formation-progression",
+        "name": "P5. 编队推关 (Formation Progression)",
+        "start": 1200.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-021-evidence-01-001260000.jpg",
+          "note": "21:00 画面显示：推进火炉等级并培养武将。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-022-evidence-01-001320000.jpg",
+          "timestamp": 1320.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-022-evidence-02-001350000.jpg",
+          "timestamp": 1350.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-022-evidence-03-001379000.jpg",
+          "timestamp": 1379.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过招募、培养和编队连续推进讨伐关卡",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进第10关",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T7 讨伐推关 (战斗→奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "队伍战力 8.1万",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "formation-progression",
+        "name": "P5. 编队推关 (Formation Progression)",
+        "start": 1200.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-022-evidence-01-001320000.jpg",
+          "note": "22:00 画面显示：推进第10关。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-023-evidence-01-001395000.jpg",
+          "timestamp": 1395.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-023-evidence-02-001410000.jpg",
+          "timestamp": 1410.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-023-evidence-03-001435000.jpg",
+          "timestamp": 1435.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过招募、培养和编队连续推进讨伐关卡",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 配置1-1阵容",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T11 阵容编成 (上阵→开战)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "上阵编队",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "蔡文姬 Lv.10\n华雄 Lv.14\n关银屏 Lv.12",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "队伍完成编成并准备进入新章节关卡。\n目的：把已有武将成长转化为下一轮战斗投入。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "formation-progression",
+        "name": "P5. 编队推关 (Formation Progression)",
+        "start": 1200.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-023-evidence-01-001395000.jpg",
+          "note": "23:15 画面显示：配置1-1阵容。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-024-evidence-01-001440000.jpg",
+          "timestamp": 1440.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-024-evidence-02-001470000.jpg",
+          "timestamp": 1470.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-024-evidence-03-001490000.jpg",
+          "timestamp": 1490.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过招募、培养和编队连续推进讨伐关卡",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 连续推进至1-7",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T7 讨伐推关 (连胜→更高关卡)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "队伍战力 8.1万",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "formation-progression",
+        "name": "P5. 编队推关 (Formation Progression)",
+        "start": 1200.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标明确、连续战斗且技能与结算反馈密集。"
+      },
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-024-evidence-01-001440000.jpg",
+          "note": "24:00 画面显示：连续推进至1-7。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "围绕木材与矿产缺口集中升级聚落",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 解决木材缺口",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T5 资源补给 (缺口→获取更多)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "“获取更多”资源指引",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "木材 48.4/120\n木材产出 +7.4/5秒",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "resource-sprint",
+        "name": "P6. 资源冲刺 (Resource Sprint)",
+        "start": 1500.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-025-main-001530000.jpg",
+          "note": "25:30 画面显示：解决木材缺口。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "围绕木材与矿产缺口集中升级聚落",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 将铁矿升级至5级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T9 聚落扩建 (铁矿升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "讨伐、行囊入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "战力 113,868",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "resource-sprint",
+        "name": "P6. 资源冲刺 (Resource Sprint)",
+        "start": 1500.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-026-main-001590000.jpg",
+          "note": "26:30 画面显示：将铁矿升级至5级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "围绕木材与矿产缺口集中升级聚落",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 将煤矿升级至5级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T5 生产建筑 (煤矿升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "战力 114,948\n煤矿 Lv.3",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "resource-sprint",
+        "name": "P6. 资源冲刺 (Resource Sprint)",
+        "start": 1500.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-027-main-001650000.jpg",
+          "note": "27:30 画面显示：将煤矿升级至5级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "围绕木材与矿产缺口集中升级聚落",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 使用建造加速",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T12 建造加速 (道具→完工)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "建造加速",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "战力 116,068",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "resource-sprint",
+        "name": "P6. 资源冲刺 (Resource Sprint)",
+        "start": 1500.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-028-main-001710000.jpg",
+          "note": "28:30 画面显示：使用建造加速。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-029-evidence-01-001740000.jpg",
+          "timestamp": 1740.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-029-evidence-02-001755000.jpg",
+          "timestamp": 1755.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-029-evidence-03-001770000.jpg",
+          "timestamp": 1770.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "围绕木材与矿产缺口集中升级聚落",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 查看完整主城与个人主页",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T0 模拟聚落 (完整主城)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "个人主页、完整主城功能入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "完整主城",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 26\n战力 125,008",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "模拟聚落发展为完整主城，玩家身份和功能入口正式接入长期SLG框架。\n目的：完成前期模拟体验向主城经营的叙事转场。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "resource-sprint",
+        "name": "P6. 资源冲刺 (Resource Sprint)",
+        "start": 1500.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-029-evidence-01-001740000.jpg",
+          "note": "29:00 画面显示：查看完整主城与个人主页。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 2100.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-030-main-001950000.jpg",
+        "timestamp": 1950.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-030-evidence-01-001815000.jpg",
+          "timestamp": 1815.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-030-evidence-02-001950000.jpg",
+          "timestamp": 1950.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-030-evidence-03-002070000.jpg",
+          "timestamp": 2070.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "接入兵营、活动和完整主城成长入口",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 训练士兵并培养1星武将",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T13 兵营训练 (生产→兵力)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "士兵训练、活动、初出茅庐",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 28→41\n战力 125,468→171,764",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "full-city",
+        "name": "P7. 完整主城 (Full City)",
+        "start": 1800.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-030-evidence-01-001815000.jpg",
+          "note": "30:15 画面显示：训练士兵并培养1星武将。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 31,
+      "start": 2100.0,
+      "end": 2400.0,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-031-main-002250000.jpg",
+        "timestamp": 2250.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-031-evidence-01-002115000.jpg",
+          "timestamp": 2115.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-031-evidence-02-002160000.jpg",
+          "timestamp": 2160.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-031-evidence-03-002385000.jpg",
+          "timestamp": 2385.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "进入世界地图，建立搜索、行军、讨伐与同盟目标",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级火炉并进入大地图讨伐",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T14 大地图讨伐 (搜索→行军)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "SLG大地图、坐标、行军队列、城镇入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "SLG大地图",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 45\n战力 172,394→185,454\n火炉 Lv.6",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "slg-world",
+        "name": "P8. SLG大地图 (SLG World)",
+        "start": 2100.0,
+        "end": 2606.0333333333333
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标明确、连续战斗且技能与结算反馈密集。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-031-evidence-02-002160000.jpg",
+          "note": "36:00 世界地图显示坐标、行军队列、绿色行军路径与流寇目标。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 32,
+      "start": 2400.0,
+      "end": 2606.0333333333333,
+      "main_frame": {
+        "path": "screenshots/sanbing/frames/slice-032-main-002503017.jpg",
+        "timestamp": 2503.0166666666664
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/sanbing/frames/slice-032-evidence-01-002415000.jpg",
+          "timestamp": 2415.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-032-evidence-02-002505000.jpg",
+          "timestamp": 2505.0
+        },
+        {
+          "path": "screenshots/sanbing/frames/slice-032-evidence-03-002595000.jpg",
+          "timestamp": 2595.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "进入世界地图，建立搜索、行军、讨伐与同盟目标",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 搜索流寇、加入同盟并继续升级火炉",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T14 大地图讨伐 (搜索→征伐→资源)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "流寇搜索、自动征伐、同盟、信函",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "民心 45→49\n战力 223,020→230,718\n火炉 Lv.7",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "slg-world",
+        "name": "P8. SLG大地图 (SLG World)",
+        "start": 2100.0,
+        "end": 2606.0333333333333
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成全局剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成全局心流峰值。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/sanbing/frames/slice-032-evidence-01-002415000.jpg",
+          "note": "40:15 画面显示：搜索流寇、加入同盟并继续升级火炉。"
+        }
+      ],
+      "open_questions": []
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 2,
+          "supporting_score": 2,
+          "intensity": 2.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "严寒中救下阿牛兄妹并围炉安顿",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 2.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“接纳阿牛兄妹，围炉安顿”展开",
+            "feedback_density": "主动操作和有效反馈偏少",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "外部弹窗或低操作密度削弱沉浸"
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 1.5,
+          "supporting_score": 2,
+          "intensity": 1.7,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "发现废弃灶厨并开始解决温饱",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 3,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“修复灶厨并开始供餐”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 3,
+          "supporting_score": 3,
+          "intensity": 3.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "居民饥饿已接近极限",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“升级民居，解决居民饥饿”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 2,
+          "intensity": 1.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "采集木材推动聚落成形",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 3,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“采集木材并升级建筑”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 5,
+          "intensity": 3.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "“风雪欲来”章节与倒计时同时出现",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“应对“风雪欲来”民心事件”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "negative",
+          "drivers": [
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "倒计时推进下补足伐木资源",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“升级伐木场并补足资源”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "邀请分享弹窗覆盖主流程",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 1.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“完成“邀友同行”引导”展开",
+            "feedback_density": "主动操作和有效反馈偏少",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "邀请分享弹窗覆盖主流程，形成明显中断"
+          },
+          "summary": "外部弹窗或低操作密度削弱沉浸"
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "民心任务完成并集中发放物资",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“完成民心任务并领取物资”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 2,
+          "intensity": 1.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "煤矿升级带来生产提升",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“升级煤矿生产”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "environment_pressure",
+            "progression_reward"
+          ],
+          "event": "厨房升级并改善供餐能力",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“将厨房升级至3级”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 1.5,
+          "supporting_score": 4,
+          "intensity": 2.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "暴风雪倒计时逼近",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“完成“逆风破雪”民心任务”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 3.5,
+          "supporting_score": 5,
+          "intensity": 4.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "暴风雪到来且阿牛身体不适",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“暴风雪来临，寻找大夫”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 3,
+          "supporting_score": 5,
+          "intensity": 3.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "收复失地取得首次高密度胜利奖励",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“收复第2块失地”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 4,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "自动战斗与技能反馈连续出现",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“学习自动战斗与技能释放”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 4,
+          "intensity": 3.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "讨伐胜利并提出邀请勇将",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“收复第5块失地并邀请勇将”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 2,
+          "supporting_score": 5,
+          "intensity": 2.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat"
+          ],
+          "event": "挑战黄邵的战斗压力",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“挑战黄邵”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "新民居落成",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“建造民居丙”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "猎人小屋升级推进",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“将猎人小屋升级至4级”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "猎人小屋升级完成",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“完成猎人小屋升级”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 4,
+          "intensity": 3.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "貂蝉结契并加入队伍",
+          "reason": "剧情危机主导，并叠加环境或战斗压力。"
+        },
+        "experience": {
+          "score": 4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“升级火炉并招募貂蝉”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 3,
+          "intensity": 1.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "外围失地继续暴露敌军",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“继续收复失地”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "招募、培养与任务奖励连续出现",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“推进火炉等级并培养武将”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 5,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "第10关战斗冲突",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 4.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“推进第10关”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 4,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "新阵容编成并准备开战",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“配置1-1阵容”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 5,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "连续推进至1-7",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4.6,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“连续推进至1-7”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "negative",
+          "drivers": [
+            "urgency"
+          ],
+          "event": "木材不足阻断升级",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“解决木材缺口”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "铁矿升级与成长奖励",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“将铁矿升级至5级”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "煤矿升级与产出提升",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“将煤矿升级至5级”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "使用加速道具缩短等待",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“使用建造加速”展开",
+            "feedback_density": "任务与数值反馈稳定",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "流程清晰但挑战或反馈密度中等"
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 1.5,
+          "supporting_score": 4,
+          "intensity": 2.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "完整主城解锁并出现危险提示",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“查看完整主城与个人主页”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 2100.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 4,
+          "intensity": 1.5,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "训练士兵并快速提升主城战力",
+          "reason": "剧情提供方向，成长、环境或战斗反馈补充情绪刺激。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“训练士兵并培养1星武将”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 2100.0,
+        "end": 2400.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 5,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "大地图行军与讨伐正式开启",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 4.6,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“升级火炉并进入大地图讨伐”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      },
+      {
+        "start": 2400.0,
+        "end": 2606.0333333333333,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "搜索流寇、同盟接入与火炉升级",
+          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "主要操作围绕“搜索流寇、加入同盟并继续升级火炉”展开",
+            "feedback_density": "战斗、升级或奖励反馈连续出现",
+            "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
+            "interruption": "流程中断较少"
+          },
+          "summary": "目标、操作和反馈连续，处于较强沉浸区间"
+        }
+      }
+    ]
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 2100.0,
+      "end_label": "完整主城与出征准备完成",
+      "outside_exit_label": "进入SLG大地图"
+    },
+    "macro_loops": [
+      {
+        "id": "settlement",
+        "title": "聚落建设",
+        "accent": "settlement",
+        "summary": "通过建设、生产和居民任务把风雪压力转化为主城成长。"
+      },
+      {
+        "id": "expedition",
+        "title": "战斗远征",
+        "accent": "expedition",
+        "summary": "通过失地讨伐、关卡战斗和结算推进外部战线。"
+      },
+      {
+        "id": "hero_growth",
+        "title": "英雄成长",
+        "accent": "hero_growth",
+        "summary": "通过剧情招募、普通招募、培养和编队强化队伍。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "building_growth",
+        "title": "建筑升级养成",
+        "summary": "采集或消耗资源升级聚落建筑。",
+        "accent": "building_growth"
+      },
+      {
+        "id": "building_production",
+        "title": "建筑生产",
+        "summary": "通过厨房、煤矿等生产建筑形成持续供给。",
+        "accent": "building_production"
+      },
+      {
+        "id": "expedition_progression",
+        "title": "推关玩法",
+        "summary": "通过连续战斗收复失地并推进章节。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "hero_growth",
+        "title": "英雄养成",
+        "summary": "通过招募、培养和编队提升队伍。",
+        "accent": "hero_growth"
+      },
+      {
+        "id": "law_system",
+        "title": "民心事件",
+        "summary": "通过限时民心任务和政令技能缓解风雪危机。",
+        "accent": "law_system"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "settlement-rescue-kitchen",
+        "type": "micro_loop",
+        "title": "救援与温饱",
+        "summary": "接纳居民并修复厨房，建立第一轮安置闭环。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          0,
+          1,
+          2
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-000-evidence-02-000045000.jpg",
+          "screenshots/sanbing/frames/slice-002-evidence-02-000135000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.9,
+        "motivation": "阿牛兄妹和饥饿居民需要安全落脚与食物。",
+        "behaviors": [
+          "接纳居民",
+          "修复厨房",
+          "升级民居并供餐"
+        ],
+        "reward": "居民获得取暖、床位和食物，聚落民心提升。",
+        "next_motivation": "继续采集木材，扩建可持续聚落。"
+      },
+      {
+        "id": "settlement-collect-build",
+        "type": "micro_loop",
+        "title": "采集木材建造",
+        "summary": "把木材采集直接转化为建筑升级。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          3
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-003-main-000210000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.88,
+        "motivation": "现有建筑无法承担更多居民与生产需求。",
+        "behaviors": [
+          "按任务采集木材",
+          "投入资源升级建筑"
+        ],
+        "reward": "建筑规模扩大，获得新的生产目标。",
+        "next_motivation": "风雪将至，需要建立更稳定的供给。"
+      },
+      {
+        "id": "settlement-blizzard-morale",
+        "type": "micro_loop",
+        "title": "风雪民心事件",
+        "summary": "用民心任务与政令技能处理暴风雪倒计时。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "law_system",
+        "slice_indices": [
+          4
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-004-evidence-02-000255000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.9,
+        "motivation": "暴风雪即将到来，居民状态与民心承压。",
+        "behaviors": [
+          "查看民心事件",
+          "完成紧急任务",
+          "解锁政令技能"
+        ],
+        "reward": "获得民心与物资奖励，暂时稳定居民。",
+        "next_motivation": "继续升级生产建筑，准备迎接风雪。"
+      },
+      {
+        "id": "settlement-production-upgrades",
+        "type": "micro_loop",
+        "title": "生产设施连升",
+        "summary": "连续升级伐木、煤矿和厨房以补足风雪前供给。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_production",
+        "slice_indices": [
+          5,
+          7,
+          8,
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-008-main-000510000.jpg",
+          "screenshots/sanbing/frames/slice-009-main-000570000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.86,
+        "motivation": "风雪倒计时推进，木材、煤炭和食物供给不足。",
+        "behaviors": [
+          "升级伐木场",
+          "升级煤矿",
+          "将厨房升至3级"
+        ],
+        "reward": "资源产量和聚落战力持续提升。",
+        "next_motivation": "暴风雪正式到来后，需要转向救援与对外讨伐。"
+      },
+      {
+        "id": "expedition-blizzard-rescue",
+        "type": "micro_loop",
+        "title": "风雪救援出征",
+        "summary": "危机兑现后以失地讨伐获取救援资源。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          11,
+          12
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-011-evidence-02-000705000.jpg",
+          "screenshots/sanbing/frames/slice-012-evidence-02-000750000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.88,
+        "motivation": "暴风雪到来，阿牛身体不适且据点需要外部资源。",
+        "behaviors": [
+          "确认危机",
+          "出征第2块失地",
+          "完成战斗结算"
+        ],
+        "reward": "收复失地，获得元宝、资源和招募道具。",
+        "next_motivation": "用新资源和新武将继续推进更强敌人。"
+      },
+      {
+        "id": "expedition-auto-battle",
+        "type": "micro_loop",
+        "title": "自动战斗教学",
+        "summary": "通过连续讨伐掌握自动、倍速和技能释放。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          13,
+          14,
+          15
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-013-main-000810000.jpg",
+          "screenshots/sanbing/frames/slice-014-evidence-02-000855000.jpg",
+          "screenshots/sanbing/frames/slice-015-main-000930000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.9,
+        "motivation": "失地仍被敌军占据，需要提高推进效率。",
+        "behaviors": [
+          "开启自动战斗",
+          "释放武将技能",
+          "挑战具名敌将黄邵"
+        ],
+        "reward": "收复更多失地并获得名将线索和战斗奖励。",
+        "next_motivation": "返回聚落扩建，同时强化武将阵容。"
+      },
+      {
+        "id": "settlement-housing-expansion",
+        "type": "micro_loop",
+        "title": "居民设施扩建",
+        "summary": "建造民居并升级猎人小屋，扩大聚落承载。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          16,
+          17,
+          18
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-016-main-000990000.jpg",
+          "screenshots/sanbing/frames/slice-018-main-001110000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.88,
+        "motivation": "新居民与持续生产需要更多床位和功能设施。",
+        "behaviors": [
+          "建造民居丙",
+          "升级猎人小屋",
+          "领取完工奖励"
+        ],
+        "reward": "居民容量、生产能力和战力提高。",
+        "next_motivation": "更强聚落允许接纳并培养名将。"
+      },
+      {
+        "id": "hero-diao-chan",
+        "type": "micro_loop",
+        "title": "貂蝉结契",
+        "summary": "剧情承诺转化为名将加入的即时成长奖励。",
+        "macro_loop_id": "hero_growth",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-019-evidence-02-001170000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.95,
+        "motivation": "远征与主城扩张需要新的核心武将。",
+        "behaviors": [
+          "完成相关任务",
+          "触发结契剧情",
+          "确认貂蝉加入"
+        ],
+        "reward": "貂蝉追随主公，武将阵容扩展。",
+        "next_motivation": "进入招募与培养系统，继续提高队伍战力。"
+      },
+      {
+        "id": "hero-recruit-growth",
+        "type": "micro_loop",
+        "title": "招募培养入队",
+        "summary": "普通招募、领取任务并培养武将后再次出战。",
+        "macro_loop_id": "hero_growth",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          20,
+          21
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-020-evidence-03-001255000.jpg",
+          "screenshots/sanbing/frames/slice-021-main-001290000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.88,
+        "motivation": "后续关卡战力要求提高，现有队伍需要补强。",
+        "behaviors": [
+          "进行普通招募",
+          "领取培养任务",
+          "提升武将等级或阶位"
+        ],
+        "reward": "获得更多武将与养成资源，阵容战力提升。",
+        "next_motivation": "把成长成果投入连续讨伐。"
+      },
+      {
+        "id": "expedition-chapter-push",
+        "type": "micro_loop",
+        "title": "章节连续推关",
+        "summary": "通过阵容编成和连续战斗推进至1-7。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          22,
+          23,
+          24
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-022-main-001350000.jpg",
+          "screenshots/sanbing/frames/slice-023-main-001410000.jpg",
+          "screenshots/sanbing/frames/slice-024-main-001470000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.92,
+        "motivation": "主线要求继续收复失地并突破更高关卡。",
+        "behaviors": [
+          "完成第10关战斗",
+          "配置1-1阵容",
+          "连续推进至1-7"
+        ],
+        "reward": "取得连续胜利和资源奖励，解锁更高成长门槛。",
+        "next_motivation": "资源消耗扩大，玩家需要回城补足木材和矿产。"
+      },
+      {
+        "id": "settlement-resource-gap",
+        "type": "transition",
+        "title": "木材缺口显现",
+        "summary": "木材不足中断升级，系统展示讨伐、伐木场和采集等补给路径；本片尚未形成即时奖励闭环。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          25
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-025-main-001530000.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "settlement-mine-growth",
+        "type": "micro_loop",
+        "title": "矿业升级冲刺",
+        "summary": "连续升级铁矿、煤矿并用加速道具压缩等待。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          26,
+          27,
+          28
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-026-main-001590000.jpg",
+          "screenshots/sanbing/frames/slice-027-main-001650000.jpg",
+          "screenshots/sanbing/frames/slice-028-main-001710000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.9,
+        "motivation": "完整主城前置要求提高矿产建筑等级。",
+        "behaviors": [
+          "升级铁矿",
+          "升级煤矿",
+          "使用建造加速"
+        ],
+        "reward": "战力提升至11万以上，建设等待显著缩短。",
+        "next_motivation": "完成模拟聚落最后阶段并查看完整主城。"
+      },
+      {
+        "id": "settlement-main-city",
+        "type": "micro_loop",
+        "title": "完整主城解锁",
+        "summary": "聚落扩张成果汇总为完整主城功能框架。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          29
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-029-evidence-02-001755000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.85,
+        "motivation": "前置建筑和战力达到长期SLG框架接入条件。",
+        "behaviors": [
+          "完成最后一轮建设",
+          "查看个人主页",
+          "返回完整主城"
+        ],
+        "reward": "主城全景、个人信息与长期功能入口开放。",
+        "next_motivation": "训练士兵，为大地图活动准备第一支部队。"
+      },
+      {
+        "id": "settlement-troop-training",
+        "type": "micro_loop",
+        "title": "士兵训练",
+        "summary": "通过兵营训练把主城资源转化为可出征兵力。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "building_production",
+        "slice_indices": [
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-030-evidence-01-001815000.jpg"
+        ],
+        "status": "confirmed",
+        "confidence": 0.85,
+        "motivation": "完整主城已开放，但大地图探索需要士兵和更高战力。",
+        "behaviors": [
+          "进入训练建筑",
+          "训练10名士兵",
+          "培养1星武将"
+        ],
+        "reward": "兵力形成，主城战力提升至17万以上。",
+        "next_motivation": "离开主城进入SLG大地图，搜索并讨伐目标。"
+      },
+      {
+        "id": "full-city-end",
+        "type": "end",
+        "title": "完整主城与出征准备完成",
+        "summary": "兵营、活动和完整主城成长入口已接入，前期模拟阶段结束。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-030-evidence-03-002070000.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "slg-world-exit",
+        "type": "outside_exit",
+        "title": "进入SLG大地图",
+        "summary": "世界坐标、行军队列和讨伐目标出现，开始长期SLG探索。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          31
+        ],
+        "evidence_frames": [
+          "screenshots/sanbing/frames/slice-031-evidence-02-002160000.jpg"
+        ],
+        "status": "confirmed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "settlement-rescue-kitchen",
+        "to": "settlement-collect-build",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-collect-build",
+        "to": "settlement-blizzard-morale",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-blizzard-morale",
+        "to": "settlement-production-upgrades",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-production-upgrades",
+        "to": "expedition-blizzard-rescue",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "expedition-blizzard-rescue",
+        "to": "expedition-auto-battle",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "expedition-auto-battle",
+        "to": "settlement-housing-expansion",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-housing-expansion",
+        "to": "hero-diao-chan",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "hero-diao-chan",
+        "to": "hero-recruit-growth",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "hero-recruit-growth",
+        "to": "expedition-chapter-push",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "expedition-chapter-push",
+        "to": "settlement-resource-gap",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-resource-gap",
+        "to": "settlement-mine-growth",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-mine-growth",
+        "to": "settlement-main-city",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-main-city",
+        "to": "settlement-troop-training",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-troop-training",
+        "to": "full-city-end",
+        "kind": "primary",
+        "label": "按实际时间进入下一闭环"
+      },
+      {
+        "from": "settlement-production-upgrades",
+        "to": "settlement-housing-expansion",
+        "kind": "macro_return",
+        "label": "远征后回到聚落扩建"
+      },
+      {
+        "from": "settlement-housing-expansion",
+        "to": "settlement-mine-growth",
+        "kind": "macro_return",
+        "label": "武将与推关后回城冲刺矿业升级"
+      },
+      {
+        "from": "expedition-auto-battle",
+        "to": "expedition-chapter-push",
+        "kind": "macro_return",
+        "label": "扩建和养成后继续推关"
+      },
+      {
+        "from": "settlement-production-upgrades",
+        "to": "expedition-blizzard-rescue",
+        "kind": "cross_macro",
+        "label": "生产准备支撑风雪出征"
+      },
+      {
+        "from": "expedition-auto-battle",
+        "to": "settlement-housing-expansion",
+        "kind": "cross_macro",
+        "label": "战斗收益回投聚落"
+      },
+      {
+        "from": "settlement-housing-expansion",
+        "to": "hero-diao-chan",
+        "kind": "cross_macro",
+        "label": "聚落成长接入名将线"
+      },
+      {
+        "from": "hero-recruit-growth",
+        "to": "expedition-chapter-push",
+        "kind": "cross_macro",
+        "label": "武将成长支撑连续推关"
+      },
+      {
+        "from": "full-city-end",
+        "to": "slg-world-exit",
+        "kind": "conditional",
+        "label": "出征准备完成后进入大地图"
+      }
+    ]
+  }
+}

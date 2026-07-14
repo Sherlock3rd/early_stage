@@ -2,8 +2,9 @@
 
 ## 1. 单一事实源
 
-`analysis.json` 是唯一分析事实源。`build_viewer.py` 只将图片路径重写到可移动包并生成
-`data.json`；`write_feishu_sheet.py` 从同一份已校验数据生成页签。禁止分别维护 HTML 文案和飞书文案。
+每个游戏的 `analysis.json` 是该拆解唯一分析事实源。`build_viewer.py` 只将图片路径重写到
+`data/<dataset-id>.json` 与 `screenshots/<dataset-id>/`；`write_feishu_sheet.py`
+从同一份已校验数据生成页签。禁止分别维护 HTML 文案和飞书文案，也禁止多个游戏共用一个 JSON。
 
 文件使用 UTF-8 JSON。以 `analysis_model.py` 的校验器为最终机器契约；本文补充语义约束。
 
@@ -290,10 +291,20 @@ P9 进入 SLG 大地图只作为图外虚线出口，具体解锁门槛未有证
 ```text
 viewer/
   index.html
-  data.json
+  data/
+    frost.json
+    sanbing.json
   screenshots/
+    frost/
+    sanbing/
 ```
 
+- `--dataset-id` 使用稳定的小写英文 slug；每个拆解独占一个 JSON 和同名截图子目录。
+- 对同一输出目录构建新 `dataset-id` 时保留已有数据集；重建同名 ID 时原子替换该 ID 的
+  JSON 与截图，避免遗留旧帧。
+- 页面通过 `?dataset=<dataset-id>` 选择数据；未提供参数时读取构建时写入
+  `analysis-data-file` 元信息的默认数据。
+- 数据集参数只允许小写字母、数字与连字符，禁止路径字符和目录穿越。
 - 顶部提供标题、视频时长、阶段与关键词/关键节点筛选。
 - 主区使用单一总览时间轴代替七条泳道，所有时间片按真实时间比例压缩在容器宽度内；
   支持点击节点、上一片/下一片、阶段快速跳转和键盘左右方向键，不产生页面横向滚动。
@@ -315,7 +326,7 @@ viewer/
 - 图片区采用焦点轮播：当前图完整居中，前后图侧后方虚化；支持左右按钮、圆点、连续键盘切换、
   指针/触屏滑动和当前图放大，单图时隐藏导航。加载失败要显示可见错误，不能静默空白。
 - 资源本地化，无 CDN；不得在 HTML 内复制一份独立分析对象。
-- 直接用 `file://` 打开时若浏览器限制 `fetch("data.json")`，使用页面内文件选择器加载同目录的 `data.json`。
+- 直接用 `file://` 打开时若浏览器限制 `fetch`，使用页面内文件选择器加载该游戏对应的独立 JSON。
 
 ## 6. 飞书页签布局
 

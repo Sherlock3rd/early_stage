@@ -32,6 +32,12 @@
     return `${minutes}:${String(remainder).padStart(2, "0")}`;
   };
   const exactValue = (value) => String(value || "").trim().toLocaleLowerCase();
+  function resolveAnalysisDataPath(search, configured = "data.json") {
+    const dataset = new URLSearchParams(String(search || "")).get("dataset");
+    return dataset && /^[a-z0-9][a-z0-9-]{0,63}$/.test(dataset)
+      ? `data/${dataset}.json`
+      : configured;
+  }
   const visibleDimensionText = (slice) => DIMENSIONS
     .map((dimension) => slice.dimensions[dimension]?.fact || "")
     .filter(Boolean);
@@ -898,6 +904,7 @@
       macroLoopSegments,
       relatedLoopNavigationMarkup,
       relatedMicroLoops,
+      resolveAnalysisDataPath,
       showAllMacroLoops,
       updateMacroLoopVisibility,
       adjacentGalleryIndex,
@@ -1425,9 +1432,16 @@
     loopResizeObserver.observe(loopContainer);
   }
 
+  const configuredDataFile = document
+    .querySelector('meta[name="analysis-data-file"]')
+    ?.getAttribute("content") || "data.json";
+  const initialDataFile = resolveAnalysisDataPath(
+    window.location.search,
+    configuredDataFile
+  );
   loadInitialData(
-    () => fetch("data.json", { cache: "no-store" }).then((response) => {
-      if (!response.ok) throw new Error(`data.json 返回 ${response.status}`);
+    () => fetch(initialDataFile, { cache: "no-store" }).then((response) => {
+      if (!response.ok) throw new Error(`${initialDataFile} 返回 ${response.status}`);
       return response.json();
     }),
     initialize,
