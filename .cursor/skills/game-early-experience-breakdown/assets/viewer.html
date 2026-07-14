@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>游戏前期体验拆解</title>
+  <style>/*__VIEWER_CSS__*/</style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <p class="eyebrow">EARLY EXPERIENCE REVIEW</p>
+      <h1 id="game-title">游戏前期体验拆解</h1>
+      <p id="video-overview" class="muted">正在读取 data.json…</p>
+    </div>
+    <div id="summary-cards" class="summary-cards" aria-label="视频概览"></div>
+  </header>
+
+  <main>
+    <section id="filters" class="filters" aria-label="时间片筛选">
+      <label>关键词<input id="keyword-filter" type="search" placeholder="搜索维度描述或待确认项"></label>
+      <label>阶段<select id="stage-filter"><option value="">全部阶段</option></select></label>
+      <label>关键节点<select id="highlight-filter">
+        <option value="">全部节点</option>
+        <option value="climax">剧情高潮</option>
+        <option value="low">剧情低谷</option>
+        <option value="flow_peak">心流高点</option>
+      </select></label>
+      <button id="reset-filters" type="button">重置筛选</button>
+    </section>
+
+    <section id="emotion-curve-section" class="emotion-curve-section" aria-labelledby="emotion-curve-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">EMOTION & EXPERIENCE</p><h2 id="emotion-curve-title">全局情绪与体验曲线</h2></div>
+        <div id="emotion-curve-legend" class="emotion-curve-legend" aria-label="情绪曲线图例"></div>
+      </div>
+      <p id="curve-reading-guide" class="curve-reading-guide">情绪曲线以剧情为主体，并补充环境压力等其他刺激；体验曲线用于判断玩法沉浸与心流强度；趋势线用于观察前期体验是否整体提升。</p>
+      <div id="experience-trend-summary" class="experience-trend-summary" aria-label="体验整体趋势"></div>
+      <div class="emotion-curve-canvas">
+        <div id="emotion-curve-svg" aria-label="情绪强度、体验强度与体验趋势曲线"></div>
+        <div id="emotion-curve-tooltip" class="emotion-curve-tooltip" role="tooltip" hidden></div>
+      </div>
+      <p id="emotion-curve-error" class="emotion-curve-error" hidden></p>
+      <details id="emotion-algorithm-details" class="emotion-algorithm-details">
+        <summary>双曲线评分口径</summary>
+        <div id="emotion-algorithm-content"></div>
+      </details>
+    </section>
+
+    <section class="timeline-section">
+      <div class="section-heading">
+        <div><p class="eyebrow">TIMELINE</p><h2>体验总览时间轴</h2></div>
+        <div class="timeline-meta"><span id="time-granularity" class="pill"></span><span id="result-count" class="muted"></span></div>
+      </div>
+      <div id="stage-summary" class="stage-summary" aria-label="阶段快速跳转"></div>
+      <div id="timeline" class="timeline" aria-label="全局时间轴">
+        <div id="timeline-axis" class="timeline-axis"></div>
+        <div id="overview-track" class="overview-track"></div>
+      </div>
+    </section>
+
+    <section id="detail-panel" class="detail-panel" aria-live="polite">
+      <header class="detail-header">
+        <div>
+          <p id="detail-time" class="eyebrow"></p>
+          <h2 id="detail-title">选择一个时间片</h2>
+        </div>
+        <nav class="slice-navigation" aria-label="时间片导航">
+          <button id="previous-slice" type="button">上一片</button>
+          <button id="next-slice" type="button">下一片</button>
+        </nav>
+      </header>
+      <div id="related-loop-navigation" class="related-loop-navigation"></div>
+      <div id="detail-content" class="detail-content"></div>
+      <div id="dimension-tabs" class="dimension-tabs" role="tablist" aria-label="七维描述"></div>
+      <section id="dimension-description" class="dimension-description" role="tabpanel"></section>
+    </section>
+
+    <section id="global-loop-section" class="global-loop-section" aria-labelledby="global-loop-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">GLOBAL GAMEPLAY LOOPS</p><h2 id="global-loop-title">全局 LOOP 流程</h2></div>
+        <p class="muted">按实际时间串联小 LOOP；同色分段组成大 LOOP</p>
+      </div>
+      <div id="global-loop-statistics" class="global-loop-statistics"></div>
+      <div id="global-loop-legend" class="global-loop-legend" aria-label="大 LOOP 筛选"></div>
+      <div id="global-loop-canvas" class="global-loop-canvas"></div>
+      <p id="global-loop-error" class="global-loop-error" hidden></p>
+    </section>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-modal="true" aria-labelledby="lightbox-caption">
+    <button id="close-lightbox" class="close-button" type="button" aria-label="关闭图片">×</button>
+    <img id="lightbox-image" alt="放大的时间片截图">
+    <p id="lightbox-caption"></p>
+  </dialog>
+
+  <div id="load-error" class="load-error" hidden>
+    <strong>无法自动读取 data.json。</strong>
+    <span>若直接双击打开本文件，请选择同目录中的 data.json。</span>
+    <input id="data-file" type="file" accept=".json,application/json">
+  </div>
+
+  <script>/*__VIEWER_JS__*/</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+interface:
+  display_name: "游戏前期体验拆解"
+  short_description: "基于游戏录屏拆解 FTE，并交付 HTML 与飞书页签。"
+  default_prompt: "使用 $game-early-experience-breakdown 分析游戏录屏。录屏路径：；游戏/版本：；目标飞书 URL：；新页签名："
+
+policy:
+  allow_implicit_invocation: true
