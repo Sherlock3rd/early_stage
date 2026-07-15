@@ -1,0 +1,4226 @@
+{
+  "video": {
+    "path": "d:/charlie/Workbencch/asset/recordings/Beboo Bash 260709-1.mp4",
+    "duration_seconds": 4383.060667
+  },
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-000-evidence-01-000026000.jpg",
+          "timestamp": 26.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-000-evidence-02-000046000.jpg",
+          "timestamp": 46.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-000-evidence-03-000059000.jpg",
+          "timestamp": 59.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 开场与身份选择 (Opening & Identity)\n完成角色选择并理解探险危机。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 进入游戏并选择角色",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T0 身份选择 (角色确认)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "角色选择界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "嘉年华式开场与角色选择建立轻松表象。\n目的：让玩家先确认身份，再进入危机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening",
+        "name": "P1. 开场与身份选择 (Opening & Identity)",
+        "start": 0.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-000-evidence-01-000026000.jpg",
+          "note": "00:26.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-000-evidence-02-000046000.jpg",
+          "note": "00:46.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-000-evidence-03-000059000.jpg",
+          "note": "00:59.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": [
+        "游戏版本号与开场漫画中的角色专名待确认；本地分析不据此补写因果。"
+      ]
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-001-evidence-01-000069000.jpg",
+          "timestamp": 69.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-001-evidence-02-000084000.jpg",
+          "timestamp": 84.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-001-evidence-03-000098000.jpg",
+          "timestamp": 98.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 开场与身份选择 (Opening & Identity)\n完成角色选择并理解探险危机。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 观看探险危机漫画过场",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T0 剧情引导 (危机动机)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "连续漫画过场中，巨兽/灾害袭击并打断庆典，探险队面临危机。\n目的：制造首个剧情冲突并给出出发理由。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "opening",
+        "name": "P1. 开场与身份选择 (Opening & Identity)",
+        "start": 0.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "连续画面形成明确冲突升级与结果，属于本段叙事峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-001-evidence-01-000069000.jpg",
+          "note": "01:09 漫画过场展示庆典/城市中的角色群像。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-001-evidence-02-000084000.jpg",
+          "note": "01:24 红色巨兽进入画面并攻击，开场冲突明确升级。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-001-evidence-03-000098000.jpg",
+          "note": "01:38 暴风雨与闪电画面显示袭击造成的危机持续。"
+        }
+      ],
+      "open_questions": [
+        "游戏版本号与开场漫画中的角色专名待确认；本地分析不据此补写因果。"
+      ]
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-002-evidence-01-000136000.jpg",
+          "timestamp": 136.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-002-evidence-02-000150000.jpg",
+          "timestamp": 150.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-002-evidence-03-000170000.jpg",
+          "timestamp": 170.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 基础操作教学 (Basic Tutorial)\n掌握移动、攻击与比宝卡使用。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 学习移动与比宝卡",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T1 探索战斗 (移动/出牌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "移动、攻击与比宝卡",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "起始森林线性探索区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "basic-tutorial",
+        "name": "P2. 基础操作教学 (Basic Tutorial)",
+        "start": 120.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-002-evidence-01-000136000.jpg",
+          "note": "02:16.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-002-evidence-02-000150000.jpg",
+          "note": "02:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-002-evidence-03-000170000.jpg",
+          "note": "02:50.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 基础操作教学 (Basic Tutorial)\n掌握移动、攻击与比宝卡使用。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 完成首次敌人战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (接敌/攻击/胜利)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "basic-tutorial",
+        "name": "P2. 基础操作教学 (Basic Tutorial)",
+        "start": 120.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-003-main-000210000.jpg",
+          "note": "03:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-004-evidence-02-000268000.jpg",
+        "timestamp": 268.0,
+        "selection_reason": "midpoint_uninformative"
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-004-evidence-01-000258000.jpg",
+          "timestamp": 258.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-004-evidence-02-000268000.jpg",
+          "timestamp": 268.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-004-evidence-03-000289000.jpg",
+          "timestamp": 289.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 基础操作教学 (Basic Tutorial)\n掌握移动、攻击与比宝卡使用。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 获取并整理新卡",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 比宝卡成长 (获取/编组)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "比宝卡获取/编组",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "basic-tutorial",
+        "name": "P2. 基础操作教学 (Basic Tutorial)",
+        "start": 120.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "low",
+        "reason": "界面整理/录屏收束打断连续行动，叙事张力处于低点。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-004-evidence-01-000258000.jpg",
+          "note": "04:18.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-004-evidence-02-000268000.jpg",
+          "note": "04:28.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-004-evidence-03-000289000.jpg",
+          "note": "04:49.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 森林路线试炼 (Forest Route)\n沿线清敌、收集卡牌并击败首个大型敌人。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 沿森林道路前进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (寻路/接敌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "forest-route",
+        "name": "P3. 森林路线试炼 (Forest Route)",
+        "start": 300.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-005-main-000330000.jpg",
+          "note": "05:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 森林路线试炼 (Forest Route)\n沿线清敌、收集卡牌并击败首个大型敌人。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 清理沿途敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (清敌/掉落)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "forest-route",
+        "name": "P3. 森林路线试炼 (Forest Route)",
+        "start": 300.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-006-main-000390000.jpg",
+          "note": "06:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 森林路线试炼 (Forest Route)\n沿线清敌、收集卡牌并击败首个大型敌人。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 通过岩石与怪物路段",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (路线推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "forest-route",
+        "name": "P3. 森林路线试炼 (Forest Route)",
+        "start": 300.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-007-main-000450000.jpg",
+          "note": "07:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 森林路线试炼 (Forest Route)\n沿线清敌、收集卡牌并击败首个大型敌人。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 使用场景交互继续推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (场景交互)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "forest-route",
+        "name": "P3. 森林路线试炼 (Forest Route)",
+        "start": 300.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-008-main-000510000.jpg",
+          "note": "08:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-009-evidence-01-000565000.jpg",
+          "timestamp": 565.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-009-evidence-02-000575000.jpg",
+          "timestamp": 575.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-009-evidence-03-000590000.jpg",
+          "timestamp": 590.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 森林路线试炼 (Forest Route)\n沿线清敌、收集卡牌并击败首个大型敌人。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 击败首个大型敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T1 探索战斗 (大型敌人/胜利)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "玩家在森林中遭遇首个体型明显放大的敌人并完成对抗。\n目的：为基础教学提供阶段性验证。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "forest-route",
+        "name": "P3. 森林路线试炼 (Forest Route)",
+        "start": 300.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标清晰、连续战斗与即时胜利/掉落反馈形成挑战—能力匹配高点。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-009-evidence-01-000565000.jpg",
+          "note": "09:25 首个体型明显放大的野生比宝进入连续对抗画面。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-009-evidence-02-000575000.jpg",
+          "note": "09:35 玩家持续出牌攻击大型比宝。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-009-evidence-03-000590000.jpg",
+          "note": "09:50 战斗结束后任务对话与路线目标重新出现。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 进入下一段道路",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (区域推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "森林遗迹与洞穴路线",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-010-main-000630000.jpg",
+          "note": "10:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 探索洞穴入口",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (洞穴入口)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-011-main-000690000.jpg",
+          "note": "11:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 清理遗迹敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (清敌/奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-012-main-000750000.jpg",
+          "note": "12:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成竞技场战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 探索战斗 (竞技场压力)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "竞技场式战斗空间",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-013-main-000810000.jpg",
+          "note": "13:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续穿越森林遗迹",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (遗迹路线)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-014-main-000870000.jpg",
+          "note": "14:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 抵达红色目标区域",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (目标区域)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-015-main-000930000.jpg",
+          "note": "15:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 通过门廊与机关",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (门廊/机关)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-016-main-000990000.jpg",
+          "note": "16:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进祭坛区域",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (祭坛路线)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-017-main-001050000.jpg",
+          "note": "17:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成室内竞技战",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (竞技战/胜利)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-018-main-001110000.jpg",
+          "note": "18:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 遗迹连续试炼 (Ruins Trial)\n在遗迹与洞穴路线中巩固战斗、技能与路线探索。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 离开遗迹并抵达停车场",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T3 区域推进 (抵达停车场)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "野外停车场前置区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "ruins-trial",
+        "name": "P4. 遗迹连续试炼 (Ruins Trial)",
+        "start": 600.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-019-main-001170000.jpg",
+          "note": "19:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-020-evidence-01-001205000.jpg",
+          "timestamp": 1205.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-020-evidence-02-001230000.jpg",
+          "timestamp": 1230.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-020-evidence-03-001255000.jpg",
+          "timestamp": 1255.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 停车场集结 (Parking Departure)\n完成停车场战斗并启动探险车。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 清理停车场敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (停车场清敌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "parking-departure",
+        "name": "P5. 停车场集结 (Parking Departure)",
+        "start": 1200.0,
+        "end": 1320.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-020-evidence-01-001205000.jpg",
+          "note": "20:05.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-020-evidence-02-001230000.jpg",
+          "note": "20:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-020-evidence-03-001255000.jpg",
+          "note": "20:55.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-021-evidence-01-001265000.jpg",
+          "timestamp": 1265.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-021-evidence-02-001291000.jpg",
+          "timestamp": 1291.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-021-evidence-03-001319000.jpg",
+          "timestamp": 1319.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 停车场集结 (Parking Departure)\n完成停车场战斗并启动探险车。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 与博士会合并启动探险车",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 区域推进 (车辆启程)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "探险车跨区移动",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "博士与玩家在停车场会合，车辆被修复/召出并准备启程。\n目的：把线性森林探索转为跨区域探险。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "parking-departure",
+        "name": "P5. 停车场集结 (Parking Departure)",
+        "start": 1200.0,
+        "end": 1320.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-021-evidence-01-001265000.jpg",
+          "note": "21:05.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-021-evidence-02-001291000.jpg",
+          "note": "21:31.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-021-evidence-03-001319000.jpg",
+          "note": "21:59.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-022-evidence-01-001336000.jpg",
+          "timestamp": 1336.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-022-evidence-02-001337000.jpg",
+          "timestamp": 1337.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-022-evidence-03-001337500.jpg",
+          "timestamp": 1337.5
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 探险岛入口 (Adventure Island Entry)\n乘车进入野外停车场，建立新的区域探索边界。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 乘车抵达探险岛野外停车场",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 区域推进 (跨区移动/落点)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "探险岛探索区域与区域小地图",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "探险岛·野外停车场探索区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "玩家等级 Lv.5\n体力 201/300\n战力值 5,510（入口画面）",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "探险车离开旧区域，抵达“探险岛·野外停车场”；随后巨兽袭击车辆。\n目的：完成新地图入口并迅速建立岛屿危险。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-entry",
+        "name": "P6. 探险岛入口 (Adventure Island Entry)",
+        "start": 1320.0,
+        "end": 1440.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "连续画面形成明确冲突升级与结果，属于本段叙事峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-022-evidence-01-001336000.jpg",
+          "note": "22:16.0 跨区载入仍在进行，探险车尚未显示新区域完整 UI。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-022-evidence-02-001337000.jpg",
+          "note": "22:17.0 首次完整显示“探险岛·野外停车场 / 探索区域”、区域小地图与新任务结算。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-022-evidence-03-001337500.jpg",
+          "note": "22:17.5 探险车落在新区域边界内，区域小地图和探索任务持续可见。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-023-evidence-01-001387000.jpg",
+          "timestamp": 1387.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-023-evidence-02-001400000.jpg",
+          "timestamp": 1400.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-023-evidence-03-001425000.jpg",
+          "timestamp": 1425.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 探险岛入口 (Adventure Island Entry)\n乘车进入野外停车场，建立新的区域探索边界。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 应对巨兽袭击并在新区域落地",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T3 区域推进 (落地/新目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "探险岛开放式区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "巨兽袭击后的连续过场展示岛屿环境，玩家与博士在落点继续行动。\n目的：交代新区域目标与行动方向。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-entry",
+        "name": "P6. 探险岛入口 (Adventure Island Entry)",
+        "start": 1320.0,
+        "end": 1440.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-023-evidence-01-001387000.jpg",
+          "note": "23:07.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-023-evidence-02-001400000.jpg",
+          "note": "23:20.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-023-evidence-03-001425000.jpg",
+          "note": "23:45.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 清理新区域敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (新区域清敌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-024-main-001470000.jpg",
+          "note": "24:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 跟随博士继续探索",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T3 区域推进 (博士引导)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-025-main-001530000.jpg",
+          "note": "25:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在夜间营地接取任务",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T4 营地 (夜间落脚)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "昼夜/夜间探索",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "探险岛夜间区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-026-main-001590000.jpg",
+          "note": "26:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成营地周边目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (营地周边目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-027-main-001650000.jpg",
+          "note": "27:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 使用扎营/设施界面",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T4 营地 (扎营/设施)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "扎营设施",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-028-main-001710000.jpg",
+          "note": "28:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 夜间探索与战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (夜间清敌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-029-main-001770000.jpg",
+          "note": "29:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 2100.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-030-main-001950000.jpg",
+        "timestamp": 1950.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 岛屿立足 (Island Foothold)\n探索岛屿、建立营地并在昼夜变化中推进任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 连续战斗并整理卡组",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T2 比宝卡成长 (编组/强化)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "island-foothold",
+        "name": "P7. 岛屿立足 (Island Foothold)",
+        "start": 1440.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-030-main-001950000.jpg",
+          "note": "32:30.0 主帧记录该片的主要可见玩法状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 31,
+      "start": 2100.0,
+      "end": 2400.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-031-main-002250000.jpg",
+        "timestamp": 2250.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-031-evidence-01-002298000.jpg",
+          "timestamp": 2298.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-031-evidence-02-002303000.jpg",
+          "timestamp": 2303.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-031-evidence-03-002311000.jpg",
+          "timestamp": 2311.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 深区捕捉与战斗 (Deep Exploration)\n深入夜间区域、削弱并拍摄捕捉野生比宝。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 削弱并拍摄捕捉黄色比宝",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (削弱/拍摄/捕捉)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "探险岛深区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "玩家削弱黄色野生比宝后进入相机取景，完成拍摄评价并获得对应比宝卡。\n目的：把战斗、捕捉与卡牌成长闭合为完整玩法反馈。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "deep-exploration",
+        "name": "P8. 深区捕捉与战斗 (Deep Exploration)",
+        "start": 2100.0,
+        "end": 3000.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.76,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-031-evidence-01-002298000.jpg",
+          "note": "38:18 黄色野生比宝进入相机取景框，战斗转入拍摄捕捉。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-031-evidence-02-002303000.jpg",
+          "note": "38:23 取景结果显示“优秀”，拍摄捕捉获得明确评价反馈。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-031-evidence-03-002311000.jpg",
+          "note": "38:31 对应比宝卡与属性界面出现，捕捉奖励完成结算。"
+        }
+      ],
+      "open_questions": [
+        "该段部分中文 UI 字号较小，伙伴/区域专名与精确数值待确认。"
+      ]
+    },
+    {
+      "index": 32,
+      "start": 2400.0,
+      "end": 2700.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-032-main-002550000.jpg",
+        "timestamp": 2550.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-032-evidence-01-002520000.jpg",
+          "timestamp": 2520.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-032-evidence-02-002524000.jpg",
+          "timestamp": 2524.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-032-evidence-03-002533000.jpg",
+          "timestamp": 2533.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 深区捕捉与战斗 (Deep Exploration)\n深入夜间区域、削弱并拍摄捕捉野生比宝。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 削弱并拍摄捕捉遗迹比宝",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 探索战斗 (遗迹比宝/拍摄捕捉)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "遗迹中的章鱼状比宝阻断路线，玩家削弱后拍摄捕捉并获得新卡。\n目的：以更强敌人强化“战斗—捕捉—成长”循环。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "deep-exploration",
+        "name": "P8. 深区捕捉与战斗 (Deep Exploration)",
+        "start": 2100.0,
+        "end": 3000.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标清晰、连续战斗与即时胜利/掉落反馈形成挑战—能力匹配高点。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-032-evidence-01-002520000.jpg",
+          "note": "42:00 章鱼状野生比宝进入相机取景框。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-032-evidence-02-002524000.jpg",
+          "note": "42:04 取景结果显示“不错”，捕捉评价即时返回。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-032-evidence-03-002533000.jpg",
+          "note": "42:13 对应比宝卡与属性界面出现，奖励闭环完成。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 33,
+      "start": 2700.0,
+      "end": 3000.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-033-main-002850000.jpg",
+        "timestamp": 2850.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-033-evidence-01-002710000.jpg",
+          "timestamp": 2710.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-033-evidence-02-002840000.jpg",
+          "timestamp": 2840.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-033-evidence-03-002960000.jpg",
+          "timestamp": 2960.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 深区捕捉与战斗 (Deep Exploration)\n深入夜间区域、削弱并拍摄捕捉野生比宝。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 处理机关并离开战区",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 探索战斗 (机关/脱离)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "deep-exploration",
+        "name": "P8. 深区捕捉与战斗 (Deep Exploration)",
+        "start": 2100.0,
+        "end": 3000.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.82,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-033-evidence-01-002710000.jpg",
+          "note": "45:10.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-033-evidence-02-002840000.jpg",
+          "note": "47:20.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-033-evidence-03-002960000.jpg",
+          "note": "49:20.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": [
+        "46:30 左右出现短暂桌面/窗口切换，是否为录屏操作中断待确认。"
+      ]
+    },
+    {
+      "index": 34,
+      "start": 3000.0,
+      "end": 3300.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-034-main-003150000.jpg",
+        "timestamp": 3150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-034-evidence-01-003060000.jpg",
+          "timestamp": 3060.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-034-evidence-02-003210000.jpg",
+          "timestamp": 3210.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-034-evidence-03-003290000.jpg",
+          "timestamp": 3290.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 营地与卡组成长 (Camp & Deck Growth)\n利用营地和卡牌界面整理成长，为后续探索做准备。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 返回营地并查看区域信息",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 营地 (返回/整理)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "区域地图/营地整理",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "营地及区域地图",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "玩家回到营地/聚落并查看区域信息。\n目的：提供远征后的节奏缓冲与下一轮准备。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "camp-growth",
+        "name": "P9. 营地与卡组成长 (Camp & Deck Growth)",
+        "start": 3000.0,
+        "end": 3600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.76,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-034-evidence-01-003060000.jpg",
+          "note": "51:00.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-034-evidence-02-003210000.jpg",
+          "note": "53:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-034-evidence-03-003290000.jpg",
+          "note": "54:50.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": [
+        "该段部分中文 UI 字号较小，伙伴/区域专名与精确数值待确认。"
+      ]
+    },
+    {
+      "index": 35,
+      "start": 3300.0,
+      "end": 3600.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-035-main-003450000.jpg",
+        "timestamp": 3450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-035-evidence-01-003330000.jpg",
+          "timestamp": 3330.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-035-evidence-02-003450000.jpg",
+          "timestamp": 3450.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-035-evidence-03-003570000.jpg",
+          "timestamp": 3570.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 营地与卡组成长 (Camp & Deck Growth)\n利用营地和卡牌界面整理成长，为后续探索做准备。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Upgrade: 整理比宝卡与角色成长",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T2 比宝卡成长 (查看/编组/再投入)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "卡组与成长界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "camp-growth",
+        "name": "P9. 营地与卡组成长 (Camp & Deck Growth)",
+        "start": 3000.0,
+        "end": 3600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-035-evidence-01-003330000.jpg",
+          "note": "55:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-035-evidence-02-003450000.jpg",
+          "note": "57:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-035-evidence-03-003570000.jpg",
+          "note": "59:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 36,
+      "start": 3600.0,
+      "end": 4200.0,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-036-main-003900000.jpg",
+        "timestamp": 3900.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-036-evidence-01-003916000.jpg",
+          "timestamp": 3916.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-036-evidence-02-003920000.jpg",
+          "timestamp": 3920.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-036-evidence-03-003939000.jpg",
+          "timestamp": 3939.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P10. 后段远征 (Late Expedition)\n在更深区域连续战斗并完成本段录屏收束。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 深入夜间区域并击败强敌",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 探索战斗 (深区强敌/奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "探险岛后段区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "玩家在深夜区域削弱飞蛾状比宝，拍摄捕捉后获得新卡。\n目的：将成长结果投入更深区域并再次闭合捕捉循环。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "late-expedition",
+        "name": "P10. 后段远征 (Late Expedition)",
+        "start": 3600.0,
+        "end": 4383.060667
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片以系统推进或常规战斗为主，未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标清晰、连续战斗与即时胜利/掉落反馈形成挑战—能力匹配高点。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-036-evidence-01-003916000.jpg",
+          "note": "65:16 飞蛾状野生比宝进入相机取景框。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-036-evidence-02-003920000.jpg",
+          "note": "65:20 取景结果显示“优秀”，捕捉评价即时返回。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-036-evidence-03-003939000.jpg",
+          "note": "65:39 对应比宝卡成长界面出现，奖励与成长完成结算。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 37,
+      "start": 4200.0,
+      "end": 4383.060667,
+      "main_frame": {
+        "path": "screenshots/beboo/frames/slice-037-main-004291530.jpg",
+        "timestamp": 4291.5303335
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/beboo/frames/slice-037-evidence-01-004230000.jpg",
+          "timestamp": 4230.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-037-evidence-02-004290000.jpg",
+          "timestamp": 4290.0
+        },
+        {
+          "path": "screenshots/beboo/frames/slice-037-evidence-03-004370000.jpg",
+          "timestamp": 4370.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P10. 后段远征 (Late Expedition)\n在更深区域连续战斗并完成本段录屏收束。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成末段探索与奖励整理",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T1 探索战斗 (末段奖励/收束)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "late-expedition",
+        "name": "P10. 后段远征 (Late Expedition)",
+        "start": 3600.0,
+        "end": 4383.060667
+      },
+      "narrative_climax": {
+        "judgement": "low",
+        "reason": "界面整理/录屏收束打断连续行动，叙事张力处于低点。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时满足持续专注、适配挑战与高密度即时反馈。"
+      },
+      "confidence": 0.76,
+      "evidence": [
+        {
+          "frame": "screenshots/beboo/frames/slice-037-evidence-01-004230000.jpg",
+          "note": "70:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-037-evidence-02-004290000.jpg",
+          "note": "71:30.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        },
+        {
+          "frame": "screenshots/beboo/frames/slice-037-evidence-03-004370000.jpg",
+          "note": "72:50.0 连续审阅帧记录该片的可见界面、角色或战斗状态。"
+        }
+      ],
+      "open_questions": [
+        "该段部分中文 UI 字号较小，伙伴/区域专名与精确数值待确认。"
+      ]
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 1,
+          "intensity": 1.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "嘉年华开场与角色确认",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 1.5,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.5/5。"
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 5,
+          "supporting_score": 4,
+          "intensity": 5.0,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency"
+          ],
+          "event": "巨兽袭击打断庆典",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 1.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.0/5。"
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 2,
+          "intensity": 1.3,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "危机后进入基础教学",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.3,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.3/5。"
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "常规成长反馈",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 1.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.8/5。"
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。"
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 5,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "首个大型敌人战斗",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.4/5。"
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.7,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。"
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 4,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat"
+          ],
+          "event": "停车场战斗与突破",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.0/5。"
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 2,
+          "supporting_score": 3,
+          "intensity": 2.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "车辆启动并准备跨区",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.7,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 4,
+          "supporting_score": 5,
+          "intensity": 4.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "进入探险岛后遭遇巨兽袭击",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.2/5。"
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 3,
+          "supporting_score": 2,
+          "intensity": 3.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure"
+          ],
+          "event": "落地新区域并交代岛屿威胁",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.3,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.3/5。"
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "轻量目标推进",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.9/5。"
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1,
+          "intensity": 0.3,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "常规成长反馈",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.5,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.5/5。"
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 2100.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.4/5。"
+        }
+      },
+      {
+        "start": 2100.0,
+        "end": 2400.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 4,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "削弱并拍摄捕捉黄色比宝",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+        }
+      },
+      {
+        "start": 2400.0,
+        "end": 2700.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 5,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "捕捉遗迹章鱼状比宝",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.3/5。"
+        }
+      },
+      {
+        "start": 2700.0,
+        "end": 3000.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "combat"
+          ],
+          "event": "持续战斗压力",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+        }
+      },
+      {
+        "start": 3000.0,
+        "end": 3300.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 3,
+          "intensity": 1.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "relief",
+            "progression_reward"
+          ],
+          "event": "返回营地整理成果",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.7,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+        }
+      },
+      {
+        "start": 3300.0,
+        "end": 3600.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "常规成长反馈",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+        }
+      },
+      {
+        "start": 3600.0,
+        "end": 4200.0,
+        "emotion": {
+          "narrative_score": 1,
+          "supporting_score": 5,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "捕捉深夜飞蛾状比宝",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.1/5。"
+        }
+      },
+      {
+        "start": 4200.0,
+        "end": 4383.060667,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 3,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "常规成长反馈",
+          "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
+        },
+        "experience": {
+          "score": 2.6,
+          "basis": {
+            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
+            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
+            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
+            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+          },
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.6/5。"
+        }
+      }
+    ]
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 4383.060667,
+      "end_label": "本段录屏结束",
+      "outside_exit_label": "后续探险内容未录制"
+    },
+    "macro_loops": [
+      {
+        "id": "expedition",
+        "title": "探索远征",
+        "accent": "expedition",
+        "summary": "移动、接敌、胜利与区域推进。"
+      },
+      {
+        "id": "hero",
+        "title": "比宝卡成长",
+        "accent": "hero_growth",
+        "summary": "获取、编组和强化卡牌后再次投入战斗。"
+      },
+      {
+        "id": "camp",
+        "title": "营地准备",
+        "accent": "settlement",
+        "summary": "扎营、整理设施与补给下一轮远征。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "combat-route",
+        "title": "探索战斗",
+        "summary": "沿路线接敌并以胜利开启下一段。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "card-growth",
+        "title": "比宝卡成长",
+        "summary": "获得或整理卡牌后提高后续战斗能力。",
+        "accent": "hero_growth"
+      },
+      {
+        "id": "camp-prepare",
+        "title": "营地准备",
+        "summary": "通过扎营与整理形成再出发条件。",
+        "accent": "building_growth"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "m01",
+        "type": "micro_loop",
+        "title": "基础战斗教学",
+        "summary": "理解如何突破第一段路线，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          2
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-002-main-000150000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "理解如何突破第一段路线",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m02",
+        "type": "micro_loop",
+        "title": "首次战斗闭环",
+        "summary": "击败首批敌人继续深入，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          3
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-003-main-000210000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "击败首批敌人继续深入",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m03",
+        "type": "micro_loop",
+        "title": "首次卡牌成长",
+        "summary": "利用战斗所得增强卡组，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "hero",
+        "loop_family_id": "card-growth",
+        "slice_indices": [
+          4
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-004-evidence-02-000268000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "利用战斗所得增强卡组",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m04",
+        "type": "micro_loop",
+        "title": "森林清敌推进",
+        "summary": "以连续战斗穿越森林，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          5,
+          6,
+          7,
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-005-main-000330000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "以连续战斗穿越森林",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m05",
+        "type": "micro_loop",
+        "title": "首个大型敌人",
+        "summary": "验证基础战斗能力，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-009-main-000570000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "验证基础战斗能力",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m06",
+        "type": "micro_loop",
+        "title": "遗迹连续试炼",
+        "summary": "穿过洞穴与遗迹到达停车场，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-010-main-000630000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "穿过洞穴与遗迹到达停车场",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m07",
+        "type": "micro_loop",
+        "title": "停车场清敌",
+        "summary": "解除车辆周边威胁，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          20
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-020-main-001230000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "解除车辆周边威胁",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m08",
+        "type": "micro_loop",
+        "title": "跨区抵达探险岛",
+        "summary": "响应博士引导并前往新区域，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          21,
+          22,
+          23
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-021-main-001290000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "响应博士引导并前往新区域",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m09",
+        "type": "micro_loop",
+        "title": "岛屿首轮探索",
+        "summary": "在新区域建立行动路线，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-024-main-001470000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "在新区域建立行动路线",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m10",
+        "type": "micro_loop",
+        "title": "夜间捕捉推进",
+        "summary": "削弱并拍摄捕捉黄色比宝，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          30,
+          31
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-030-main-001950000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "削弱并拍摄捕捉黄色比宝",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.76
+      },
+      {
+        "id": "m11",
+        "type": "micro_loop",
+        "title": "遗迹比宝捕捉",
+        "summary": "削弱并拍摄捕捉章鱼状比宝，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          32,
+          33
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-032-main-002550000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "削弱并拍摄捕捉章鱼状比宝",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.82
+      },
+      {
+        "id": "m12",
+        "type": "micro_loop",
+        "title": "营地整理再投入",
+        "summary": "将远征成果转为下一轮准备，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "camp",
+        "loop_family_id": "camp-prepare",
+        "slice_indices": [
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-034-main-003150000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "将远征成果转为下一轮准备",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.76
+      },
+      {
+        "id": "m13",
+        "type": "micro_loop",
+        "title": "卡组整理再投入",
+        "summary": "优化卡组后再次远征，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "hero",
+        "loop_family_id": "card-growth",
+        "slice_indices": [
+          35
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-035-main-003450000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "优化卡组后再次远征",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.9
+      },
+      {
+        "id": "m14",
+        "type": "micro_loop",
+        "title": "后段深区远征",
+        "summary": "使用成长结果挑战更深区域，完成连续行为并取得即时推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "combat-route",
+        "slice_indices": [
+          36,
+          37
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-036-main-003900000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "使用成长结果挑战更深区域",
+        "behaviors": [
+          "沿目标路线移动或进入相应界面",
+          "完成该段核心战斗/整理行为"
+        ],
+        "reward": "获得胜利、卡牌、任务或区域推进反馈",
+        "next_motivation": "进入下一段目标或再次投入同类循环",
+        "confidence": 0.76
+      },
+      {
+        "id": "end",
+        "type": "end",
+        "title": "本段录屏结束",
+        "summary": "末段奖励与界面整理后结束录制。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          37
+        ],
+        "evidence_frames": [
+          "screenshots/beboo/frames/slice-037-main-004291530.jpg"
+        ],
+        "status": "confirmed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "m01",
+        "to": "m02",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m02",
+        "to": "m03",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m03",
+        "to": "m04",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m04",
+        "to": "m05",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m05",
+        "to": "m06",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m06",
+        "to": "m07",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m07",
+        "to": "m08",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m08",
+        "to": "m09",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m09",
+        "to": "m10",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m10",
+        "to": "m11",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m11",
+        "to": "m12",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m12",
+        "to": "m13",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m13",
+        "to": "m14",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m14",
+        "to": "end",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "m02",
+        "to": "m04",
+        "kind": "macro_return",
+        "label": "卡牌整理后返回探索战斗"
+      },
+      {
+        "from": "m02",
+        "to": "m03",
+        "kind": "cross_macro",
+        "label": "战斗奖励供给卡牌成长"
+      },
+      {
+        "from": "m03",
+        "to": "m04",
+        "kind": "cross_macro",
+        "label": "卡牌成长支撑后续远征"
+      },
+      {
+        "from": "m11",
+        "to": "m12",
+        "kind": "cross_macro",
+        "label": "远征成果转入营地准备"
+      },
+      {
+        "from": "m13",
+        "to": "m14",
+        "kind": "cross_macro",
+        "label": "卡组成长支撑深区远征"
+      }
+    ]
+  },
+  "timeline_milestones": [
+    {
+      "id": "adventure-island-entry",
+      "type": "slg_entry",
+      "label": "进入探险岛大地图",
+      "timestamp": 1337.0,
+      "slice_index": 22,
+      "note": "该游戏的大地图不是传统 SLG 世界坐标/行军地图，而是以探险车跨区载入后开放的可探索岛屿区域。22:16.0 仍为载入；22:17.0 首次完整显示“探险岛·野外停车场 / 探索区域”、区域小地图和新任务；22:17.5 车辆已落在新区域边界内，证明交互与功能边界已切换。"
+    }
+  ]
+}

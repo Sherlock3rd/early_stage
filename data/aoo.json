@@ -1,0 +1,3019 @@
+{
+  "video": {
+    "path": "d:/charlie/Workbencch/asset/recordings/AOO前30分钟.mp4",
+    "duration_seconds": 1927.9
+  },
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 末日开火 (Immediate Combat)\n以自动载具射击快速建立战斗目标、威胁与首轮胜利反馈。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 乘载具射击僵尸并完成首关",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T1 战术战斗 (自动射击/首关结算)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "载具自动射击、关卡结算",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "线性战术跑图区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "幸存者乘载具射击僵尸；首关结算后出现怪物CG标题并继续战斗。\n目的：立即建立末日威胁与战斗爽点。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-opening-combat",
+        "name": "P1. 末日开火 (Immediate Combat)",
+        "start": 0.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "开场首关胜利后紧接怪物CG标题，形成短时叙事高点。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "开场目标直接、战斗持续且结算快速，形成最强即时投入。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-000-main-000030000.jpg",
+          "note": "30.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 末日开火 (Immediate Combat)\n以自动载具射击快速建立战斗目标、威胁与首轮胜利反馈。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续跑图战斗并完成第二次结算",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 战术战斗 (跑图/交战/结算)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "队伍继续交战并再次完成阶段结算。\n目的：强化战斗—结算节奏。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-opening-combat",
+        "name": "P1. 末日开火 (Immediate Combat)",
+        "start": 0.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-001-main-000090000.jpg",
+          "note": "90.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进战术路线并进入首段角色对话",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 战术战斗 (推进/对话转场)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约02:51开始首段角色对话。\n目的：在连续战斗后补充人物关系与下一目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-tactical-advance",
+        "name": "P2. 战术推进 (Tactical Advance)",
+        "start": 120.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-002-main-000150000.jpg",
+          "note": "150.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 对话后继续战术跑图与交战",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 战术战斗 (跑图/交战)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-tactical-advance",
+        "name": "P2. 战术推进 (Tactical Advance)",
+        "start": 120.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-003-main-000210000.jpg",
+          "note": "210.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-004-main-000270000.jpg",
+        "timestamp": 270.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进至Boss相关对话与冲突铺垫",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 战术战斗 (Boss冲突铺垫)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约04:39开始Boss相关对话。\n目的：抬高敌方威胁并为后续冲突蓄势。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-tactical-advance",
+        "name": "P2. 战术推进 (Tactical Advance)",
+        "start": 120.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "Boss相关对话集中抬高威胁，是前段冲突高点。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-004-main-000270000.jpg",
+          "note": "270.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 延续战斗并转入基地阶段",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T1 战术战斗 (战斗/基地转场)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "战斗内容逐步转入基地阶段。\n目的：把外部生存压力导向长期经营。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-tactical-advance",
+        "name": "P2. 战术推进 (Tactical Advance)",
+        "start": 120.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-005-main-000330000.jpg",
+          "note": "330.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 进入基地并认识经营界面",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 基地经营 (进入/认识界面)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "基地界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地经营区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-base-recruit",
+        "name": "P3. 基地与招募 (Base & Recruit)",
+        "start": 360.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-006-main-000390000.jpg",
+          "note": "390.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 完成首次英雄招募",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 英雄招募 (招募/获得)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "英雄招募",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-base-recruit",
+        "name": "P3. 基地与招募 (Base & Recruit)",
+        "start": 360.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "首次招募提供清晰目标与集中获得反馈。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-007-main-000450000.jpg",
+          "note": "450.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 使用新角色继续基地/战斗推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T2 基地经营 (新角色投入)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-base-recruit",
+        "name": "P3. 基地与招募 (Base & Recruit)",
+        "start": 360.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-008-main-000510000.jpg",
+          "note": "510.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 进行英雄成长与追加招募",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T3 英雄成长 (培养/招募)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "英雄成长/追加招募",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-base-recruit",
+        "name": "P3. 基地与招募 (Base & Recruit)",
+        "start": 360.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-009-main-000570000.jpg",
+          "note": "570.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 观看实验室相关对话",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T4 剧情引导 (实验室线索)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "实验室剧情入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约10:29开始实验室相关对话。\n目的：补充科学/研究方向的剧情线索。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-010-main-000630000.jpg",
+          "note": "630.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在基地系统中承接实验室后的目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T2 基地经营 (目标承接)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-011-main-000690000.jpg",
+          "note": "690.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在战斗与基地操作间继续推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1/T2 战斗与基地 (推进/返回)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-012-main-000750000.jpg",
+          "note": "750.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 按引导完成阶段性系统操作",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T2 基地经营 (引导操作)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-013-main-000810000.jpg",
+          "note": "810.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续战斗或基地任务推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1/T2 战斗与基地 (任务推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-014-main-000870000.jpg",
+          "note": "870.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 进入中段剧情插段",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T4 剧情引导 (中段插段)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约15:50开始中段剧情插段。\n目的：在系统推进中重新聚焦角色与主线。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-015-main-000930000.jpg",
+          "note": "930.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 剧情后恢复系统与任务推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T2 基地经营 (剧情后承接)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-lab-story",
+        "name": "P4. 实验室线索 (Lab & Story)",
+        "start": 600.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-016-main-000990000.jpg",
+          "note": "990.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 开放经济/建筑系统",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T5 经济建设 (开放/首次建设)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "经济与建筑系统",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-017-main-001050000.jpg",
+          "note": "1050.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 建设并获取经营反馈",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T5 经济建设 (投入/建成/反馈)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "经济与建筑操作连续给出建造反馈，形成经营投入高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-018-main-001110000.jpg",
+          "note": "1110.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 继续建筑与资源周转",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T5 经济建设 (资源/建筑周转)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-019-main-001170000.jpg",
+          "note": "1170.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 以经营产出承接后续目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T5 经济建设 (产出/下一目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-020-main-001230000.jpg",
+          "note": "1230.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 持续基地建设与任务推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T5 经济建设 (建设/任务)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-021-main-001290000.jpg",
+          "note": "1290.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在经营系统中完成阶段目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T5 经济建设 (经营推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-022-main-001350000.jpg",
+          "note": "1350.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续资源与建筑管理",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T5 经济建设 (资源管理)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-023-main-001410000.jpg",
+          "note": "1410.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进基地经营内容",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T5 经济建设 (基地推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-024-main-001470000.jpg",
+          "note": "1470.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 进入后段角色对话",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T4 剧情引导 (后段对话)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约25:49开始后段角色对话。\n目的：承接经营进度并导向后续人物内容。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-economy-building",
+        "name": "P5. 经营展开 (Economy & Building)",
+        "start": 1020.0,
+        "end": 1560.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-025-main-001530000.jpg",
+          "note": "1530.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 科学家线索 (Scientist Thread)\n通过后段对话与科学家相关内容承接后续英雄目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 对话后继续系统推进",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T2/T5 基地经营 (目标承接)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-scientist-thread",
+        "name": "P6. 科学家线索 (Scientist Thread)",
+        "start": 1560.0,
+        "end": 1740.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-026-main-001590000.jpg",
+          "note": "1590.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 科学家线索 (Scientist Thread)\n通过后段对话与科学家相关内容承接后续英雄目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 查看科学家相关内容",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T4 剧情引导 (科学家线索)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "科学家相关内容",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "约27:40出现科学家相关内容。\n目的：强化科学家线索并衔接英雄内容。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-scientist-thread",
+        "name": "P6. 科学家线索 (Scientist Thread)",
+        "start": 1560.0,
+        "end": 1740.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-027-main-001650000.jpg",
+          "note": "1650.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 科学家线索 (Scientist Thread)\n通过后段对话与科学家相关内容承接后续英雄目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 从科学家线索转入英雄内容",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T6 英雄内容 (线索/界面)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "英雄相关内容",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "科学家相关内容延续，并在约28:20转入英雄相关内容。\n目的：将人物线索导向英雄成长目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-scientist-thread",
+        "name": "P6. 科学家线索 (Scientist Thread)",
+        "start": 1560.0,
+        "end": 1740.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.68,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-028-main-001710000.jpg",
+          "note": "1710.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "对话字幕中的人物名、专有名词与具体因果需结合原视频音频确认。"
+      ]
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 英雄后续 (Hero Follow-up)\n回到英雄相关成长与后续推进，收束本段录屏。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 查看并推进英雄相关内容",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T6 英雄成长 (查看/培养)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-hero-followup",
+        "name": "P7. 英雄后续 (Hero Follow-up)",
+        "start": 1740.0,
+        "end": 1927.9
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-029-main-001770000.jpg",
+          "note": "1770.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 1927.9,
+      "main_frame": {
+        "path": "screenshots/aoo/frames/slice-030-main-001863950.jpg",
+        "timestamp": 1863.95
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 英雄后续 (Hero Follow-up)\n回到英雄相关成长与后续推进，收束本段录屏。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续英雄/基地后续目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T6 英雄成长 (后续推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-hero-followup",
+        "name": "P7. 英雄后续 (Hero Follow-up)",
+        "start": 1740.0,
+        "end": 1927.9
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更强、且证据充分的剧情高潮。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成相对前后片段更突出的挑战—能力匹配高点。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/aoo/frames/slice-030-main-001863950.jpg",
+          "note": "1863.95s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+        }
+      ],
+      "open_questions": [
+        "该分钟的具体任务名、资源数值或成长等级未可靠辨清。"
+      ]
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 3.2,
+          "supporting_score": 4.2,
+          "intensity": 3.5,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "幸存者乘载具射击僵尸；首关结算后出现怪物CG标题并继续战斗。",
+          "reason": "剧情刺激3.2/5、战斗/成长等其他刺激4.2/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 3.8,
+          "intensity": 2.5,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "队伍继续交战并再次完成阶段结算。",
+          "reason": "剧情刺激2/5、战斗/成长等其他刺激3.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 2.4,
+          "supporting_score": 3.0,
+          "intensity": 2.6,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "约02:51开始首段角色对话。",
+          "reason": "剧情刺激2.4/5、战斗/成长等其他刺激3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.4,
+          "intensity": 1.7,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "战术跑图、僵尸交战与阶段推进持续发生。",
+          "reason": "剧情刺激1/5、战斗/成长等其他刺激3.4/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 3.2,
+          "intensity": 3.1,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "约04:39开始Boss相关对话。",
+          "reason": "剧情刺激3/5、战斗/成长等其他刺激3.2/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 1.6,
+          "supporting_score": 3.0,
+          "intensity": 2.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "战斗内容逐步转入基地阶段。",
+          "reason": "剧情刺激1.6/5、战斗/成长等其他刺激3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 0.6,
+          "supporting_score": 1.8,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地操作、招募或英雄成长提供阶段反馈。",
+          "reason": "剧情刺激0.6/5、战斗/成长等其他刺激1.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.5,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.2,
+          "intensity": 1.7,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地操作、招募或英雄成长提供阶段反馈。",
+          "reason": "剧情刺激1/5、战斗/成长等其他刺激3.2/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 0.4,
+          "supporting_score": 2.4,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地操作、招募或英雄成长提供阶段反馈。",
+          "reason": "剧情刺激0.4/5、战斗/成长等其他刺激2.4/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 0.8,
+          "supporting_score": 3.0,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地操作、招募或英雄成长提供阶段反馈。",
+          "reason": "剧情刺激0.8/5、战斗/成长等其他刺激3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 1.0,
+          "intensity": 2.5,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "约10:29开始实验室相关对话。",
+          "reason": "剧情刺激2.5/5、战斗/成长等其他刺激1/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.2,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 0.8,
+          "supporting_score": 1.8,
+          "intensity": 1.1,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地、战斗与剧情插段交替推进。",
+          "reason": "剧情刺激0.8/5、战斗/成长等其他刺激1.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 2.8,
+          "intensity": 1.2,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地、战斗与剧情插段交替推进。",
+          "reason": "剧情刺激0.5/5、战斗/成长等其他刺激2.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 0.4,
+          "supporting_score": 2.2,
+          "intensity": 0.9,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地、战斗与剧情插段交替推进。",
+          "reason": "剧情刺激0.4/5、战斗/成长等其他刺激2.2/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 0.6,
+          "supporting_score": 2.8,
+          "intensity": 1.3,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地、战斗与剧情插段交替推进。",
+          "reason": "剧情刺激0.6/5、战斗/成长等其他刺激2.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 2.7,
+          "supporting_score": 0.8,
+          "intensity": 2.7,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "约15:50开始中段剧情插段。",
+          "reason": "剧情刺激2.7/5、战斗/成长等其他刺激0.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.1,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 1.1,
+          "supporting_score": 1.7,
+          "intensity": 1.3,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "基地、战斗与剧情插段交替推进。",
+          "reason": "剧情刺激1.1/5、战斗/成长等其他刺激1.7/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 0.4,
+          "supporting_score": 3.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.4/5、战斗/成长等其他刺激3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 0.3,
+          "supporting_score": 3.6,
+          "intensity": 1.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.3/5、战斗/成长等其他刺激3.6/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 0.2,
+          "supporting_score": 3.4,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.2/5、战斗/成长等其他刺激3.4/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "战斗结算、招募或建设反馈较集中。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "少量界面切换，未显著中断主操作。"
+          },
+          "summary": "战斗/成长反馈集中，玩法投入较高。"
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 0.2,
+          "supporting_score": 3.0,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.2/5、战斗/成长等其他刺激3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 0.2,
+          "supporting_score": 2.8,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.2/5、战斗/成长等其他刺激2.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 0.2,
+          "supporting_score": 2.9,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.2/5、战斗/成长等其他刺激2.9/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.3,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 0.2,
+          "supporting_score": 2.8,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.2/5、战斗/成长等其他刺激2.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 0.3,
+          "supporting_score": 2.7,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "经济与建筑系统持续提供经营成长反馈。",
+          "reason": "剧情刺激0.3/5、战斗/成长等其他刺激2.7/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 2.1,
+          "supporting_score": 0.8,
+          "intensity": 2.1,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "约25:49开始后段角色对话。",
+          "reason": "剧情刺激2.1/5、战斗/成长等其他刺激0.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.2,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 0.8,
+          "supporting_score": 2.0,
+          "intensity": 1.2,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "后段人物线索、英雄内容与基地推进交替出现。",
+          "reason": "剧情刺激0.8/5、战斗/成长等其他刺激2/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 1.0,
+          "intensity": 2.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "约27:40出现科学家相关内容。",
+          "reason": "剧情刺激2/5、战斗/成长等其他刺激1/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 2.3,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 2.2,
+          "supporting_score": 2.3,
+          "intensity": 2.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "科学家相关内容延续，并在约28:20转入英雄相关内容。",
+          "reason": "剧情刺激2.2/5、战斗/成长等其他刺激2.3/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.3,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 0.6,
+          "supporting_score": 2.8,
+          "intensity": 1.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "后段人物线索、英雄内容与基地推进交替出现。",
+          "reason": "剧情刺激0.6/5、战斗/成长等其他刺激2.8/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "以连续战斗或系统操作为主。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标清晰，存在连续执行或阶段挑战。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 1927.9,
+        "emotion": {
+          "narrative_score": 0.4,
+          "supporting_score": 2.4,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "后段人物线索、英雄内容与基地推进交替出现。",
+          "reason": "剧情刺激0.4/5、战斗/成长等其他刺激2.4/5；依据既有密集审阅记录取片内最强刺激。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "操作与对话、界面切换或引导交替。",
+            "feedback_density": "反馈稳定但并非持续高密度。",
+            "goal_challenge": "目标可辨，但挑战或操作密度有限。",
+            "interruption": "对话、转场或菜单在片内造成一定中断。"
+          },
+          "summary": "系统与剧情交替推进，体验强度中等或偏低。"
+        }
+      }
+    ]
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 1927.9,
+      "end_label": "英雄与基地后续推进至录屏结束",
+      "outside_exit_label": "未观察到传统世界大地图出口"
+    },
+    "macro_loops": [
+      {
+        "id": "macro-settlement",
+        "title": "基地经营",
+        "accent": "settlement",
+        "summary": "资源与建筑投入形成持续基地成长。"
+      },
+      {
+        "id": "macro-expedition",
+        "title": "战术跑图战斗",
+        "accent": "expedition",
+        "summary": "沿线推进、交战并通过结算进入下一目标。"
+      },
+      {
+        "id": "macro-hero",
+        "title": "英雄养成",
+        "accent": "hero_growth",
+        "summary": "招募与培养扩充阵容并支持后续推进。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "building_growth",
+        "title": "建筑成长",
+        "summary": "投入建设并获得建筑完成与后续目标。",
+        "accent": "building_growth"
+      },
+      {
+        "id": "expedition_progression",
+        "title": "战术关卡推进",
+        "summary": "推进、交战、结算后继续下一段路线。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "hero_growth",
+        "title": "英雄招募成长",
+        "summary": "招募或培养英雄后扩充阵容。",
+        "accent": "hero_growth"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "l01",
+        "type": "micro_loop",
+        "title": "首关载具清场",
+        "summary": "在僵尸威胁下持续射击并完成首关结算，随后出现怪物CG并导向下一段战斗。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "摆脱开场僵尸围攻并推进路线",
+        "behaviors": [
+          "乘载具自动前进",
+          "持续射击僵尸",
+          "完成首关"
+        ],
+        "reward": "首关完成反馈与怪物CG标题",
+        "next_motivation": "继续进入下一段战斗",
+        "confidence": 0.78
+      },
+      {
+        "id": "l02",
+        "type": "micro_loop",
+        "title": "第二段战斗结算",
+        "summary": "在CG后继续跑图交战，并于约01:37再次获得阶段结算反馈。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          1
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-001-main-000090000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "延续关卡路线并清除前方敌人",
+        "behaviors": [
+          "沿路线推进",
+          "持续交战",
+          "完成阶段目标"
+        ],
+        "reward": "第二次阶段结算反馈",
+        "next_motivation": "继续推进并接触角色剧情",
+        "confidence": 0.78
+      },
+      {
+        "id": "l03",
+        "type": "micro_loop",
+        "title": "首次英雄招募",
+        "summary": "进入基地后的招募引导，完成招募并获得可用于后续推进的新英雄。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          7,
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-007-main-000450000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "扩充基地可用战斗成员",
+        "behaviors": [
+          "进入招募界面",
+          "执行首次招募",
+          "查看获得结果"
+        ],
+        "reward": "获得新英雄与成长入口",
+        "next_motivation": "培养新英雄并投入后续任务",
+        "confidence": 0.72
+      },
+      {
+        "id": "l04",
+        "type": "micro_loop",
+        "title": "英雄成长与追加招募",
+        "summary": "通过成长操作与再次招募强化英雄阵容，并导向后续基地/战斗目标。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-009-main-000570000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提高已有阵容的推进能力",
+        "behaviors": [
+          "进入英雄成长界面",
+          "完成培养操作",
+          "执行追加招募"
+        ],
+        "reward": "英雄成长与阵容扩充反馈",
+        "next_motivation": "以强化阵容继续基地和战斗任务",
+        "confidence": 0.78
+      },
+      {
+        "id": "l05",
+        "type": "micro_loop",
+        "title": "首次经济建设周转",
+        "summary": "经济与建筑系统开放后，执行建设和资源周转并获得持续经营反馈。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          17,
+          18,
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-018-main-001110000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "建立可持续的基地经营能力",
+        "behaviors": [
+          "进入经济/建筑系统",
+          "投入建设",
+          "完成建筑或阶段任务"
+        ],
+        "reward": "建筑完成与后续经营目标开放",
+        "next_motivation": "继续资源周转并扩展基地",
+        "confidence": 0.78
+      },
+      {
+        "id": "subject-end",
+        "type": "end",
+        "title": "本段体验终点",
+        "summary": "英雄相关内容与基地后续推进持续至录屏结束；未观察到传统世界大地图入口。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-030-main-001863950.jpg"
+        ],
+        "status": "confirmed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "l01",
+        "to": "l02",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l02",
+        "to": "l03",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l03",
+        "to": "l04",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l04",
+        "to": "l05",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l05",
+        "to": "subject-end",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l02",
+        "to": "l03",
+        "kind": "cross_macro",
+        "label": "战斗推进后转入英雄招募"
+      }
+    ]
+  }
+}
