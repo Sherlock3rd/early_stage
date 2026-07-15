@@ -3646,5 +3646,15 @@
         "label": "进入SLG大地图"
       }
     ]
-  }
+  },
+  "timeline_milestones": [
+    {
+      "id": "slg-entry",
+      "type": "slg_entry",
+      "label": "进入SLG大地图",
+      "timestamp": 1510.0,
+      "slice_index": 25,
+      "note": "25:10首次明确进入SLG大地图；25:10–25:30完成强制教学后返回主城。"
+    }
+  ]
 }

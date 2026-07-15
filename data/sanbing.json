@@ -3798,5 +3798,15 @@
         "label": "出征准备完成后进入大地图"
       }
     ]
-  }
+  },
+  "timeline_milestones": [
+    {
+      "id": "slg-entry",
+      "type": "slg_entry",
+      "label": "进入SLG大地图",
+      "timestamp": 2160.0,
+      "slice_index": 31,
+      "note": "36:00世界坐标、行军队列、绿色行军路径和流寇目标共同确认进入SLG大地图。"
+    }
+  ]
 }

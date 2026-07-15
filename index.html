@@ -734,7 +734,31 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     });
   }
 
-  function linearRegressionTrend(observations, min, max) {
+  function stageAverageExperienceObservations(slices, curvePoints) {
+    const stages = new Map();
+    slices.forEach((slice, index) => {
+      const range = slice.stage_range;
+      const stageId = String(range.stage_id);
+      if (!stages.has(stageId)) {
+        stages.set(stageId, {
+          time: (Number(range.start) + Number(range.end)) / 2,
+          total: 0,
+          count: 0
+        });
+      }
+      const stage = stages.get(stageId);
+      stage.total += Number(curvePoints[index].experience.score);
+      stage.count += 1;
+    });
+    return [...stages.entries()].map(([stageId, stage]) => ({
+      time: stage.time,
+      score: stage.total / stage.count,
+      stageId,
+      count: stage.count
+    }));
+  }
+
+  function linearRegressionTrend(observations, min, max, predictionTimes = null) {
     if (!observations.length) {
       return {
         slope: 0,
@@ -767,15 +791,18 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     const intercept = meanY - slope * meanX;
     const predict = (time) => slope * Number(time) + intercept;
     const clamp = (value) => Math.min(Number(max), Math.max(Number(min), value));
-    const rawOpeningPrediction = predict(normalized[0].time);
-    const rawEndingPrediction = predict(normalized[normalized.length - 1].time);
+    const outputTimes = Array.isArray(predictionTimes) && predictionTimes.length
+      ? predictionTimes.map(Number)
+      : normalized.map((item) => item.time);
+    const rawOpeningPrediction = predict(outputTimes[0]);
+    const rawEndingPrediction = predict(outputTimes[outputTimes.length - 1]);
     const openingPrediction = clamp(rawOpeningPrediction);
     const endingPrediction = clamp(rawEndingPrediction);
     const delta = endingPrediction - openingPrediction;
     return {
       slope,
       intercept,
-      predictions: normalized.map((item) => clamp(predict(item.time))),
+      predictions: outputTimes.map((time) => clamp(predict(time))),
       rawOpeningPrediction,
       rawEndingPrediction,
       openingPrediction,
@@ -811,11 +838,21 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     const max = Number(curve.scale.max);
     const scoreY = (score) => padding.top + (max - Number(score)) / (max - min) * plotHeight;
     const timeX = (seconds) => padding.left + Number(seconds) / duration * plotWidth;
-    const observations = curve.points.map((point) => ({
-      time: (Number(point.start) + Number(point.end)) / 2,
-      score: Number(point.experience.score)
-    }));
-    const trendSummary = linearRegressionTrend(observations, min, max);
+    const predictionTimes = curve.points.map(
+      (point) => (Number(point.start) + Number(point.end)) / 2
+    );
+    const stageObservations = stageAverageExperienceObservations(
+      data.slices,
+      curve.points
+    );
+    const trendSummary = linearRegressionTrend(
+      stageObservations,
+      min,
+      max,
+      predictionTimes
+    );
+    trendSummary.sampleBasis = "stage_average";
+    trendSummary.sampleCount = stageObservations.length;
     const points = curve.points.map((point, index) => {
       const slice = data.slices[index];
       const midpoint = (Number(point.start) + Number(point.end)) / 2;
@@ -1012,7 +1049,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   }
 
   function globalCurvesGuideMarkup() {
-    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>以全部体验评分点的真实时间中点计算线性回归直线，不修改原始评分。</p>`;
+    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>先计算各阶段的体验平均分，再让每个阶段以相同权重参与真实时间线性回归；原始时间片评分和折线不修改。</p>`;
   }
 
   function loadInitialData(fetcher, onData, onError) {
@@ -1410,6 +1447,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       galleryViewModel,
       imageMarkupPure,
       linearRegressionTrend,
+      stageAverageExperienceObservations,
       lightboxViewModel,
       loadInitialData,
       matchesSlice,
