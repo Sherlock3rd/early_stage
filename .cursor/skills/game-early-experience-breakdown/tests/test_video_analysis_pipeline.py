@@ -26,6 +26,25 @@ class VideoTimelineTests(unittest.TestCase):
             video_timeline.generate_timeline(75.0),
         )
 
+    def test_review_step_uses_one_five_and_ten_second_cadence(self):
+        self.assertEqual(1.0, video_timeline.review_step_seconds(0.0))
+        self.assertEqual(1.0, video_timeline.review_step_seconds(599.0))
+        self.assertEqual(5.0, video_timeline.review_step_seconds(600.0))
+        self.assertEqual(5.0, video_timeline.review_step_seconds(1199.0))
+        self.assertEqual(10.0, video_timeline.review_step_seconds(1200.0))
+
+    def test_review_points_are_dense_without_changing_display_slices(self):
+        duration = 1212.5
+        points = video_timeline.generate_review_points(duration)
+        self.assertEqual([0.0, 1.0, 2.0], points[:3])
+        self.assertIn(599.0, points)
+        self.assertIn(600.0, points)
+        self.assertIn(1195.0, points)
+        self.assertIn(1200.0, points)
+        self.assertIn(1210.0, points)
+        self.assertNotIn(1212.5, points)
+        self.assertEqual(21, len(video_timeline.generate_timeline(duration)))
+
     def test_boundary_29_minutes_uses_one_minute_slices(self):
         slices = video_timeline.generate_time_slices(29 * 60)
         self.assertEqual(29, len(slices))
@@ -717,6 +736,46 @@ class AnalysisModelTests(unittest.TestCase):
             )
         )
         analysis_model.validate_analysis(data)
+
+    def test_sanbing_records_mother_death_as_exact_second_climax(self):
+        sanbing_path = (
+            ROOT.parents[1]
+            / "tmp"
+            / "sanbing-breakdown"
+            / "analysis.validated.json"
+        )
+        if not sanbing_path.exists():
+            sanbing_path = ROOT.parents[2] / "data" / "sanbing.json"
+        if not sanbing_path.exists():
+            sanbing_path = (
+                ROOT.parents[2]
+                / "artifacts"
+                / "sanbing-early-experience"
+                / "viewer"
+                / "data"
+                / "sanbing.json"
+            )
+        data = json.loads(sanbing_path.read_text(encoding="utf-8"))
+        target_slice = data["slices"][7]
+        target_curve = data["global_curves"]["points"][7]
+
+        self.assertIn("母亲", target_slice["dimensions"]["剧情轴"]["fact"])
+        self.assertEqual("climax", target_slice["narrative_climax"]["judgement"])
+        self.assertTrue(
+            any(
+                473.0 <= frame["timestamp"] <= 477.0
+                for frame in target_slice["evidence_frames"]
+            )
+        )
+        self.assertTrue(
+            any(
+                "07:54" in evidence["note"] and "去世" in evidence["note"]
+                for evidence in target_slice["evidence"]
+            )
+        )
+        self.assertEqual(5, target_curve["emotion"]["narrative_score"])
+        self.assertEqual(5, target_curve["emotion"]["intensity"])
+        self.assertEqual("negative", target_curve["emotion"]["valence"])
 
     def test_invalid_json_is_rejected(self):
         with self.assertRaises(analysis_model.AnalysisValidationError):

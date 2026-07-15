@@ -512,16 +512,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/sanbing/frames/slice-007-evidence-01-000420000.jpg",
-          "timestamp": 420.0
+          "path": "screenshots/sanbing/frames/slice-007-evidence-01-000468000.jpg",
+          "timestamp": 468.0
         },
         {
-          "path": "screenshots/sanbing/frames/slice-007-evidence-02-000435000.jpg",
-          "timestamp": 435.0
+          "path": "screenshots/sanbing/frames/slice-007-evidence-02-000474000.jpg",
+          "timestamp": 474.0
         },
         {
-          "path": "screenshots/sanbing/frames/slice-007-evidence-03-000465000.jpg",
-          "timestamp": 465.0
+          "path": "screenshots/sanbing/frames/slice-007-evidence-03-000477000.jpg",
+          "timestamp": 477.0
         }
       ],
       "dimensions": {
@@ -550,7 +550,7 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "",
+          "fact": "孩子呼喊母亲，众人确认母亲因缺少食物、严寒和暴风雪去世；孩子抱着母亲哭泣。\n目的：把生存危机的代价具体落到人物死亡，形成前期剧情与情绪高潮，并强化继续抗寒和保障供给的动机。",
           "inference": ""
         }
       },
@@ -561,8 +561,8 @@
         "end": 720.0
       },
       "narrative_climax": {
-        "judgement": "none",
-        "reason": "本片未形成全局剧情峰值。"
+        "judgement": "climax",
+        "reason": "07:54 母亲因饥饿、严寒与暴风雪去世，孩子抱着母亲哭泣，形成前期剧情与情绪大高潮。"
       },
       "flow": {
         "judgement": "none",
@@ -571,8 +571,16 @@
       "confidence": 0.9,
       "evidence": [
         {
-          "frame": "screenshots/sanbing/frames/slice-007-evidence-01-000420000.jpg",
-          "note": "07:00 画面显示：完成民心任务并领取物资。"
+          "frame": "screenshots/sanbing/frames/slice-007-evidence-01-000468000.jpg",
+          "note": "07:48 孩子向母亲表示自己已经冻得失去知觉。"
+        },
+        {
+          "frame": "screenshots/sanbing/frames/slice-007-evidence-02-000474000.jpg",
+          "note": "07:54 对话说明母亲因缺少食物、严寒与暴风雪去世。"
+        },
+        {
+          "frame": "screenshots/sanbing/frames/slice-007-evidence-03-000477000.jpg",
+          "note": "07:57 过场画面显示孩子抱着闭眼的母亲哭泣。"
         }
       ],
       "open_questions": []
@@ -2533,16 +2541,16 @@
         "start": 420.0,
         "end": 480.0,
         "emotion": {
-          "narrative_score": 0,
+          "narrative_score": 5,
           "supporting_score": 4,
-          "intensity": 1.2,
-          "valence": "positive",
+          "intensity": 5.0,
+          "valence": "negative",
           "drivers": [
-            "progression_reward",
-            "relief"
+            "narrative",
+            "environment_pressure"
           ],
-          "event": "民心任务完成并集中发放物资",
-          "reason": "主要由环境、战斗或成长反馈形成情绪刺激。"
+          "event": "07:54 母亲因饥饿、严寒与暴风雪去世",
+          "reason": "母亲死亡由剧情主导，饥饿、严寒和暴风雪共同放大失去亲人的负向冲击。"
         },
         "experience": {
           "score": 3.8,
@@ -2550,7 +2558,7 @@
             "gameplay_concentration": "主要操作围绕“完成民心任务并领取物资”展开",
             "feedback_density": "任务与数值反馈稳定",
             "goal_challenge": "当前目标清晰，挑战由资源门槛、倒计时或敌军强度提供",
-            "interruption": "流程中断较少"
+            "interruption": "剧情对话短暂中断操作，但服务于目标建立"
           },
           "summary": "流程清晰但挑战或反馈密度中等"
         }

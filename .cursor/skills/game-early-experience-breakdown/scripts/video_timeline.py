@@ -21,6 +21,32 @@ class ToolError(RuntimeError):
     """Raised when an external video tool cannot be used."""
 
 
+def review_step_seconds(timestamp: float) -> float:
+    """Return the required evidence-review cadence at an absolute timestamp."""
+    if isinstance(timestamp, bool) or not isinstance(timestamp, (int, float)):
+        raise ValueError("审阅时间必须是数字")
+    timestamp = float(timestamp)
+    if not math.isfinite(timestamp) or timestamp < 0:
+        raise ValueError("审阅时间必须是大于等于 0 的有限数")
+    if timestamp < 10 * 60:
+        return 1.0
+    if timestamp < 20 * 60:
+        return 5.0
+    return 10.0
+
+
+def generate_review_points(duration: float) -> list[float]:
+    """Return dense evidence-review timestamps without changing display slices."""
+    generate_timeline(duration)
+    duration = float(duration)
+    points: list[float] = []
+    timestamp = 0.0
+    while timestamp < duration:
+        points.append(timestamp)
+        timestamp += review_step_seconds(timestamp)
+    return points
+
+
 def generate_timeline(duration: float) -> list[dict[str, int | float]]:
     """Return slices for a positive finite duration measured in seconds."""
     if isinstance(duration, bool) or not isinstance(duration, (int, float)):
@@ -124,6 +150,7 @@ def main(argv: list[str] | None = None) -> int:
                 "duration_seconds": duration,
             },
             "slices": generate_timeline(duration),
+            "review_points": generate_review_points(duration),
         }
         if args.output:
             atomic_write_text(

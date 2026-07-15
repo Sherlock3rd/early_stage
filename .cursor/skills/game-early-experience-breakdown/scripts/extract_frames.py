@@ -17,10 +17,15 @@ from typing import Any, Iterator
 
 try:
     from .runtime_utils import atomic_write_text, emit_json_error
-    from .video_timeline import ToolError, generate_timeline, probe_duration
+    from .video_timeline import (
+        ToolError,
+        generate_review_points,
+        generate_timeline,
+        probe_duration,
+    )
 except ImportError:
     from runtime_utils import atomic_write_text, emit_json_error
-    from video_timeline import ToolError, generate_timeline, probe_duration
+    from video_timeline import ToolError, generate_review_points, generate_timeline, probe_duration
 
 
 def _stable_filename(
@@ -272,6 +277,7 @@ def main(argv: list[str] | None = None) -> int:
             payload = {
                 "video": {"path": video.as_posix(), "duration_seconds": duration},
                 "slices": slices,
+                "review_points": generate_review_points(duration),
                 "frames": frames,
             }
             text = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
