@@ -60,7 +60,19 @@ class FakeRunner:
             values = []
             for name, command in self.calls:
                 if name == "write":
-                    values.extend(json.loads(command[command.index("--values") + 1]))
+                    if "--values" in command:
+                        values.extend(json.loads(command[command.index("--values") + 1]))
+                    else:
+                        cells = json.loads(command[command.index("--cells-json") + 1])
+                        values.extend(
+                            [
+                                [
+                                    cell.get("value") if isinstance(cell, dict) else None
+                                    for cell in row
+                                ]
+                                for row in cells
+                            ]
+                        )
             return {"values": values}
         if operation == "export":
             Path(output_path).write_bytes(b"fake-xlsx")
@@ -340,6 +352,23 @@ class WriteWorkflowTests(unittest.TestCase):
         self.assertLess(names.index("read"), names.index("export"))
         self.assertTrue(result["verification"]["passed"])
 
+    def test_write_uses_cells_set_file_payload_instead_of_deprecated_values(self):
+        runner = FakeRunner(fail_operation="write")
+        with self.assertRaises(write_feishu_sheet.WriteTransactionError):
+            write_feishu_sheet.write_analysis(
+                valid_analysis(),
+                "sht-test",
+                "前期体验拆解",
+                runner=runner,
+                batch_size=1,
+            )
+
+        write_args = next(args for operation, args in runner.calls if operation == "write")
+        self.assertIn("+cells-set", write_args)
+        self.assertIn("--cells-json", write_args)
+        self.assertNotIn("+write", write_args)
+        self.assertNotIn("--values", write_args)
+
     def test_create_payload_and_insert_dimension_follow_real_contract(self):
         runner = FakeRunner()
         with mock.patch(
@@ -427,6 +456,38 @@ class WriteWorkflowTests(unittest.TestCase):
         self.assertEqual("utf-8", run.call_args.kwargs["encoding"])
         self.assertEqual("replace", run.call_args.kwargs["errors"])
         self.assertEqual(1, run.call_args.kwargs["timeout"])
+
+    def test_cli_runner_materializes_unicode_cells_json_as_file_argument(self):
+        observed = {}
+
+        def invoke(command, **kwargs):
+            observed["command"] = command
+            if "--cells" in command:
+                reference = command[command.index("--cells") + 1]
+                observed["reference"] = reference
+                observed["payload"] = json.loads(
+                    Path(reference.removeprefix("@")).read_text(encoding="utf-8")
+                )
+            return mock.Mock(returncode=0, stdout='{"ok": true}', stderr="")
+
+        cells = [[{"value": "三冰拆解"}, {"value": ""}]]
+        with mock.patch("write_feishu_sheet.subprocess.run", side_effect=invoke):
+            write_feishu_sheet.LarkRunner(timeout=1).run(
+                "write",
+                [
+                    "sheets",
+                    "+cells-set",
+                    "--cells-json",
+                    json.dumps(cells, ensure_ascii=False),
+                ],
+            )
+
+        self.assertIn("--cells", observed["command"])
+        self.assertNotIn("--cells-json", observed["command"])
+        self.assertTrue(observed["reference"].startswith("@"))
+        self.assertFalse(Path(observed["reference"][1:]).is_absolute())
+        self.assertEqual(cells, observed["payload"])
+        self.assertFalse(Path(observed["reference"][1:]).exists())
 
     def test_invalid_analysis_fails_before_network(self):
         runner = FakeRunner()
@@ -521,6 +582,24 @@ class WriteWorkflowTests(unittest.TestCase):
             },
             set(result["checks"]),
         )
+
+    def test_export_verification_accepts_small_positive_row_height_drift(self):
+        from openpyxl import load_workbook
+
+        layout = write_feishu_sheet.build_sheet_layout(valid_analysis())
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "export.xlsx"
+            make_export_workbook(path, "前期体验拆解", layout)
+            workbook = load_workbook(path)
+            worksheet = workbook["前期体验拆解"]
+            worksheet.row_dimensions[1].height = layout["row_heights"][1] * (2 / 3) + 5.5
+            workbook.save(path)
+            workbook.close()
+            result = write_feishu_sheet.verify_export_xlsx(
+                path, "前期体验拆解", layout
+            )
+
+        self.assertTrue(result["passed"])
 
     def test_export_verification_rejects_each_visual_mismatch(self):
         from openpyxl import load_workbook

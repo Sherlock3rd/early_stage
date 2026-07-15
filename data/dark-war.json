@@ -1,0 +1,4456 @@
+{
+  "video": {
+    "path": "Dark War（三段连续录屏）.mp4",
+    "duration_seconds": 3695.6665416666665,
+    "source_segments": [
+      {
+        "index": 0,
+        "path": "asset/recordings/dark_war_1.mp4",
+        "start": 0.0,
+        "end": 1289.7082916666668,
+        "duration": 1289.7082916666668,
+        "fps": 23.973638224845352,
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "index": 1,
+        "path": "asset/recordings/dark_war_2.mp4",
+        "start": 1289.7082916666668,
+        "end": 2521.8749166666666,
+        "duration": 1232.166625,
+        "fps": 23.98701555481589,
+        "width": 720,
+        "height": 1280
+      },
+      {
+        "index": 2,
+        "path": "asset/recordings/dark_war_3.mp4",
+        "start": 2521.8749166666666,
+        "end": 3695.6665416666665,
+        "duration": 1173.791625,
+        "fps": 23.96933101307483,
+        "width": 720,
+        "height": 1280
+      }
+    ]
+  },
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 30.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-000-evidence-01-000005000.jpg",
+          "timestamp": 5.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 5.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-000-evidence-02-000020000.jpg",
+          "timestamp": 20.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 20.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-000-evidence-03-000037000.jpg",
+          "timestamp": 37.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 37.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在危机环境中建立营火与最初聚落，认识核心幸存者。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 集合幸存者并点燃营火",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T0 生存动机 (集合/点火)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "场景移动与目标反馈",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "夜间森林→营火聚集区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "幸存者在危机环境中汇合并建立第一处安全点。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-camp",
+        "name": "P1. 荒野立足 (Establish Camp)",
+        "start": 0,
+        "end": 300
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-000-evidence-01-000005000.jpg",
+          "note": "Intro: 集合幸存者并点燃营火；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 90.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-001-evidence-01-000060000.jpg",
+          "timestamp": 60.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 60.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-001-evidence-02-000095000.jpg",
+          "timestamp": 95.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 95.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在危机环境中建立营火与最初聚落，认识核心幸存者。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 升级营火并搭建首座建筑",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T1 聚落建设 (投入/完成)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "设施升级、任务列表与建筑管理",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "营火周边形成基础聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "危机报告后，队伍开始把临时营火转化为聚落。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-camp",
+        "name": "P1. 荒野立足 (Establish Camp)",
+        "start": 0,
+        "end": 300
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-001-evidence-01-000060000.jpg",
+          "note": "Tutorial: 升级营火并搭建首座建筑；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 150.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在危机环境中建立营火与最初聚落，认识核心幸存者。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在室内认识幸存者并接取森林目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T0 剧情引导 (关系/目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "首次进入建筑内部→返回森林",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "多人室内对话补充团队关系，并把目标导向森林深处。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-camp",
+        "name": "P1. 荒野立足 (Establish Camp)",
+        "start": 0,
+        "end": 300
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-002-main-000150000.jpg",
+          "note": "Main: 在室内认识幸存者并接取森林目标；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 210.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在危机环境中建立营火与最初聚落，认识核心幸存者。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 探索森林并完成设施任务",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (发现/执行/建成)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "场景任务确认与槽位管理",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "森林探索区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "引导角色带队深入森林，寻找可用设施与资源点。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-camp",
+        "name": "P1. 荒野立足 (Establish Camp)",
+        "start": 0,
+        "end": 300
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-003-main-000210000.jpg",
+          "note": "Main: 探索森林并完成设施任务；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-004-main-000270000.jpg",
+        "timestamp": 270.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 270.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在危机环境中建立营火与最初聚落，认识核心幸存者。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 侦察红色标记并开启生产",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 生产制作 (侦察/生产)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "侦察面板、生产制作与人员指派",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "大型木构设施区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "新人物在设施建成后登场，推动下一阶段冲突。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-camp",
+        "name": "P1. 荒野立足 (Establish Camp)",
+        "start": 0,
+        "end": 300
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-004-main-000270000.jpg",
+          "note": "Unlock: 侦察红色标记并开启生产；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 330.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-005-evidence-01-000330000.jpg",
+          "timestamp": 330.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 330.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-005-evidence-02-000354000.jpg",
+          "timestamp": 354.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 354.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 建筑施工后首次编队出征",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 战斗远征 (编队/进入战区)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "三人编队与独立战斗区域",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落→室内/地下战区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "队伍接触新同伴并进入首次成规模作战。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-005-evidence-01-000330000.jpg",
+          "note": "Main: 建筑施工后首次编队出征；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 390.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-006-evidence-01-000375000.jpg",
+          "timestamp": 375.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 375.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-006-evidence-02-000398000.jpg",
+          "timestamp": 398.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 398.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-006-evidence-03-000418000.jpg",
+          "timestamp": 418.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 418.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 篝火战斗并处理感染成员",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (交战/代价)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "新角色获得",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "篝火战斗圈",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "同伴戴维德感染尸变，众人被迫焚烧并安葬他，形成前期负向情绪高潮。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "06:24后同伴感染尸变并被迫焚烧安葬，构成不可逆人员损失。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-006-evidence-01-000375000.jpg",
+          "note": "Main: 篝火战斗并处理感染成员；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-007-evidence-01-000428000.jpg",
+          "timestamp": 428.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 428.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-007-evidence-02-000435000.jpg",
+          "timestamp": 435.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 435.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-007-evidence-03-000449000.jpg",
+          "timestamp": 449.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 449.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 在余波中分配人员并强化核心建筑",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 聚落建设 (分配/升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "人员岗位分配",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "返回聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "火灾回忆与连续对话承接同伴死亡，团队把损失转化为继续建设的目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "low",
+        "reason": "死亡余波与火灾回忆延续，团队情绪处于明显低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-007-evidence-01-000428000.jpg",
+          "note": "Main: 在余波中分配人员并强化核心建筑；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 510.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-008-evidence-01-000495000.jpg",
+          "timestamp": 495.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 495.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-008-evidence-02-000515000.jpg",
+          "timestamp": 515.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 515.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-008-evidence-03-000538000.jpg",
+          "timestamp": 538.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 538.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 升级核心建筑并开启林地任务",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (升级/扩区)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "倒计时关卡入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落外围→林地任务区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "角色照片与建筑蓝图把人物背景连接到新的建设计划。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-008-evidence-01-000495000.jpg",
+          "note": "Unlock: 升级核心建筑并开启林地任务；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 570.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 建造塔状设施并接近威胁点",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T1 聚落建设 (材料/升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落外围威胁区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-009-main-000570000.jpg",
+          "note": "Main: 建造塔状设施并接近威胁点；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 630.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-010-evidence-01-000620000.jpg",
+          "timestamp": 620.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 620.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-010-evidence-02-000650000.jpg",
+          "timestamp": 650.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 650.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 强化中央建筑",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 聚落建设 (施工/完成)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落核心区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "壮年男性持续说明建设目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-010-evidence-01-000620000.jpg",
+          "note": "Main: 强化中央建筑；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 690.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-011-evidence-01-000680000.jpg",
+          "timestamp": 680.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 680.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-011-evidence-02-000705000.jpg",
+          "timestamp": 705.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 705.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-011-evidence-03-000718000.jpg",
+          "timestamp": 718.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 718.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "用编队与战斗验证聚落供给，并经历首个重大人员损失。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 从强化后的基地进入林地战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (出征/持续作战)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "出征选择",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地→林地战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "横卧人物画面构成受伤或搬运候选，随后队伍立即出征。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-first-expedition",
+        "name": "P2. 首次远征 (First Expedition)",
+        "start": 300,
+        "end": 720
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-011-evidence-01-000680000.jpg",
+          "note": "Main: 从强化后的基地进入林地战斗；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 750.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-012-evidence-01-000725000.jpg",
+          "timestamp": 725.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 725.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-012-evidence-02-000748000.jpg",
+          "timestamp": 748.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 748.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-012-evidence-03-000779000.jpg",
+          "timestamp": 779.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 779.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成战斗并招募角色",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 英雄成长 (战斗/招募)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "角色招募/获得",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "林地战场→基地",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "战斗结果推动两次角色获得，并接入档案式剧情。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-012-evidence-01-000725000.jpg",
+          "note": "Main: 完成战斗并招募角色；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 810.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-013-evidence-01-000785000.jpg",
+          "timestamp": 785.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 785.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-013-evidence-02-000805000.jpg",
+          "timestamp": 805.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 805.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 阅读档案并接受新目标",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T0 剧情引导 (档案/交接)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "未解锁功能提示",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "档案文本后多名角色连续对话，补充团队关系并交接目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-013-evidence-01-000785000.jpg",
+          "note": "Main: 阅读档案并接受新目标；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 870.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成短战斗并领取金色奖励",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (目标/战斗/奖励)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "奖励或系统开放动画",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地局部区域→短战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "壮年男性说明出征目标，队伍迅速完成一次冲突。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-014-main-000870000.jpg",
+          "note": "Main: 完成短战斗并领取金色奖励；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 930.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-015-evidence-01-000925000.jpg",
+          "timestamp": 925.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 925.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-015-evidence-02-000948000.jpg",
+          "timestamp": 948.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 948.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 建设准备后再次作战",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (准备/战斗/提交)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地→战斗区→基地",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-015-evidence-01-000925000.jpg",
+          "note": "Main: 建设准备后再次作战；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 990.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 投入资源强化建筑",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T1 聚落建设 (投入/强化)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地建筑区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "壮年男性在强化完成后引出新人物与下一目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-016-main-000990000.jpg",
+          "note": "Main: 投入资源强化建筑；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 1050.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-017-evidence-01-001020000.jpg",
+          "timestamp": 1020.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1020.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-017-evidence-02-001040000.jpg",
+          "timestamp": 1040.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1040.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-017-evidence-03-001070000.jpg",
+          "timestamp": 1070.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1070.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 认识蓝衣人物并查看英雄",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T4 英雄成长 (角色页/编队)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "英雄详情页",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地→战斗区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "红发女性与壮年男性均为Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "蓝衣人物加入对话并触发新的战斗目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-017-evidence-01-001020000.jpg",
+          "note": "Unlock: 认识蓝衣人物并查看英雄；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 1110.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-018-evidence-01-001080000.jpg",
+          "timestamp": 1080.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1080.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-018-evidence-02-001100000.jpg",
+          "timestamp": 1100.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1100.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-018-evidence-03-001120000.jpg",
+          "timestamp": 1120.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1120.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 多英雄作战并取得胜利",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (集结/技能/胜利)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "林地战斗区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-018-evidence-01-001080000.jpg",
+          "note": "Main: 多英雄作战并取得胜利；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 1170.0
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过连续短战斗扩充队伍，并把战果转化为建设进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 再次作战并探索新交互",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (战斗/胜利/新目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "选择/交换式功能候选",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "战场→基地局部方格区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "蓝衣人物在胜利后引导玩家与发光对象互动。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-recruit-and-grow",
+        "name": "P3. 招募成长 (Recruit and Grow)",
+        "start": 720,
+        "end": 1200
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-019-main-001170000.jpg",
+          "note": "Main: 再次作战并探索新交互；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0,
+        "segment_index": 0,
+        "segment_local_timestamp": 1230.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-020-evidence-01-001200000.jpg",
+          "timestamp": 1200.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1200.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-020-evidence-02-001220000.jpg",
+          "timestamp": 1220.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1220.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-020-evidence-03-001240000.jpg",
+          "timestamp": 1240.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1240.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 获得新角色并进入建筑管理",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 英雄成长 (获得/养成/投入)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "新角色加入",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地与战场往返",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "紫发女性获得后加入战斗与基地管理。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-020-evidence-01-001200000.jpg",
+          "note": "Unlock: 获得新角色并进入建筑管理；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 0.29170833333319024
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-021-evidence-01-001285000.jpg",
+          "timestamp": 1285.0,
+          "segment_index": 0,
+          "segment_local_timestamp": 1285.0
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-021-evidence-02-001295000.jpg",
+          "timestamp": 1295.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 5.29170833333319
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 管理建筑并持续战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (生产/升级/再投入)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-021-evidence-01-001285000.jpg",
+          "note": "Main: 管理建筑并持续战斗；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 60.29170833333319
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 连续战斗并回收建设资源",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (作战/回城)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "战场→聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-022-main-001350000.jpg",
+          "note": "Main: 连续战斗并回收建设资源；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 120.29170833333319
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 培养两名角色并继续剧情",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T4 英雄成长 (升级/验证)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "两名角色达到Lv.5",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "照片档案和坐姿女性对话补充人物背景。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-023-main-001410000.jpg",
+          "note": "Main: 培养两名角色并继续剧情；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 180.2917083333332
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-024-evidence-01-001470000.jpg",
+          "timestamp": 1470.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 180.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-024-evidence-02-001490000.jpg",
+          "timestamp": 1490.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 200.2917083333332
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 作战并进入连续人物剧情",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (战斗/胜利/剧情)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "战场→室内剧情场景",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "战斗结算后，多名角色展开较完整的连续对话。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-024-evidence-01-001470000.jpg",
+          "note": "Main: 作战并进入连续人物剧情；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 240.2917083333332
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-025-evidence-01-001510000.jpg",
+          "timestamp": 1510.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 220.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-025-evidence-02-001530000.jpg",
+          "timestamp": 1530.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 240.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-025-evidence-03-001550000.jpg",
+          "timestamp": 1550.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 260.2917083333332
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 调整编队并挑战大型敌人",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T3 战斗远征 (编队/精英战)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "编队/阵容配置",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-025-evidence-01-001510000.jpg",
+          "note": "Unlock: 调整编队并挑战大型敌人；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 300.2917083333332
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-026-evidence-01-001570000.jpg",
+          "timestamp": 1570.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 280.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-026-evidence-02-001590000.jpg",
+          "timestamp": 1590.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 300.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-026-evidence-03-001610000.jpg",
+          "timestamp": 1610.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 320.2917083333332
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 扩建建筑并培养角色",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (升级/养成/再战)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落→战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "壮年男性达到Lv.5",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-026-evidence-01-001570000.jpg",
+          "note": "Main: 扩建建筑并培养角色；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 360.2917083333332
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 高强度战斗并返回建设",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (战斗/胜利/建设)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "战场→聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-027-main-001650000.jpg",
+          "note": "Main: 高强度战斗并返回建设；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 420.2917083333332
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 接触商店并完成又一轮战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 英雄成长 (资源入口/战力验证)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "商品/礼包界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落与战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "独立人物对话继续铺设任务关系。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-028-main-001710000.jpg",
+          "note": "Unlock: 接触商店并完成又一轮战斗；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 480.2917083333332
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-029-evidence-01-001775000.jpg",
+          "timestamp": 1775.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 485.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-029-evidence-02-001790000.jpg",
+          "timestamp": 1790.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 500.2917083333332
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "交替推进建筑、英雄养成与战斗，扩大可用系统。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 任务、剧情卡与角色配置交替",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T4 英雄成长 (任务/配置)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "壮年男性达到Lv.10",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "浅发女性对话与剧情卡片承接后续目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-settlement-expansion",
+        "name": "P4. 聚落扩建 (Settlement Expansion)",
+        "start": 1200,
+        "end": 1800
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-029-evidence-01-001775000.jpg",
+          "note": "Main: 任务、剧情卡与角色配置交替；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 2100.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-030-main-001950000.jpg",
+        "timestamp": 1950.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 660.2917083333332
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-030-evidence-01-001800000.jpg",
+          "timestamp": 1800.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 510.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-030-evidence-02-001950000.jpg",
+          "timestamp": 1950.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 660.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-030-evidence-03-002050000.jpg",
+          "timestamp": 2050.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 760.2917083333332
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在密集升级、养成与战斗之间建立中期资源周转。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 密集升级建筑与角色",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (材料/升级/验证)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "红发女性保持Lv.5",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "女性人物对话穿插在基地管理之间。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-management-pressure",
+        "name": "P5. 管理强化 (Management Pressure)",
+        "start": 1800,
+        "end": 2400
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-030-evidence-01-001800000.jpg",
+          "note": "Main: 密集升级建筑与角色；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 31,
+      "start": 2100.0,
+      "end": 2400.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-031-main-002250000.jpg",
+        "timestamp": 2250.0,
+        "segment_index": 1,
+        "segment_local_timestamp": 960.2917083333332
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在密集升级、养成与战斗之间建立中期资源周转。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 建筑升级后完成战斗奖励链",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 聚落建设 (升级/战斗供给)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "聚落→战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "壮年男性达到Lv.5",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "坐姿女性连续对话后返回建筑目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-management-pressure",
+        "name": "P5. 管理强化 (Management Pressure)",
+        "start": 1800,
+        "end": 2400
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-031-main-002250000.jpg",
+          "note": "Main: 建筑升级后完成战斗奖励链；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 32,
+      "start": 2400.0,
+      "end": 2700.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-032-main-002550000.jpg",
+        "timestamp": 2550.0,
+        "segment_index": 2,
+        "segment_local_timestamp": 28.12508333333335
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-032-evidence-01-002520000.jpg",
+          "timestamp": 2520.0,
+          "segment_index": 1,
+          "segment_local_timestamp": 1230.2917083333332
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-032-evidence-02-002630000.jpg",
+          "timestamp": 2630.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 108.12508333333335
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-032-evidence-03-002690000.jpg",
+          "timestamp": 2690.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 168.12508333333335
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "进入更完整的关卡路线、增益选择与精英战闭环。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 进入关卡路线并选择战斗增益",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 战斗远征 (路线/增益/推进)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "关卡路线、三选一增益",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地→关卡路线→野外战场",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "基地人物对话把目标导向更深层远征。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-expedition-depth",
+        "name": "P6. 远征深化 (Expedition Depth)",
+        "start": 2400,
+        "end": 3000
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-032-evidence-01-002520000.jpg",
+          "note": "Unlock: 进入关卡路线并选择战斗增益；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 33,
+      "start": 2700.0,
+      "end": 3000.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-033-main-002850000.jpg",
+        "timestamp": 2850.0,
+        "segment_index": 2,
+        "segment_local_timestamp": 328.12508333333335
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "进入更完整的关卡路线、增益选择与精英战闭环。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 击败大型敌人并结算翻牌",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 战斗远征 (精英战/结算/成长)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "关卡结算与翻牌",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "野外战场→基地",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "红发女性与男性英雄达到Lv.10",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-expedition-depth",
+        "name": "P6. 远征深化 (Expedition Depth)",
+        "start": 2400,
+        "end": 3000
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.86,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-033-main-002850000.jpg",
+          "note": "Main: 击败大型敌人并结算翻牌；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 34,
+      "start": 3000.0,
+      "end": 3300.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-034-main-003150000.jpg",
+        "timestamp": 3150.0,
+        "segment_index": 2,
+        "segment_local_timestamp": 628.1250833333334
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-034-evidence-01-003100000.jpg",
+          "timestamp": 3100.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 578.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-034-evidence-02-003130000.jpg",
+          "timestamp": 3130.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 608.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-034-evidence-03-003290000.jpg",
+          "timestamp": 3290.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 768.1250833333334
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过开放区域探索、连续剧情和英雄成长提升中长期动机。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 进入开放遭遇区并接触成长树",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T3 战斗远征 (探索/遭遇/成长)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "树状成长系统候选",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地→带遭遇节点的开放区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "年长男性对话后，队伍进入开放区域并遭遇火焰冲突。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-exploration-conflict",
+        "name": "P7. 探索与冲突 (Exploration Conflict)",
+        "start": 3000,
+        "end": 3600
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-034-evidence-01-003100000.jpg",
+          "note": "Unlock: 进入开放遭遇区并接触成长树；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    },
+    {
+      "index": 35,
+      "start": 3300.0,
+      "end": 3600.0,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-035-main-003450000.jpg",
+        "timestamp": 3450.0,
+        "segment_index": 2,
+        "segment_local_timestamp": 928.1250833333334
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-035-evidence-01-003310000.jpg",
+          "timestamp": 3310.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 788.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-035-evidence-02-003370000.jpg",
+          "timestamp": 3370.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 848.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-035-evidence-03-003580000.jpg",
+          "timestamp": 3580.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 1058.1250833333334
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "通过开放区域探索、连续剧情和英雄成长提升中长期动机。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 经历关键剧情并获得新英雄",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 英雄成长 (剧情奖励/获得/培养)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "新英雄获得与编队",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "开放遭遇区→探索场景",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "猫耳女性Lv.6；红发女性达到Lv.15",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "女性对话、黑底文字与跪倒画面形成全程第二个叙事高潮；具体是否死亡或离别仍待高清字幕确认。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-exploration-conflict",
+        "name": "P7. 探索与冲突 (Exploration Conflict)",
+        "start": 3000,
+        "end": 3600
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "55:10–55:40连续对话、黑底文字和跪倒画面形成强转折；事件性质仍待高清字幕确认。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+      },
+      "confidence": 0.72,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-035-evidence-01-003310000.jpg",
+          "note": "Main: 经历关键剧情并获得新英雄；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "55:10–55:40连续字幕需用高清原视频确认人物身份及是否涉及死亡、离别或重大揭示。"
+      ]
+    },
+    {
+      "index": 36,
+      "start": 3600.0,
+      "end": 3695.6665416666665,
+      "main_frame": {
+        "path": "screenshots/dark-war/frames/slice-036-main-003647833.jpg",
+        "timestamp": 3647.8332708333332,
+        "segment_index": 2,
+        "segment_local_timestamp": 1125.9583541666666
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/dark-war/frames/slice-036-evidence-01-003610000.jpg",
+          "timestamp": 3610.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 1088.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-036-evidence-02-003648000.jpg",
+          "timestamp": 3648.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 1126.1250833333334
+        },
+        {
+          "path": "screenshots/dark-war/frames/slice-036-evidence-03-003685000.jpg",
+          "timestamp": 3685.0,
+          "segment_index": 2,
+          "segment_local_timestamp": 1163.1250833333334
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "回到基地升级并结束本次录屏；未确认进入SLG大地图。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 处理奖励并完成尾段建筑升级",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T1 聚落建设 (领取/升级/结束)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "基地",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-recording-tail",
+        "name": "P8. 录屏尾段 (Recording Tail)",
+        "start": 3600,
+        "end": 3695.6665416666665
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "本片未形成独立于相邻片段的心流高点。"
+      },
+      "confidence": 0.78,
+      "evidence": [
+        {
+          "frame": "screenshots/dark-war/frames/slice-036-evidence-01-003610000.jpg",
+          "note": "Main: 处理奖励并完成尾段建筑升级；该帧用于定位本时间片的主要可见事件。"
+        }
+      ],
+      "open_questions": [
+        "接触表无法可靠识别的专名、字幕或数值需结合高清原视频确认。"
+      ]
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 1.4,
+          "intensity": 2.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "relief"
+          ],
+          "event": "幸存者在危机环境中汇合并建立第一处安全点。",
+          "reason": "剧情刺激2/5，玩法与环境刺激1.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.6,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "叙事引导清晰，点火反馈建立首个安全感。"
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 2.2,
+          "supporting_score": 1.2,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "progression_reward"
+          ],
+          "event": "危机报告后，队伍开始把临时营火转化为聚落。",
+          "reason": "剧情刺激2.2/5，玩法与环境刺激1.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "升级与建造反馈集中，但报告页短暂打断操作。"
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 2.1,
+          "supporting_score": 0.5,
+          "intensity": 2.1,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "urgency"
+          ],
+          "event": "多人室内对话补充团队关系，并把目标导向森林深处。",
+          "reason": "剧情刺激2.1/5，玩法与环境刺激0.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 1.9,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "近一分钟连续对话降低操作密度。"
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 1.3,
+          "supporting_score": 1.0,
+          "intensity": 1.3,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "引导角色带队深入森林，寻找可用设施与资源点。",
+          "reason": "剧情刺激1.3/5，玩法与环境刺激1/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "目标—进度—建成反馈形成短闭环。"
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 1.7,
+          "supporting_score": 1.3,
+          "intensity": 1.7,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "新人物在设施建成后登场，推动下一阶段冲突。",
+          "reason": "剧情刺激1.7/5，玩法与环境刺激1.3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "侦察、制作和建设连续给出明确反馈。"
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 2.1,
+          "supporting_score": 2.0,
+          "intensity": 2.1,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "队伍接触新同伴并进入首次成规模作战。",
+          "reason": "剧情刺激2.1/5，玩法与环境刺激2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "建设后迅速切入编队和战斗，节奏显著提升。"
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 5.0,
+          "supporting_score": 3.2,
+          "intensity": 5.0,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "combat",
+            "environment_pressure"
+          ],
+          "event": "同伴戴维德感染尸变，众人被迫焚烧并安葬他，形成前期负向情绪高潮。",
+          "reason": "剧情刺激5/5，玩法与环境刺激3.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "高密度战斗与不可逆人员损失叠加，形成首个强高潮。"
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 4.0,
+          "supporting_score": 1.3,
+          "intensity": 4.0,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "progression_reward"
+          ],
+          "event": "火灾回忆与连续对话承接同伴死亡，团队把损失转化为继续建设的目标。",
+          "reason": "剧情刺激4/5，玩法与环境刺激1.3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.7,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "叙事余波较强，岗位分配让玩家重新获得控制感。"
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 2.3,
+          "supporting_score": 1.5,
+          "intensity": 2.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "角色照片与建筑蓝图把人物背景连接到新的建设计划。",
+          "reason": "剧情刺激2.3/5，玩法与环境刺激1.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "升级、地图变化和短任务反馈连续出现。"
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 1.2,
+          "intensity": 0.4,
+          "valence": "neutral",
+          "drivers": [
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "Main: 建造塔状设施并接近威胁点",
+          "reason": "剧情刺激0/5，玩法与环境刺激1.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "建筑面板频繁切换，倒计时卡片造成重复中断。"
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 1.0,
+          "intensity": 1.0,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "壮年男性持续说明建设目标。",
+          "reason": "剧情刺激1/5，玩法与环境刺激1/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.3,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "施工展示偏长，完成光效带来延迟反馈。"
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 2.2,
+          "supporting_score": 2.5,
+          "intensity": 2.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "横卧人物画面构成受伤或搬运候选，随后队伍立即出征。",
+          "reason": "剧情刺激2.2/5，玩法与环境刺激2.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "建设等待后切入持续战斗，反馈密度明显提高。"
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 2.2,
+          "intensity": 2.1,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "战斗结果推动两次角色获得，并接入档案式剧情。",
+          "reason": "剧情刺激2/5，玩法与环境刺激2.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "战斗以招募奖励收束，成长反馈清楚。"
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 2.8,
+          "supporting_score": 0.4,
+          "intensity": 2.8,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "urgency"
+          ],
+          "event": "档案文本后多名角色连续对话，补充团队关系并交接目标。",
+          "reason": "剧情刺激2.8/5，玩法与环境刺激0.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.0,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "剧情信息密集，但主动操作较少。"
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 1.5,
+          "supporting_score": 2.5,
+          "intensity": 1.8,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "壮年男性说明出征目标，队伍迅速完成一次冲突。",
+          "reason": "剧情刺激1.5/5，玩法与环境刺激2.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "移动短、战斗短、奖励及时，闭环非常紧凑。"
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.4,
+          "intensity": 0.7,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Main: 建设准备后再次作战",
+          "reason": "剧情刺激0/5，玩法与环境刺激2.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "建设准备、战斗、胜利和任务提交连续完成。"
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 1.4,
+          "supporting_score": 1.2,
+          "intensity": 1.4,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "壮年男性在强化完成后引出新人物与下一目标。",
+          "reason": "剧情刺激1.4/5，玩法与环境刺激1.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "资源投入和完成光效明确，但菜单往返较多。"
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 2.1,
+          "supporting_score": 1.2,
+          "intensity": 2.1,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "蓝衣人物加入对话并触发新的战斗目标。",
+          "reason": "剧情刺激2.1/5，玩法与环境刺激1.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "人物交接与英雄页建立清晰成长参照。"
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.3,
+          "intensity": 1.0,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Main: 多英雄作战并取得胜利",
+          "reason": "剧情刺激0/5，玩法与环境刺激3.3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "技能、范围攻击和胜利排行构成高反馈战斗段。"
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 1.7,
+          "supporting_score": 2.6,
+          "intensity": 2.0,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "蓝衣人物在胜利后引导玩家与发光对象互动。",
+          "reason": "剧情刺激1.7/5，玩法与环境刺激2.6/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "战斗高点后转入新交互教学，节奏逐步放缓。"
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 1.8,
+          "supporting_score": 2.1,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "紫发女性获得后加入战斗与基地管理。",
+          "reason": "剧情刺激1.8/5，玩法与环境刺激2.1/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "角色获得、战斗和建筑操作交替，成长方向明确。"
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 1.6,
+          "intensity": 0.5,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward",
+            "combat"
+          ],
+          "event": "Main: 管理建筑并持续战斗",
+          "reason": "剧情刺激0/5，玩法与环境刺激1.6/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "生产升级与战斗交替，系统切换开始增多。"
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.8,
+          "intensity": 0.8,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Main: 连续战斗并回收建设资源",
+          "reason": "剧情刺激0/5，玩法与环境刺激2.8/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "连续战斗反馈集中，回城后立即进入资源管理。"
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 1.5,
+          "intensity": 2.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "照片档案和坐姿女性对话补充人物背景。",
+          "reason": "剧情刺激2/5，玩法与环境刺激1.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "明确等级成长与剧情穿插，但操作被面板分割。"
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 2.2,
+          "intensity": 2.5,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "战斗结算后，多名角色展开较完整的连续对话。",
+          "reason": "剧情刺激2.5/5，玩法与环境刺激2.2/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "战斗结算与剧情承接自然，是中段较完整反馈链。"
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Unlock: 调整编队并挑战大型敌人",
+          "reason": "剧情刺激0/5，玩法与环境刺激3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "战前选择、大型敌人和结果反馈形成清晰挑战闭环。"
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 1.8,
+          "intensity": 0.5,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward",
+            "combat"
+          ],
+          "event": "Main: 扩建建筑并培养角色",
+          "reason": "剧情刺激0/5，玩法与环境刺激1.8/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "升级与养成密集，但重复菜单增加认知负担。"
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.3,
+          "intensity": 1.0,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Main: 高强度战斗并返回建设",
+          "reason": "剧情刺激0/5，玩法与环境刺激3.3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "大型敌人、胜利横幅和后续升级连续出现。"
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 1.3,
+          "supporting_score": 2.5,
+          "intensity": 1.7,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "独立人物对话继续铺设任务关系。",
+          "reason": "剧情刺激1.3/5，玩法与环境刺激2.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.7,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "商店首次出现后快速回到战斗，反馈仍较集中。"
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 1.8,
+          "supporting_score": 1.4,
+          "intensity": 1.8,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "浅发女性对话与剧情卡片承接后续目标。",
+          "reason": "剧情刺激1.8/5，玩法与环境刺激1.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈稳定",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "成长结果明确，但任务、剧情和配置界面连续切换。"
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 2100.0,
+        "emotion": {
+          "narrative_score": 1.2,
+          "supporting_score": 1.4,
+          "intensity": 1.3,
+          "valence": "neutral",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "女性人物对话穿插在基地管理之间。",
+          "reason": "剧情刺激1.2/5，玩法与环境刺激1.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.6,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "标题加载和连续建筑面板造成明显中断。"
+        }
+      },
+      {
+        "start": 2100.0,
+        "end": 2400.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 2.5,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "坐姿女性连续对话后返回建筑目标。",
+          "reason": "剧情刺激2/5，玩法与环境刺激2.5/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "战斗—胜利—强光奖励链完整，前后管理略显重复。"
+        }
+      },
+      {
+        "start": 2400.0,
+        "end": 2700.0,
+        "emotion": {
+          "narrative_score": 1.8,
+          "supporting_score": 3.0,
+          "intensity": 2.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "基地人物对话把目标导向更深层远征。",
+          "reason": "剧情刺激1.8/5，玩法与环境刺激3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "路线、增益和持续战斗显著提升决策与反馈密度。"
+        }
+      },
+      {
+        "start": 2700.0,
+        "end": 3000.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.4,
+          "intensity": 1.0,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Main: 击败大型敌人并结算翻牌",
+          "reason": "剧情刺激0/5，玩法与环境刺激3.4/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "精英战、奖励弹窗和英雄成长构成强正反馈。"
+        }
+      },
+      {
+        "start": 3000.0,
+        "end": 3300.0,
+        "emotion": {
+          "narrative_score": 2.8,
+          "supporting_score": 2.7,
+          "intensity": 2.8,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency"
+          ],
+          "event": "年长男性对话后，队伍进入开放区域并遭遇火焰冲突。",
+          "reason": "剧情刺激2.8/5，玩法与环境刺激2.7/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "地图探索、战斗和奖励连续推进，系统层级明显加深。"
+        }
+      },
+      {
+        "start": 3300.0,
+        "end": 3600.0,
+        "emotion": {
+          "narrative_score": 4.5,
+          "supporting_score": 3.0,
+          "intensity": 4.5,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "女性对话、黑底文字与跪倒画面形成全程第二个叙事高潮；具体是否死亡或离别仍待高清字幕确认。",
+          "reason": "剧情刺激4.5/5，玩法与环境刺激3/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "操作集中",
+            "feedback_density": "反馈密集且连续",
+            "goal_challenge": "目标与挑战匹配清晰",
+            "interruption": "中断较少"
+          },
+          "summary": "强剧情、英雄获得和探索战斗连续出现，沉浸度达到后段高点。"
+        }
+      },
+      {
+        "start": 3600.0,
+        "end": 3695.6665416666665,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 0.8,
+          "intensity": 0.2,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "Main: 处理奖励并完成尾段建筑升级",
+          "reason": "剧情刺激0/5，玩法与环境刺激0.8/5；以片内最强可见事件计分。"
+        },
+        "experience": {
+          "score": 2.0,
+          "basis": {
+            "gameplay_concentration": "操作被剧情、菜单或等待分散",
+            "feedback_density": "反馈偏稀疏",
+            "goal_challenge": "目标可见但挑战或操作密度有限",
+            "interruption": "存在对话、菜单、加载或等待中断"
+          },
+          "summary": "约30秒近静止等待后完成建筑升级，录屏在基地结束。"
+        }
+      }
+    ]
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 3600.0,
+      "end_label": "开放区域探索与英雄Lv.15成长后返回基地",
+      "outside_exit_label": "录屏尾段基地管理；SLG大地图未确认"
+    },
+    "macro_loops": [
+      {
+        "id": "macro-settlement",
+        "title": "聚落建设",
+        "accent": "settlement",
+        "summary": "探索与战斗提供资源，资源投入建筑后开放更多生产和目标。"
+      },
+      {
+        "id": "macro-expedition",
+        "title": "战斗远征",
+        "accent": "expedition",
+        "summary": "编队进入战区，通过战斗、增益与结算推进关卡。"
+      },
+      {
+        "id": "macro-hero",
+        "title": "英雄养成",
+        "accent": "hero_growth",
+        "summary": "招募和奖励转化为英雄等级与队伍配置，再验证于战斗。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "building_growth",
+        "title": "建筑成长",
+        "summary": "投入资源完成建筑升级并开放下一目标。",
+        "accent": "building_growth"
+      },
+      {
+        "id": "building_production",
+        "title": "生产周转",
+        "summary": "设施生产与管理为后续行动提供条件。",
+        "accent": "building_production"
+      },
+      {
+        "id": "expedition_progression",
+        "title": "远征推进",
+        "summary": "编队、战斗、结算后进入更深目标。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "hero_growth",
+        "title": "英雄成长",
+        "summary": "招募、升级和编队后提高战斗能力。",
+        "accent": "hero_growth"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "l01",
+        "type": "micro_loop",
+        "title": "点燃营火",
+        "summary": "在危机环境中获得安全点；通过移动集合、完成点火目标获得营火建立并缓解环境压力。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "在危机环境中获得安全点",
+        "behaviors": [
+          "移动集合",
+          "完成点火目标"
+        ],
+        "reward": "营火建立并缓解环境压力",
+        "next_motivation": "开始把临时据点建设为聚落",
+        "confidence": 0.86
+      },
+      {
+        "id": "l02",
+        "type": "micro_loop",
+        "title": "首座建筑建成",
+        "summary": "扩大可容纳的幸存者空间；通过投入资源、完成建造、打开管理槽位获得建筑成形并开放管理。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          1
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-001-main-000090000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "扩大可容纳的幸存者空间",
+        "behaviors": [
+          "投入资源",
+          "完成建造",
+          "打开管理槽位"
+        ],
+        "reward": "建筑成形并开放管理",
+        "next_motivation": "寻找更多设施和资源点",
+        "confidence": 0.86
+      },
+      {
+        "id": "l03",
+        "type": "micro_loop",
+        "title": "森林设施任务",
+        "summary": "获取聚落所需设施与产能；通过探索森林、执行进度任务、侦察红点、开启生产获得新设施建成并开放制作。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_production",
+        "slice_indices": [
+          3,
+          4
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-003-main-000210000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "获取聚落所需设施与产能",
+        "behaviors": [
+          "探索森林",
+          "执行进度任务",
+          "侦察红点",
+          "开启生产"
+        ],
+        "reward": "新设施建成并开放制作",
+        "next_motivation": "组织队伍应对外部威胁",
+        "confidence": 0.86
+      },
+      {
+        "id": "l04",
+        "type": "micro_loop",
+        "title": "首次编队远征",
+        "summary": "消除营地周边威胁；通过配置三人队伍、进入战区、持续交战获得获得新角色但付出同伴死亡代价。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          5,
+          6
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-005-main-000330000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "消除营地周边威胁",
+        "behaviors": [
+          "配置三人队伍",
+          "进入战区",
+          "持续交战"
+        ],
+        "reward": "获得新角色但付出同伴死亡代价",
+        "next_motivation": "重整人员并强化核心建筑",
+        "confidence": 0.86
+      },
+      {
+        "id": "l05",
+        "type": "micro_loop",
+        "title": "岗位与核心升级",
+        "summary": "在损失后恢复聚落运转；通过分配人员、投入升级、完成核心建筑强化获得聚落范围扩大并开放林地任务。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_growth",
+        "slice_indices": [
+          7,
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-007-main-000450000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "在损失后恢复聚落运转",
+        "behaviors": [
+          "分配人员",
+          "投入升级",
+          "完成核心建筑强化"
+        ],
+        "reward": "聚落范围扩大并开放林地任务",
+        "next_motivation": "以新产能继续探索",
+        "confidence": 0.86
+      },
+      {
+        "id": "l06",
+        "type": "micro_loop",
+        "title": "倒计时林地任务",
+        "summary": "验证扩区后的战斗能力；通过进入限时入口、完成林地目标、返回升级设施获得短任务奖励和塔状设施进度。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          8,
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-008-main-000510000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "验证扩区后的战斗能力",
+        "behaviors": [
+          "进入限时入口",
+          "完成林地目标",
+          "返回升级设施"
+        ],
+        "reward": "短任务奖励和塔状设施进度",
+        "next_motivation": "继续强化中央建筑",
+        "confidence": 0.78
+      },
+      {
+        "id": "l07",
+        "type": "micro_loop",
+        "title": "强化后招募",
+        "summary": "用聚落强化支撑新一轮出征；通过完成中央建筑、进入林地战斗、取得胜利获得两次角色获得反馈。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          10,
+          11,
+          12
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-010-main-000630000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "用聚落强化支撑新一轮出征",
+        "behaviors": [
+          "完成中央建筑",
+          "进入林地战斗",
+          "取得胜利"
+        ],
+        "reward": "两次角色获得反馈",
+        "next_motivation": "培养新角色并接受新目标",
+        "confidence": 0.78
+      },
+      {
+        "id": "l08",
+        "type": "micro_loop",
+        "title": "短战奖励闭环",
+        "summary": "快速完成明确战斗目标；通过移动至目标、短战斗、领取金色奖励获得即时奖励或系统开放反馈。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          14
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-014-main-000870000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "快速完成明确战斗目标",
+        "behaviors": [
+          "移动至目标",
+          "短战斗",
+          "领取金色奖励"
+        ],
+        "reward": "即时奖励或系统开放反馈",
+        "next_motivation": "投入下一轮建设与战斗",
+        "confidence": 0.86
+      },
+      {
+        "id": "l09",
+        "type": "micro_loop",
+        "title": "建设战斗提交",
+        "summary": "把建设准备转化为战果；通过检查建设条件、进入战斗、胜利、提交任务获得任务完成并强化建筑。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          15,
+          16
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-015-main-000930000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把建设准备转化为战果",
+        "behaviors": [
+          "检查建设条件",
+          "进入战斗",
+          "胜利",
+          "提交任务"
+        ],
+        "reward": "任务完成并强化建筑",
+        "next_motivation": "认识新人物并扩展队伍",
+        "confidence": 0.86
+      },
+      {
+        "id": "l10",
+        "type": "micro_loop",
+        "title": "英雄战力验证",
+        "summary": "验证新角色与队伍配置；通过查看英雄等级、多英雄出战、释放技能、结算胜利获得胜利排行与新交互入口。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          17,
+          18,
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-017-main-001050000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "验证新角色与队伍配置",
+        "behaviors": [
+          "查看英雄等级",
+          "多英雄出战",
+          "释放技能",
+          "结算胜利"
+        ],
+        "reward": "胜利排行与新交互入口",
+        "next_motivation": "继续招募并提升英雄",
+        "confidence": 0.78
+      },
+      {
+        "id": "l11",
+        "type": "micro_loop",
+        "title": "角色获得与Lv.5成长",
+        "summary": "扩充可用英雄并提高战力；通过获得紫发角色、参与战斗、打开养成页、提升等级获得多名角色达到Lv.5。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          20,
+          21,
+          22,
+          23
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-020-main-001230000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "扩充可用英雄并提高战力",
+        "behaviors": [
+          "获得紫发角色",
+          "参与战斗",
+          "打开养成页",
+          "提升等级"
+        ],
+        "reward": "多名角色达到Lv.5",
+        "next_motivation": "挑战更强敌人",
+        "confidence": 0.86
+      },
+      {
+        "id": "l12",
+        "type": "micro_loop",
+        "title": "编队大型敌人战",
+        "summary": "用编队调整应对大型敌人；通过战前配置、持续攻击、完成结算获得胜利反馈与后续剧情。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          24,
+          25
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-024-main-001470000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "用编队调整应对大型敌人",
+        "behaviors": [
+          "战前配置",
+          "持续攻击",
+          "完成结算"
+        ],
+        "reward": "胜利反馈与后续剧情",
+        "next_motivation": "把战果用于聚落和英雄成长",
+        "confidence": 0.86
+      },
+      {
+        "id": "l13",
+        "type": "micro_loop",
+        "title": "中段资源周转",
+        "summary": "维持聚落扩建和连续出征；通过升级建筑、完成战斗、进入商店、培养英雄获得建筑进度与英雄Lv.10。",
+        "macro_loop_id": "macro-settlement",
+        "loop_family_id": "building_production",
+        "slice_indices": [
+          26,
+          27,
+          28,
+          29
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-026-main-001590000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "维持聚落扩建和连续出征",
+        "behaviors": [
+          "升级建筑",
+          "完成战斗",
+          "进入商店",
+          "培养英雄"
+        ],
+        "reward": "建筑进度与英雄Lv.10",
+        "next_motivation": "进入更深层关卡",
+        "confidence": 0.78
+      },
+      {
+        "id": "l14",
+        "type": "micro_loop",
+        "title": "关卡路线精英战",
+        "summary": "推进关卡路线并击败精英敌人；通过选择路线、选择增益、持续战斗、翻牌结算获得英雄达到Lv.10并获得关卡奖励。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          32,
+          33
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-032-main-002550000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "推进关卡路线并击败精英敌人",
+        "behaviors": [
+          "选择路线",
+          "选择增益",
+          "持续战斗",
+          "翻牌结算"
+        ],
+        "reward": "英雄达到Lv.10并获得关卡奖励",
+        "next_motivation": "探索开放遭遇区域",
+        "confidence": 0.86
+      },
+      {
+        "id": "l15",
+        "type": "micro_loop",
+        "title": "开放区域探索",
+        "summary": "调查更开放的遭遇区域；通过移动探索、触发战斗、领取奖励、查看成长树获得开放区域进度和成长入口。",
+        "macro_loop_id": "macro-expedition",
+        "loop_family_id": "expedition_progression",
+        "slice_indices": [
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-034-main-003150000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "调查更开放的遭遇区域",
+        "behaviors": [
+          "移动探索",
+          "触发战斗",
+          "领取奖励",
+          "查看成长树"
+        ],
+        "reward": "开放区域进度和成长入口",
+        "next_motivation": "处理冲突并扩充英雄",
+        "confidence": 0.78
+      },
+      {
+        "id": "l16",
+        "type": "micro_loop",
+        "title": "剧情奖励与英雄培养",
+        "summary": "把关键剧情转折转化为队伍成长；通过观看连续剧情、领取紫色奖励、获得英雄、编队培养获得红发女性达到Lv.15并完成探索战斗。",
+        "macro_loop_id": "macro-hero",
+        "loop_family_id": "hero_growth",
+        "slice_indices": [
+          35
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-035-main-003450000.jpg"
+        ],
+        "status": "pending_confirmation",
+        "motivation": "把关键剧情转折转化为队伍成长",
+        "behaviors": [
+          "观看连续剧情",
+          "领取紫色奖励",
+          "获得英雄",
+          "编队培养"
+        ],
+        "reward": "红发女性达到Lv.15并完成探索战斗",
+        "next_motivation": "返回基地继续长期建设",
+        "confidence": 0.72
+      },
+      {
+        "id": "subject-end",
+        "type": "end",
+        "title": "前期体验主体终点",
+        "summary": "开放区域探索、关键剧情和英雄培养完成后返回基地；录屏未确认进入SLG大地图。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          35
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-035-main-003450000.jpg"
+        ],
+        "status": "pending_confirmation"
+      },
+      {
+        "id": "outside-exit",
+        "type": "outside_exit",
+        "title": "录屏尾段",
+        "summary": "基地等待与建筑升级；不作为SLG大地图入口证据。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          36
+        ],
+        "evidence_frames": [
+          "screenshots/dark-war/frames/slice-036-main-003647833.jpg"
+        ],
+        "status": "pending_confirmation"
+      }
+    ],
+    "edges": [
+      {
+        "from": "l01",
+        "to": "l02",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l02",
+        "to": "l03",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l03",
+        "to": "l04",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l04",
+        "to": "l05",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l05",
+        "to": "l06",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l06",
+        "to": "l07",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l07",
+        "to": "l08",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l08",
+        "to": "l09",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l09",
+        "to": "l10",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l10",
+        "to": "l11",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l11",
+        "to": "l12",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l12",
+        "to": "l13",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l13",
+        "to": "l14",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l14",
+        "to": "l15",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l15",
+        "to": "l16",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l16",
+        "to": "subject-end",
+        "kind": "primary",
+        "label": "时间主链"
+      },
+      {
+        "from": "l02",
+        "to": "l05",
+        "kind": "macro_return",
+        "label": "远征后回到聚落升级"
+      },
+      {
+        "from": "l06",
+        "to": "l08",
+        "kind": "macro_return",
+        "label": "建设强化后再次远征"
+      },
+      {
+        "from": "l07",
+        "to": "l10",
+        "kind": "macro_return",
+        "label": "建设与远征后继续英雄成长"
+      },
+      {
+        "from": "l05",
+        "to": "l07",
+        "kind": "cross_macro",
+        "label": "聚落产能支撑招募"
+      },
+      {
+        "from": "l10",
+        "to": "l13",
+        "kind": "cross_macro",
+        "label": "英雄战力反哺资源周转"
+      },
+      {
+        "from": "l14",
+        "to": "l16",
+        "kind": "cross_macro",
+        "label": "远征奖励推动英雄培养"
+      },
+      {
+        "from": "subject-end",
+        "to": "outside-exit",
+        "kind": "conditional",
+        "label": "录屏继续但未进入大地图"
+      }
+    ]
+  }
+}

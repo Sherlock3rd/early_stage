@@ -148,12 +148,12 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-002-evidence-01-000125000.jpg",
-          "timestamp": 125.0
+          "path": "screenshots/frost/frames/slice-002-evidence-01-000136000.jpg",
+          "timestamp": 136.0
         },
         {
-          "path": "screenshots/frost/frames/slice-002-evidence-03-000175000.jpg",
-          "timestamp": 175.0
+          "path": "screenshots/frost/frames/slice-002-evidence-02-000152000.jpg",
+          "timestamp": 152.0
         }
       ],
       "dimensions": {
@@ -174,7 +174,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "X玩法全局区域（02:40后）",
+          "fact": "",
           "inference": ""
         },
         "经济体验": {
@@ -182,7 +182,7 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "爷爷比尔在暴风雪中去世，肖恩等人在墓前送别；众人随后从比尔遗留的笔记和图纸中得知，他原本想在这里建造一座帮助更多幸存者的避难所。\n目的：以亲人死亡形成前期剧情高点，并把悲伤转化为肖恩继承遗志、建设避难所的长期目标。",
+          "fact": "比尔在暴风雪中去世，众人在墓前送别；随后从其笔记与避难所图纸中得知未竟计划。\n目的：以亲人死亡形成前期剧情高点，并把悲伤转化为建设避难所的长期目标。",
           "inference": ""
         }
       },
@@ -194,7 +194,7 @@
       },
       "narrative_climax": {
         "judgement": "climax",
-        "reason": "02:18–02:36 比尔去世并被安葬，肖恩继承其建设避难所的遗志；证据 frames/slice-002-evidence-02-000145000.jpg"
+        "reason": "02:16–02:26为死亡与送别关键段，02:31–02:37转入笔记、图纸和人物承接对话。"
       },
       "flow": {
         "judgement": "none",
@@ -204,15 +204,19 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-002-evidence-02-000145000.jpg",
-          "note": "02:25 比尔墓碑与送别画面；字幕说明比尔离世后肖恩泣不成声。"
+          "note": "02:16 暗色雪夜关键过场开始。"
         },
         {
-          "frame": "screenshots/frost/frames/slice-002-evidence-03-000175000.jpg",
-          "note": "02:55 比尔遗留的避难所图纸转化为后续建设任务。"
+          "frame": "screenshots/frost/frames/slice-002-evidence-01-000136000.jpg",
+          "note": "02:25 死亡与送别画面。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-002-evidence-02-000152000.jpg",
+          "note": "02:32 比尔遗留的笔记与避难所图纸出现。"
         }
       ],
       "open_questions": [
-        "静帧中不可辨识的专有名词、资源名称或数值需结合原视频/高清源确认。"
+        "人物姓名与亲属关系沿用连续原视频确认结果；缩略接触表本身不足以单独辨字。"
       ]
     },
     {
@@ -300,12 +304,12 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-004-evidence-01-000245000.jpg",
-          "timestamp": 245.0
+          "path": "screenshots/frost/frames/slice-004-evidence-01-000288000.jpg",
+          "timestamp": 288.0
         },
         {
-          "path": "screenshots/frost/frames/slice-004-evidence-02-000275000.jpg",
-          "timestamp": 275.0
+          "path": "screenshots/frost/frames/slice-004-evidence-02-000291000.jpg",
+          "timestamp": 291.0
         }
       ],
       "dimensions": {
@@ -314,7 +318,7 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Tutorial: 配置建造队列，完成聚落任务",
+          "fact": "Main: 完成建设并接收暴风雪倒计时目标",
           "inference": ""
         },
         "核心循环": {
@@ -322,7 +326,7 @@
           "inference": ""
         },
         "渐进体验": {
-          "fact": "建造队列",
+          "fact": "环境倒计时/限时压力机制",
           "inference": ""
         },
         "地图体验": {
@@ -334,7 +338,7 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "",
+          "fact": "雪夜移动与长者对话后出现约一小时倒计时，将聚落建设转化为有时限的生存准备。",
           "inference": ""
         }
       },
@@ -355,8 +359,16 @@
       "confidence": 0.88,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-004-evidence-01-000245000.jpg",
-          "note": "04:05 联系表所示：掌握队列/人员安排并完成核心建筑升级。"
+          "frame": "screenshots/frost/frames/slice-004-main-000270000.jpg",
+          "note": "04:30 继续完成聚落建设。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-004-evidence-01-000288000.jpg",
+          "note": "04:48 首次清楚出现倒计时面板。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-004-evidence-02-000291000.jpg",
+          "note": "04:51 倒计时持续并回到设施任务。"
         }
       ],
       "open_questions": []
@@ -561,16 +573,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-008-evidence-01-000485000.jpg",
-          "timestamp": 485.0
+          "path": "screenshots/frost/frames/slice-008-evidence-01-000484000.jpg",
+          "timestamp": 484.0
         },
         {
           "path": "screenshots/frost/frames/slice-008-evidence-02-000515000.jpg",
           "timestamp": 515.0
         },
         {
-          "path": "screenshots/frost/frames/slice-008-evidence-03-000535000.jpg",
-          "timestamp": 535.0
+          "path": "screenshots/frost/frames/slice-008-evidence-03-000525000.jpg",
+          "timestamp": 525.0
         }
       ],
       "dimensions": {
@@ -579,15 +591,15 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 首次出征\nTutorial: 小队战斗",
+          "fact": "Main: 离开聚落、揭示新英雄并开始首次远征",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T5 X玩法战斗 (出征/战斗)",
+          "fact": "[New] T5 X玩法战斗 (远征/英雄揭示/开战)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "X玩法战斗",
+          "fact": "首次远征、英雄卡揭示、X玩法战斗",
           "inference": ""
         },
         "地图体验": {
@@ -599,7 +611,7 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "大熔炉和聚落逐渐吸引新的幸存者，肖恩带队驾驶雪地载具离开安全区，首次正面遭遇外部敌人。\n目的：把比尔留下的避难所理想转化为主动救援和清除威胁的行动。",
+          "fact": "肖恩带队离开聚落，在雪原行进和对话后乘车推进；新英雄揭示后立即投入战斗。\n目的：把建设成果转化为外部远征，并用角色成长提高首次战斗期待。",
           "inference": ""
         }
       },
@@ -615,13 +627,21 @@
       },
       "flow": {
         "judgement": "flow_peak",
-        "reason": "目标清晰、敌我可见且战斗反馈连续。 证据：frames/slice-008-evidence-01-000485000.jpg"
+        "reason": "08:44–09:00进入连续战斗，英雄揭示后快速兑现战力。"
       },
       "confidence": 0.88,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-008-evidence-01-000485000.jpg",
-          "note": "08:05 联系表所示：从基地经营切换到首次外出和小队战斗。"
+          "frame": "screenshots/frost/frames/slice-008-main-000510000.jpg",
+          "note": "08:04 雪原远景过场开始，首次明确离开聚落。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-008-evidence-01-000484000.jpg",
+          "note": "08:35 新英雄卡揭示。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-008-evidence-02-000515000.jpg",
+          "note": "08:45 正式进入连续战斗。"
         }
       ],
       "open_questions": []
@@ -640,12 +660,12 @@
           "timestamp": 545.0
         },
         {
-          "path": "screenshots/frost/frames/slice-009-evidence-02-000575000.jpg",
-          "timestamp": 575.0
+          "path": "screenshots/frost/frames/slice-009-evidence-02-000562000.jpg",
+          "timestamp": 562.0
         },
         {
-          "path": "screenshots/frost/frames/slice-009-evidence-03-000595000.jpg",
-          "timestamp": 595.0
+          "path": "screenshots/frost/frames/slice-009-evidence-03-000563000.jpg",
+          "timestamp": 563.0
         }
       ],
       "dimensions": {
@@ -654,15 +674,15 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 完成首战并领取奖励",
+          "fact": "Main: 持续首战、选择战中强化并返城养成",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T5 X玩法战斗 (结算/回投)",
+          "fact": "[Cont] T5 X玩法战斗 (持续战斗/强化选择/返城)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "战斗结算",
+          "fact": "战中强化选择",
           "inference": ""
         },
         "地图体验": {
@@ -674,7 +694,7 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "肖恩的小队赢得首次战斗并带着物资返回聚落，证明新建立的避难点具备继续扩张的能力。\n目的：完成第一轮外部冲突，给予阶段性胜利，并承接后续建设和招募。",
+          "fact": "首次战斗持续至09:22，随后返回聚落并进入英雄养成与章节界面。",
           "inference": ""
         }
       },
@@ -689,14 +709,22 @@
         "reason": "胜利是奖励高点，不单独构成新的剧情高潮。 证据：frames/slice-009-evidence-01-000545000.jpg"
       },
       "flow": {
-        "judgement": "none",
-        "reason": "结算和菜单打断战斗连续性。 证据：frames/slice-009-evidence-01-000545000.jpg"
+        "judgement": "flow_peak",
+        "reason": "08:45–09:22为连续战斗高点；09:02–09:06的强化选择短暂打断但增加决策。"
       },
       "confidence": 0.78,
       "evidence": [
         {
+          "frame": "screenshots/frost/frames/slice-009-main-000570000.jpg",
+          "note": "09:05 战斗中出现强化选择。"
+        },
+        {
           "frame": "screenshots/frost/frames/slice-009-evidence-01-000545000.jpg",
-          "note": "09:05 联系表所示：结算首次战斗并把奖励回投任务与基地。"
+          "note": "09:22 第二次强化选择并结束战斗段。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-009-evidence-02-000562000.jpg",
+          "note": "09:23 返回聚落，首战结算回投并非发生在09:05。"
         }
       ],
       "open_questions": [
@@ -713,16 +741,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-010-evidence-01-000625000.jpg",
-          "timestamp": 625.0
+          "path": "screenshots/frost/frames/slice-010-evidence-01-000620000.jpg",
+          "timestamp": 620.0
         },
         {
-          "path": "screenshots/frost/frames/slice-010-evidence-02-000645000.jpg",
+          "path": "screenshots/frost/frames/slice-010-evidence-02-000635000.jpg",
+          "timestamp": 635.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-010-evidence-03-000645000.jpg",
           "timestamp": 645.0
-        },
-        {
-          "path": "screenshots/frost/frames/slice-010-evidence-03-000655000.jpg",
-          "timestamp": 655.0
         }
       ],
       "dimensions": {
@@ -731,15 +759,15 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Tutorial: 首次英雄招募",
+          "fact": "Tutorial: 10:20起完成正式英雄召唤与详情教学",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T6 英雄 (招募)",
+          "fact": "[New] T6 英雄 (召唤/揭示/详情)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "英雄招募/英雄系统",
+          "fact": "英雄召唤与英雄详情",
           "inference": ""
         },
         "地图体验": {
@@ -772,8 +800,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-010-evidence-01-000625000.jpg",
-          "note": "10:25 联系表所示：认识英雄招募、稀有度和角色获得反馈。"
+          "frame": "screenshots/frost/frames/slice-010-main-000630000.jpg",
+          "note": "10:20 进入英雄召唤入口。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-010-evidence-01-000620000.jpg",
+          "note": "10:35 新英雄揭示。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-010-evidence-02-000635000.jpg",
+          "note": "10:45 进入英雄详情与养成界面。"
         }
       ],
       "open_questions": [
@@ -788,22 +824,35 @@
         "path": "screenshots/frost/frames/slice-011-main-000690000.jpg",
         "timestamp": 690.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-011-evidence-01-000660000.jpg",
+          "timestamp": 660.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-011-evidence-02-000680000.jpg",
+          "timestamp": 680.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-011-evidence-03-000715000.jpg",
+          "timestamp": 715.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "完成英雄招募并把英雄接入战斗",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 新英雄入队并再次出战",
+          "fact": "Main: 领取宝箱与英雄奖励，11:55再次出战",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T6 英雄 (编队/出战)",
+          "fact": "[Upgrade] T6 英雄 (奖励/整理/再出战)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "英雄编队",
+          "fact": "",
           "inference": ""
         },
         "地图体验": {
@@ -837,7 +886,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-011-main-000690000.jpg",
-          "note": "11:30 联系表所示：整理新英雄和奖励，并重新进入战斗。"
+          "note": "11:00 宝箱与多项奖励展示。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-011-evidence-01-000660000.jpg",
+          "note": "11:20 角色或碎片获得反馈。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-011-evidence-02-000680000.jpg",
+          "note": "11:55 才切换至雪原战斗；11:30仍为英雄界面。"
         }
       ],
       "open_questions": [
@@ -852,18 +909,31 @@
         "path": "screenshots/frost/frames/slice-012-main-000750000.jpg",
         "timestamp": 750.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-012-evidence-01-000730000.jpg",
+          "timestamp": 730.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-012-evidence-02-000755000.jpg",
+          "timestamp": 755.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-012-evidence-03-000775000.jpg",
+          "timestamp": 775.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "在模拟聚落建设与X玩法战斗之间往返",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 战斗推进/返回聚落建设",
+          "fact": "Main: 战斗—基地管理—再次战斗",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Loop] T1 模拟聚落 ↔ T5 战斗",
+          "fact": "[Loop] T1 模拟聚落 ↔ T5 战斗 (往返/菜单中断)",
           "inference": ""
         },
         "渐进体验": {
@@ -901,7 +971,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-012-main-000750000.jpg",
-          "note": "12:30 联系表所示：通过战斗推动建设，再以成长结果继续作战。"
+          "note": "12:10 返回基地。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-012-evidence-01-000730000.jpg",
+          "note": "12:35 再次进入战斗。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-012-evidence-02-000755000.jpg",
+          "note": "12:55 继续战斗推进。"
         }
       ],
       "open_questions": []
@@ -914,18 +992,27 @@
         "path": "screenshots/frost/frames/slice-013-main-000810000.jpg",
         "timestamp": 810.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-013-evidence-01-000800000.jpg",
+          "timestamp": 800.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-013-evidence-02-000835000.jpg",
+          "timestamp": 835.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "在模拟聚落建设与X玩法战斗之间往返",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 完成战斗并升级模拟聚落",
+          "fact": "Main: 取得胜利、领取战利品并进入建筑教学",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Cont] T1 模拟聚落 ↔ T5 战斗",
+          "fact": "[Loop] T5 战斗 (胜利/奖励/建设回投)",
           "inference": ""
         },
         "渐进体验": {
@@ -963,7 +1050,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-013-main-000810000.jpg",
-          "note": "13:30 联系表所示：结束当前战斗步骤并继续提升基地。"
+          "note": "13:20 明确胜利结算。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-013-evidence-01-000800000.jpg",
+          "note": "13:30 战利品奖励反馈。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-013-evidence-02-000835000.jpg",
+          "note": "13:55 出现建筑强制教学。"
         }
       ],
       "open_questions": []
@@ -976,18 +1071,31 @@
         "path": "screenshots/frost/frames/slice-014-main-000870000.jpg",
         "timestamp": 870.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-014-evidence-01-000870000.jpg",
+          "timestamp": 870.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-014-evidence-02-000880000.jpg",
+          "timestamp": 880.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-014-evidence-03-000895000.jpg",
+          "timestamp": 895.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "推进第二次远征，熟悉连续战斗与技能反馈",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 第二次远征",
+          "fact": "Main: 14:30载具出发并进入雪原战斗",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T5 战斗 (第二次远征)",
+          "fact": "[Loop] T5 X玩法战斗 (出征/自动战斗)",
           "inference": ""
         },
         "渐进体验": {
@@ -1025,7 +1133,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-014-main-000870000.jpg",
-          "note": "14:30 联系表所示：完成基地准备并开启第二轮远征。"
+          "note": "14:30 载具离开聚落。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-014-evidence-01-000870000.jpg",
+          "note": "14:40 进入自动战斗。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-014-evidence-02-000880000.jpg",
+          "note": "14:55 战斗持续。"
         }
       ],
       "open_questions": [
@@ -1042,8 +1158,8 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-015-evidence-01-000905000.jpg",
-          "timestamp": 905.0
+          "path": "screenshots/frost/frames/slice-015-evidence-01-000920000.jpg",
+          "timestamp": 920.0
         },
         {
           "path": "screenshots/frost/frames/slice-015-evidence-02-000925000.jpg",
@@ -1060,15 +1176,15 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Tutorial: 英雄养成/背包",
+          "fact": "Main: 战斗返城后浏览试炼、VIP与背包",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T6 英雄 (养成)\n[New] T7 背包/商店",
+          "fact": "[Cont] T5 战斗 (返城/系统菜单)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "英雄养成/背包/商店",
+          "fact": "生存者试炼、VIP与背包入口",
           "inference": ""
         },
         "地图体验": {
@@ -1096,13 +1212,21 @@
       },
       "flow": {
         "judgement": "none",
-        "reason": "信息量高但缺少连续挑战。 证据：frames/slice-015-evidence-01-000905000.jpg"
+        "reason": "15:20返城后连续打开试炼、VIP、商品与背包界面，战斗心流被菜单中断。"
       },
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-015-evidence-01-000905000.jpg",
-          "note": "15:05 联系表所示：处理战后开放的人员成长、商品和库存系统。"
+          "frame": "screenshots/frost/frames/slice-015-main-000930000.jpg",
+          "note": "15:20 返回聚落。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-015-evidence-01-000920000.jpg",
+          "note": "15:25 生存者试炼界面。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-015-evidence-02-000925000.jpg",
+          "note": "15:55 背包界面。"
         }
       ],
       "open_questions": [
@@ -1117,18 +1241,31 @@
         "path": "screenshots/frost/frames/slice-016-main-000990000.jpg",
         "timestamp": 990.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-016-evidence-01-000965000.jpg",
+          "timestamp": 965.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-016-evidence-02-000990000.jpg",
+          "timestamp": 990.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-016-evidence-03-001005000.jpg",
+          "timestamp": 1005.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "推进第二次远征，熟悉连续战斗与技能反馈",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 领取宝箱并继续出战",
+          "fact": "Main: 英雄养成、铁矿升级与试炼宝箱",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Loop] 养成→奖励→战斗",
+          "fact": "[Loop] T1 建设 ↔ T6 英雄/试炼 (养成/升级/奖励)",
           "inference": ""
         },
         "渐进体验": {
@@ -1140,7 +1277,7 @@
           "inference": ""
         },
         "经济体验": {
-          "fact": "战力: 约7万",
+          "fact": "铁矿 Lv.4",
           "inference": ""
         },
         "剧情轴": {
@@ -1166,7 +1303,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-016-main-000990000.jpg",
-          "note": "16:30 联系表所示：完成角色/基地强化，领取阶段奖励并再次出战。"
+          "note": "16:05 英雄详情/养成。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-016-evidence-01-000965000.jpg",
+          "note": "16:30 铁矿 Lv.4升级界面。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-016-evidence-02-000990000.jpg",
+          "note": "16:45 试炼宝箱反馈。"
         }
       ],
       "open_questions": [
@@ -1187,8 +1332,8 @@
           "timestamp": 1025.0
         },
         {
-          "path": "screenshots/frost/frames/slice-017-evidence-02-001055000.jpg",
-          "timestamp": 1055.0
+          "path": "screenshots/frost/frames/slice-017-evidence-02-001050000.jpg",
+          "timestamp": 1050.0
         },
         {
           "path": "screenshots/frost/frames/slice-017-evidence-03-001075000.jpg",
@@ -1237,13 +1382,21 @@
       },
       "flow": {
         "judgement": "flow_peak",
-        "reason": "整分钟持续战斗，技能反馈密集且无菜单打断。 证据：frames/slice-017-evidence-01-001025000.jpg"
+        "reason": "17:05–17:55连续战斗且技能反馈密集，未见菜单打断。"
       },
       "confidence": 0.88,
       "evidence": [
         {
+          "frame": "screenshots/frost/frames/slice-017-main-001050000.jpg",
+          "note": "17:05 连续战斗建立。"
+        },
+        {
           "frame": "screenshots/frost/frames/slice-017-evidence-01-001025000.jpg",
-          "note": "17:05 联系表所示：持续推进战线并消灭连续敌群。"
+          "note": "17:30 技能反馈集中。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-017-evidence-02-001050000.jpg",
+          "note": "17:55 战斗持续推进。"
         }
       ],
       "open_questions": []
@@ -1258,16 +1411,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-018-evidence-01-001085000.jpg",
-          "timestamp": 1085.0
+          "path": "screenshots/frost/frames/slice-018-evidence-01-001090000.jpg",
+          "timestamp": 1090.0
         },
         {
-          "path": "screenshots/frost/frames/slice-018-evidence-02-001105000.jpg",
-          "timestamp": 1105.0
+          "path": "screenshots/frost/frames/slice-018-evidence-02-001095000.jpg",
+          "timestamp": 1095.0
         },
         {
-          "path": "screenshots/frost/frames/slice-018-evidence-03-001135000.jpg",
-          "timestamp": 1135.0
+          "path": "screenshots/frost/frames/slice-018-evidence-03-001120000.jpg",
+          "timestamp": 1120.0
         }
       ],
       "dimensions": {
@@ -1276,11 +1429,11 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 推进至冰河区域",
+          "fact": "Main: 雪原胜利后立即进入冰河战斗，再返回聚落",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T5 战斗 (新地形)",
+          "fact": "[Loop] T5 战斗 (胜利/新挑战/回城)",
           "inference": ""
         },
         "渐进体验": {
@@ -1317,8 +1470,16 @@
       "confidence": 0.88,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-018-evidence-01-001085000.jpg",
-          "note": "18:05 联系表所示：跨入冰河区域继续战斗，并把成果带回基地。"
+          "frame": "screenshots/frost/frames/slice-018-main-001110000.jpg",
+          "note": "18:10 胜利结算。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-018-evidence-01-001090000.jpg",
+          "note": "18:15 进入冰河战斗场景。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-018-evidence-02-001095000.jpg",
+          "note": "18:40 返回聚落。"
         }
       ],
       "open_questions": []
@@ -1331,22 +1492,35 @@
         "path": "screenshots/frost/frames/slice-019-main-001170000.jpg",
         "timestamp": 1170.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-019-evidence-01-001160000.jpg",
+          "timestamp": 1160.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-019-evidence-02-001170000.jpg",
+          "timestamp": 1170.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-019-evidence-03-001190000.jpg",
+          "timestamp": 1190.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "提升模拟聚落等级，学习生产、法令与资源门槛",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 返回聚落完成建筑升级",
+          "fact": "Main: 继续建设并处理第二建造队列门槛",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Cont] T1 模拟聚落",
+          "fact": "[Upgrade] T1 建设 (队列摩擦/付费解锁)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "",
+          "fact": "雇佣/第二建造队列付费入口",
           "inference": ""
         },
         "地图体验": {
@@ -1380,7 +1554,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-019-main-001170000.jpg",
-          "note": "19:30 联系表所示：集中清理任务并推进多座建筑等级。"
+          "note": "19:20 建筑完成反馈。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-019-evidence-01-001160000.jpg",
+          "note": "19:30 雇佣队列限时/永久解锁弹窗。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-019-evidence-02-001170000.jpg",
+          "note": "19:50 返回建设。"
         }
       ],
       "open_questions": []
@@ -1472,8 +1654,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-021-evidence-01-001285000.jpg",
-          "timestamp": 1285.0
+          "path": "screenshots/frost/frames/slice-021-evidence-01-001270000.jpg",
+          "timestamp": 1270.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-021-evidence-02-001300000.jpg",
+          "timestamp": 1300.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-021-evidence-03-001310000.jpg",
+          "timestamp": 1310.0
         }
       ],
       "dimensions": {
@@ -1482,15 +1672,15 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Tutorial: 选择法令",
+          "fact": "Unlock: 管理建筑并首次明确进入法令/治理界面",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T8 法令 (选择/增益)",
+          "fact": "[New] T9 治理系统 (法令/管理)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "法令系统",
+          "fact": "法令/治理系统",
           "inference": ""
         },
         "地图体验": {
@@ -1523,8 +1713,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-021-evidence-01-001285000.jpg",
-          "note": "21:25 联系表所示：提升核心建筑并认识新的卡片式分支系统。"
+          "frame": "screenshots/frost/frames/slice-021-main-001290000.jpg",
+          "note": "21:10 建筑升级反馈。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-021-evidence-01-001270000.jpg",
+          "note": "21:40 首次明确看到法令/治理界面。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-021-evidence-02-001300000.jpg",
+          "note": "21:50 返回聚落管理。"
         }
       ],
       "open_questions": [
@@ -1676,16 +1874,16 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-024-evidence-01-001445000.jpg",
-          "timestamp": 1445.0
+          "path": "screenshots/frost/frames/slice-024-evidence-01-001460000.jpg",
+          "timestamp": 1460.0
         },
         {
-          "path": "screenshots/frost/frames/slice-024-evidence-02-001475000.jpg",
-          "timestamp": 1475.0
+          "path": "screenshots/frost/frames/slice-024-evidence-02-001470000.jpg",
+          "timestamp": 1470.0
         },
         {
-          "path": "screenshots/frost/frames/slice-024-evidence-03-001495000.jpg",
-          "timestamp": 1495.0
+          "path": "screenshots/frost/frames/slice-024-evidence-03-001490000.jpg",
+          "timestamp": 1490.0
         }
       ],
       "dimensions": {
@@ -1694,11 +1892,11 @@
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 跟随角色查看新设施",
+          "fact": "Main: 完成核心建筑与新设施，兑现完整主城",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T9 新设施 (剧情引导)",
+          "fact": "[End] T1 完整主城 (核心完成/设施展开)",
           "inference": ""
         },
         "渐进体验": {
@@ -1706,7 +1904,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "主城全区域",
+          "fact": "完整主城全区域",
           "inference": ""
         },
         "经济体验": {
@@ -1735,8 +1933,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-024-evidence-01-001445000.jpg",
-          "note": "24:05 联系表所示：结束集中管理段，通过角色引导认识新设施。"
+          "frame": "screenshots/frost/frames/slice-024-main-001470000.jpg",
+          "note": "24:20 城市规模完整展开。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-024-evidence-01-001460000.jpg",
+          "note": "24:30 核心建筑完成反馈。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-024-evidence-02-001470000.jpg",
+          "note": "24:50 新设施高亮。"
         }
       ],
       "open_questions": [
@@ -1753,33 +1959,33 @@
       },
       "evidence_frames": [
         {
-          "path": "screenshots/frost/frames/slice-025-evidence-01-001505000.jpg",
-          "timestamp": 1505.0
+          "path": "screenshots/frost/frames/slice-025-evidence-01-001510000.jpg",
+          "timestamp": 1510.0
         },
         {
-          "path": "screenshots/frost/frames/slice-025-evidence-02-001535000.jpg",
-          "timestamp": 1535.0
+          "path": "screenshots/frost/frames/slice-025-evidence-02-001530000.jpg",
+          "timestamp": 1530.0
         },
         {
-          "path": "screenshots/frost/frames/slice-025-evidence-03-001555000.jpg",
-          "timestamp": 1555.0
+          "path": "screenshots/frost/frames/slice-025-evidence-03-001550000.jpg",
+          "timestamp": 1550.0
         }
       ],
       "dimensions": {
         "阶段目标": {
-          "fact": "进入SLG大地图并建立主城—世界地图循环",
+          "fact": "短暂进入SLG大地图后返回主城，完成章节任务与建筑升级",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 编队并进入SLG大地图",
+          "fact": "Unlock: 25:10–25:30短暂进入SLG大地图并完成强制教学",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T10 SLG大地图 (编队/探索)",
+          "fact": "[New] T10 SLG大地图 (进入/教学/单位互动)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "英雄编组/章节任务/SLG探索",
+          "fact": "SLG大地图与地图单位交互",
           "inference": ""
         },
         "地图体验": {
@@ -1791,13 +1997,13 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "主城建成后，肖恩把行动范围扩展到城外世界，开始编排行军并与其他城镇产生联系。\n目的：把单城求生目标升级为更大范围的世界探索与势力扩张。",
+          "fact": "完整主城建成后短暂进入SLG大地图，随后转入章节任务；未观察到可确认的外部城镇关系。",
           "inference": ""
         }
       },
       "stage_range": {
         "stage_id": "industrial-expansion",
-        "name": "P9. 大地图扩张 (SLG Expansion)",
+        "name": "P9. 大地图试触与回城 (World Map Trial)",
         "start": 1500.0,
         "end": 1648.1666666666667
       },
@@ -1812,8 +2018,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/frost/frames/slice-025-evidence-01-001505000.jpg",
-          "note": "25:05 联系表所示：配置外出队伍并推进新的探索任务链。"
+          "frame": "screenshots/frost/frames/slice-025-main-001530000.jpg",
+          "note": "25:10 首次明确进入SLG大地图。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-025-evidence-01-001510000.jpg",
+          "note": "25:30 地图单位互动。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-025-evidence-02-001530000.jpg",
+          "note": "25:50 已返回完整主城。"
         }
       ],
       "open_questions": [
@@ -1829,22 +2043,35 @@
         "timestamp": 1595.0,
         "selection_reason": "midpoint_uninformative"
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-026-evidence-01-001560000.jpg",
+          "timestamp": 1560.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-026-evidence-02-001590000.jpg",
+          "timestamp": 1590.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-026-evidence-03-001610000.jpg",
+          "timestamp": 1610.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
-          "fact": "进入SLG大地图并建立主城—世界地图循环",
+          "fact": "短暂进入SLG大地图后返回主城，完成章节任务与建筑升级",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 建造大地图工业设施",
+          "fact": "Main: 返回主城并连续升级建筑、清理章节任务",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T10 大地图 (设施建设)",
+          "fact": "[Loop] T1 主城建设 (升级/任务清理)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "工业设施建造",
+          "fact": "",
           "inference": ""
         },
         "地图体验": {
@@ -1862,7 +2089,7 @@
       },
       "stage_range": {
         "stage_id": "industrial-expansion",
-        "name": "P9. 大地图扩张 (SLG Expansion)",
+        "name": "P9. 大地图试触与回城 (World Map Trial)",
         "start": 1500.0,
         "end": 1648.1666666666667
       },
@@ -1878,7 +2105,15 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-026-main-alt-001595000.jpg",
-          "note": "26:35 联系表所示：建设或升级新开放的大型工业设施。"
+          "note": "26:00 返回主城后升级建筑。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-026-evidence-01-001560000.jpg",
+          "note": "26:30 白屏转场。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-026-evidence-02-001590000.jpg",
+          "note": "26:50 章节任务界面。"
         }
       ],
       "open_questions": [
@@ -1893,18 +2128,27 @@
         "path": "screenshots/frost/frames/slice-027-main-001634083.jpg",
         "timestamp": 1634.0833333333335
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "path": "screenshots/frost/frames/slice-027-evidence-01-001620000.jpg",
+          "timestamp": 1620.0
+        },
+        {
+          "path": "screenshots/frost/frames/slice-027-evidence-02-001640000.jpg",
+          "timestamp": 1640.0
+        }
+      ],
       "dimensions": {
         "阶段目标": {
-          "fact": "进入SLG大地图并建立主城—世界地图循环",
+          "fact": "短暂进入SLG大地图后返回主城，完成章节任务与建筑升级",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 回城继续升级",
+          "fact": "Main: 处理建筑计时与章节任务后结束录屏",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Loop] T1 主城 ↔ T10 大地图",
+          "fact": "[Cont] T1 主城建设 (计时/任务/收尾)",
           "inference": ""
         },
         "渐进体验": {
@@ -1926,7 +2170,7 @@
       },
       "stage_range": {
         "stage_id": "industrial-expansion",
-        "name": "P9. 大地图扩张 (SLG Expansion)",
+        "name": "P9. 大地图试触与回城 (World Map Trial)",
         "start": 1500.0,
         "end": 1648.1666666666667
       },
@@ -1942,7 +2186,11 @@
       "evidence": [
         {
           "frame": "screenshots/frost/frames/slice-027-main-001634083.jpg",
-          "note": "27:14 联系表所示：完成最后一次建设操作并回看基地成果。"
+          "note": "27:00 建筑计时状态。"
+        },
+        {
+          "frame": "screenshots/frost/frames/slice-027-evidence-01-001620000.jpg",
+          "note": "27:20 黑底加载或录制收尾。"
         }
       ],
       "open_questions": [
@@ -2014,25 +2262,25 @@
         "end": 180.0,
         "emotion": {
           "narrative_score": 5,
-          "supporting_score": 3,
-          "intensity": 5,
+          "supporting_score": 2,
+          "intensity": 5.0,
           "valence": "negative",
           "drivers": [
             "narrative",
             "environment_pressure"
           ],
-          "event": "比尔去世，众人在暴风雪中的墓前送别",
-          "reason": "核心亲人离世并触发遗志继承，暴风雪环境强化了前段最强剧情情绪"
+          "event": "02:16–02:26比尔去世与送别，02:31后揭示遗留图纸",
+          "reason": "死亡高点与遗志揭示边界经逐秒审阅收紧"
         },
         "experience": {
-          "score": 1,
+          "score": 2.8,
           "basis": {
-            "gameplay_concentration": "[New] T2 任务 (接取/提交)；有效玩法投入评为 1/5",
-            "feedback_density": "新内容：任务系统；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 查看线索地图，接取主线任务",
-            "interruption": "剧情过场占据主要时间，主动玩法操作暂时中断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "关键剧情与连续对话中断主动操作"
           },
-          "summary": "剧情情绪达到高峰，过场使玩法沉浸暂时降低"
+          "summary": "强剧情高点后转入图纸与建设目标"
         }
       },
       {
@@ -2066,25 +2314,27 @@
         "start": 240.0,
         "end": 300.0,
         "emotion": {
-          "narrative_score": 0,
-          "supporting_score": 2,
-          "intensity": 0.6,
-          "valence": "positive",
+          "narrative_score": 2.2,
+          "supporting_score": 2.2,
+          "intensity": 2.2,
+          "valence": "mixed",
           "drivers": [
-            "progression_reward"
+            "narrative",
+            "environment_pressure",
+            "urgency"
           ],
-          "event": "大熔炉升至3级并继续推进聚落建设",
-          "reason": "没有新增剧情，但核心建筑成长形成明确的正向进度刺激"
+          "event": "雪夜对话后首次明确出现约一小时倒计时",
+          "reason": "环境压力与限时目标同时建立"
         },
         "experience": {
-          "score": 2,
+          "score": 3.0,
           "basis": {
-            "gameplay_concentration": "[Upgrade] T1 模拟聚落 (队列/等待)；有效玩法投入评为 2/5",
-            "feedback_density": "新内容：建造队列；成长反馈：大熔炉: Lv.3",
-            "goal_challenge": "当前目标：Tutorial: 配置建造队列，完成聚落任务",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "短剧情插段后进入倒计时界面"
           },
-          "summary": "队列等待削弱即时反馈，体验强度较为一般"
+          "summary": "倒计时把重复建设转化为有时限的准备目标"
         }
       },
       {
@@ -2169,109 +2419,106 @@
         "start": 480.0,
         "end": 540.0,
         "emotion": {
-          "narrative_score": 3,
-          "supporting_score": 4,
-          "intensity": 3.3,
+          "narrative_score": 3.2,
+          "supporting_score": 3.2,
+          "intensity": 3.2,
           "valence": "mixed",
           "drivers": [
             "narrative",
-            "environment_pressure",
-            "urgency",
-            "combat"
+            "combat",
+            "progression_reward"
           ],
-          "event": "肖恩首次率队离开营地并遭遇雪原敌人与野兽",
-          "reason": "首次离开安全区是明确剧情推进，严寒环境与即时战斗进一步放大紧张感"
+          "event": "首次离开聚落、英雄揭示并进入战斗",
+          "reason": "远征过场、角色成长和战斗快速连续兑现"
         },
         "experience": {
-          "score": 4,
+          "score": 4.3,
           "basis": {
-            "gameplay_concentration": "[New] T5 X玩法战斗 (出征/战斗)；有效玩法投入评为 4/5",
-            "feedback_density": "新内容：X玩法战斗；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 首次出征\nTutorial: 小队战斗",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "过场和对话后进入连续战斗"
           },
-          "summary": "首次出征目标清晰、战斗连续，形成强心流"
+          "summary": "08:35英雄揭示后08:45立即开战，体验快速抬升"
         }
       },
       {
         "start": 540.0,
         "end": 600.0,
         "emotion": {
-          "narrative_score": 3,
-          "supporting_score": 4,
-          "intensity": 3.3,
-          "valence": "mixed",
+          "narrative_score": 1.2,
+          "supporting_score": 3.5,
+          "intensity": 1.9,
+          "valence": "positive",
           "drivers": [
             "narrative",
-            "environment_pressure",
-            "progression_reward",
-            "relief"
+            "combat",
+            "progression_reward"
           ],
-          "event": "小队赢得首战并携带物资返回，但营地温度骤降至约零下47.5度",
-          "reason": "首战胜利形成正向收束，骤降温度和暴风雪倒计时保留强烈生存压力"
+          "event": "持续首战、两次强化选择并于09:23返城",
+          "reason": "战斗刺激为主，返城时间经逐秒复核纠正"
         },
         "experience": {
-          "score": 4,
+          "score": 4.2,
           "basis": {
-            "gameplay_concentration": "[Upgrade] T5 X玩法战斗 (结算/回投)；有效玩法投入评为 4/5",
-            "feedback_density": "新内容：战斗结算；成长反馈：战力: 约5万",
-            "goal_challenge": "当前目标：Main: 完成首战并领取奖励",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "09:02–09:06强化选择及09:23返城终止连续战斗"
           },
-          "summary": "首战胜利和奖励回投保持高密度正向反馈"
+          "summary": "连续战斗至09:22，强化选择增加决策但短暂打断"
         }
       },
       {
         "start": 600.0,
         "end": 660.0,
         "emotion": {
-          "narrative_score": 1,
-          "supporting_score": 2,
-          "intensity": 1.3,
-          "valence": "mixed",
+          "narrative_score": 0.5,
+          "supporting_score": 2.5,
+          "intensity": 1.1,
+          "valence": "positive",
           "drivers": [
             "narrative",
-            "environment_pressure",
             "progression_reward"
           ],
-          "event": "新英雄加入幸存者队伍",
-          "reason": "新角色带来轻度获得感，营地仍处严寒和暴风雪倒计时压力下"
+          "event": "10:20进入正式英雄召唤并于10:35揭示角色",
+          "reason": "成长反馈明确，主要由界面演出驱动"
         },
         "experience": {
-          "score": 3,
+          "score": 3.2,
           "basis": {
-            "gameplay_concentration": "[New] T6 英雄 (招募)；有效玩法投入评为 3/5",
-            "feedback_density": "新内容：英雄招募/英雄系统；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Tutorial: 首次英雄招募",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "召唤动画与详情教学打断主动操作"
           },
-          "summary": "英雄招募带来新鲜感，但主要由界面教学驱动"
+          "summary": "正式召唤链清晰但演出和详情页占据主要时间"
         }
       },
       {
         "start": 660.0,
         "end": 720.0,
         "emotion": {
-          "narrative_score": 1,
-          "supporting_score": 2,
-          "intensity": 1.3,
+          "narrative_score": 0.4,
+          "supporting_score": 2.2,
+          "intensity": 0.9,
           "valence": "positive",
           "drivers": [
             "narrative",
             "progression_reward"
           ],
-          "event": "新英雄完成编队并再次出战",
-          "reason": "招募成果迅速转化为可见战力和后续行动"
+          "event": "宝箱与英雄奖励整理后11:55再次出战",
+          "reason": "奖励密集但大部分时间停留在界面"
         },
         "experience": {
-          "score": 3,
+          "score": 2.9,
           "basis": {
-            "gameplay_concentration": "[Upgrade] T6 英雄 (编队/出战)；有效玩法投入评为 3/5",
-            "feedback_density": "新内容：英雄编队；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 新英雄入队并再次出战",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "英雄界面、弹窗与基地菜单持续至11:55"
           },
-          "summary": "新英雄快速进入编队和战斗，体验保持稳定"
+          "summary": "奖励反馈稳定，直到11:55才恢复战斗"
         }
       },
       {
@@ -2279,53 +2526,52 @@
         "end": 780.0,
         "emotion": {
           "narrative_score": 0,
-          "supporting_score": 2,
-          "intensity": 0.6,
-          "valence": "mixed",
+          "supporting_score": 2.8,
+          "intensity": 0.8,
+          "valence": "positive",
           "drivers": [
-            "environment_pressure",
-            "urgency",
+            "combat",
             "progression_reward"
           ],
-          "event": "暴风雪倒计时继续推进，建设与战斗收益开始往返回投",
-          "reason": "持续环境压力维持紧迫感，双循环形成轻度成长回报"
+          "event": "战斗、20秒基地管理、再次战斗",
+          "reason": "战斗反馈被12:10–12:30菜单段切断"
         },
         "experience": {
-          "score": 3,
+          "score": 3.4,
           "basis": {
-            "gameplay_concentration": "[Loop] T1 模拟聚落 ↔ T5 战斗；有效玩法投入评为 3/5",
-            "feedback_density": "新内容：本片未观察到新增系统；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 战斗推进/返回聚落建设",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "12:10–12:30基地菜单中断约20秒"
           },
-          "summary": "建设与战斗往返形成可理解的双循环"
+          "summary": "双循环成立，但基地菜单形成明显中断"
         }
       },
       {
         "start": 780.0,
         "end": 840.0,
         "emotion": {
-          "narrative_score": 0,
-          "supporting_score": 3,
-          "intensity": 0.9,
-          "valence": "mixed",
+          "narrative_score": 0.5,
+          "supporting_score": 3.2,
+          "intensity": 1.3,
+          "valence": "positive",
           "drivers": [
-            "environment_pressure",
-            "urgency",
+            "narrative",
+            "combat",
             "progression_reward"
           ],
-          "event": "暴风雪倒计时降至约51分钟，大熔炉升至4级并领取远征奖励",
-          "reason": "倒计时维持生存压力，核心建筑升级与奖励提供对冲性的正向刺激"
+          "event": "13:20胜利、13:30战利品、13:55建筑教学",
+          "reason": "胜利与奖励连续，但很快转入强制教学"
         },
         "experience": {
-          "score": 3,
+          "score": 3.8,
           "basis": {
-            "gameplay_concentration": "[Cont] T1 模拟聚落 ↔ T5 战斗；有效玩法投入评为 3/5",
-            "feedback_density": "新内容：本片未观察到新增系统；成长反馈：大熔炉: Lv.4",
-            "goal_challenge": "当前目标：Main: 完成战斗并升级模拟聚落",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "13:20后返城，13:55强制手指教学"
           },
-          "summary": "战斗收益投入建筑升级，成长反馈稳定"
+          "summary": "战斗结算与奖励形成高点，建筑教学结束心流"
         }
       },
       {
@@ -2361,22 +2607,24 @@
         "end": 960.0,
         "emotion": {
           "narrative_score": 0,
-          "supporting_score": 0,
-          "intensity": 0,
+          "supporting_score": 1.8,
+          "intensity": 0.5,
           "valence": "neutral",
-          "drivers": [],
-          "event": "",
-          "reason": ""
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "返城后连续浏览试炼、VIP、商品和背包",
+          "reason": "系统入口增多但连续菜单降低沉浸"
         },
         "experience": {
-          "score": 1,
+          "score": 2.2,
           "basis": {
-            "gameplay_concentration": "[New] T6 英雄 (养成)\n[New] T7 背包/商店；有效玩法投入评为 1/5",
-            "feedback_density": "新内容：英雄养成/背包/商店；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Tutorial: 英雄养成/背包",
-            "interruption": "英雄、背包、商店与成长界面连续出现，打断远征"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "15:25–15:55多层菜单连续切换"
           },
-          "summary": "英雄、背包和商店连续弹出，信息过载中断远征"
+          "summary": "战斗后被付费与系统菜单连续切断"
         }
       },
       {
@@ -2409,53 +2657,52 @@
         "start": 1020.0,
         "end": 1080.0,
         "emotion": {
-          "narrative_score": 1,
-          "supporting_score": 4,
-          "intensity": 1.9,
+          "narrative_score": 0,
+          "supporting_score": 3.8,
+          "intensity": 1.1,
           "valence": "positive",
           "drivers": [
-            "narrative",
             "combat",
             "progression_reward"
           ],
-          "event": "小队连续击退敌群并强化队伍",
-          "reason": "轻度胜利叙事叠加高密度连续战斗与技能反馈，形成明显兴奋感"
+          "event": "17:05–17:55无菜单打断的连续战斗",
+          "reason": "技能特效、关卡推进和持续反馈密集"
         },
         "experience": {
-          "score": 5,
+          "score": 4.5,
           "basis": {
-            "gameplay_concentration": "[Cont] T5 战斗；有效玩法投入评为 5/5",
-            "feedback_density": "新内容：战斗技能；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 连续战斗推进",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "未观察到主要菜单中断"
           },
-          "summary": "整分钟连续战斗且技能反馈密集，形成全段心流峰值"
+          "summary": "一整分钟连续战斗构成明确心流高点"
         }
       },
       {
         "start": 1080.0,
         "end": 1140.0,
         "emotion": {
-          "narrative_score": 1,
-          "supporting_score": 4,
-          "intensity": 1.9,
-          "valence": "mixed",
+          "narrative_score": 0,
+          "supporting_score": 3.6,
+          "intensity": 1.1,
+          "valence": "positive",
           "drivers": [
-            "narrative",
-            "combat"
+            "combat",
+            "progression_reward"
           ],
-          "event": "小队进入冰河区域继续高压作战",
-          "reason": "新地形带来探索期待，持续交战和队伍血量压力提供更强即时刺激"
+          "event": "18:10胜利后18:15立即进入冰河战斗",
+          "reason": "胜利反馈直接产生下一挑战"
         },
         "experience": {
-          "score": 5,
+          "score": 4.2,
           "basis": {
-            "gameplay_concentration": "[Upgrade] T5 战斗 (新地形)；有效玩法投入评为 5/5",
-            "feedback_density": "新内容：本片未观察到新增系统；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 推进至冰河区域",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "18:40返回聚落并转入建筑菜单"
           },
-          "summary": "新地形与连续战斗共同维持最高等级沉浸"
+          "summary": "胜利—新挑战闭环紧凑，18:40返城后结束"
         }
       },
       {
@@ -2463,22 +2710,24 @@
         "end": 1200.0,
         "emotion": {
           "narrative_score": 0,
-          "supporting_score": 0,
-          "intensity": 0,
+          "supporting_score": 1.5,
+          "intensity": 0.5,
           "valence": "neutral",
-          "drivers": [],
-          "event": "",
-          "reason": ""
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "19:30出现第二建造队列限时/永久解锁弹窗",
+          "reason": "成长需求被队列容量与付费入口阻断"
         },
         "experience": {
-          "score": 1,
+          "score": 2.4,
           "basis": {
-            "gameplay_concentration": "[Cont] T1 模拟聚落；有效玩法投入评为 1/5",
-            "feedback_density": "新内容：本片未观察到新增系统；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 返回聚落完成建筑升级",
-            "interruption": "连续战斗后整分钟切回任务和建筑菜单"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "雇佣队列弹窗直接打断建设节奏"
           },
-          "summary": "从战斗切回建筑菜单，节奏出现明显断裂"
+          "summary": "建设反馈存在，但付费队列摩擦明显"
         }
       },
       {
@@ -2588,87 +2837,8 @@
         "start": 1440.0,
         "end": 1500.0,
         "emotion": {
-          "narrative_score": 3,
-          "supporting_score": 4,
-          "intensity": 3.3,
-          "valence": "positive",
-          "drivers": [
-            "narrative",
-            "progression_reward",
-            "relief"
-          ],
-          "event": "模拟聚落发展为完整主城",
-          "reason": "比尔的避难所蓝图得到阶段性兑现，中型城镇揭示形成显著成长和安全感"
-        },
-        "experience": {
-          "score": 4,
-          "basis": {
-            "gameplay_concentration": "[New] T9 新设施 (剧情引导)；有效玩法投入评为 4/5",
-            "feedback_density": "新内容：新设施引导；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 跟随角色查看新设施",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
-          },
-          "summary": "完整主城揭示兑现建设目标，空间与功能同时展开"
-        }
-      },
-      {
-        "start": 1500.0,
-        "end": 1560.0,
-        "emotion": {
-          "narrative_score": 3,
-          "supporting_score": 5,
-          "intensity": 3.6,
-          "valence": "positive",
-          "drivers": [
-            "narrative",
-            "progression_reward"
-          ],
-          "event": "肖恩进入SLG大地图并接触外部城镇",
-          "reason": "单城求生升级为世界探索与势力扩张，大地图行军和目标集中开放形成强刺激"
-        },
-        "experience": {
-          "score": 5,
-          "basis": {
-            "gameplay_concentration": "[New] T10 SLG大地图 (编队/探索)；有效玩法投入评为 5/5",
-            "feedback_density": "新内容：英雄编组/章节任务/SLG探索；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 编队并进入SLG大地图",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
-          },
-          "summary": "大地图、编队和探索集中开放，形成后段体验峰值"
-        }
-      },
-      {
-        "start": 1560.0,
-        "end": 1620.0,
-        "emotion": {
-          "narrative_score": 1,
-          "supporting_score": 3,
-          "intensity": 1.6,
-          "valence": "positive",
-          "drivers": [
-            "narrative",
-            "progression_reward"
-          ],
-          "event": "团队开始建设大地图工业设施",
-          "reason": "新世界目标转化为具体建设行动，灯塔等新设施提供清晰进度反馈"
-        },
-        "experience": {
-          "score": 4,
-          "basis": {
-            "gameplay_concentration": "[Upgrade] T10 大地图 (设施建设)；有效玩法投入评为 4/5",
-            "feedback_density": "新内容：工业设施建造；成长反馈：本片未观察到明确成长数值",
-            "goal_challenge": "当前目标：Main: 建造大地图工业设施",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
-          },
-          "summary": "工业设施把大地图空间转化为连续建设目标"
-        }
-      },
-      {
-        "start": 1620.0,
-        "end": 1648.1666666666667,
-        "emotion": {
-          "narrative_score": 2,
-          "supporting_score": 3,
+          "narrative_score": 1.5,
+          "supporting_score": 4.0,
           "intensity": 2.3,
           "valence": "positive",
           "drivers": [
@@ -2676,18 +2846,95 @@
             "progression_reward",
             "relief"
           ],
-          "event": "队伍回城并回看阶段成长成果",
-          "reason": "主城与大地图循环以章节奖励和大熔炉6级成果收束，形成阶段性满足"
+          "event": "完整主城展开、核心建筑完成并出现新设施",
+          "reason": "长期建设目标在24:20–24:50集中兑现"
         },
         "experience": {
-          "score": 4,
+          "score": 4.6,
           "basis": {
-            "gameplay_concentration": "[Loop] T1 主城 ↔ T10 大地图；有效玩法投入评为 4/5",
-            "feedback_density": "新内容：本片未观察到新增系统；成长反馈：战力: 约9万",
-            "goal_challenge": "当前目标：Main: 回城继续升级",
-            "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "任务列表仅形成短暂中断"
           },
-          "summary": "回城升级和战力成果使主城—大地图循环正向收束"
+          "summary": "城市规模、核心完成和新设施构成强成长高潮"
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 1.2,
+          "supporting_score": 3.5,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "25:10–25:30短暂进入SLG大地图后返回主城",
+          "reason": "新地图刺激强，但强制教学与任务面板连续打断"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "25:00转场、25:20强制教学、25:40任务面板"
+          },
+          "summary": "大地图新鲜感明确，但不是持续一整分钟的高心流"
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1.8,
+          "intensity": 0.5,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "返回主城后连续升级建筑与清理章节任务",
+          "reason": "主要是常规建设反馈，不是大地图工业扩张"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "26:30白屏与章节任务界面打断"
+          },
+          "summary": "主城建设稳定但菜单重复"
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1648.1666666666667,
+        "emotion": {
+          "narrative_score": 0,
+          "supporting_score": 1.0,
+          "intensity": 0.3,
+          "valence": "neutral",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "建筑计时、章节任务与录屏收尾",
+          "reason": "反馈稀疏且存在加载或录制结束"
+        },
+        "experience": {
+          "score": 1.9,
+          "basis": {
+            "gameplay_concentration": "依据密集审阅记录本片主要操作与连续性",
+            "feedback_density": "依据片内战斗、成长、建设和结算反馈密度",
+            "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
+            "interruption": "建筑计时与27:20黑底画面"
+          },
+          "summary": "尾段以等待、任务清理和黑屏收尾"
         }
       }
     ]
@@ -2770,7 +3017,7 @@
           1
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-000-evidence-01-000005000.jpg"
+          "screenshots/frost/frames/slice-000-main-000030000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.88,
@@ -2793,8 +3040,7 @@
           2
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-002-evidence-02-000145000.jpg",
-          "screenshots/frost/frames/slice-002-evidence-03-000175000.jpg"
+          "screenshots/frost/frames/slice-002-evidence-02-000145000.jpg"
         ],
         "status": "confirmed"
       },
@@ -2809,7 +3055,7 @@
           3
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-003-evidence-01-000185000.jpg"
+          "screenshots/frost/frames/slice-003-main-000210000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.88,
@@ -2833,7 +3079,7 @@
           4
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-004-evidence-01-000245000.jpg"
+          "screenshots/frost/frames/slice-004-main-000270000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.88,
@@ -2927,8 +3173,7 @@
           9
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-008-main-000510000.jpg",
-          "screenshots/frost/frames/slice-009-evidence-01-000545000.jpg"
+          "screenshots/frost/frames/slice-008-main-000510000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -2945,7 +3190,7 @@
         "id": "hero-recruit-and-deploy",
         "type": "micro_loop",
         "title": "英雄招募入队",
-        "summary": "通过招募和编队把新英雄接入下一次战斗。",
+        "summary": "10:20起完成正式英雄召唤、奖励整理，并于11:55再次出战。",
         "macro_loop_id": "hero_growth",
         "loop_family_id": "hero_growth",
         "slice_indices": [
@@ -2953,16 +3198,16 @@
           11
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-010-evidence-01-000625000.jpg",
-          "screenshots/frost/frames/slice-011-main-000690000.jpg"
+          "screenshots/frost/frames/slice-010-main-000630000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
         "motivation": "首次远征后需要强化队伍结构来应对更强敌人。",
         "behaviors": [
-          "进入英雄招募",
-          "获得新英雄",
-          "调整编队并重新出战"
+          "进入正式英雄召唤",
+          "揭示并查看英雄",
+          "领取宝箱与碎片",
+          "11:55再次出战"
         ],
         "reward": "新英雄加入队伍，战斗阵容和战力结构得到强化。",
         "next_motivation": "用强化后的队伍推进更深区域。"
@@ -2979,7 +3224,7 @@
           13
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-013-main-000810000.jpg"
+          "screenshots/frost/frames/slice-012-main-000750000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.88,
@@ -3027,7 +3272,7 @@
           16
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-015-evidence-02-000925000.jpg"
+          "screenshots/frost/frames/slice-015-main-000930000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -3052,8 +3297,7 @@
           18
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-017-evidence-01-001025000.jpg",
-          "screenshots/frost/frames/slice-018-evidence-01-001085000.jpg"
+          "screenshots/frost/frames/slice-017-main-001050000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.88,
@@ -3101,7 +3345,7 @@
           20
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-020-evidence-01-001200000.jpg"
+          "screenshots/frost/frames/slice-020-main-001230000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -3124,9 +3368,7 @@
           20
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-020-main-001230000.jpg",
-          "screenshots/frost/frames/slice-020-evidence-02-001232000.jpg",
-          "screenshots/frost/frames/slice-020-evidence-03-001236000.jpg"
+          "screenshots/frost/frames/slice-020-main-001230000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -3149,7 +3391,7 @@
           21
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-021-evidence-01-001285000.jpg"
+          "screenshots/frost/frames/slice-021-main-001290000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -3174,8 +3416,7 @@
           23
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-022-evidence-02-001375000.jpg",
-          "screenshots/frost/frames/slice-023-main-001410000.jpg"
+          "screenshots/frost/frames/slice-022-main-001350000.jpg"
         ],
         "status": "confirmed",
         "confidence": 0.78,
@@ -3198,8 +3439,7 @@
           24
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-024-main-001470000.jpg",
-          "screenshots/frost/frames/slice-024-evidence-02-001475000.jpg"
+          "screenshots/frost/frames/slice-024-main-001470000.jpg"
         ],
         "status": "confirmed"
       },
@@ -3207,13 +3447,13 @@
         "id": "slg-outside-exit",
         "type": "outside_exit",
         "title": "进入SLG大地图",
-        "summary": "编队并开始大地图探索；具体解锁门槛仍需确认，不属于本图主体范围。",
+        "summary": "25:10–25:30短暂进入SLG大地图并完成教学；25:50后返回主城，不记录外部城镇关系。",
         "macro_loop_id": "",
         "slice_indices": [
           25
         ],
         "evidence_frames": [
-          "screenshots/frost/frames/slice-025-evidence-01-001505000.jpg"
+          "screenshots/frost/frames/slice-025-main-001530000.jpg"
         ],
         "status": "pending_confirmation"
       }

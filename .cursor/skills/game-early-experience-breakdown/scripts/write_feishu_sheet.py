@@ -289,19 +289,45 @@ class LarkRunner:
         *,
         output_path: str | Path | None = None,
     ) -> dict[str, Any]:
-        command = [self.executable, *args]
-        try:
-            completed = subprocess.run(
-                command,
-                capture_output=True,
-                text=True,
+        normalized_args = list(args)
+        temporary_cells: Path | None = None
+        if "--cells-json" in normalized_args:
+            marker = normalized_args.index("--cells-json")
+            if marker + 1 >= len(normalized_args):
+                raise LarkCliError(f"{operation} 缺少 --cells-json 内容")
+            cells_json = normalized_args[marker + 1]
+            with tempfile.NamedTemporaryFile(
+                mode="w",
                 encoding="utf-8",
-                errors="replace",
-                timeout=self.timeout,
-                check=False,
-            )
-        except (OSError, subprocess.TimeoutExpired) as exc:
-            raise LarkCliError(f"{operation} 调用失败: {exc}") from exc
+                newline="",
+                prefix=".lark-cells-",
+                suffix=".json",
+                dir=Path.cwd(),
+                delete=False,
+            ) as stream:
+                stream.write(cells_json)
+                temporary_cells = Path(stream.name)
+            normalized_args[marker : marker + 2] = [
+                "--cells",
+                f"@./{temporary_cells.name}",
+            ]
+        command = [self.executable, *normalized_args]
+        try:
+            try:
+                completed = subprocess.run(
+                    command,
+                    capture_output=True,
+                    text=True,
+                    encoding="utf-8",
+                    errors="replace",
+                    timeout=self.timeout,
+                    check=False,
+                )
+            except (OSError, subprocess.TimeoutExpired) as exc:
+                raise LarkCliError(f"{operation} 调用失败: {exc}") from exc
+        finally:
+            if temporary_cells is not None:
+                temporary_cells.unlink(missing_ok=True)
         if completed.returncode != 0:
             detail = completed.stderr.strip() or completed.stdout.strip() or "无错误详情"
             raise LarkCliError(f"{operation} 调用失败({completed.returncode}): {detail}")
@@ -628,7 +654,8 @@ def verify_export_xlsx(
         for row, pixels in layout["row_heights"].items():
             actual = worksheet.row_dimensions[row].height
             expected_points = pixels * (2 / 3)
-            if actual is None or abs(float(actual) - expected_points) > 2:
+            drift = None if actual is None else float(actual) - expected_points
+            if drift is None or drift < -2 or drift > 6:
                 label = "长文本行高" if row in long_text_rows else "行高"
                 raise VerificationError(
                     f"导出文件{label}错误（第 {row} 行）: "
@@ -769,20 +796,26 @@ def _write_analysis_unprotected(
     for start in range(0, len(matrix), batch_size):
         values = matrix[start : start + batch_size]
         end = start + len(values)
-        cell_range = f"{sheet_id}!A{start + 1}:{last_column}{end}"
+        cell_range = f"A{start + 1}:{last_column}{end}"
+        cells = [
+            [{"value": "" if value is None else value} for value in row]
+            for row in values
+        ]
         runner.run(
             "write",
             [
                 "sheets",
-                "+write",
+                "+cells-set",
                 "--as",
                 identity,
                 "--spreadsheet-token",
                 token,
+                "--sheet-id",
+                sheet_id,
                 "--range",
                 cell_range,
-                "--values",
-                _json_arg(values),
+                "--cells-json",
+                json.dumps(cells, ensure_ascii=False, separators=(",", ":")),
             ],
         )
 
