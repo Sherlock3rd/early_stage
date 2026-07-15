@@ -734,14 +734,20 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     });
   }
 
-  function stageAverageExperienceObservations(slices, curvePoints) {
+  function stageAverageExperienceObservations(
+    slices,
+    curvePoints,
+    endTime = Number.POSITIVE_INFINITY
+  ) {
     const stages = new Map();
     slices.forEach((slice, index) => {
       const range = slice.stage_range;
       const stageId = String(range.stage_id);
       if (!stages.has(stageId)) {
         stages.set(stageId, {
-          time: (Number(range.start) + Number(range.end)) / 2,
+          time: (
+            Number(range.start) + Math.min(Number(range.end), Number(endTime))
+          ) / 2,
           total: 0,
           count: 0
         });
@@ -838,24 +844,44 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     const max = Number(curve.scale.max);
     const scoreY = (score) => padding.top + (max - Number(score)) / (max - min) * plotHeight;
     const timeX = (seconds) => padding.left + Number(seconds) / duration * plotWidth;
-    const predictionTimes = curve.points.map(
-      (point) => (Number(point.start) + Number(point.end)) / 2
+    const slgMilestone = (data.timeline_milestones || []).find(
+      (milestone) => milestone.type === "slg_entry"
     );
+    const trendEndTime = slgMilestone
+      ? Number(slgMilestone.timestamp)
+      : duration;
+    const trendEndSliceIndex = slgMilestone
+      ? Number(slgMilestone.slice_index)
+      : curve.points.length - 1;
+    const trendSlices = data.slices.slice(0, trendEndSliceIndex + 1);
+    const trendCurvePoints = curve.points.slice(0, trendEndSliceIndex + 1);
+    const firstPredictionTime = (
+      Number(curve.points[0].start) + Number(curve.points[0].end)
+    ) / 2;
     const stageObservations = stageAverageExperienceObservations(
-      data.slices,
-      curve.points
+      trendSlices,
+      trendCurvePoints,
+      trendEndTime
     );
     const trendSummary = linearRegressionTrend(
       stageObservations,
       min,
       max,
-      predictionTimes
+      [firstPredictionTime, trendEndTime]
     );
     trendSummary.sampleBasis = "stage_average";
     trendSummary.sampleCount = stageObservations.length;
+    trendSummary.endTime = trendEndTime;
+    const predictTrend = (time) => Math.min(
+      max,
+      Math.max(min, trendSummary.slope * Number(time) + trendSummary.intercept)
+    );
     const points = curve.points.map((point, index) => {
       const slice = data.slices[index];
       const midpoint = (Number(point.start) + Number(point.end)) / 2;
+      const experienceTrend = index <= trendEndSliceIndex
+        ? predictTrend(Math.min(midpoint, trendEndTime))
+        : null;
       return {
         index,
         start: Number(point.start),
@@ -868,7 +894,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         emotionEvent: point.emotion.event,
         emotionReason: point.emotion.reason,
         experienceScore: Number(point.experience.score),
-        experienceTrend: trendSummary.predictions[index],
+        experienceTrend,
         experienceBasis: { ...point.experience.basis },
         experienceSummary: point.experience.summary,
         climax: exactValue(slice.narrative_climax.judgement) === "climax",
@@ -877,7 +903,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         y: {
           emotion: scoreY(point.emotion.intensity),
           experience: scoreY(point.experience.score),
-          trend: scoreY(trendSummary.predictions[index])
+          trend: experienceTrend === null ? null : scoreY(experienceTrend)
         }
       };
     });
@@ -892,9 +918,18 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       duration,
       colors: { ...CURVE_COLORS },
       points,
-      trendPoints: points.length
-        ? [points[0], points[points.length - 1]]
-        : [],
+      trendPoints: points.length ? [
+        {
+          x: timeX(firstPredictionTime),
+          y: { trend: scoreY(trendSummary.openingPrediction) }
+        },
+        {
+          x: timeX(trendEndTime),
+          y: { trend: scoreY(trendSummary.endingPrediction) }
+        }
+      ] : [],
+      trendEndTime,
+      trendEndSliceIndex,
       trendSummary
     };
   }
@@ -1002,8 +1037,11 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       .map((driver) => driverLabels[driver] || driver)
       .map(escapeHtml)
       .join(" / ");
+    const trendText = Number.isFinite(point.experienceTrend)
+      ? `回归预测 ${Number(point.experienceTrend).toFixed(2)}`
+      : "已超出大地图入口回归范围";
     return `<strong>${formatTime(point.start)}–${formatTime(point.end)}</strong>
-      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>体验强度 ${Number(point.experienceScore).toFixed(1)} · 回归预测 ${Number(point.experienceTrend).toFixed(2)}</span></div>
+      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>体验强度 ${Number(point.experienceScore).toFixed(1)} · ${trendText}</span></div>
       <div class="emotion-tooltip-scores"><span>剧情刺激 ${Number(point.narrativeScore).toFixed(1)}</span><span>其他刺激 ${Number(point.supportingScore).toFixed(1)}</span>${drivers ? `<span>刺激来源 ${drivers}</span>` : ""}</div>
       ${point.emotionEvent ? `<p><b>主要刺激：</b>${escapeHtml(point.emotionEvent)}<br><b>评分原因：</b>${escapeHtml(point.emotionReason)}</p>` : ""}
       <div class="experience-basis">
@@ -1049,7 +1087,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   }
 
   function globalCurvesGuideMarkup() {
-    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>先计算各阶段的体验平均分，再让每个阶段以相同权重参与真实时间线性回归；原始时间片评分和折线不修改。</p>`;
+    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>统计范围从录屏开始到首次进入SLG大地图，包含入口所在时间片；先计算范围内各阶段的体验平均分，再让每个阶段以相同权重参与真实时间线性回归。入口后的实际折线继续保留，但不参与回归。</p>`;
   }
 
   function loadInitialData(fetcher, onData, onError) {
@@ -1498,7 +1536,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       const labels = { rising: "上升", flat: "持平", falling: "下降" };
       byId("experience-trend-summary").innerHTML = `
         <span>回归起点 <strong>${trend.openingPrediction.toFixed(2)}</strong></span>
-        <span>回归终点 <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
+        <span>大地图入口 ${formatTime(trend.endTime)} <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
         <span>变化 <strong>${trend.delta >= 0 ? "+" : ""}${trend.delta.toFixed(2)}</strong></span>
         <b class="trend-${trend.direction}">${labels[trend.direction]}</b>`;
       byId("emotion-curve-error").hidden = true;
