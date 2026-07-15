@@ -7,6 +7,7 @@
     experience: "#65a9ff",
     trend: "#66e3c4"
   };
+  const DATASET_ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,63}$/;
   const state = {
     data: null,
     visible: [],
@@ -34,13 +35,50 @@
   const exactValue = (value) => String(value || "").trim().toLocaleLowerCase();
   function resolveAnalysisDataPath(search, configured = "data.json") {
     const dataset = new URLSearchParams(String(search || "")).get("dataset");
-    return dataset && /^[a-z0-9][a-z0-9-]{0,63}$/.test(dataset)
+    return dataset && DATASET_ID_PATTERN.test(dataset)
       ? `data/${dataset}.json`
       : configured;
   }
-  const visibleDimensionText = (slice) => DIMENSIONS
-    .map((dimension) => slice.dimensions[dimension]?.fact || "")
-    .filter(Boolean);
+
+  function resolveCurrentDatasetId(search, configured = "data.json") {
+    const requested = new URLSearchParams(String(search || "")).get("dataset");
+    if (requested && DATASET_ID_PATTERN.test(requested)) return requested;
+    const configuredMatch = String(configured).match(
+      /^data\/([a-z0-9][a-z0-9-]{0,63})\.json$/
+    );
+    return configuredMatch ? configuredMatch[1] : "";
+  }
+
+  function normalizeDatasetManifest(payload, currentId = "") {
+    const datasets = Array.isArray(payload?.datasets) ? payload.datasets : [];
+    const normalized = [];
+    datasets.forEach((entry) => {
+      const id = String(entry?.id || "");
+      if (!DATASET_ID_PATTERN.test(id) || normalized.some((item) => item.id === id)) {
+        return;
+      }
+      const label = String(entry?.label || "").trim() || id;
+      normalized.push({ id, label });
+    });
+    if (
+      DATASET_ID_PATTERN.test(currentId)
+      && !normalized.some((item) => item.id === currentId)
+    ) {
+      normalized.push({ id: currentId, label: currentId });
+    }
+    return normalized;
+  }
+
+  function datasetSwitchTarget(href, datasetId) {
+    if (!DATASET_ID_PATTERN.test(String(datasetId || ""))) return "";
+    try {
+      const target = new URL(String(href));
+      target.searchParams.set("dataset", datasetId);
+      return target.toString();
+    } catch {
+      return "";
+    }
+  }
 
   function computeTimelineLayout(duration, slices) {
     return {
@@ -74,21 +112,11 @@
     return [...stages.values()];
   }
 
-  function sliceSearchText(slice) {
-    return [
-      slice.stage_range.name,
-      ...visibleDimensionText(slice),
-      ...slice.open_questions
-    ].join(" ").toLocaleLowerCase();
-  }
-
   function matchesSlice(slice, filters) {
-    const keyword = exactValue(filters.keyword);
     const highlight = exactValue(filters.highlight);
     const narrative = exactValue(slice.narrative_climax.judgement);
     const flow = exactValue(slice.flow.judgement);
-    return (!keyword || sliceSearchText(slice).includes(keyword))
-      && (!filters.stage || slice.stage_range.name === filters.stage)
+    return (!filters.stage || slice.stage_range.name === filters.stage)
       && (!highlight || narrative === highlight || flow === highlight);
   }
 
@@ -904,7 +932,10 @@
       macroLoopSegments,
       relatedLoopNavigationMarkup,
       relatedMicroLoops,
+      datasetSwitchTarget,
+      normalizeDatasetManifest,
       resolveAnalysisDataPath,
+      resolveCurrentDatasetId,
       showAllMacroLoops,
       updateMacroLoopVisibility,
       adjacentGalleryIndex,
@@ -1205,7 +1236,6 @@
   function applyFilters() {
     if (!state.data) return;
     const filters = {
-      keyword: byId("keyword-filter").value,
       stage: byId("stage-filter").value,
       highlight: byId("highlight-filter").value
     };
@@ -1245,11 +1275,27 @@
     byId("video-overview").textContent = `读取失败：${error.message}`;
   }
 
-  ["keyword-filter", "stage-filter", "highlight-filter"].forEach((id) => {
+  function renderDatasetSwitch(payload, currentId) {
+    const select = byId("dataset-switch");
+    const datasets = normalizeDatasetManifest(payload, currentId);
+    const options = datasets.map((dataset) => {
+      const option = document.createElement("option");
+      option.value = dataset.id;
+      option.textContent = dataset.label;
+      return option;
+    });
+    select.replaceChildren(...options);
+    if (datasets.some((dataset) => dataset.id === currentId)) {
+      select.value = currentId;
+    }
+    select.disabled = datasets.length <= 1;
+  }
+
+  ["stage-filter", "highlight-filter"].forEach((id) => {
     byId(id).addEventListener("input", applyFilters);
   });
   byId("reset-filters").addEventListener("click", () => {
-    ["keyword-filter", "stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
+    ["stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
     applyFilters();
   });
   byId("emotion-curve-legend").addEventListener("click", (event) => {
@@ -1439,6 +1485,22 @@
     window.location.search,
     configuredDataFile
   );
+  const currentDatasetId = resolveCurrentDatasetId(
+    window.location.search,
+    configuredDataFile
+  );
+  renderDatasetSwitch({ datasets: [] }, currentDatasetId);
+  byId("dataset-switch").addEventListener("change", (event) => {
+    const target = datasetSwitchTarget(window.location.href, event.target.value);
+    if (target && target !== window.location.href) window.location.assign(target);
+  });
+  fetch("data/datasets.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`data/datasets.json 返回 ${response.status}`);
+      return response.json();
+    })
+    .then((manifest) => renderDatasetSwitch(manifest, currentDatasetId))
+    .catch(() => renderDatasetSwitch({ datasets: [] }, currentDatasetId));
   loadInitialData(
     () => fetch(initialDataFile, { cache: "no-store" }).then((response) => {
       if (!response.ok) throw new Error(`${initialDataFile} 返回 ${response.status}`);

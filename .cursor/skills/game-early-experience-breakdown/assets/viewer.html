@@ -14,12 +14,17 @@
       <h1 id="game-title">游戏前期体验拆解</h1>
       <p id="video-overview" class="muted">正在读取 data.json…</p>
     </div>
-    <div id="summary-cards" class="summary-cards" aria-label="视频概览"></div>
+    <div class="hero-tools">
+      <label class="dataset-picker">
+        <span>拆解项目</span>
+        <select id="dataset-switch" aria-label="切换拆解项目"></select>
+      </label>
+      <div id="summary-cards" class="summary-cards" aria-label="视频概览"></div>
+    </div>
   </header>
 
   <main>
     <section id="filters" class="filters" aria-label="时间片筛选">
-      <label>关键词<input id="keyword-filter" type="search" placeholder="搜索维度描述或待确认项"></label>
       <label>阶段<select id="stage-filter"><option value="">全部阶段</option></select></label>
       <label>关键节点<select id="highlight-filter">
         <option value="">全部节点</option>

@@ -33,6 +33,9 @@ h2, h3, p { margin-top: 0; }
 h2, h3 { margin-bottom: 0; }
 .eyebrow { margin: 0; color: var(--accent); font-size: 12px; font-weight: 800; letter-spacing: .14em; }
 .muted { color: var(--muted); }
+.hero-tools { display: grid; justify-items: end; gap: 10px; }
+.dataset-picker { display: grid; min-width: 190px; gap: 5px; color: var(--muted); font-size: 11px; }
+.dataset-picker select { width: 100%; border: 1px solid var(--accent); border-radius: 9px; padding: 8px 34px 8px 11px; background: var(--panel); color: var(--text); }
 .summary-cards { display: flex; gap: 8px; flex-wrap: wrap; justify-content: end; }
 .summary-card { min-width: 88px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--panel); }
 .summary-card strong, .summary-card span { display: block; }
@@ -41,9 +44,8 @@ h2, h3 { margin-bottom: 0; }
 main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 
 .filters { position: sticky; top: 0; z-index: 8; display: flex; align-items: end; flex-wrap: wrap; gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: rgba(19, 27, 39, .96); box-shadow: 0 10px 28px #0005; backdrop-filter: blur(10px); }
-.filters label { display: grid; flex: 1 1 180px; gap: 4px; color: var(--muted); font-size: 11px; }
-.filters label:first-child { flex-grow: 2; }
-.filters input, .filters select { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); color: var(--text); }
+.filters label { display: grid; flex: 1 1 240px; gap: 4px; color: var(--muted); font-size: 11px; }
+.filters select { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); color: var(--text); }
 .filters button, .slice-navigation button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 13px; background: transparent; color: var(--accent); }
 .filters button:hover, .slice-navigation button:hover { background: #1d443e; }
 .filters button:disabled, .slice-navigation button:disabled { cursor: not-allowed; opacity: .35; }
@@ -282,6 +284,8 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 
 @media (max-width: 820px) {
   .hero { align-items: start; flex-direction: column; }
+  .hero-tools { width: 100%; justify-items: start; }
+  .dataset-picker { width: min(100%, 320px); }
   .summary-cards { justify-content: start; }
   .hero, main { padding: 18px 14px; }
   .detail-content { grid-template-columns: 1fr; }
@@ -344,12 +348,17 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       <h1 id="game-title">游戏前期体验拆解</h1>
       <p id="video-overview" class="muted">正在读取 data.json…</p>
     </div>
-    <div id="summary-cards" class="summary-cards" aria-label="视频概览"></div>
+    <div class="hero-tools">
+      <label class="dataset-picker">
+        <span>拆解项目</span>
+        <select id="dataset-switch" aria-label="切换拆解项目"></select>
+      </label>
+      <div id="summary-cards" class="summary-cards" aria-label="视频概览"></div>
+    </div>
   </header>
 
   <main>
     <section id="filters" class="filters" aria-label="时间片筛选">
-      <label>关键词<input id="keyword-filter" type="search" placeholder="搜索维度描述或待确认项"></label>
       <label>阶段<select id="stage-filter"><option value="">全部阶段</option></select></label>
       <label>关键节点<select id="highlight-filter">
         <option value="">全部节点</option>
@@ -440,6 +449,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     experience: "#65a9ff",
     trend: "#66e3c4"
   };
+  const DATASET_ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,63}$/;
   const state = {
     data: null,
     visible: [],
@@ -467,13 +477,50 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   const exactValue = (value) => String(value || "").trim().toLocaleLowerCase();
   function resolveAnalysisDataPath(search, configured = "data.json") {
     const dataset = new URLSearchParams(String(search || "")).get("dataset");
-    return dataset && /^[a-z0-9][a-z0-9-]{0,63}$/.test(dataset)
+    return dataset && DATASET_ID_PATTERN.test(dataset)
       ? `data/${dataset}.json`
       : configured;
   }
-  const visibleDimensionText = (slice) => DIMENSIONS
-    .map((dimension) => slice.dimensions[dimension]?.fact || "")
-    .filter(Boolean);
+
+  function resolveCurrentDatasetId(search, configured = "data.json") {
+    const requested = new URLSearchParams(String(search || "")).get("dataset");
+    if (requested && DATASET_ID_PATTERN.test(requested)) return requested;
+    const configuredMatch = String(configured).match(
+      /^data\/([a-z0-9][a-z0-9-]{0,63})\.json$/
+    );
+    return configuredMatch ? configuredMatch[1] : "";
+  }
+
+  function normalizeDatasetManifest(payload, currentId = "") {
+    const datasets = Array.isArray(payload?.datasets) ? payload.datasets : [];
+    const normalized = [];
+    datasets.forEach((entry) => {
+      const id = String(entry?.id || "");
+      if (!DATASET_ID_PATTERN.test(id) || normalized.some((item) => item.id === id)) {
+        return;
+      }
+      const label = String(entry?.label || "").trim() || id;
+      normalized.push({ id, label });
+    });
+    if (
+      DATASET_ID_PATTERN.test(currentId)
+      && !normalized.some((item) => item.id === currentId)
+    ) {
+      normalized.push({ id: currentId, label: currentId });
+    }
+    return normalized;
+  }
+
+  function datasetSwitchTarget(href, datasetId) {
+    if (!DATASET_ID_PATTERN.test(String(datasetId || ""))) return "";
+    try {
+      const target = new URL(String(href));
+      target.searchParams.set("dataset", datasetId);
+      return target.toString();
+    } catch {
+      return "";
+    }
+  }
 
   function computeTimelineLayout(duration, slices) {
     return {
@@ -507,21 +554,11 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     return [...stages.values()];
   }
 
-  function sliceSearchText(slice) {
-    return [
-      slice.stage_range.name,
-      ...visibleDimensionText(slice),
-      ...slice.open_questions
-    ].join(" ").toLocaleLowerCase();
-  }
-
   function matchesSlice(slice, filters) {
-    const keyword = exactValue(filters.keyword);
     const highlight = exactValue(filters.highlight);
     const narrative = exactValue(slice.narrative_climax.judgement);
     const flow = exactValue(slice.flow.judgement);
-    return (!keyword || sliceSearchText(slice).includes(keyword))
-      && (!filters.stage || slice.stage_range.name === filters.stage)
+    return (!filters.stage || slice.stage_range.name === filters.stage)
       && (!highlight || narrative === highlight || flow === highlight);
   }
 
@@ -1337,7 +1374,10 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       macroLoopSegments,
       relatedLoopNavigationMarkup,
       relatedMicroLoops,
+      datasetSwitchTarget,
+      normalizeDatasetManifest,
       resolveAnalysisDataPath,
+      resolveCurrentDatasetId,
       showAllMacroLoops,
       updateMacroLoopVisibility,
       adjacentGalleryIndex,
@@ -1638,7 +1678,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   function applyFilters() {
     if (!state.data) return;
     const filters = {
-      keyword: byId("keyword-filter").value,
       stage: byId("stage-filter").value,
       highlight: byId("highlight-filter").value
     };
@@ -1678,11 +1717,27 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     byId("video-overview").textContent = `读取失败：${error.message}`;
   }
 
-  ["keyword-filter", "stage-filter", "highlight-filter"].forEach((id) => {
+  function renderDatasetSwitch(payload, currentId) {
+    const select = byId("dataset-switch");
+    const datasets = normalizeDatasetManifest(payload, currentId);
+    const options = datasets.map((dataset) => {
+      const option = document.createElement("option");
+      option.value = dataset.id;
+      option.textContent = dataset.label;
+      return option;
+    });
+    select.replaceChildren(...options);
+    if (datasets.some((dataset) => dataset.id === currentId)) {
+      select.value = currentId;
+    }
+    select.disabled = datasets.length <= 1;
+  }
+
+  ["stage-filter", "highlight-filter"].forEach((id) => {
     byId(id).addEventListener("input", applyFilters);
   });
   byId("reset-filters").addEventListener("click", () => {
-    ["keyword-filter", "stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
+    ["stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
     applyFilters();
   });
   byId("emotion-curve-legend").addEventListener("click", (event) => {
@@ -1872,6 +1927,22 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     window.location.search,
     configuredDataFile
   );
+  const currentDatasetId = resolveCurrentDatasetId(
+    window.location.search,
+    configuredDataFile
+  );
+  renderDatasetSwitch({ datasets: [] }, currentDatasetId);
+  byId("dataset-switch").addEventListener("change", (event) => {
+    const target = datasetSwitchTarget(window.location.href, event.target.value);
+    if (target && target !== window.location.href) window.location.assign(target);
+  });
+  fetch("data/datasets.json", { cache: "no-store" })
+    .then((response) => {
+      if (!response.ok) throw new Error(`data/datasets.json 返回 ${response.status}`);
+      return response.json();
+    })
+    .then((manifest) => renderDatasetSwitch(manifest, currentDatasetId))
+    .catch(() => renderDatasetSwitch({ datasets: [] }, currentDatasetId));
   loadInitialData(
     () => fetch(initialDataFile, { cache: "no-store" }).then((response) => {
       if (!response.ok) throw new Error(`${initialDataFile} 返回 ${response.status}`);
