@@ -136,6 +136,11 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 .timeline-node.narrative-high { box-shadow: inset 0 -4px var(--hot); }
 .timeline-node.narrative-low { box-shadow: inset 0 -4px var(--low); }
 .timeline-node.flow-high { box-shadow: inset 0 -4px var(--flow); }
+.timeline-milestone { position: absolute; z-index: 8; top: 0; bottom: 5px; width: 0; overflow: visible; border: 0; border-left: 3px solid #ffd166; padding: 0; background: transparent; color: #fff3c4; }
+.timeline-milestone::after { position: absolute; top: 5px; left: -6px; width: 9px; height: 9px; border: 2px solid #1a2230; border-radius: 50%; background: #ffd166; content: ""; }
+.timeline-milestone span { position: absolute; top: -4px; left: 5px; display: flex; gap: 5px; align-items: center; padding: 3px 6px; border: 1px solid #8b6d25; border-radius: 6px; background: #3d3219; box-shadow: 0 3px 12px #0008; font-size: 10px; font-weight: 800; white-space: nowrap; transform: translateY(-100%); }
+.timeline-milestone b { color: #ffd166; font-size: 10px; }
+.timeline-milestone:hover, .timeline-milestone:focus-visible { z-index: 10; border-left-color: #fff0a8; }
 .node-tags { position: absolute; z-index: 5; top: 62px; left: 50%; display: flex; gap: 3px; transform: translateX(-50%); }
 .node-tag { padding: 2px 4px; border-radius: 4px; background: #293a50; color: var(--text); font-size: 9px; font-style: normal; white-space: nowrap; }
 .node-tag.narrative-high { background: #8b3f31; }
@@ -529,6 +534,26 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         width: (slice.end - slice.start) / duration * 100
       }))
     };
+  }
+
+  function timelineMilestoneMarkup(milestones, duration) {
+    if (!Array.isArray(milestones) || !(Number(duration) > 0)) return "";
+    return milestones.map((milestone) => {
+      const timestamp = Number(milestone?.timestamp);
+      const sliceIndex = Number(milestone?.slice_index);
+      if (!Number.isFinite(timestamp) || timestamp < 0 || timestamp > duration) {
+        return "";
+      }
+      if (!Number.isInteger(sliceIndex) || sliceIndex < 0) return "";
+      const type = String(milestone?.type || "").replaceAll("_", "-");
+      const label = String(milestone?.label || "").trim();
+      const note = String(milestone?.note || "").trim();
+      const position = timestamp / duration * 100;
+      const title = `${label} · ${formatTime(timestamp)}${note ? ` · ${note}` : ""}`;
+      return `<button class="timeline-milestone ${escapeHtml(type)}" data-slice="${sliceIndex}" style="left:${position}%" type="button" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">
+        <span>${escapeHtml(label)}<b>${formatTime(timestamp)}</b></span>
+      </button>`;
+    }).join("");
   }
 
   function classifyHighlights(slice) {
@@ -1392,6 +1417,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       restoreGalleryFocus,
       selectedIndexForVisible,
       shouldDismissEmotionTooltip,
+      timelineMilestoneMarkup,
       timelineKeyDirection,
       updateGlobalCurveVisibility
     };
@@ -1592,7 +1618,11 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       return `<span class="axis-mark" style="left:${second / duration * 100}%">${formatTime(second)}</span>`;
     }).join("");
     const overviewTrack = byId("overview-track");
-    overviewTrack.innerHTML = data.slices.map((slice, index) => {
+    const milestones = timelineMilestoneMarkup(
+      data.timeline_milestones || [],
+      duration
+    );
+    overviewTrack.innerHTML = milestones + data.slices.map((slice, index) => {
       const geometry = layout.nodes[index];
       const highlights = classifyHighlights(slice);
       const wideEnough = geometry.width >= 2.5;

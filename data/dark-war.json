@@ -2462,7 +2462,7 @@
       ],
       "dimensions": {
         "阶段目标": {
-          "fact": "进入更完整的关卡路线、增益选择与精英战闭环。",
+          "fact": "完成关卡路线与精英战，为进入SLG大地图做准备。",
           "inference": ""
         },
         "任务链": {
@@ -2478,7 +2478,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "基地→关卡路线→野外战场",
+          "fact": "43:30–44:06出现雷达/路线界面；其后回到基地与战斗，属于大地图入口前置引导。",
           "inference": ""
         },
         "经济体验": {
@@ -2494,7 +2494,7 @@
         "stage_id": "p6-expedition-depth",
         "name": "P6. 远征深化 (Expedition Depth)",
         "start": 2400,
-        "end": 3000
+        "end": 2700
       },
       "narrative_climax": {
         "judgement": "none",
@@ -2508,7 +2508,7 @@
       "evidence": [
         {
           "frame": "screenshots/dark-war/frames/slice-032-evidence-01-002520000.jpg",
-          "note": "Unlock: 进入关卡路线并选择战斗增益；该帧用于定位本时间片的主要可见事件。"
+          "note": "43:30–44:06可见雷达/路线界面；只记录为大地图入口前置，不把背景说明文本当作已发生剧情。"
         }
       ],
       "open_questions": []
@@ -2526,23 +2526,23 @@
       "evidence_frames": [],
       "dimensions": {
         "阶段目标": {
-          "fact": "进入更完整的关卡路线、增益选择与精英战闭环。",
+          "fact": "跟随雷达热气球进入SLG大地图，建立地图目标—战斗—返城循环。",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 击败大型敌人并结算翻牌",
-          "inference": ""
+          "fact": "Unlock: 约47:00跟随雷达热气球进入SLG大地图",
+          "inference": "精确边界采用玩家回看确认；展示时间片仍为45:00–50:00。"
         },
         "核心循环": {
-          "fact": "[Loop] T3 战斗远征 (精英战/结算/成长)",
+          "fact": "[New] T5 SLG大地图 (雷达引导/地图目标/战斗/返城)",
           "inference": ""
         },
         "渐进体验": {
-          "fact": "关卡结算与翻牌",
+          "fact": "SLG大地图与雷达热气球引导",
           "inference": ""
         },
         "地图体验": {
-          "fact": "野外战场→基地",
+          "fact": "约47:00进入SLG大地图；此前43:30–44:06为雷达/路线前置界面。",
           "inference": ""
         },
         "经济体验": {
@@ -2555,14 +2555,14 @@
         }
       },
       "stage_range": {
-        "stage_id": "p6-expedition-depth",
-        "name": "P6. 远征深化 (Expedition Depth)",
-        "start": 2400,
+        "stage_id": "p7-slg-entry",
+        "name": "P7. SLG大地图入口 (SLG Entry)",
+        "start": 2700,
         "end": 3000
       },
       "narrative_climax": {
         "judgement": "none",
-        "reason": "本片未观察到需要单独标记的剧情高潮或低谷。"
+        "reason": "进入大地图是玩法与空间层级转折，不自动视为剧情高潮。"
       },
       "flow": {
         "judgement": "flow_peak",
@@ -2572,7 +2572,7 @@
       "evidence": [
         {
           "frame": "screenshots/dark-war/frames/slice-033-main-002850000.jpg",
-          "note": "Main: 击败大型敌人并结算翻牌；该帧用于定位本时间片的主要可见事件。"
+          "note": "约47:00跟随雷达热气球进入SLG大地图；时间点由玩家回看确认，本帧用于定位进入后的连续战斗与返城循环。"
         }
       ],
       "open_questions": []
@@ -2638,8 +2638,8 @@
         }
       },
       "stage_range": {
-        "stage_id": "p7-exploration-conflict",
-        "name": "P7. 探索与冲突 (Exploration Conflict)",
+        "stage_id": "p8-slg-expansion",
+        "name": "P8. SLG大地图展开 (SLG Expansion)",
         "start": 3000,
         "end": 3600
       },
@@ -2694,15 +2694,15 @@
       ],
       "dimensions": {
         "阶段目标": {
-          "fact": "通过开放区域探索、连续剧情和英雄成长提升中长期动机。",
+          "fact": "处理基地角色对话与设定卡，获得并培养猫耳女性英雄。",
           "inference": ""
         },
         "任务链": {
-          "fact": "Main: 经历关键剧情并获得新英雄",
+          "fact": "Main: 完成角色事件卡并获得新英雄",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Loop] T4 英雄成长 (剧情奖励/获得/培养)",
+          "fact": "[Loop] T4 英雄成长 (对话/设定卡/获得/培养)",
           "inference": ""
         },
         "渐进体验": {
@@ -2718,34 +2718,40 @@
           "inference": ""
         },
         "剧情轴": {
-          "fact": "女性对话、黑底文字与跪倒画面形成全程第二个叙事高潮；具体是否死亡或离别仍待高清字幕确认。",
+          "fact": "55:10–55:18为基地角色对话；55:20–55:22展示背景设定卡；55:28–55:42通过角色卡与对话解锁猫耳女性，55:52起获得并查看该英雄。画面未出现可确认的死亡、离别、跪倒或不可逆剧情转折。",
           "inference": ""
         }
       },
       "stage_range": {
-        "stage_id": "p7-exploration-conflict",
-        "name": "P7. 探索与冲突 (Exploration Conflict)",
+        "stage_id": "p8-slg-expansion",
+        "name": "P8. SLG大地图展开 (SLG Expansion)",
         "start": 3000,
         "end": 3600
       },
       "narrative_climax": {
-        "judgement": "climax",
-        "reason": "55:10–55:40连续对话、黑底文字和跪倒画面形成强转折；事件性质仍待高清字幕确认。"
+        "judgement": "none",
+        "reason": "该段由角色对话、背景设定卡和英雄获得构成；设定文本不等于片内实际事件，没有足够证据判定为剧情高潮。"
       },
       "flow": {
-        "judgement": "flow_peak",
-        "reason": "目标、连续操作与即时奖励形成高密度闭环。"
+        "judgement": "none",
+        "reason": "连续对话、事件卡与英雄界面以阅读和领取为主，不构成操作心流高点。"
       },
-      "confidence": 0.72,
+      "confidence": 0.9,
       "evidence": [
         {
           "frame": "screenshots/dark-war/frames/slice-035-evidence-01-003310000.jpg",
-          "note": "Main: 经历关键剧情并获得新英雄；该帧用于定位本时间片的主要可见事件。"
+          "note": "55:10起为基地角色对话；不根据人物立绘推断事件性质。"
+        },
+        {
+          "frame": "screenshots/dark-war/frames/slice-035-evidence-02-003370000.jpg",
+          "note": "55:28后进入猫耳女性角色卡与解锁流程，不是跪倒画面。"
+        },
+        {
+          "frame": "screenshots/dark-war/frames/slice-035-evidence-03-003580000.jpg",
+          "note": "55:52后为新英雄获得与查看，属于成长反馈。"
         }
       ],
-      "open_questions": [
-        "55:10–55:40连续字幕需用高清原视频确认人物身份及是否涉及死亡、离别或重大揭示。"
-      ]
+      "open_questions": []
     },
     {
       "index": 36,
@@ -2779,7 +2785,7 @@
       ],
       "dimensions": {
         "阶段目标": {
-          "fact": "回到基地升级并结束本次录屏；未确认进入SLG大地图。",
+          "fact": "进入SLG大地图后回到基地处理奖励与升级，结束本次录屏。",
           "inference": ""
         },
         "任务链": {
@@ -2795,7 +2801,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "基地",
+          "fact": "SLG大地图→基地",
           "inference": ""
         },
         "经济体验": {
@@ -3718,26 +3724,27 @@
         "start": 2700.0,
         "end": 3000.0,
         "emotion": {
-          "narrative_score": 0.0,
-          "supporting_score": 3.4,
-          "intensity": 1.0,
+          "narrative_score": 1.2,
+          "supporting_score": 4.2,
+          "intensity": 2.1,
           "valence": "positive",
           "drivers": [
+            "narrative",
             "combat",
             "progression_reward"
           ],
-          "event": "Main: 击败大型敌人并结算翻牌",
-          "reason": "剧情刺激0/5，玩法与环境刺激3.4/5；以片内最强可见事件计分。"
+          "event": "约47:00跟随雷达热气球进入SLG大地图。",
+          "reason": "这是玩法空间与长期目标的显著扩展，但不是剧情高潮。"
         },
         "experience": {
-          "score": 4.4,
+          "score": 4.5,
           "basis": {
-            "gameplay_concentration": "操作集中",
-            "feedback_density": "反馈密集且连续",
-            "goal_challenge": "目标与挑战匹配清晰",
-            "interruption": "中断较少"
+            "gameplay_concentration": "进入SLG大地图并连续处理地图目标与战斗",
+            "feedback_density": "地图开放、战斗和返城反馈连续",
+            "goal_challenge": "跟随雷达热气球并完成大地图目标",
+            "interruption": "存在短结算与基地界面，但未遮蔽大地图开放节点"
           },
-          "summary": "精英战、奖励弹窗和英雄成长构成强正反馈。"
+          "summary": "大地图开放形成明确体验跃迁，并快速进入地图目标与战斗反馈。"
         }
       },
       {
@@ -3771,27 +3778,26 @@
         "start": 3300.0,
         "end": 3600.0,
         "emotion": {
-          "narrative_score": 4.5,
-          "supporting_score": 3.0,
-          "intensity": 4.5,
-          "valence": "mixed",
+          "narrative_score": 1.5,
+          "supporting_score": 2.6,
+          "intensity": 1.8,
+          "valence": "positive",
           "drivers": [
             "narrative",
-            "combat",
             "progression_reward"
           ],
-          "event": "女性对话、黑底文字与跪倒画面形成全程第二个叙事高潮；具体是否死亡或离别仍待高清字幕确认。",
-          "reason": "剧情刺激4.5/5，玩法与环境刺激3/5；以片内最强可见事件计分。"
+          "event": "基地角色对话、背景设定卡与猫耳女性英雄获得。",
+          "reason": "设定文本不作为实际剧情事件；本段主要正反馈来自英雄解锁。"
         },
         "experience": {
-          "score": 4.3,
+          "score": 3.0,
           "basis": {
-            "gameplay_concentration": "操作集中",
-            "feedback_density": "反馈密集且连续",
-            "goal_challenge": "目标与挑战匹配清晰",
-            "interruption": "中断较少"
+            "gameplay_concentration": "以对话、事件卡和英雄获得界面为主",
+            "feedback_density": "新英雄获得明确，但实际操作反馈较少",
+            "goal_challenge": "完成角色事件卡并领取英雄",
+            "interruption": "连续对话与设定卡造成明显阅读中断"
           },
-          "summary": "强剧情、英雄获得和探索战斗连续出现，沉浸度达到后段高点。"
+          "summary": "角色获得提供成长反馈，但连续阅读与界面操作降低玩法集中度。"
         }
       },
       {
@@ -3824,9 +3830,9 @@
   "global_loops": {
     "scope": {
       "start": 0.0,
-      "end": 3600.0,
-      "end_label": "开放区域探索与英雄Lv.15成长后返回基地",
-      "outside_exit_label": "录屏尾段基地管理；SLG大地图未确认"
+      "end": 2700.0,
+      "end_label": "完成关卡路线精英战与翻牌结算",
+      "outside_exit_label": "约47:00跟随雷达热气球进入SLG大地图"
     },
     "macro_loops": [
       {
@@ -4211,12 +4217,11 @@
         "id": "l14",
         "type": "micro_loop",
         "title": "关卡路线精英战",
-        "summary": "推进关卡路线并击败精英敌人；通过选择路线、选择增益、持续战斗、翻牌结算获得英雄达到Lv.10并获得关卡奖励。",
+        "summary": "推进关卡路线并击败精英敌人；通过选择路线、选择增益、持续战斗和翻牌结算，为进入SLG大地图做准备。",
         "macro_loop_id": "macro-expedition",
         "loop_family_id": "expedition_progression",
         "slice_indices": [
-          32,
-          33
+          32
         ],
         "evidence_frames": [
           "screenshots/dark-war/frames/slice-032-main-002550000.jpg"
@@ -4230,86 +4235,36 @@
           "翻牌结算"
         ],
         "reward": "英雄达到Lv.10并获得关卡奖励",
-        "next_motivation": "探索开放遭遇区域",
+        "next_motivation": "跟随雷达热气球进入SLG大地图",
         "confidence": 0.86
-      },
-      {
-        "id": "l15",
-        "type": "micro_loop",
-        "title": "开放区域探索",
-        "summary": "调查更开放的遭遇区域；通过移动探索、触发战斗、领取奖励、查看成长树获得开放区域进度和成长入口。",
-        "macro_loop_id": "macro-expedition",
-        "loop_family_id": "expedition_progression",
-        "slice_indices": [
-          34
-        ],
-        "evidence_frames": [
-          "screenshots/dark-war/frames/slice-034-main-003150000.jpg"
-        ],
-        "status": "confirmed",
-        "motivation": "调查更开放的遭遇区域",
-        "behaviors": [
-          "移动探索",
-          "触发战斗",
-          "领取奖励",
-          "查看成长树"
-        ],
-        "reward": "开放区域进度和成长入口",
-        "next_motivation": "处理冲突并扩充英雄",
-        "confidence": 0.78
-      },
-      {
-        "id": "l16",
-        "type": "micro_loop",
-        "title": "剧情奖励与英雄培养",
-        "summary": "把关键剧情转折转化为队伍成长；通过观看连续剧情、领取紫色奖励、获得英雄、编队培养获得红发女性达到Lv.15并完成探索战斗。",
-        "macro_loop_id": "macro-hero",
-        "loop_family_id": "hero_growth",
-        "slice_indices": [
-          35
-        ],
-        "evidence_frames": [
-          "screenshots/dark-war/frames/slice-035-main-003450000.jpg"
-        ],
-        "status": "pending_confirmation",
-        "motivation": "把关键剧情转折转化为队伍成长",
-        "behaviors": [
-          "观看连续剧情",
-          "领取紫色奖励",
-          "获得英雄",
-          "编队培养"
-        ],
-        "reward": "红发女性达到Lv.15并完成探索战斗",
-        "next_motivation": "返回基地继续长期建设",
-        "confidence": 0.72
       },
       {
         "id": "subject-end",
         "type": "end",
         "title": "前期体验主体终点",
-        "summary": "开放区域探索、关键剧情和英雄培养完成后返回基地；录屏未确认进入SLG大地图。",
+        "summary": "关卡路线与精英战闭环完成，前期主体在进入SLG大地图前结束。",
         "macro_loop_id": "",
         "slice_indices": [
-          35
+          32
         ],
         "evidence_frames": [
-          "screenshots/dark-war/frames/slice-035-main-003450000.jpg"
+          "screenshots/dark-war/frames/slice-032-main-002550000.jpg"
         ],
-        "status": "pending_confirmation"
+        "status": "confirmed"
       },
       {
         "id": "outside-exit",
         "type": "outside_exit",
-        "title": "录屏尾段",
-        "summary": "基地等待与建筑升级；不作为SLG大地图入口证据。",
+        "title": "进入SLG大地图",
+        "summary": "约47:00跟随雷达热气球进入SLG大地图，作为主体流程图外出口。",
         "macro_loop_id": "",
         "slice_indices": [
-          36
+          33
         ],
         "evidence_frames": [
-          "screenshots/dark-war/frames/slice-036-main-003647833.jpg"
+          "screenshots/dark-war/frames/slice-033-main-002850000.jpg"
         ],
-        "status": "pending_confirmation"
+        "status": "confirmed"
       }
     ],
     "edges": [
@@ -4392,24 +4347,6 @@
         "label": "时间主链"
       },
       {
-        "from": "l14",
-        "to": "l15",
-        "kind": "primary",
-        "label": "时间主链"
-      },
-      {
-        "from": "l15",
-        "to": "l16",
-        "kind": "primary",
-        "label": "时间主链"
-      },
-      {
-        "from": "l16",
-        "to": "subject-end",
-        "kind": "primary",
-        "label": "时间主链"
-      },
-      {
         "from": "l02",
         "to": "l05",
         "kind": "macro_return",
@@ -4441,16 +4378,26 @@
       },
       {
         "from": "l14",
-        "to": "l16",
-        "kind": "cross_macro",
-        "label": "远征奖励推动英雄培养"
+        "to": "subject-end",
+        "kind": "primary",
+        "label": "完成进入大地图前的关卡闭环"
       },
       {
         "from": "subject-end",
         "to": "outside-exit",
         "kind": "conditional",
-        "label": "录屏继续但未进入大地图"
+        "label": "约47:00进入SLG大地图"
       }
     ]
-  }
+  },
+  "timeline_milestones": [
+    {
+      "id": "slg-entry",
+      "type": "slg_entry",
+      "label": "进入SLG大地图",
+      "timestamp": 2820.0,
+      "slice_index": 33,
+      "note": "约47:00按玩家回看确认：跟随雷达热气球进入SLG大地图；43:30–44:06已出现雷达/路线界面作为前置引导。"
+    }
+  ]
 }
