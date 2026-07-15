@@ -43,12 +43,9 @@ h2, h3 { margin-bottom: 0; }
 .summary-card span { color: var(--muted); font-size: 11px; }
 main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 
-.filters { position: sticky; top: 0; z-index: 8; display: flex; align-items: end; flex-wrap: wrap; gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: rgba(19, 27, 39, .96); box-shadow: 0 10px 28px #0005; backdrop-filter: blur(10px); }
-.filters label { display: grid; flex: 1 1 240px; gap: 4px; color: var(--muted); font-size: 11px; }
-.filters select { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); color: var(--text); }
-.filters button, .slice-navigation button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 13px; background: transparent; color: var(--accent); }
-.filters button:hover, .slice-navigation button:hover { background: #1d443e; }
-.filters button:disabled, .slice-navigation button:disabled { cursor: not-allowed; opacity: .35; }
+.slice-navigation button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 13px; background: transparent; color: var(--accent); }
+.slice-navigation button:hover { background: #1d443e; }
+.slice-navigation button:disabled { cursor: not-allowed; opacity: .35; }
 
 .emotion-curve-section { position: relative; z-index: 2; min-width: 0; border: 1px solid var(--line); border-radius: 14px; padding: 18px; background: #101824; }
 .emotion-curve-section .section-heading { align-items: start; }
@@ -323,8 +320,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 }
 
 @media (max-width: 540px) {
-  .filters { position: static; }
-  .filters label { flex-basis: 100%; }
   .stage-summary { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
   .stage-summary button { flex: 0 0 auto; }
   .overview-track { height: 76px; }
@@ -363,17 +358,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   </header>
 
   <main>
-    <section id="filters" class="filters" aria-label="时间片筛选">
-      <label>阶段<select id="stage-filter"><option value="">全部阶段</option></select></label>
-      <label>关键节点<select id="highlight-filter">
-        <option value="">全部节点</option>
-        <option value="climax">剧情高潮</option>
-        <option value="low">剧情低谷</option>
-        <option value="flow_peak">心流高点</option>
-      </select></label>
-      <button id="reset-filters" type="button">重置筛选</button>
-    </section>
-
     <section id="emotion-curve-section" class="emotion-curve-section" aria-labelledby="emotion-curve-title">
       <div class="section-heading">
         <div><p class="eyebrow">EMOTION & EXPERIENCE</p><h2 id="emotion-curve-title">全局情绪与体验曲线</h2></div>
@@ -579,14 +563,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     return [...stages.values()];
   }
 
-  function matchesSlice(slice, filters) {
-    const highlight = exactValue(filters.highlight);
-    const narrative = exactValue(slice.narrative_climax.judgement);
-    const flow = exactValue(slice.flow.judgement);
-    return (!filters.stage || slice.stage_range.name === filters.stage)
-      && (!highlight || narrative === highlight || flow === highlight);
-  }
-
   function dimensionTabs(slice, activeDimension = "") {
     const firstAvailable = DIMENSIONS.find((dimension) =>
       String(slice.dimensions[dimension]?.fact || "").trim()
@@ -722,16 +698,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     if (event.key === "ArrowLeft") return -1;
     if (event.key === "ArrowRight") return 1;
     return 0;
-  }
-
-  function replaceSelectOptions(select, values, documentRef) {
-    select.options.length = 1;
-    [...new Set(values)].forEach((value) => {
-      const option = documentRef.createElement("option");
-      option.value = value;
-      option.textContent = value;
-      select.append(option);
-    });
   }
 
   function stageAverageExperienceObservations(
@@ -1488,8 +1454,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       stageAverageExperienceObservations,
       lightboxViewModel,
       loadInitialData,
-      matchesSlice,
-      replaceSelectOptions,
       restoreGalleryFocus,
       selectedIndexForVisible,
       shouldDismissEmotionTooltip,
@@ -1678,10 +1642,10 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       ["时间片", data.slices.length]
     ].map(([label, value]) => `<div class="summary-card"><strong>${escapeHtml(value)}</strong><span>${label}</span></div>`).join("");
     byId("time-granularity").textContent = `粒度：${sliceLengths.map((length) => `${length} 秒`).join(" / ")}`;
+    byId("result-count").textContent = `${data.slices.length} 个时间片`;
     byId("stage-summary").innerHTML = stages.map((stage) =>
       `<button type="button" data-slice="${stage.firstIndex}"><strong>${escapeHtml(stage.name)}</strong><span>${formatTime(stage.start)}–${formatTime(stage.end)}</span></button>`
     ).join("");
-    replaceSelectOptions(byId("stage-filter"), stages.map((stage) => stage.name), document);
   }
 
   function renderTimeline(data) {
@@ -1781,23 +1745,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     byId("detail-panel").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function applyFilters() {
-    if (!state.data) return;
-    const filters = {
-      stage: byId("stage-filter").value,
-      highlight: byId("highlight-filter").value
-    };
-    state.visible = state.data.slices.map((slice) => matchesSlice(slice, filters));
-    document.querySelectorAll(".timeline-node").forEach((button, index) => {
-      button.hidden = !state.visible[index];
-    });
-    const visibleCount = state.visible.filter(Boolean).length;
-    byId("result-count").textContent = `${visibleCount} 个时间片`;
-    state.selectedIndex = selectedIndexForVisible(state.selectedIndex, state.visible);
-    renderSelected();
-    renderGlobalLoops();
-  }
-
   function initialize(data) {
     if (!data || !data.video || !Array.isArray(data.slices) || !data.slices.length) {
       throw new Error("data.json 内容为空或格式不正确");
@@ -1814,7 +1761,8 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     renderOverview(data);
     renderEmotionCurve();
     renderTimeline(data);
-    applyFilters();
+    renderSelected();
+    renderGlobalLoops();
     byId("load-error").hidden = true;
   }
 
@@ -1839,13 +1787,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     select.disabled = datasets.length <= 1;
   }
 
-  ["stage-filter", "highlight-filter"].forEach((id) => {
-    byId(id).addEventListener("input", applyFilters);
-  });
-  byId("reset-filters").addEventListener("click", () => {
-    ["stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
-    applyFilters();
-  });
   byId("emotion-curve-legend").addEventListener("click", (event) => {
     const seriesButton = event.target.closest("[data-curve-series-toggle]");
     const actionButton = event.target.closest("[data-curve-action]");

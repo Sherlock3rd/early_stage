@@ -418,13 +418,11 @@ class ViewerBuilderTests(unittest.TestCase):
         combined = html + script
         for hook in (
             'id="timeline"',
-            'id="filters"',
             'id="detail-panel"',
             'id="overview-track"',
             'id="previous-slice"',
             'id="next-slice"',
             'id="dimension-tabs"',
-            'id="highlight-filter"',
             'id="lightbox"',
             'id="emotion-curve-section"',
             'id="emotion-curve-svg"',
@@ -455,15 +453,28 @@ class ViewerBuilderTests(unittest.TestCase):
             self.assertNotIn(obsolete, combined)
         self.assertIn("narrative", combined)
 
-    def test_shared_viewer_has_header_dataset_switch_and_no_keyword_filter(self):
+    def test_shared_viewer_omits_top_filter_bar(self):
         html = (ROOT / "assets" / "viewer.html").read_text(encoding="utf-8")
         script = (ROOT / "assets" / "viewer.js").read_text(encoding="utf-8")
-        combined = html + script
+        css = (ROOT / "assets" / "viewer.css").read_text(encoding="utf-8")
+        combined = html + script + css
         self.assertIn('id="dataset-switch"', html)
         self.assertIn("拆解项目", html)
         self.assertIn("data/datasets.json", script)
-        self.assertNotIn('id="keyword-filter"', combined)
-        self.assertNotIn("sliceSearchText", script)
+        for removed in (
+            'id="filters"',
+            'id="stage-filter"',
+            'id="highlight-filter"',
+            'id="reset-filters"',
+            "applyFilters",
+            "matchesSlice",
+            "replaceSelectOptions",
+            ".filters",
+        ):
+            self.assertNotIn(removed, combined)
+        self.assertIn('id="stage-summary"', html)
+        self.assertIn('id="emotion-curve-legend"', html)
+        self.assertIn('id="global-loop-legend"', html)
         self.assertIn("flow", combined)
         self.assertNotIn("综合情绪值", combined)
         self.assertNotIn("维度分 × 维度权重", combined)
@@ -572,9 +583,16 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
 
     def test_dual_curves_use_linear_regression_over_real_time(self):
         data = valid_analysis(125)
-        for point, emotion, experience in zip(
+        for index, (point, emotion, experience) in enumerate(zip(
             data["global_curves"]["points"], (5, 2, 0), (1, 3, 5)
-        ):
+        )):
+            timeline_slice = data["slices"][index]
+            timeline_slice["stage_range"] = {
+                "stage_id": f"stage-{index}",
+                "name": f"阶段{index}",
+                "start": timeline_slice["start"],
+                "end": timeline_slice["end"],
+            }
             point["emotion"].update({
                 "intensity": emotion,
                 "valence": "negative" if emotion else "neutral",
@@ -618,6 +636,68 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         self.assertLess(
             result["model"]["points"][0]["x"],
             result["model"]["points"][1]["x"],
+        )
+
+    def test_experience_trend_uses_equal_weight_stage_averages(self):
+        slices = [
+            {"stage_range": {"stage_id": "a", "start": 0, "end": 180}},
+            {"stage_range": {"stage_id": "a", "start": 0, "end": 180}},
+            {"stage_range": {"stage_id": "a", "start": 0, "end": 180}},
+            {"stage_range": {"stage_id": "b", "start": 180, "end": 240}},
+            {"stage_range": {"stage_id": "c", "start": 240, "end": 360}},
+            {"stage_range": {"stage_id": "c", "start": 240, "end": 360}},
+        ]
+        points = [
+            {"experience": {"score": score}}
+            for score in (2, 2, 2, 4, 4, 2)
+        ]
+        result = self.run_node(
+            "viewer.stageAverageExperienceObservations("
+            f"{json.dumps(slices)},{json.dumps(points)})"
+        )
+        self.assertEqual(
+            [
+                {"time": 90, "score": 2, "stageId": "a", "count": 3},
+                {"time": 210, "score": 4, "stageId": "b", "count": 1},
+                {"time": 300, "score": 3, "stageId": "c", "count": 2},
+            ],
+            result,
+        )
+
+    def test_experience_trend_ends_at_slg_entry_milestone(self):
+        data = valid_analysis(300)
+        scores = (1, 2, 5, 0, 0)
+        for index, (timeline_slice, point, score) in enumerate(zip(
+            data["slices"], data["global_curves"]["points"], scores
+        )):
+            timeline_slice["stage_range"] = {
+                "stage_id": f"stage-{index}",
+                "name": f"阶段{index}",
+                "start": timeline_slice["start"],
+                "end": timeline_slice["end"],
+            }
+            point["experience"]["score"] = score
+        data["timeline_milestones"] = [{
+            "id": "slg-entry",
+            "type": "slg_entry",
+            "label": "进入SLG大地图",
+            "timestamp": 150,
+            "slice_index": 2,
+            "note": "正式进入大地图",
+        }]
+        model = self.run_node(
+            f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
+        )
+        self.assertEqual(150, model["trendEndTime"])
+        self.assertEqual(2, model["trendEndSliceIndex"])
+        self.assertEqual(3, model["trendSummary"]["sampleCount"])
+        self.assertEqual("rising", model["trendSummary"]["direction"])
+        self.assertIsNotNone(model["points"][2]["experienceTrend"])
+        self.assertIsNone(model["points"][3]["experienceTrend"])
+        self.assertAlmostEqual(
+            model["padding"]["left"]
+            + model["trendEndTime"] / model["duration"] * model["plotWidth"],
+            model["trendPoints"][-1]["x"],
         )
 
     def test_curve_chart_uses_responsive_container_dimensions(self):
@@ -1270,7 +1350,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             stages[0]["goals"],
         )
 
-    def test_stage_highlight_filter_detail_tabs_and_lightbox_pure_behaviors(self):
+    def test_detail_tabs_and_lightbox_pure_behaviors(self):
         slice_data = {
                 "start": 60,
                 "end": 120,
@@ -1297,15 +1377,11 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         encoded = json.dumps(slice_data, ensure_ascii=False)
         result = self.run_node(
             "({"
-            f"match:viewer.matchesSlice({encoded},{{stage:'教学',highlight:'climax'}}),"
-            f"miss:viewer.matchesSlice({encoded},{{stage:'探索',highlight:''}}),"
             f"detail:viewer.detailViewModel({encoded},'剧情轴'),"
             f"tabs:viewer.dimensionTabs({encoded},'剧情轴'),"
             f"lightbox:viewer.lightboxViewModel({encoded}.main_frame)"
             "})"
         )
-        self.assertTrue(result["match"])
-        self.assertFalse(result["miss"])
         self.assertEqual(2, len(result["detail"]["screenshots"]))
         self.assertEqual(["奖励是否固定"], result["detail"]["questions"])
         self.assertEqual("冲突升级", result["detail"]["description"])
@@ -1359,6 +1435,24 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         self.assertNotIn("待确认项", html)
         self.assertIn("置信度", html)
         self.assertIn("dimension-tab", html)
+
+    def test_timeline_marks_precise_slg_entry_with_label_and_timestamp(self):
+        milestone = {
+            "id": "slg-entry",
+            "type": "slg_entry",
+            "label": "进入SLG大地图",
+            "timestamp": 2820,
+            "slice_index": 33,
+            "note": "跟随雷达热气球进入大地图。",
+        }
+        html = self.run_node(
+            f"viewer.timelineMilestoneMarkup([{json.dumps(milestone, ensure_ascii=False)}],3600)"
+        )
+        self.assertIn("timeline-milestone", html)
+        self.assertIn("slg-entry", html)
+        self.assertIn("进入SLG大地图", html)
+        self.assertIn("47:00", html)
+        self.assertIn("78.333", html)
 
     def test_timeline_selection_moves_between_visible_slices(self):
         result = self.run_node(
@@ -1574,20 +1668,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             result,
         )
 
-    def test_repeated_option_population_replaces_options_and_binds_once(self):
-        expression = """
-        (() => {
-          const select={
-            options:[{value:''}],
-            append(option){this.options.push(option);}
-          };
-          const doc={createElement(){return {};}};
-          viewer.replaceSelectOptions(select,['教学','探索'],doc);
-          viewer.replaceSelectOptions(select,['教学'],doc);
-          return select.options.map(option=>option.value);
-        })()
-        """
-        self.assertEqual(["", "教学"], self.run_node(expression))
+    def test_timeline_click_handler_is_replaced_instead_of_accumulated(self):
         script = (ROOT / "assets" / "viewer.js").read_text(encoding="utf-8")
         self.assertIn("overviewTrack.onclick =", script)
         self.assertNotIn('overviewTrack.addEventListener("click"', script)

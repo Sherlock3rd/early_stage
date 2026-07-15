@@ -36,12 +36,9 @@ h2, h3 { margin-bottom: 0; }
 .summary-card span { color: var(--muted); font-size: 11px; }
 main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 
-.filters { position: sticky; top: 0; z-index: 8; display: flex; align-items: end; flex-wrap: wrap; gap: 10px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; background: rgba(19, 27, 39, .96); box-shadow: 0 10px 28px #0005; backdrop-filter: blur(10px); }
-.filters label { display: grid; flex: 1 1 240px; gap: 4px; color: var(--muted); font-size: 11px; }
-.filters select { width: 100%; min-width: 0; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; background: var(--bg); color: var(--text); }
-.filters button, .slice-navigation button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 13px; background: transparent; color: var(--accent); }
-.filters button:hover, .slice-navigation button:hover { background: #1d443e; }
-.filters button:disabled, .slice-navigation button:disabled { cursor: not-allowed; opacity: .35; }
+.slice-navigation button { border: 1px solid var(--accent); border-radius: 8px; padding: 8px 13px; background: transparent; color: var(--accent); }
+.slice-navigation button:hover { background: #1d443e; }
+.slice-navigation button:disabled { cursor: not-allowed; opacity: .35; }
 
 .emotion-curve-section { position: relative; z-index: 2; min-width: 0; border: 1px solid var(--line); border-radius: 14px; padding: 18px; background: #101824; }
 .emotion-curve-section .section-heading { align-items: start; }
@@ -129,6 +126,11 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 .timeline-node.narrative-high { box-shadow: inset 0 -4px var(--hot); }
 .timeline-node.narrative-low { box-shadow: inset 0 -4px var(--low); }
 .timeline-node.flow-high { box-shadow: inset 0 -4px var(--flow); }
+.timeline-milestone { position: absolute; z-index: 8; top: 0; bottom: 5px; width: 0; overflow: visible; border: 0; border-left: 3px solid #ffd166; padding: 0; background: transparent; color: #fff3c4; }
+.timeline-milestone::after { position: absolute; top: 5px; left: -6px; width: 9px; height: 9px; border: 2px solid #1a2230; border-radius: 50%; background: #ffd166; content: ""; }
+.timeline-milestone span { position: absolute; top: -4px; left: 5px; display: flex; gap: 5px; align-items: center; padding: 3px 6px; border: 1px solid #8b6d25; border-radius: 6px; background: #3d3219; box-shadow: 0 3px 12px #0008; font-size: 10px; font-weight: 800; white-space: nowrap; transform: translateY(-100%); }
+.timeline-milestone b { color: #ffd166; font-size: 10px; }
+.timeline-milestone:hover, .timeline-milestone:focus-visible { z-index: 10; border-left-color: #fff0a8; }
 .node-tags { position: absolute; z-index: 5; top: 62px; left: 50%; display: flex; gap: 3px; transform: translateX(-50%); }
 .node-tag { padding: 2px 4px; border-radius: 4px; background: #293a50; color: var(--text); font-size: 9px; font-style: normal; white-space: nowrap; }
 .node-tag.narrative-high { background: #8b3f31; }
@@ -311,8 +313,6 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
 }
 
 @media (max-width: 540px) {
-  .filters { position: static; }
-  .filters label { flex-basis: 100%; }
   .stage-summary { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; }
   .stage-summary button { flex: 0 0 auto; }
   .overview-track { height: 76px; }

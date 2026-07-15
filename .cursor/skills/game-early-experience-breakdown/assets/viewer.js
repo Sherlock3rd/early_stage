@@ -89,6 +89,26 @@
     };
   }
 
+  function timelineMilestoneMarkup(milestones, duration) {
+    if (!Array.isArray(milestones) || !(Number(duration) > 0)) return "";
+    return milestones.map((milestone) => {
+      const timestamp = Number(milestone?.timestamp);
+      const sliceIndex = Number(milestone?.slice_index);
+      if (!Number.isFinite(timestamp) || timestamp < 0 || timestamp > duration) {
+        return "";
+      }
+      if (!Number.isInteger(sliceIndex) || sliceIndex < 0) return "";
+      const type = String(milestone?.type || "").replaceAll("_", "-");
+      const label = String(milestone?.label || "").trim();
+      const note = String(milestone?.note || "").trim();
+      const position = timestamp / duration * 100;
+      const title = `${label} · ${formatTime(timestamp)}${note ? ` · ${note}` : ""}`;
+      return `<button class="timeline-milestone ${escapeHtml(type)}" data-slice="${sliceIndex}" style="left:${position}%" type="button" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">
+        <span>${escapeHtml(label)}<b>${formatTime(timestamp)}</b></span>
+      </button>`;
+    }).join("");
+  }
+
   function classifyHighlights(slice) {
     const labels = [];
     const narrative = exactValue(slice.narrative_climax.judgement);
@@ -110,14 +130,6 @@
       if (goal && !goals.includes(goal)) goals.push(goal);
     });
     return [...stages.values()];
-  }
-
-  function matchesSlice(slice, filters) {
-    const highlight = exactValue(filters.highlight);
-    const narrative = exactValue(slice.narrative_climax.judgement);
-    const flow = exactValue(slice.flow.judgement);
-    return (!filters.stage || slice.stage_range.name === filters.stage)
-      && (!highlight || narrative === highlight || flow === highlight);
   }
 
   function dimensionTabs(slice, activeDimension = "") {
@@ -257,17 +269,37 @@
     return 0;
   }
 
-  function replaceSelectOptions(select, values, documentRef) {
-    select.options.length = 1;
-    [...new Set(values)].forEach((value) => {
-      const option = documentRef.createElement("option");
-      option.value = value;
-      option.textContent = value;
-      select.append(option);
+  function stageAverageExperienceObservations(
+    slices,
+    curvePoints,
+    endTime = Number.POSITIVE_INFINITY
+  ) {
+    const stages = new Map();
+    slices.forEach((slice, index) => {
+      const range = slice.stage_range;
+      const stageId = String(range.stage_id);
+      if (!stages.has(stageId)) {
+        stages.set(stageId, {
+          time: (
+            Number(range.start) + Math.min(Number(range.end), Number(endTime))
+          ) / 2,
+          total: 0,
+          count: 0
+        });
+      }
+      const stage = stages.get(stageId);
+      stage.total += Number(curvePoints[index].experience.score);
+      stage.count += 1;
     });
+    return [...stages.entries()].map(([stageId, stage]) => ({
+      time: stage.time,
+      score: stage.total / stage.count,
+      stageId,
+      count: stage.count
+    }));
   }
 
-  function linearRegressionTrend(observations, min, max) {
+  function linearRegressionTrend(observations, min, max, predictionTimes = null) {
     if (!observations.length) {
       return {
         slope: 0,
@@ -300,15 +332,18 @@
     const intercept = meanY - slope * meanX;
     const predict = (time) => slope * Number(time) + intercept;
     const clamp = (value) => Math.min(Number(max), Math.max(Number(min), value));
-    const rawOpeningPrediction = predict(normalized[0].time);
-    const rawEndingPrediction = predict(normalized[normalized.length - 1].time);
+    const outputTimes = Array.isArray(predictionTimes) && predictionTimes.length
+      ? predictionTimes.map(Number)
+      : normalized.map((item) => item.time);
+    const rawOpeningPrediction = predict(outputTimes[0]);
+    const rawEndingPrediction = predict(outputTimes[outputTimes.length - 1]);
     const openingPrediction = clamp(rawOpeningPrediction);
     const endingPrediction = clamp(rawEndingPrediction);
     const delta = endingPrediction - openingPrediction;
     return {
       slope,
       intercept,
-      predictions: normalized.map((item) => clamp(predict(item.time))),
+      predictions: outputTimes.map((time) => clamp(predict(time))),
       rawOpeningPrediction,
       rawEndingPrediction,
       openingPrediction,
@@ -344,14 +379,44 @@
     const max = Number(curve.scale.max);
     const scoreY = (score) => padding.top + (max - Number(score)) / (max - min) * plotHeight;
     const timeX = (seconds) => padding.left + Number(seconds) / duration * plotWidth;
-    const observations = curve.points.map((point) => ({
-      time: (Number(point.start) + Number(point.end)) / 2,
-      score: Number(point.experience.score)
-    }));
-    const trendSummary = linearRegressionTrend(observations, min, max);
+    const slgMilestone = (data.timeline_milestones || []).find(
+      (milestone) => milestone.type === "slg_entry"
+    );
+    const trendEndTime = slgMilestone
+      ? Number(slgMilestone.timestamp)
+      : duration;
+    const trendEndSliceIndex = slgMilestone
+      ? Number(slgMilestone.slice_index)
+      : curve.points.length - 1;
+    const trendSlices = data.slices.slice(0, trendEndSliceIndex + 1);
+    const trendCurvePoints = curve.points.slice(0, trendEndSliceIndex + 1);
+    const firstPredictionTime = (
+      Number(curve.points[0].start) + Number(curve.points[0].end)
+    ) / 2;
+    const stageObservations = stageAverageExperienceObservations(
+      trendSlices,
+      trendCurvePoints,
+      trendEndTime
+    );
+    const trendSummary = linearRegressionTrend(
+      stageObservations,
+      min,
+      max,
+      [firstPredictionTime, trendEndTime]
+    );
+    trendSummary.sampleBasis = "stage_average";
+    trendSummary.sampleCount = stageObservations.length;
+    trendSummary.endTime = trendEndTime;
+    const predictTrend = (time) => Math.min(
+      max,
+      Math.max(min, trendSummary.slope * Number(time) + trendSummary.intercept)
+    );
     const points = curve.points.map((point, index) => {
       const slice = data.slices[index];
       const midpoint = (Number(point.start) + Number(point.end)) / 2;
+      const experienceTrend = index <= trendEndSliceIndex
+        ? predictTrend(Math.min(midpoint, trendEndTime))
+        : null;
       return {
         index,
         start: Number(point.start),
@@ -364,7 +429,7 @@
         emotionEvent: point.emotion.event,
         emotionReason: point.emotion.reason,
         experienceScore: Number(point.experience.score),
-        experienceTrend: trendSummary.predictions[index],
+        experienceTrend,
         experienceBasis: { ...point.experience.basis },
         experienceSummary: point.experience.summary,
         climax: exactValue(slice.narrative_climax.judgement) === "climax",
@@ -373,7 +438,7 @@
         y: {
           emotion: scoreY(point.emotion.intensity),
           experience: scoreY(point.experience.score),
-          trend: scoreY(trendSummary.predictions[index])
+          trend: experienceTrend === null ? null : scoreY(experienceTrend)
         }
       };
     });
@@ -388,9 +453,18 @@
       duration,
       colors: { ...CURVE_COLORS },
       points,
-      trendPoints: points.length
-        ? [points[0], points[points.length - 1]]
-        : [],
+      trendPoints: points.length ? [
+        {
+          x: timeX(firstPredictionTime),
+          y: { trend: scoreY(trendSummary.openingPrediction) }
+        },
+        {
+          x: timeX(trendEndTime),
+          y: { trend: scoreY(trendSummary.endingPrediction) }
+        }
+      ] : [],
+      trendEndTime,
+      trendEndSliceIndex,
       trendSummary
     };
   }
@@ -498,8 +572,11 @@
       .map((driver) => driverLabels[driver] || driver)
       .map(escapeHtml)
       .join(" / ");
+    const trendText = Number.isFinite(point.experienceTrend)
+      ? `回归预测 ${Number(point.experienceTrend).toFixed(2)}`
+      : "已超出大地图入口回归范围";
     return `<strong>${formatTime(point.start)}–${formatTime(point.end)}</strong>
-      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>体验强度 ${Number(point.experienceScore).toFixed(1)} · 回归预测 ${Number(point.experienceTrend).toFixed(2)}</span></div>
+      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>体验强度 ${Number(point.experienceScore).toFixed(1)} · ${trendText}</span></div>
       <div class="emotion-tooltip-scores"><span>剧情刺激 ${Number(point.narrativeScore).toFixed(1)}</span><span>其他刺激 ${Number(point.supportingScore).toFixed(1)}</span>${drivers ? `<span>刺激来源 ${drivers}</span>` : ""}</div>
       ${point.emotionEvent ? `<p><b>主要刺激：</b>${escapeHtml(point.emotionEvent)}<br><b>评分原因：</b>${escapeHtml(point.emotionReason)}</p>` : ""}
       <div class="experience-basis">
@@ -545,7 +622,7 @@
   }
 
   function globalCurvesGuideMarkup() {
-    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>以全部体验评分点的真实时间中点计算线性回归直线，不修改原始评分。</p>`;
+    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>统计范围从录屏开始到首次进入SLG大地图，包含入口所在时间片；先计算范围内各阶段的体验平均分，再让每个阶段以相同权重参与真实时间线性回归。入口后的实际折线继续保留，但不参与回归。</p>`;
   }
 
   function loadInitialData(fetcher, onData, onError) {
@@ -943,13 +1020,13 @@
       galleryViewModel,
       imageMarkupPure,
       linearRegressionTrend,
+      stageAverageExperienceObservations,
       lightboxViewModel,
       loadInitialData,
-      matchesSlice,
-      replaceSelectOptions,
       restoreGalleryFocus,
       selectedIndexForVisible,
       shouldDismissEmotionTooltip,
+      timelineMilestoneMarkup,
       timelineKeyDirection,
       updateGlobalCurveVisibility
     };
@@ -992,7 +1069,7 @@
       const labels = { rising: "上升", flat: "持平", falling: "下降" };
       byId("experience-trend-summary").innerHTML = `
         <span>回归起点 <strong>${trend.openingPrediction.toFixed(2)}</strong></span>
-        <span>回归终点 <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
+        <span>大地图入口 ${formatTime(trend.endTime)} <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
         <span>变化 <strong>${trend.delta >= 0 ? "+" : ""}${trend.delta.toFixed(2)}</strong></span>
         <b class="trend-${trend.direction}">${labels[trend.direction]}</b>`;
       byId("emotion-curve-error").hidden = true;
@@ -1134,10 +1211,10 @@
       ["时间片", data.slices.length]
     ].map(([label, value]) => `<div class="summary-card"><strong>${escapeHtml(value)}</strong><span>${label}</span></div>`).join("");
     byId("time-granularity").textContent = `粒度：${sliceLengths.map((length) => `${length} 秒`).join(" / ")}`;
+    byId("result-count").textContent = `${data.slices.length} 个时间片`;
     byId("stage-summary").innerHTML = stages.map((stage) =>
       `<button type="button" data-slice="${stage.firstIndex}"><strong>${escapeHtml(stage.name)}</strong><span>${formatTime(stage.start)}–${formatTime(stage.end)}</span></button>`
     ).join("");
-    replaceSelectOptions(byId("stage-filter"), stages.map((stage) => stage.name), document);
   }
 
   function renderTimeline(data) {
@@ -1150,7 +1227,11 @@
       return `<span class="axis-mark" style="left:${second / duration * 100}%">${formatTime(second)}</span>`;
     }).join("");
     const overviewTrack = byId("overview-track");
-    overviewTrack.innerHTML = data.slices.map((slice, index) => {
+    const milestones = timelineMilestoneMarkup(
+      data.timeline_milestones || [],
+      duration
+    );
+    overviewTrack.innerHTML = milestones + data.slices.map((slice, index) => {
       const geometry = layout.nodes[index];
       const highlights = classifyHighlights(slice);
       const wideEnough = geometry.width >= 2.5;
@@ -1233,23 +1314,6 @@
     byId("detail-panel").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
-  function applyFilters() {
-    if (!state.data) return;
-    const filters = {
-      stage: byId("stage-filter").value,
-      highlight: byId("highlight-filter").value
-    };
-    state.visible = state.data.slices.map((slice) => matchesSlice(slice, filters));
-    document.querySelectorAll(".timeline-node").forEach((button, index) => {
-      button.hidden = !state.visible[index];
-    });
-    const visibleCount = state.visible.filter(Boolean).length;
-    byId("result-count").textContent = `${visibleCount} 个时间片`;
-    state.selectedIndex = selectedIndexForVisible(state.selectedIndex, state.visible);
-    renderSelected();
-    renderGlobalLoops();
-  }
-
   function initialize(data) {
     if (!data || !data.video || !Array.isArray(data.slices) || !data.slices.length) {
       throw new Error("data.json 内容为空或格式不正确");
@@ -1266,7 +1330,8 @@
     renderOverview(data);
     renderEmotionCurve();
     renderTimeline(data);
-    applyFilters();
+    renderSelected();
+    renderGlobalLoops();
     byId("load-error").hidden = true;
   }
 
@@ -1291,13 +1356,6 @@
     select.disabled = datasets.length <= 1;
   }
 
-  ["stage-filter", "highlight-filter"].forEach((id) => {
-    byId(id).addEventListener("input", applyFilters);
-  });
-  byId("reset-filters").addEventListener("click", () => {
-    ["stage-filter", "highlight-filter"].forEach((id) => { byId(id).value = ""; });
-    applyFilters();
-  });
   byId("emotion-curve-legend").addEventListener("click", (event) => {
     const seriesButton = event.target.closest("[data-curve-series-toggle]");
     const actionButton = event.target.closest("[data-curve-action]");
