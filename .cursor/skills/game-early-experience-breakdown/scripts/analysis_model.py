@@ -63,6 +63,7 @@ GLOBAL_LOOP_EDGE_KINDS = (
     "cross_macro",
     "conditional",
 )
+TIMELINE_MILESTONE_TYPES = ("slg_entry", "map_entry", "cg_end")
 
 
 class AnalysisValidationError(ValueError):
@@ -594,6 +595,50 @@ def _validate_global_loops(
             )
 
 
+def _validate_timeline_milestones(
+    value: Any, slices: list[Any], duration: float
+) -> None:
+    if not isinstance(value, list):
+        _fail("timeline_milestones 必须是数组")
+    seen_ids: set[str] = set()
+    for index, raw in enumerate(value):
+        location = f"timeline_milestones[{index}]"
+        milestone = _require_object(raw, location)
+        _require_keys(
+            milestone,
+            ("id", "type", "label", "timestamp", "slice_index", "note"),
+            location,
+        )
+        milestone_id = milestone["id"]
+        _nonempty_text(milestone_id, f"{location}.id")
+        if milestone_id in seen_ids:
+            _fail(f"{location}.id 不得重复")
+        seen_ids.add(milestone_id)
+        milestone_type = milestone["type"]
+        if milestone_type not in TIMELINE_MILESTONE_TYPES:
+            _fail(
+                f"{location}.type 必须是: {', '.join(TIMELINE_MILESTONE_TYPES)}"
+            )
+        _nonempty_text(milestone["label"], f"{location}.label")
+        _nonempty_text(milestone["note"], f"{location}.note")
+        timestamp = _number(milestone["timestamp"], f"{location}.timestamp")
+        if not 0 <= timestamp <= duration:
+            _fail(f"{location}.timestamp 必须位于视频时长内")
+        slice_index = milestone["slice_index"]
+        if (
+            isinstance(slice_index, bool)
+            or not isinstance(slice_index, int)
+            or not 0 <= slice_index < len(slices)
+        ):
+            _fail(f"{location}.slice_index 越界")
+        target = slices[slice_index]
+        if not (
+            float(target["start"]) <= timestamp < float(target["end"])
+            or timestamp == duration == float(target["end"])
+        ):
+            _fail(f"{location}.timestamp 必须落在 slice_index 对应时间片内")
+
+
 def validate_analysis(data: Any) -> None:
     """Validate analysis data, raising AnalysisValidationError on failure."""
     root = _require_object(data, "analysis")
@@ -791,6 +836,8 @@ def validate_analysis(data: Any) -> None:
             _nonempty_text(question, f"{location}.open_questions[{question_index}]")
     if previous_stage is not None and float(previous_stage["end"]) != previous_slice_end:
         _fail("最后阶段范围 end 必须等于该阶段末片 end")
+    if "timeline_milestones" in root:
+        _validate_timeline_milestones(root["timeline_milestones"], slices, duration)
     _validate_global_curves(root["global_curves"], slices)
     _validate_global_loops(root["global_loops"], slices, duration)
 

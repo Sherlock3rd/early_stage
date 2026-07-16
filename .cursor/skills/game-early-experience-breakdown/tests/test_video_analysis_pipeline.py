@@ -285,6 +285,56 @@ def valid_analysis(duration=60.0):
 
 
 class AnalysisModelTests(unittest.TestCase):
+    def test_precise_timeline_milestones_are_validated(self):
+        data = valid_analysis(120.0)
+        data["timeline_milestones"] = [
+            {
+                "id": "slg-entry",
+                "type": "slg_entry",
+                "label": "进入SLG大地图",
+                "timestamp": 90.0,
+                "slice_index": 1,
+                "note": "跟随雷达热气球进入大地图。",
+            }
+        ]
+        analysis_model.validate_analysis(data)
+
+        data["timeline_milestones"][0]["timestamp"] = 121.0
+        with self.assertRaisesRegex(
+            analysis_model.AnalysisValidationError, "timeline_milestones|视频时长"
+        ):
+            analysis_model.validate_analysis(data)
+
+    def test_cg_end_timeline_milestone_is_valid(self):
+        data = valid_analysis(120.0)
+        data["timeline_milestones"] = [
+            {
+                "id": "opening-cg-end",
+                "type": "cg_end",
+                "label": "开场CG结束",
+                "timestamp": 42.5,
+                "slice_index": 0,
+                "note": "预渲染过场结束并恢复可操作界面。",
+            }
+        ]
+
+        analysis_model.validate_analysis(data)
+
+    def test_non_slg_map_entry_timeline_milestone_is_valid(self):
+        data = valid_analysis(120.0)
+        data["timeline_milestones"] = [
+            {
+                "id": "open-area-entry",
+                "type": "map_entry",
+                "label": "进入开放探索大地图",
+                "timestamp": 90.0,
+                "slice_index": 1,
+                "note": "区域地图与探索任务开始生效，但未进入SLG玩法。",
+            }
+        ]
+
+        analysis_model.validate_analysis(data)
+
     def test_valid_analysis_passes_and_json_round_trips_utf8(self):
         data = valid_analysis()
         analysis_model.validate_analysis(data)
@@ -634,13 +684,20 @@ class AnalysisModelTests(unittest.TestCase):
 
     def test_frost_global_loops_use_seventeen_typed_micro_loops_before_slg(self):
         frost_path = (
-            ROOT.parents[1]
-            / "tmp"
-            / "frost-breakdown"
-            / "analysis.final.validated.json"
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "frost.json"
         )
         if not frost_path.exists():
-            frost_path = ROOT.parents[2] / "data" / "frost.json"
+            frost_path = (
+                ROOT.parents[1]
+                / "tmp"
+                / "frost-breakdown"
+                / "analysis.final.validated.json"
+            )
         if not frost_path.exists():
             frost_path = (
                 ROOT.parents[2]
@@ -735,17 +792,35 @@ class AnalysisModelTests(unittest.TestCase):
                 for edge in data["global_loops"]["edges"]
             )
         )
+        self.assertEqual(
+            {
+                "type": "slg_entry",
+                "timestamp": 1510.0,
+                "slice_index": 25,
+            },
+            {
+                key: data["timeline_milestones"][0][key]
+                for key in ("type", "timestamp", "slice_index")
+            },
+        )
         analysis_model.validate_analysis(data)
 
     def test_sanbing_records_mother_death_as_exact_second_climax(self):
         sanbing_path = (
-            ROOT.parents[1]
-            / "tmp"
-            / "sanbing-breakdown"
-            / "analysis.validated.json"
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "sanbing.json"
         )
         if not sanbing_path.exists():
-            sanbing_path = ROOT.parents[2] / "data" / "sanbing.json"
+            sanbing_path = (
+                ROOT.parents[1]
+                / "tmp"
+                / "sanbing-breakdown"
+                / "analysis.validated.json"
+            )
         if not sanbing_path.exists():
             sanbing_path = (
                 ROOT.parents[2]
@@ -776,6 +851,17 @@ class AnalysisModelTests(unittest.TestCase):
         self.assertEqual(5, target_curve["emotion"]["narrative_score"])
         self.assertEqual(5, target_curve["emotion"]["intensity"])
         self.assertEqual("negative", target_curve["emotion"]["valence"])
+        self.assertEqual(
+            {
+                "type": "slg_entry",
+                "timestamp": 2160.0,
+                "slice_index": 31,
+            },
+            {
+                key: data["timeline_milestones"][0][key]
+                for key in ("type", "timestamp", "slice_index")
+            },
+        )
 
     def test_invalid_json_is_rejected(self):
         with self.assertRaises(analysis_model.AnalysisValidationError):

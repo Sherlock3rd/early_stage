@@ -12,7 +12,23 @@
         "path": "screenshots/aoo/frames/slice-000-main-000030000.jpg",
         "timestamp": 30.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 32.0,
+          "path": "screenshots/aoo/frames/slice-000-evidence-01-000032000.jpg",
+          "note": "高速突入镜头明确交代开场危机。"
+        },
+        {
+          "timestamp": 33.5,
+          "path": "screenshots/aoo/frames/slice-000-evidence-02-000033500.jpg",
+          "note": "装甲车与英雄队伍进入战场。"
+        },
+        {
+          "timestamp": 39.0,
+          "path": "screenshots/aoo/frames/slice-000-evidence-03-000039000.jpg",
+          "note": "开场战斗目标与行动方向建立。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P1. 末日开火 (Immediate Combat)\n以自动载具射击快速建立战斗目标、威胁与首轮胜利反馈。",
@@ -60,8 +76,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-000-main-000030000.jpg",
-          "note": "30.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-000-evidence-01-000032000.jpg",
+          "note": "高速突入镜头明确交代开场危机。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-000-evidence-02-000033500.jpg",
+          "note": "装甲车与英雄队伍进入战场。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-000-evidence-03-000039000.jpg",
+          "note": "开场战斗目标与行动方向建立。"
         }
       ],
       "open_questions": []
@@ -74,7 +98,23 @@
         "path": "screenshots/aoo/frames/slice-001-main-000090000.jpg",
         "timestamp": 90.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 97.0,
+          "path": "screenshots/aoo/frames/slice-001-evidence-01-000097000.jpg",
+          "note": "剧情演出切入基地受袭场景。"
+        },
+        {
+          "timestamp": 98.0,
+          "path": "screenshots/aoo/frames/slice-001-evidence-02-000098000.jpg",
+          "note": "敌方威胁与基地环境被连续交代。"
+        },
+        {
+          "timestamp": 100.0,
+          "path": "screenshots/aoo/frames/slice-001-evidence-03-000100000.jpg",
+          "note": "战斗 HUD 恢复，进入可操作清敌。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P1. 末日开火 (Immediate Combat)\n以自动载具射击快速建立战斗目标、威胁与首轮胜利反馈。",
@@ -122,8 +162,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-001-main-000090000.jpg",
-          "note": "90.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-001-evidence-01-000097000.jpg",
+          "note": "剧情演出切入基地受袭场景。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-001-evidence-02-000098000.jpg",
+          "note": "敌方威胁与基地环境被连续交代。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-001-evidence-03-000100000.jpg",
+          "note": "战斗 HUD 恢复，进入可操作清敌。"
         }
       ],
       "open_questions": []
@@ -136,7 +184,23 @@
         "path": "screenshots/aoo/frames/slice-002-main-000150000.jpg",
         "timestamp": 150.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 173.5,
+          "path": "screenshots/aoo/frames/slice-002-evidence-01-000173500.jpg",
+          "note": "02:53.5 首次出现技能解锁提示。"
+        },
+        {
+          "timestamp": 174.0,
+          "path": "screenshots/aoo/frames/slice-002-evidence-02-000174000.jpg",
+          "note": "02:54.0 新技能图标与提示持续可见。"
+        },
+        {
+          "timestamp": 177.0,
+          "path": "screenshots/aoo/frames/slice-002-evidence-03-000177000.jpg",
+          "note": "技能教学后立刻进入实战验证。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
@@ -184,8 +248,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-002-main-000150000.jpg",
-          "note": "150.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-002-evidence-01-000173500.jpg",
+          "note": "02:53.5 首次出现技能解锁提示。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-002-evidence-02-000174000.jpg",
+          "note": "02:54.0 新技能图标与提示持续可见。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-002-evidence-03-000177000.jpg",
+          "note": "技能教学后立刻进入实战验证。"
         }
       ],
       "open_questions": [
@@ -262,7 +334,23 @@
         "path": "screenshots/aoo/frames/slice-004-main-000270000.jpg",
         "timestamp": 270.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 283.5,
+          "path": "screenshots/aoo/frames/slice-004-evidence-01-000283500.jpg",
+          "note": "基地管理入口首次明确出现。"
+        },
+        {
+          "timestamp": 284.5,
+          "path": "screenshots/aoo/frames/slice-004-evidence-02-000284500.jpg",
+          "note": "建设与资源界面开始建立经营目标。"
+        },
+        {
+          "timestamp": 289.5,
+          "path": "screenshots/aoo/frames/slice-004-evidence-03-000289500.jpg",
+          "note": "基地建设反馈与任务推进形成闭环。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
@@ -310,8 +398,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-004-main-000270000.jpg",
-          "note": "270.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-004-evidence-01-000283500.jpg",
+          "note": "基地管理入口首次明确出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-004-evidence-02-000284500.jpg",
+          "note": "建设与资源界面开始建立经营目标。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-004-evidence-03-000289500.jpg",
+          "note": "基地建设反馈与任务推进形成闭环。"
         }
       ],
       "open_questions": [
@@ -326,7 +422,13 @@
         "path": "screenshots/aoo/frames/slice-005-main-000330000.jpg",
         "timestamp": 330.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 359.5,
+          "path": "screenshots/aoo/frames/slice-005-evidence-01-000359500.jpg",
+          "note": "05:59.5 战役区域界面首次出现。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P2. 战术推进 (Tactical Advance)\n在跑图战斗与角色对话之间推进，并建立Boss威胁。",
@@ -374,8 +476,8 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-005-main-000330000.jpg",
-          "note": "330.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-005-evidence-01-000359500.jpg",
+          "note": "05:59.5 战役区域界面首次出现。"
         }
       ],
       "open_questions": []
@@ -388,7 +490,23 @@
         "path": "screenshots/aoo/frames/slice-006-main-000390000.jpg",
         "timestamp": 390.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 360.5,
+          "path": "screenshots/aoo/frames/slice-006-evidence-01-000360500.jpg",
+          "note": "06:00.5 战役路线与关卡目标清晰可见。"
+        },
+        {
+          "timestamp": 361.5,
+          "path": "screenshots/aoo/frames/slice-006-evidence-02-000361500.jpg",
+          "note": "关卡选择和推进方向完成交代。"
+        },
+        {
+          "timestamp": 365.0,
+          "path": "screenshots/aoo/frames/slice-006-evidence-03-000365000.jpg",
+          "note": "进入关卡后恢复战斗操作。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
@@ -436,8 +554,16 @@
       "confidence": 0.72,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-006-main-000390000.jpg",
-          "note": "390.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-006-evidence-01-000360500.jpg",
+          "note": "06:00.5 战役路线与关卡目标清晰可见。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-006-evidence-02-000361500.jpg",
+          "note": "关卡选择和推进方向完成交代。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-006-evidence-03-000365000.jpg",
+          "note": "进入关卡后恢复战斗操作。"
         }
       ],
       "open_questions": [
@@ -452,7 +578,23 @@
         "path": "screenshots/aoo/frames/slice-007-main-000450000.jpg",
         "timestamp": 450.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 465.0,
+          "path": "screenshots/aoo/frames/slice-007-evidence-01-000465000.jpg",
+          "note": "07:45.0 变异敌人登场演出开始。"
+        },
+        {
+          "timestamp": 467.0,
+          "path": "screenshots/aoo/frames/slice-007-evidence-02-000467000.jpg",
+          "note": "敌方强化形态与威胁被突出展示。"
+        },
+        {
+          "timestamp": 477.0,
+          "path": "screenshots/aoo/frames/slice-007-evidence-03-000477000.jpg",
+          "note": "演出结束后恢复战斗 HUD 与目标。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
@@ -500,8 +642,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-007-main-000450000.jpg",
-          "note": "450.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-007-evidence-01-000465000.jpg",
+          "note": "07:45.0 变异敌人登场演出开始。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-007-evidence-02-000467000.jpg",
+          "note": "敌方强化形态与威胁被突出展示。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-007-evidence-03-000477000.jpg",
+          "note": "演出结束后恢复战斗 HUD 与目标。"
         }
       ],
       "open_questions": []
@@ -578,7 +728,23 @@
         "path": "screenshots/aoo/frames/slice-009-main-000570000.jpg",
         "timestamp": 570.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 553.0,
+          "path": "screenshots/aoo/frames/slice-009-evidence-01-000553000.jpg",
+          "note": "09:13.0 Boss 战主要战斗状态。"
+        },
+        {
+          "timestamp": 570.0,
+          "path": "screenshots/aoo/frames/slice-009-evidence-02-000570000.jpg",
+          "note": "Boss 低血量阶段强化压力。"
+        },
+        {
+          "timestamp": 574.0,
+          "path": "screenshots/aoo/frames/slice-009-evidence-03-000574000.jpg",
+          "note": "Boss 击败与胜利反馈完成。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P3. 基地与招募 (Base & Recruit)\n从战斗切入基地，认识招募与早期英雄成长。",
@@ -626,8 +792,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-009-main-000570000.jpg",
-          "note": "570.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-009-evidence-01-000553000.jpg",
+          "note": "09:13.0 Boss 战主要战斗状态。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-009-evidence-02-000570000.jpg",
+          "note": "Boss 低血量阶段强化压力。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-009-evidence-03-000574000.jpg",
+          "note": "Boss 击败与胜利反馈完成。"
         }
       ],
       "open_questions": []
@@ -640,7 +814,23 @@
         "path": "screenshots/aoo/frames/slice-010-main-000630000.jpg",
         "timestamp": 630.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 629.0,
+          "path": "screenshots/aoo/frames/slice-010-evidence-01-000629000.jpg",
+          "note": "10:29.0 任务完成提示先于实验室剧情出现。"
+        },
+        {
+          "timestamp": 630.0,
+          "path": "screenshots/aoo/frames/slice-010-evidence-02-000630000.jpg",
+          "note": "10:30.0 结算完成并开始切入后续对话。"
+        },
+        {
+          "timestamp": 635.0,
+          "path": "screenshots/aoo/frames/slice-010-evidence-03-000635000.jpg",
+          "note": "10:35.0 科学家对话正式开始。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
@@ -688,8 +878,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-010-main-000630000.jpg",
-          "note": "630.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-010-evidence-01-000629000.jpg",
+          "note": "10:29.0 任务完成提示先于实验室剧情出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-010-evidence-02-000630000.jpg",
+          "note": "10:30.0 结算完成并开始切入后续对话。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-010-evidence-03-000635000.jpg",
+          "note": "10:35.0 科学家对话正式开始。"
         }
       ],
       "open_questions": [
@@ -960,7 +1158,23 @@
         "path": "screenshots/aoo/frames/slice-015-main-000930000.jpg",
         "timestamp": 930.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 950.0,
+          "path": "screenshots/aoo/frames/slice-015-evidence-01-000950000.jpg",
+          "note": "第二段 Boss 战的主要攻防画面。"
+        },
+        {
+          "timestamp": 955.0,
+          "path": "screenshots/aoo/frames/slice-015-evidence-02-000955000.jpg",
+          "note": "Boss 低血量与技能反馈集中出现。"
+        },
+        {
+          "timestamp": 959.0,
+          "path": "screenshots/aoo/frames/slice-015-evidence-03-000959000.jpg",
+          "note": "击败反馈与后续推进衔接。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
@@ -1008,8 +1222,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-015-main-000930000.jpg",
-          "note": "930.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-015-evidence-01-000950000.jpg",
+          "note": "第二段 Boss 战的主要攻防画面。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-015-evidence-02-000955000.jpg",
+          "note": "Boss 低血量与技能反馈集中出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-015-evidence-03-000959000.jpg",
+          "note": "击败反馈与后续推进衔接。"
         }
       ],
       "open_questions": [
@@ -1024,7 +1246,13 @@
         "path": "screenshots/aoo/frames/slice-016-main-000990000.jpg",
         "timestamp": 990.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 965.0,
+          "path": "screenshots/aoo/frames/slice-016-evidence-01-000965000.jpg",
+          "note": "16:05.0 战斗 HUD 恢复，剧情演出结束。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P4. 实验室线索 (Lab & Story)\n在基地操作、战斗与实验室剧情插段之间扩展目标。",
@@ -1072,8 +1300,8 @@
       "confidence": 0.72,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-016-main-000990000.jpg",
-          "note": "990.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-016-evidence-01-000965000.jpg",
+          "note": "16:05.0 战斗 HUD 恢复，剧情演出结束。"
         }
       ],
       "open_questions": [
@@ -1088,7 +1316,23 @@
         "path": "screenshots/aoo/frames/slice-017-main-001050000.jpg",
         "timestamp": 1050.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1034.0,
+          "path": "screenshots/aoo/frames/slice-017-evidence-01-001034000.jpg",
+          "note": "17:14.0 主战斗阶段持续。"
+        },
+        {
+          "timestamp": 1035.5,
+          "path": "screenshots/aoo/frames/slice-017-evidence-02-001035500.jpg",
+          "note": "敌人压力与英雄技能反馈同屏。"
+        },
+        {
+          "timestamp": 1040.0,
+          "path": "screenshots/aoo/frames/slice-017-evidence-03-001040000.jpg",
+          "note": "战斗完成后的任务反馈。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
@@ -1136,8 +1380,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-017-main-001050000.jpg",
-          "note": "1050.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-017-evidence-01-001034000.jpg",
+          "note": "17:14.0 主战斗阶段持续。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-017-evidence-02-001035500.jpg",
+          "note": "敌人压力与英雄技能反馈同屏。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-017-evidence-03-001040000.jpg",
+          "note": "战斗完成后的任务反馈。"
         }
       ],
       "open_questions": []
@@ -1150,7 +1402,23 @@
         "path": "screenshots/aoo/frames/slice-018-main-001110000.jpg",
         "timestamp": 1110.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1090.0,
+          "path": "screenshots/aoo/frames/slice-018-evidence-01-001090000.jpg",
+          "note": "18:10.0 角色信息或养成入口出现。"
+        },
+        {
+          "timestamp": 1095.0,
+          "path": "screenshots/aoo/frames/slice-018-evidence-02-001095000.jpg",
+          "note": "英雄成长与属性反馈明确展示。"
+        },
+        {
+          "timestamp": 1100.0,
+          "path": "screenshots/aoo/frames/slice-018-evidence-03-001100000.jpg",
+          "note": "养成操作后回到下一目标。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
@@ -1198,8 +1466,16 @@
       "confidence": 0.78,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-018-main-001110000.jpg",
-          "note": "1110.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-018-evidence-01-001090000.jpg",
+          "note": "18:10.0 角色信息或养成入口出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-018-evidence-02-001095000.jpg",
+          "note": "英雄成长与属性反馈明确展示。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-018-evidence-03-001100000.jpg",
+          "note": "养成操作后回到下一目标。"
         }
       ],
       "open_questions": []
@@ -1594,7 +1870,23 @@
         "path": "screenshots/aoo/frames/slice-025-main-001530000.jpg",
         "timestamp": 1530.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1549.0,
+          "path": "screenshots/aoo/frames/slice-025-evidence-01-001549000.jpg",
+          "note": "25:49.0 研究中心入口与科技目标出现。"
+        },
+        {
+          "timestamp": 1550.0,
+          "path": "screenshots/aoo/frames/slice-025-evidence-02-001550000.jpg",
+          "note": "科技研究界面建立长期成长方向。"
+        },
+        {
+          "timestamp": 1551.0,
+          "path": "screenshots/aoo/frames/slice-025-evidence-03-001551000.jpg",
+          "note": "研究选择与资源消耗反馈可见。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P5. 经营展开 (Economy & Building)\n开放经济与建筑系统，以持续建设反馈拉长中期投入。",
@@ -1642,8 +1934,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-025-main-001530000.jpg",
-          "note": "1530.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-025-evidence-01-001549000.jpg",
+          "note": "25:49.0 研究中心入口与科技目标出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-025-evidence-02-001550000.jpg",
+          "note": "科技研究界面建立长期成长方向。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-025-evidence-03-001551000.jpg",
+          "note": "研究选择与资源消耗反馈可见。"
         }
       ],
       "open_questions": [
@@ -1722,7 +2022,23 @@
         "path": "screenshots/aoo/frames/slice-027-main-001650000.jpg",
         "timestamp": 1650.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1660.0,
+          "path": "screenshots/aoo/frames/slice-027-evidence-01-001660000.jpg",
+          "note": "27:40.0 英雄收集/养成界面出现。"
+        },
+        {
+          "timestamp": 1661.0,
+          "path": "screenshots/aoo/frames/slice-027-evidence-02-001661000.jpg",
+          "note": "角色列表与成长入口持续可见。"
+        },
+        {
+          "timestamp": 1662.0,
+          "path": "screenshots/aoo/frames/slice-027-evidence-03-001662000.jpg",
+          "note": "养成完成后形成明确反馈。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
           "fact": "P6. 科学家线索 (Scientist Thread)\n通过后段对话与科学家相关内容承接后续英雄目标。",
@@ -1770,8 +2086,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-027-main-001650000.jpg",
-          "note": "1650.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-027-evidence-01-001660000.jpg",
+          "note": "27:40.0 英雄收集/养成界面出现。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-027-evidence-02-001661000.jpg",
+          "note": "角色列表与成长入口持续可见。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-027-evidence-03-001662000.jpg",
+          "note": "养成完成后形成明确反馈。"
         }
       ],
       "open_questions": [
@@ -1786,18 +2110,34 @@
         "path": "screenshots/aoo/frames/slice-028-main-001710000.jpg",
         "timestamp": 1710.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1736.5,
+          "path": "screenshots/aoo/frames/slice-028-evidence-01-001736500.jpg",
+          "note": "28:56.5 仍处于世界地图载入前的基地状态。"
+        },
+        {
+          "timestamp": 1737.5,
+          "path": "screenshots/aoo/frames/slice-028-evidence-02-001737500.jpg",
+          "note": "28:57.5 世界地图切换开始。"
+        },
+        {
+          "timestamp": 1738.5,
+          "path": "screenshots/aoo/frames/slice-028-evidence-03-001738500.jpg",
+          "note": "28:58.5 首次完整出现 SLG 世界大地图。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
-          "fact": "P6. 科学家线索 (Scientist Thread)\n通过后段对话与科学家相关内容承接后续英雄目标。",
+          "fact": "承接英雄养成与战斗任务，并在 28:58.5 首次进入 SLG 世界大地图。",
           "inference": ""
         },
         "任务链": {
-          "fact": "Unlock: 从科学家线索转入英雄内容",
+          "fact": "英雄与基地任务 → 世界地图切换 → 地图据点和 HUD 完整出现。",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[New] T6 英雄内容 (线索/界面)",
+          "fact": "[New] T7 世界地图：基地成长 → 解锁大地图 → 查看据点与外部目标。",
           "inference": ""
         },
         "渐进体验": {
@@ -1805,7 +2145,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "",
+          "fact": "28:58.5 从基地视角切换到可交互 SLG 世界大地图。",
           "inference": ""
         },
         "经济体验": {
@@ -1834,8 +2174,16 @@
       "confidence": 0.68,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-028-main-001710000.jpg",
-          "note": "1710.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-028-evidence-01-001736500.jpg",
+          "note": "28:56.5 仍处于世界地图载入前的基地状态。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-028-evidence-02-001737500.jpg",
+          "note": "28:57.5 世界地图切换开始。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-028-evidence-03-001738500.jpg",
+          "note": "28:58.5 首次完整出现 SLG 世界大地图。"
         }
       ],
       "open_questions": [
@@ -1850,18 +2198,34 @@
         "path": "screenshots/aoo/frames/slice-029-main-001770000.jpg",
         "timestamp": 1770.0
       },
-      "evidence_frames": [],
+      "evidence_frames": [
+        {
+          "timestamp": 1740.5,
+          "path": "screenshots/aoo/frames/slice-029-evidence-01-001740500.jpg",
+          "note": "29:00.5 世界地图据点与地图交互保持可见。"
+        },
+        {
+          "timestamp": 1742.5,
+          "path": "screenshots/aoo/frames/slice-029-evidence-02-001742500.jpg",
+          "note": "29:02.5 玩家短暂检查世界地图目标。"
+        },
+        {
+          "timestamp": 1747.0,
+          "path": "screenshots/aoo/frames/slice-029-evidence-03-001747000.jpg",
+          "note": "29:07.0 由世界地图返回基地继续任务。"
+        }
+      ],
       "dimensions": {
         "阶段目标": {
-          "fact": "P7. 英雄后续 (Hero Follow-up)\n回到英雄相关成长与后续推进，收束本段录屏。",
+          "fact": "短暂试触世界地图后返回基地，继续基地任务与成长引导。",
           "inference": ""
         },
         "任务链": {
-          "fact": "Tutorial: 查看并推进英雄相关内容",
+          "fact": "查看世界地图据点 → 返回基地 → 继续任务。",
           "inference": ""
         },
         "核心循环": {
-          "fact": "[Upgrade] T6 英雄成长 (查看/培养)",
+          "fact": "T7 世界地图试触后回到 T6 基地成长循环。",
           "inference": ""
         },
         "渐进体验": {
@@ -1869,7 +2233,7 @@
           "inference": ""
         },
         "地图体验": {
-          "fact": "",
+          "fact": "世界地图短暂交互后返回基地；大地图入口已在 28:58.5 成立。",
           "inference": ""
         },
         "经济体验": {
@@ -1898,8 +2262,16 @@
       "confidence": 0.72,
       "evidence": [
         {
-          "frame": "screenshots/aoo/frames/slice-029-main-001770000.jpg",
-          "note": "1770.00s 主帧用于定位本片的主要界面、战斗或角色状态；详细字幕不作逐字断言。"
+          "frame": "screenshots/aoo/frames/slice-029-evidence-01-001740500.jpg",
+          "note": "29:00.5 世界地图据点与地图交互保持可见。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-029-evidence-02-001742500.jpg",
+          "note": "29:02.5 玩家短暂检查世界地图目标。"
+        },
+        {
+          "frame": "screenshots/aoo/frames/slice-029-evidence-03-001747000.jpg",
+          "note": "29:07.0 由世界地图返回基地继续任务。"
         }
       ],
       "open_questions": [
@@ -2794,9 +3166,9 @@
   "global_loops": {
     "scope": {
       "start": 0.0,
-      "end": 1927.9,
-      "end_label": "英雄与基地后续推进至录屏结束",
-      "outside_exit_label": "未观察到传统世界大地图出口"
+      "end": 1740.0,
+      "end_label": "28:58.5 首次进入 SLG 世界大地图",
+      "outside_exit_label": "世界地图短暂交互及返回基地后的后续内容"
     },
     "macro_loops": [
       {
@@ -2965,16 +3337,30 @@
       {
         "id": "subject-end",
         "type": "end",
-        "title": "本段体验终点",
-        "summary": "英雄相关内容与基地后续推进持续至录屏结束；未观察到传统世界大地图入口。",
+        "title": "进入 SLG 世界大地图",
+        "summary": "28:58.5 世界地图、基地据点与地图 HUD 同时出现，主体拆解在首次入图处结束。",
         "macro_loop_id": "",
         "slice_indices": [
-          30
+          28
         ],
         "evidence_frames": [
-          "screenshots/aoo/frames/slice-030-main-001863950.jpg"
+          "screenshots/aoo/frames/slice-028-evidence-03-001738500.jpg"
         ],
         "status": "confirmed"
+      },
+      {
+        "id": "outside-exit",
+        "type": "outside_exit",
+        "title": "世界地图试触后返回基地",
+        "macro_loop_id": "",
+        "slice_indices": [
+          29
+        ],
+        "evidence_frames": [
+          "screenshots/aoo/frames/slice-029-evidence-02-001742500.jpg"
+        ],
+        "status": "confirmed",
+        "summary": "进入世界地图后短暂查看据点，随后返回基地继续任务；不再纳入入图前 LOOP 统计。"
       }
     ],
     "edges": [
@@ -3013,7 +3399,23 @@
         "to": "l03",
         "kind": "cross_macro",
         "label": "战斗推进后转入英雄招募"
+      },
+      {
+        "from": "subject-end",
+        "to": "outside-exit",
+        "kind": "conditional",
+        "label": "主体范围外：世界地图短暂交互"
       }
     ]
-  }
+  },
+  "timeline_milestones": [
+    {
+      "id": "slg-world-map-entry",
+      "type": "slg_entry",
+      "label": "进入 SLG 世界大地图",
+      "timestamp": 1738.5,
+      "slice_index": 28,
+      "note": "28:58.5 首次完整出现可交互世界地图、基地据点与地图 HUD；28:56.5 尚未进入，29:00.5 后地图交互持续成立。"
+    }
+  ]
 }

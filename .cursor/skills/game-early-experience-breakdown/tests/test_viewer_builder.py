@@ -700,6 +700,43 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             model["trendPoints"][-1]["x"],
         )
 
+    def test_cg_end_milestone_does_not_truncate_experience_trend(self):
+        data = valid_analysis(300)
+        data["timeline_milestones"] = [{
+            "id": "opening-cg-end",
+            "type": "cg_end",
+            "label": "开场CG结束",
+            "timestamp": 42.5,
+            "slice_index": 0,
+            "note": "恢复可操作界面",
+        }]
+
+        model = self.run_node(
+            f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
+        )
+
+        self.assertEqual(300, model["trendEndTime"])
+        self.assertEqual(4, model["trendEndSliceIndex"])
+        self.assertIsNotNone(model["points"][-1]["experienceTrend"])
+
+    def test_non_slg_map_entry_does_not_truncate_experience_trend(self):
+        data = valid_analysis(300)
+        data["timeline_milestones"] = [{
+            "id": "open-area-entry",
+            "type": "map_entry",
+            "label": "进入开放探索大地图",
+            "timestamp": 150,
+            "slice_index": 2,
+            "note": "地图开放但未进入SLG玩法",
+        }]
+
+        model = self.run_node(
+            f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
+        )
+
+        self.assertEqual(300, model["trendEndTime"])
+        self.assertEqual(4, model["trendEndSliceIndex"])
+
     def test_curve_chart_uses_responsive_container_dimensions(self):
         data = valid_analysis(125)
         model = self.run_node(
@@ -1453,6 +1490,22 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         self.assertIn("进入SLG大地图", html)
         self.assertIn("47:00", html)
         self.assertIn("78.333", html)
+
+    def test_timeline_marks_cg_end_without_treating_it_as_slg_entry(self):
+        milestone = {
+            "id": "opening-cg-end",
+            "type": "cg_end",
+            "label": "开场CG结束",
+            "timestamp": 42.5,
+            "slice_index": 0,
+            "note": "恢复可操作界面。",
+        }
+        html = self.run_node(
+            f"viewer.timelineMilestoneMarkup([{json.dumps(milestone, ensure_ascii=False)}],300)"
+        )
+        self.assertIn("timeline-milestone cg-end", html)
+        self.assertIn("开场CG结束", html)
+        self.assertIn("0:42", html)
 
     def test_timeline_selection_moves_between_visible_slices(self):
         result = self.run_node(

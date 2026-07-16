@@ -4215,12 +4215,52 @@
   },
   "timeline_milestones": [
     {
+      "id": "carnival-opening-cg-end",
+      "type": "cg_end",
+      "label": "嘉年华开场 CG 结束",
+      "timestamp": 44.5,
+      "slice_index": 0,
+      "note": "漫画人物演出结束，首次完整出现角色选择界面。"
+    },
+    {
+      "id": "crisis-landing-cg-end",
+      "type": "cg_end",
+      "label": "危机漫画与落地演出结束",
+      "timestamp": 134.5,
+      "slice_index": 2,
+      "note": "角色 HUD 与小地图恢复，开始持续可操作探索。"
+    },
+    {
+      "id": "forest-beast-cg-end",
+      "type": "cg_end",
+      "label": "森林巨兽登场 CG 结束",
+      "timestamp": 589.0,
+      "slice_index": 9,
+      "note": "漫画式巨兽对峙结束，恢复任务对话与路线玩法。"
+    },
+    {
       "id": "adventure-island-entry",
-      "type": "slg_entry",
-      "label": "进入探险岛大地图",
+      "type": "map_entry",
+      "label": "抵达探险岛·野外停车场",
       "timestamp": 1337.0,
       "slice_index": 22,
-      "note": "该游戏的大地图不是传统 SLG 世界坐标/行军地图，而是以探险车跨区载入后开放的可探索岛屿区域。22:16.0 仍为载入；22:17.0 首次完整显示“探险岛·野外停车场 / 探索区域”、区域小地图和新任务；22:17.5 车辆已落在新区域边界内，证明交互与功能边界已切换。"
+      "note": "跨区加载结束，新区域名称、小地图与任务界面完整出现；未出现世界坐标、行军、联盟等 SLG 证据。"
+    },
+    {
+      "id": "beast-attack-fall-cg-end",
+      "type": "cg_end",
+      "label": "巨兽袭车与坠落 CG 结束",
+      "timestamp": 1361.5,
+      "slice_index": 22,
+      "note": "无 HUD 坠落演出结束，HUD 与区域任务提示恢复。"
+    },
+    {
+      "id": "island-danger-montage-cg-end",
+      "type": "cg_end",
+      "label": "岛屿危险蒙太奇 CG 结束",
+      "timestamp": 1426.0,
+      "slice_index": 23,
+      "note": "无 HUD 敌群蒙太奇结束，角色 HUD 与小地图恢复。"
     }
   ]
 }
