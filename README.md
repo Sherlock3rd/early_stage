@@ -9,6 +9,7 @@
 - Dark War：<https://sherlock3rd.github.io/early_stage/?dataset=dark-war>
 - AOO：<https://sherlock3rd.github.io/early_stage/?dataset=aoo>
 - Beboo Bash：<https://sherlock3rd.github.io/early_stage/?dataset=beboo>
+- Narco Empire：<https://sherlock3rd.github.io/early_stage/?dataset=narco-empire>
 
 共享 `index.html` 只负责展示。每个拆解独占
 `data/<dataset-id>.json` 与 `screenshots/<dataset-id>/`，避免不同游戏的数据和截图互相覆盖。
@@ -21,6 +22,8 @@
 - Dark War：61:35、37 个时间片，约 47:00 进入 SLG 大地图。
 - AOO：31:07.9、31 个时间片，28:58.5 进入 SLG 世界大地图。
 - Beboo Bash：73:03.1、38 个时间片；22:17 进入普通开放探索地图，体验趋势覆盖完整录屏。
+- Narco Empire：60:00.1、37 个时间片；53:19.5 首次进入 SLG 世界大地图，
+  后续画面确认世界坐标、联盟入口与其他据点。
 
 ## 内容
 

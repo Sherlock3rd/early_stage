@@ -561,6 +561,39 @@ class AnalysisModelTests(unittest.TestCase):
                 reason_text,
             )
 
+    def test_narco_empire_has_valid_isolated_data_and_world_map_entry(self):
+        narco_path = (
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "narco-empire.json"
+        )
+        if not narco_path.exists():
+            narco_path = ROOT.parents[2] / "data" / "narco-empire.json"
+
+        self.assertTrue(narco_path.exists(), narco_path)
+        data = json.loads(narco_path.read_text(encoding="utf-8"))
+        analysis_model.validate_analysis(data)
+
+        self.assertEqual(37, len(data["slices"]))
+        self.assertEqual(
+            "progression-repetition-v1",
+            data["global_curves"]["experience_model"]["version"],
+        )
+        slg_entries = [
+            item
+            for item in data["timeline_milestones"]
+            if item["type"] == "slg_entry"
+        ]
+        self.assertEqual(1, len(slg_entries))
+        self.assertEqual(34, slg_entries[0]["slice_index"])
+        self.assertGreaterEqual(slg_entries[0]["timestamp"], 3190.0)
+        self.assertLess(slg_entries[0]["timestamp"], 3240.0)
+        self.assertIn("坐标", slg_entries[0]["note"])
+        self.assertIn("联盟", slg_entries[0]["note"])
+
     def test_global_loop_confidence_equals_lowest_referenced_slice(self):
         data = valid_analysis(120.0)
         micro = data["global_loops"]["nodes"][1]

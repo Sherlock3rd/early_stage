@@ -1,0 +1,6227 @@
+{
+  "video": {
+    "path": "asset/recordings/narco empire前期60分钟.mp4",
+    "duration_seconds": 3600.066667
+  },
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-000-evidence-01-000009000.jpg",
+          "timestamp": 9.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-000-evidence-02-000021000.jpg",
+          "timestamp": 21.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-000-evidence-03-000028800.jpg",
+          "timestamp": 28.8
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 修复房车坏批次 (Repair the RV Batch)\n接手出错配方并完成Amber制作教学。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro/Tutorial: 查明坏批次并开始制作Amber",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T1 房车制品制作 (选配方→混合→加热/搅拌)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Amber制作小游戏；点击与持续操作手势",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "房车实验室锁定场景",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Jack按Wayne的配方操作却制造大量烟雾；Emilio担心烟雾引来警察并接手处理。\n目的：用一次实际事故建立制品制作教学和迫近的执法威胁。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-rv-batch-repair",
+        "name": "P1 房车坏批次修复",
+        "start": 0.0,
+        "end": 60.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-000-evidence-01-000009000.jpg",
+          "note": "00:09 0:00-0:03，房车停在沙漠道路旁，Emilio在电话中说“I'm handling it”，随后爆粗。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-000-evidence-02-000021000.jpg",
+          "note": "00:21 0:04起镜头进入冒烟的房车实验室；Jack持容器咳嗽，Emilio质问他在做什么。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-000-evidence-03-000028800.jpg",
+          "note": "00:28.8 0:18-0:25，Jack说Wayne改了配方且自己照步骤操作；Emilio指出烟雾会给警察发信号，并反问他搞错了什么；Jack让Emilio自己做。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-001-evidence-01-000077000.jpg",
+          "timestamp": 77.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-001-evidence-02-000095000.jpg",
+          "timestamp": 95.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-001-evidence-03-000112000.jpg",
+          "timestamp": 112.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 完成制品并逃离追捕 (Finish and Escape)\n完成Amber批次后承受警察追逐及翻车后果。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 完成Amber制作\nIntro: 逃离警察追捕",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T1 房车制品制作 (过滤→包装→获得成品)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "过滤与包装步骤",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Amber批次完成并被Jack称为99%纯；房车离开后遭两辆警车夹击，冲出道路侧翻并起火。\n目的：将制作成功迅速转为失去移动实验室的危机，推动角色另寻据点。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-production-payoff-chase",
+        "name": "P2 制作结算与警察追逐",
+        "start": 60.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "制品完成后立刻遭警车夹击，房车翻覆起火。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-001-evidence-01-000077000.jpg",
+          "note": "01:17 1:00-1:16继续过滤、敲击和包装等制作步骤，进度条逐步完成。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-001-evidence-02-000095000.jpg",
+          "note": "01:35 1:17画面给出制品图标×10；1:18 Jack称这一批纯度为99%。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-001-evidence-03-000112000.jpg",
+          "note": "01:52 1:26-1:28房车驶离；1:30起警车接近，随后两辆警车从侧后方夹击。"
+        }
+      ],
+      "open_questions": [
+        "1:18“99% pure”是角色台词，未见独立数值结算界面，因此不把99%写为系统品质数值。"
+      ]
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-002-evidence-01-000120000.jpg",
+          "timestamp": 120.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-002-evidence-02-000130000.jpg",
+          "timestamp": 130.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-002-evidence-03-000162000.jpg",
+          "timestamp": 162.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 在聚落重建业务 (Rebuild at the Settlement)\n承受房车损失后进入聚落并开始Bud Field生产教学。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Intro: 向Wayne交代房车损失\nMain: Harvest Buds in Bud Field 1x\nUnlock: Wayne's Order",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 聚落种植生产 (领取任务→派工→等待产出)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "可操作聚落HUD；Story任务面板；Wayne's Order；Bud Field Lv.1",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "沙漠聚落可操作区域",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "玩家等级1\n战力15,610\nBud Field Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio与Jack从燃烧的房车逃走并向Wayne会合；Wayne因整间移动实验室和业务损失而训斥二人。\n目的：把事故后果落到实际资产损失，并给出在新聚落重建生产的动机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-settlement-rebuild",
+        "name": "P3 聚落重建开端",
+        "start": 120.0,
+        "end": 180.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "二人逃离燃烧房车后被Wayne训斥，随后进入可操作聚落并领取任务奖励。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-002-evidence-01-000120000.jpg",
+          "note": "02:00 2:00房车仍在燃烧，Emilio要求立刻离开；2:01两人跑离残骸，2:05短暂黑屏转场。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-002-evidence-02-000130000.jpg",
+          "note": "02:10 2:06起两人跑进沙漠聚落；2:10 Wayne当面说他们弄丢了整间实验室和整套房车业务。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-002-evidence-03-000162000.jpg",
+          "note": "02:42 2:19-2:21镜头展示聚落内的种植地；2:39两人跑离Wayne，随后镜头继续掠过种植地和建筑。"
+        }
+      ],
+      "open_questions": [
+        "Bud Field派工后的首次收获发生在3:00之后，本段不能确认产量或完整收获奖励。"
+      ]
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-003-evidence-01-000180000.jpg",
+          "timestamp": 180.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-003-evidence-02-000198000.jpg",
+          "timestamp": 198.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-003-evidence-03-000238000.jpg",
+          "timestamp": 238.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 建立叶片生产链 (Leaf Production)\n完成Bud收割→Leaf Shack建造→Leaf加工的首次教学并放大产量。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: Wayne's Order / Produce Leaf x20\nTutorial: 收割1x→建Leaf Shack→生产1x→收割2x→批量生产",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 Bud生产 (收割)\n[New] T3 Leaf Shack (建造)\n[New] T4 Leaf加工 (投料→加工→包装)\n[Loop] T2/T4 原料—加工放量",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Leaf Shack建造；Produce Leaf交互式加工界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "势力/战力15,610→15,640\n现金2,000\n金条10→50",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Wayne下达20份Leaf订单；Jack与Emilio把首次收成加工成产品。\n目的：用订单串起原料、建筑与加工教学。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-leaf-production",
+        "name": "P2. 建立叶片生产链 (Leaf Production)",
+        "start": 180.0,
+        "end": 240.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "高密度生产教学高点，操作—反馈闭合快。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-003-evidence-01-000180000.jpg",
+          "note": "03:00 3:00 Wayne订单要求Produce Leaf x20。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-003-evidence-02-000198000.jpg",
+          "note": "03:18 3:03首次收割Bud；3:09切为建Leaf Shack。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-003-evidence-03-000238000.jpg",
+          "note": "03:58 3:12-3:14面板确认Leaf Shack功能并零时长建成。"
+        }
+      ],
+      "open_questions": [
+        "3:13的0金条、零时长建造是新手免费还是测试配置，待确认。"
+      ]
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-004-main-000270000.jpg",
+        "timestamp": 270.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-004-evidence-01-000240000.jpg",
+          "timestamp": 240.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-004-evidence-02-000258000.jpg",
+          "timestamp": 258.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-004-evidence-03-000290000.jpg",
+          "timestamp": 290.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 完成首次出货 (First Delivery)\n结清Wayne首单并送货到Southside Bar。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成Wayne订单→领奖→回复Wayne→前往Southside Bar→与买家交货",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T4 Leaf加工 (批量包装)\n[End] T5 Wayne订单 (20/20结算)\n[New] T6 出货交易 (接单→运输→会面)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "势力/战力15,640\n现金2,000\n金条50→110",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Wayne要求Jack与Emilio向Southside Bar买家送货；途中警车出现，Emilio提醒不要被抓。\n目的：把生产转成高风险交易并预埋警方压力。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-first-delivery",
+        "name": "P3. 完成首次出货 (First Delivery)",
+        "start": 240.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-004-evidence-01-000240000.jpg",
+          "note": "04:00 4:00奖励10份Leaf；4:01 Produce Leaf 2x完成。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-004-evidence-02-000258000.jpg",
+          "note": "04:18 4:03切为Complete Wayne's Order；4:04显示20/20，领取后金条到110。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-004-evidence-03-000290000.jpg",
+          "note": "04:50 4:07 Chapter 1完成。"
+        }
+      ],
+      "open_questions": [
+        "Southside Bar仅为剧情街景；后续是否成为可选出货点无法确认。"
+      ]
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-005-evidence-01-000300000.jpg",
+          "timestamp": 300.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-005-evidence-02-000341000.jpg",
+          "timestamp": 341.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-005-evidence-03-000359000.jpg",
+          "timestamp": 359.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3→P4. 首次交易与警方缉查开幕\n完成交易，在警方盘问后回庄园并进入Cop Crackdown。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成交易→应对盘问→返回庄园\nIntro: Chapter 2 Cop Crackdown\nMain: 收割Bud Field 3x（2/3）",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T6 出货交易 (交付→收款→撤离)\n[Cont] T2 Bud生产 (派工→等待→收割)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Chapter 2: Cop Crackdown开启；未见独立警方功能界面",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "势力/战力15,640\n现金2,000→25k\n金条110→220",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "警员在交易后拦下Jack与Emilio；二人以守法公民说辞脱身。回庄园后Emilio仍感不安，Cop Crackdown开启。\n目的：把首单收益与警方威胁并置。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-to-p4-cop-crackdown",
+        "name": "P3→P4. 首次交易与警方缉查开幕",
+        "start": 300.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-005-evidence-01-000300000.jpg",
+          "note": "05:00 5:00买家乘敞篷车离开。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-005-evidence-02-000341000.jpg",
+          "note": "05:41 5:16警车抵达；警员盘问，5:30 Emilio声称守法。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-005-evidence-03-000359000.jpg",
+          "note": "05:59 5:35后警员离开；5:40黑屏。"
+        }
+      ],
+      "open_questions": [
+        "现金2,000跳到25k，精确到账额无独立结算明细。",
+        "Cop Crackdown具体新增机制在6:00前未展示。"
+      ]
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-006-evidence-01-000366000.jpg",
+          "timestamp": 366.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-006-evidence-02-000396000.jpg",
+          "timestamp": 396.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-006-evidence-03-000410000.jpg",
+          "timestamp": 410.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 应对警察勒索 (Handle the Crackdown)\n完成叶片加工教学，并理解警察倒计时带来的建设与交货目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 收获 Bud 并完成 Produce Leaf\nMain: 查看 Cop Crackdown 要求",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T2 叶片生产 (收获→加工→包装)\n[New] T3 警察勒索 (识别限时要求)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Produce Leaf 加工小游戏\nCop Crackdown 倒计时与 Police Demands",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Power 15,640\nBud Field Lv.1\nLeaf Shack Lv.1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "产品走红引来警察；警察没有搜捕，而是要求分走利益。Emilio 决定用高品质货物解决勒索。\n目的：把生产成长转化为限时建设与交货压力。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-cop-crackdown",
+        "name": "P2 应对警察勒索",
+        "start": 360.0,
+        "end": 480.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-006-evidence-01-000366000.jpg",
+          "note": "06:06 完成第三次 Bud Field 收获，并通过 Produce Leaf 机器完成装料、按键包装和奖励结算。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-006-evidence-02-000396000.jpg",
+          "note": "06:36 产品走红后警车进入庄园门口，多名持枪警察包围 Emilio 与 Jack；双方只交涉，没有交火。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-006-evidence-03-000410000.jpg",
+          "note": "06:50 警察把事件表述为索取利益的 shakedown；随后开放 Cop Crackdown 倒计时及三项 Police Demands。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-007-evidence-01-000428000.jpg",
+          "timestamp": 428.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-007-evidence-02-000462000.jpg",
+          "timestamp": 462.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-007-evidence-03-000471000.jpg",
+          "timestamp": 471.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 应对警察勒索 (Handle the Crackdown)\n升级生产链并完成三项警察要求，以贿赂解除倒计时。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: Manor 升级→Bud Field Lv.2→Leaf Shack Lv.2→交付 Leaf→Bribe Police",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T3 警察勒索 (建设与交货)\n[End] T3 警察勒索 (贿赂交付)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "建筑升级施工与加速\nBribe Police 结算",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Manor Lv.2\nBud Field Lv.2\nLeaf Shack Lv.2\nPower 17,476",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio 以产品贿赂警察；警察接受交易并要求他们保持低调。\n目的：闭合警察勒索危机，并把合规压力转化为生产链升级。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-cop-crackdown",
+        "name": "P2 应对警察勒索",
+        "start": 360.0,
+        "end": 480.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-007-evidence-01-000428000.jpg",
+          "note": "07:08 升级 Manor，随后升级 Bud Field 和 Leaf Shack；每次均有施工过程、完成提示与奖励反馈。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-007-evidence-02-000462000.jpg",
+          "note": "07:42 Police Demands 三项变为完成：Bud Field Lv.2、Leaf Shack Lv.2、Leaf 20/20。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-007-evidence-03-000471000.jpg",
+          "note": "07:51 玩家点击 Bribe Police 后获得奖励，并进入向警察交付产品的连续剧情。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-008-evidence-01-000503000.jpg",
+          "timestamp": 503.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-008-evidence-02-000520000.jpg",
+          "timestamp": 520.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-008-evidence-03-000527000.jpg",
+          "timestamp": 527.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 扩充团队 (Raising the Crew)\n建设员工生活设施、招募本地员工并学习岗位分配。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成 Chapter 2\nMain: 建造 Mess Hall 与 Bunkhouse\nTutorial: 为 Bud Field 分配 Crew",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T3 警察勒索 (章节结算)\n[New] T4 员工运营 (建生活设施→招募→分配岗位)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Mess Hall\nBunkhouse\nCrew 岗位分配\nCrew Status 与 Optimize",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Power 20,176→20,336\nMess Hall Lv.1\nBunkhouse Lv.1\nCrew 0/0→4/4",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "警察离开后，Wayne 认可交易结果；Emilio 决定扩大产量。Heiser 派来的本地员工抵达并加入庄园。\n目的：从危机处理过渡到规模化生产与员工管理。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-raising-the-crew",
+        "name": "P3 扩充团队",
+        "start": 480.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-008-evidence-01-000503000.jpg",
+          "note": "08:23 警车驶离，Cop Crackdown 威胁解除；Manor 再次升级并显示 Chapter 2 完成与 Power +2,554。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-008-evidence-02-000520000.jpg",
+          "note": "08:40 Wayne 认可与警察达成交易，Emilio 提出扩大产量，Chapter 3: Raising the Crew 开始。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-008-evidence-03-000527000.jpg",
+          "note": "08:47 玩家建成 Mess Hall 与 Bunkhouse，随后四名本地雇员进入庄园并与 Emilio 达成合作。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-009-evidence-01-000540000.jpg",
+          "timestamp": 540.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-009-evidence-02-000570000.jpg",
+          "timestamp": 570.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-009-evidence-03-000590000.jpg",
+          "timestamp": 590.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 扩充团队 (Raising the Crew)\n验证员工生产效果，并升级食宿设施支撑团队运营。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 查看 Crew 工作与状态\nMain: 升级 Mess Hall 和 Bunkhouse",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T4 员工运营 (分配→生产→状态反馈)\n[Upgrade] T4 员工运营 (升级食宿设施)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Crew 属性与需求\nMess Hall Lv.2 设施\nBunkhouse Lv.2 设施",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Power 20,336→20,426\nMess Hall Lv.1→Lv.2\nBunkhouse Lv.1→Lv.2\nCrew 4/4",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Jack 观察新员工在农田、加工间和厨房工作，并确认他们胜任岗位。\n目的：用实际作业结果验证招募与分配的有效性。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-raising-the-crew",
+        "name": "P3 扩充团队",
+        "start": 480.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-009-evidence-01-000540000.jpg",
+          "note": "09:00 分配后的工人分别在 Bud Field、Leaf Shack 和 Mess Hall 中持续工作，证明 Crew 分配会落到实际生产。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-009-evidence-02-000570000.jpg",
+          "note": "09:30 Jack 连续评价工人懂行、厨房有当地风味，形成对招募结果的剧情确认。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-009-evidence-03-000590000.jpg",
+          "note": "09:50 玩家继续查看 Crew Status 与成员属性，并升级 Mess Hall、Bunkhouse 及其内部设施。"
+        }
+      ],
+      "open_questions": [
+        "09:58 起的新对话跨越 10:00，因果与任务结果需在下一片连续审阅。"
+      ]
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-010-evidence-01-000610000.jpg",
+          "timestamp": 610.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-010-evidence-02-000625000.jpg",
+          "timestamp": 625.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-010-evidence-03-000645000.jpg",
+          "timestamp": 645.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 北区冲突 (Northside Conflict)\n完成首批生产并接受前往 Northside 拓客的任务。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 制作 Leaf；Main: 阅读 Wayne 短信并前往 Northside",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T10 生产 (制作→领取产物)\n[New] T11 手机任务 (接收→前往目标)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Produce Leaf 制作操作；手机短信任务入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 5\n战力约 24,296（片尾可见）",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Wayne 判断现有产量足以铺货，要求团队去 Northside 的大型派对公开打响名号。\n目的：把基地生产转化为外部扩张冲突。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-northside-conflict",
+        "name": "P4. 北区冲突 (Northside Conflict)",
+        "start": 600.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-010-evidence-01-000610000.jpg",
+          "note": "10:10 Jack 与 Emilio 在基地对话。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-010-evidence-02-000625000.jpg",
+          "note": "10:25 玩家进入 Produce Leaf 交互并领取 11 袋产物。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-010-evidence-03-000645000.jpg",
+          "note": "10:45 手机响起，Wayne 的短信要求前往 Northside 的派对拓展客户。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-011-evidence-01-000660000.jpg",
+          "timestamp": 660.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-011-evidence-02-000705000.jpg",
+          "timestamp": 705.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-011-evidence-03-000715000.jpg",
+          "timestamp": 715.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 北区冲突 (Northside Conflict)\n在 Northside 冲突中借 Wayne 之手消除阻碍。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 经历 Northside 枪战并完成对峙",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T11 剧情冲突 (抵达→交火→Wayne 解决 Jax)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio 一行在 Northside 遭遇 Jax 势力枪击；Wayne 现身，Jax 认出其身份后仍被击倒。\n目的：用强力盟友兑现拓张风险，并把玩家推入更高阶的组织晋升。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-northside-conflict",
+        "name": "P4. 北区冲突 (Northside Conflict)",
+        "start": 600.0,
+        "end": 720.0
+      },
+      "narrative_climax": {
+        "judgement": "climax",
+        "reason": "多方街头枪战升级，Wayne 最终击倒 Jax。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-011-evidence-01-000660000.jpg",
+          "note": "11:00 夜间街区发生持续枪战，多名角色倒地并出现血迹。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-011-evidence-02-000705000.jpg",
+          "note": "11:45 Jax 认出 Wayne Heiser，双方对峙。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-011-evidence-03-000715000.jpg",
+          "note": "11:55 Wayne 开枪击倒 Jax。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-012-evidence-01-000720000.jpg",
+          "timestamp": 720.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-012-evidence-02-000735000.jpg",
+          "timestamp": 735.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-012-evidence-03-000760000.jpg",
+          "timestamp": 760.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 扩产晋升 (Climbing the Ranks)\n理解 Cred 晋升，并开始用销售与建设提升组织地位。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 在 Steps of Power 晋升；Main: 开始 Chapter 4 扩张任务",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T12 Cred 晋升 (积累→Promote→领奖→追逐下一门槛)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Steps of Power；Cred 晋升奖励",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred 1→5\n现金约 97.7k（片尾可见）\n金条约 812（片尾可见）",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Chapter 4 以“Climbing the Ranks”为主题，Wayne 事件之后 Emilio 开始沿组织权力阶梯晋升。\n目的：把剧情地位提升绑定到可量化的 Cred 成长。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-climbing-ranks",
+        "name": "P5. 扩产晋升 (Climbing the Ranks)",
+        "start": 720.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-012-evidence-01-000720000.jpg",
+          "note": "12:00 出现 Chapter 4: Climbing the Ranks 标题卡。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-012-evidence-02-000735000.jpg",
+          "note": "12:15 Steps of Power 界面展示人物节点、Cred 门槛和 Promote 奖励。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-012-evidence-03-000760000.jpg",
+          "note": "12:40 玩家连续晋升，Emilio 的 Cred 从 1 提升至 5。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-013-evidence-01-000785000.jpg",
+          "timestamp": 785.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-013-evidence-02-000805000.jpg",
+          "timestamp": 805.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-013-evidence-03-000815000.jpg",
+          "timestamp": 815.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 扩产晋升 (Climbing the Ranks)\n完成首次客户派送，把库存转化为现金与 Cred。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 选择客户并 Deliver；Main: 完成订单",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T13 客户销售 (选客户→派送→现金/Cred→再生产)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "客户销售地图；派送倒计时；客户差异售价",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 5\n战力 24,296\n现金约 97.9k\n金条 812",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio 明确要增加出货，并要求客户只向己方购买。\n目的：把组织扩张叙事转译为订单生产与客户争夺目标。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-climbing-ranks",
+        "name": "P5. 扩产晋升 (Climbing the Ranks)",
+        "start": 720.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-013-evidence-01-000785000.jpg",
+          "note": "13:05 客户地图展示多个客户头像、不同售价与 Deliver 按钮。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-013-evidence-02-000805000.jpg",
+          "note": "13:25 派送有倒计时，奖励区显示现金和 Cred。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-013-evidence-03-000815000.jpg",
+          "note": "13:35 Complete Order x1 任务完成。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-014-evidence-01-000845000.jpg",
+          "timestamp": 845.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-014-evidence-02-000870000.jpg",
+          "timestamp": 870.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-014-evidence-03-000890000.jpg",
+          "timestamp": 890.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 扩产晋升 (Climbing the Ranks)\n强化 Leaf Shack 与 Bud Field，为连续订单建立产能。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: Complete Order x30；Main: Upgrade Leaf Shack to Lv5",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T14 生产建筑 (升级→装配 Setup→提高产能→支撑订单)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Leaf Shack Setup；Bud Field Setup；First Move 长任务",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 5\nLeaf Shack Lv2→Lv3\nBud Field Lv2\n现金约 98.7k→83.6k\n金条约 832→814",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-climbing-ranks",
+        "name": "P5. 扩产晋升 (Climbing the Ranks)",
+        "start": 720.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-014-evidence-01-000845000.jpg",
+          "note": "14:05 First Move 长任务要求 Complete Order x30 与 Leaf Shack 升至 Lv5。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-014-evidence-02-000870000.jpg",
+          "note": "14:30 Leaf Shack 从 Lv2 升至 Lv3，并安装 Packer、货架、垃圾桶等 Setup。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-014-evidence-03-000890000.jpg",
+          "note": "14:50 Bud Field 为 Lv2，Setup 中出现围栏与风车。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-015-evidence-01-000905000.jpg",
+          "timestamp": 905.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-015-evidence-02-000935000.jpg",
+          "timestamp": 935.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-015-evidence-03-000955000.jpg",
+          "timestamp": 955.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 扩产晋升 (Climbing the Ranks)\n完善生产配员，并用宿舍扩充成员容量。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 强化 Leaf Shack；Main: Build Bunkhouse 2",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T14 生产建筑 (Setup/Crew→产能)\n[New] T15 宿舍建设 (建造→扩容)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "生产建筑 Crew 配员；Bunkhouse 2",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 5→8\nCred 8\nLeaf Shack Lv4\n生产 42/min\n成员 4/4→4/5\n现金约 81.8k→112.8k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-climbing-ranks",
+        "name": "P5. 扩产晋升 (Climbing the Ranks)",
+        "start": 720.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-015-evidence-01-000905000.jpg",
+          "note": "15:05 Bud Field Setup 完成一轮建设。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-015-evidence-02-000935000.jpg",
+          "note": "15:35 Steps of Power 显示 Emilio Cred 8、进度 10/60。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-015-evidence-03-000955000.jpg",
+          "note": "15:55 Leaf Shack 达到 Lv4，生产 42/min，并配置 Luis、Javier 两名成员。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-016-evidence-01-000970000.jpg",
+          "timestamp": 970.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-016-evidence-02-000995000.jpg",
+          "timestamp": 995.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-016-evidence-03-001015000.jpg",
+          "timestamp": 1015.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P5. 扩产晋升 (Climbing the Ranks)\n完成宿舍与医疗配套，并通过销售达到 Cred 10。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: Upgrade Bunkhouse 2 to Lv3；Main: Build Clinic；Main: Reach Cred 10",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T15 宿舍 (设施→升级→扩容)\n[New] T16 医疗建筑 (前置→建造)\n[Loop] T13 客户销售 (派送→Cred 10)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Clinic；宿舍设施升级",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 8→10\nCred 10\nBunkhouse 2 Lv2→Lv3\n成员 5/6→6/6\n战力 24,517→24,716\n现金约 108.8k→123.6k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p5-climbing-ranks",
+        "name": "P5. 扩产晋升 (Climbing the Ranks)",
+        "start": 720.0,
+        "end": 1020.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-016-evidence-01-000970000.jpg",
+          "note": "16:10 Bunkhouse 2 安装洗手盆等设施并从 Lv2 升至 Lv3。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-016-evidence-02-000995000.jpg",
+          "note": "16:35 成员容量显示 5/6，后续达到 6/6。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-016-evidence-03-001015000.jpg",
+          "note": "16:55 玩家查看并建造 Clinic，面板写明用于处理成员不适与疾病。"
+        }
+      ],
+      "open_questions": [
+        "Manor Lv4 面板显示可继续 Level Up；本片没有足够结果画面确认是否实际升到 Lv5。"
+      ]
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-017-evidence-01-001025000.jpg",
+          "timestamp": 1025.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-017-evidence-02-001050000.jpg",
+          "timestamp": 1050.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-017-evidence-03-001075000.jpg",
+          "timestamp": 1075.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. 冲突升级 (Restless Conflicts)\n用突发袭击打断建设顺风局，引入正式战斗玩法。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成 Cred 10；Intro: 应对社区冲突；Unlock: 进入 Formation",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T12 Cred 晋升 (达到 Cred 10)\n[New] T17 战斗入口 (剧情袭击→编队)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Chapter 5；Formation 入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 10\nCred 10\n战力约 24,716\n现金约 123.6k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Jack 庆祝生意兴隆后，外来车辆驶入基地并引发新的武装冲突，Chapter 5“Restless Conflicts”开启。\n目的：打破建设期的稳定感，为 Assault 战斗教学制造直接动机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-restless-conflicts",
+        "name": "P6. 冲突升级 (Restless Conflicts)",
+        "start": 1020.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-017-evidence-01-001025000.jpg",
+          "note": "17:05 Steps of Power 显示 Cred 10、进度 70/100。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-017-evidence-02-001050000.jpg",
+          "note": "17:30 达到 Cred 10 的任务勾选完成。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-017-evidence-03-001075000.jpg",
+          "note": "17:55 Jack 表示生意兴隆。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-018-evidence-01-001080000.jpg",
+          "timestamp": 1080.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-018-evidence-02-001115000.jpg",
+          "timestamp": 1115.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-018-evidence-03-001135000.jpg",
+          "timestamp": 1135.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 突击与英雄教学 (Assault & Enforcer Onboarding)\n学习编队、自动攻击与主动技能，连续推进首组关卡。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: Formation 编队；Tutorial: 完成 Assault 1-1、1-2、1-3",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T18 Assault (编队→战斗/技能→胜利→下一关)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Assault 关卡；Formation；Quick Deploy；英雄主动技能",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "出战战力 13.2k\nJohn Rojas Lv1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio 一方开始反击社区内的敌对势力。\n目的：把 Chapter 5 的冲突叙事落到可重复的战斗推关。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-assault-onboarding",
+        "name": "P7. 突击与英雄教学 (Assault & Enforcer Onboarding)",
+        "start": 1080.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "首次正式战斗形成清晰、高反馈的推关闭环。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-018-evidence-01-001080000.jpg",
+          "note": "18:00 玩家进入 Assault 战斗，John Rojas 为首名出战英雄。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-018-evidence-02-001115000.jpg",
+          "note": "18:35 战斗按 1-1、1-2、1-3 逐关推进。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-018-evidence-03-001135000.jpg",
+          "note": "18:55 Formation 支持放置英雄与 Quick Deploy。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-019-evidence-01-001145000.jpg",
+          "timestamp": 1145.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-019-evidence-02-001170000.jpg",
+          "timestamp": 1170.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-019-evidence-03-001195000.jpg",
+          "timestamp": 1195.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 突击与英雄教学 (Assault & Enforcer Onboarding)\n结算首轮战斗，学习招募与英雄升级后回到基地扩张。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 完成 Assault 1-3；Unlock: 招募 Enforcer；Tutorial: Upgrade John Rojas；Main: 强化 Bunkhouse 3",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] T18 Assault (胜利→战利品)\n[New] T19 英雄成长 (招募→查看属性→升级→强化阵容)\n[Cont] T15 宿舍建设",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Enforcer 招募；英雄详情；英雄升级；Uno Bar",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "基地等级 10\n战力 32,116→52,416\n成员 6/6→6/7\n金条 1,187→1,207\nJohn Rojas 战力 13,200、ATK 78、Squad Cap 65\nBunkhouse 3 Lv1",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Jack 称赞 Emilio 解决了社区麻烦。\n目的：确认首轮反击成功，并把战斗胜利导向英雄招募、成长与下一轮战斗准备。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-assault-onboarding",
+        "name": "P7. 突击与英雄教学 (Assault & Enforcer Onboarding)",
+        "start": 1080.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "战斗、招募、英雄成长和基地建设形成强烈的跨系统奖励链。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-019-evidence-01-001145000.jpg",
+          "note": "19:05 Assault 1-3 开战并获胜。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-019-evidence-02-001170000.jpg",
+          "note": "19:30 Victory 奖励包含 10 金条、100 Leaf、25 材料、7,500 经验、英雄碎片和技能书。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-019-evidence-03-001195000.jpg",
+          "note": "19:55 基地完成 Uno Bar 建造。"
+        }
+      ],
+      "open_questions": [
+        "1180 秒展示的新英雄姓名在画面字体下不够稳定，未写入事实字段。",
+        "招募后是否已实际完成一次 John Rojas 升级，需结合 1170-1185 秒连续操作或后续数值确认。"
+      ]
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-020-evidence-01-001210000.jpg",
+          "timestamp": 1210.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-020-evidence-02-001230000.jpg",
+          "timestamp": 1230.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. Chapter 6 扩张准备 (Expansion Prep)\n用住宿升级与突袭奖励继续抬升庄园实力。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 升级 Bunkhouse 3；推进 Assault 并结算胜利",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T6 庄园成长/突袭 (升级建筑→战斗→领奖)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.10\nPower 约52.5k\nBunkhouse 3 Lv.2→升级完成",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-expansion",
+        "name": "P6 Chapter 6 扩张准备",
+        "start": 1200.0,
+        "end": 1380.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-020-evidence-01-001210000.jpg",
+          "note": "20:10 庄园内先补足材料升级 Bunkhouse 3，随后进入突袭并领取胜利奖励。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-020-evidence-02-001230000.jpg",
+          "note": "20:30 庄园内先补足材料升级 Bunkhouse 3，随后进入突袭并领取胜利奖励。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-021-evidence-01-001290000.jpg",
+          "timestamp": 1290.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-021-evidence-02-001310000.jpg",
+          "timestamp": 1310.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. Chapter 6 扩张准备 (Expansion Prep)\n用连续突袭消耗成长成果并推进章节。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续 Assault 1-9",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T6 突袭 (编队→自动战斗→结算→下一关)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.10\nPower 约52.5k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-expansion",
+        "name": "P6 Chapter 6 扩张准备",
+        "start": 1200.0,
+        "end": 1380.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-021-evidence-01-001290000.jpg",
+          "note": "21:30 Bunkhouse 3 完成后继续推进 1-9 突袭，战斗基本自动进行并再次结算。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-021-evidence-02-001310000.jpg",
+          "note": "21:50 Bunkhouse 3 完成后继续推进 1-9 突袭，战斗基本自动进行并再次结算。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-022-evidence-01-001340000.jpg",
+          "timestamp": 1340.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-022-evidence-02-001350000.jpg",
+          "timestamp": 1350.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-022-evidence-03-001360000.jpg",
+          "timestamp": 1360.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P6. Chapter 6 扩张准备 (Expansion Prep)\n通过地盘冲突把常规战斗接入势力叙事。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 回应 Sergio 的地盘警告并完成会面战斗",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T6 剧情选择战 (对话选择→战斗→返回庄园)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "会面二选一：战斗或支付现金",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Sergio 警告 Emilio 必须遵守当地规矩；玩家可选择以武力证明权力或花钱息事。\n目的：把势力扩张包装成可付费规避的冲突选择。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p6-expansion",
+        "name": "P6 Chapter 6 扩张准备",
+        "start": 1200.0,
+        "end": 1380.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-022-evidence-01-001340000.jpg",
+          "note": "22:20 Inside the Compound 会面提出地盘规则，玩家选择以战斗回应并完成一次剧情包装的交锋。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-022-evidence-02-001350000.jpg",
+          "note": "22:30 Inside the Compound 会面提出地盘规则，玩家选择以战斗回应并完成一次剧情包装的交锋。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-022-evidence-03-001360000.jpg",
+          "note": "22:40 Inside the Compound 会面提出地盘规则，玩家选择以战斗回应并完成一次剧情包装的交锋。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-023-evidence-01-001390000.jpg",
+          "timestamp": 1390.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-023-evidence-02-001400000.jpg",
+          "timestamp": 1400.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-023-evidence-03-001430000.jpg",
+          "timestamp": 1430.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 无情攀升 (Ruthless Ascent)\n把庄园生产与城区订单连接成新的供销目标。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 开启 Chapter 6；查看城区订单；学习制作 Shatter",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T7 Shatter 供销 (生产→交付→声望/现金)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Chapter 6；城区 Deliver 订单图；Produce Shatter 制作玩法",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "城区订单路线图",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "现金约153k\n黄金约1.3k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Jack 确认庄园中的设施可制造 Shatter，Emilio 表示已掌握流程并将继续生产。\n目的：将章节主题落到可反复执行的毒品生产经营。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-ruthless-ascent",
+        "name": "P7 Chapter 6 无情攀升",
+        "start": 1380.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-023-evidence-01-001390000.jpg",
+          "note": "23:10 进入 Chapter 6「Ruthless Ascent」，首次打开城区交付地图，并由 Jack 引出 Shatter 制作教学。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-023-evidence-02-001400000.jpg",
+          "note": "23:20 进入 Chapter 6「Ruthless Ascent」，首次打开城区交付地图，并由 Jack 引出 Shatter 制作教学。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-023-evidence-03-001430000.jpg",
+          "note": "23:50 进入 Chapter 6「Ruthless Ascent」，首次打开城区交付地图，并由 Jack 引出 Shatter 制作教学。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-024-evidence-01-001450000.jpg",
+          "timestamp": 1450.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-024-evidence-02-001460000.jpg",
+          "timestamp": 1460.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-024-evidence-03-001490000.jpg",
+          "timestamp": 1490.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 无情攀升 (Ruthless Ascent)\n完成首次 Shatter 制作，掌握生产操作。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Tutorial: 完成 Shatter 制作流程",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T7 Shatter 生产 (混合→加热→粉碎→产出)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Shatter 分步制作交互",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-ruthless-ascent",
+        "name": "P7 Chapter 6 无情攀升",
+        "start": 1380.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-024-evidence-01-001450000.jpg",
+          "note": "24:10 玩家完整执行 Shatter 的 Mix、Cook、Crush 等分步制作，并返回庄园。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-024-evidence-02-001460000.jpg",
+          "note": "24:20 玩家完整执行 Shatter 的 Mix、Cook、Crush 等分步制作，并返回庄园。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-024-evidence-03-001490000.jpg",
+          "note": "24:50 玩家完整执行 Shatter 的 Mix、Cook、Crush 等分步制作，并返回庄园。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-025-evidence-01-001500000.jpg",
+          "timestamp": 1500.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-025-evidence-02-001540000.jpg",
+          "timestamp": 1540.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-025-evidence-03-001550000.jpg",
+          "timestamp": 1550.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 无情攀升 (Ruthless Ascent)\n重复生产并把产出转回章节成长。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 再次制作 Shatter；领取章节任务奖励",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T7 Shatter 供销 (重复生产→回庄园→领奖)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Emilio 确认计划会推进。\n目的：以简短对话收束首次生产教学。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-ruthless-ascent",
+        "name": "P7 Chapter 6 无情攀升",
+        "start": 1380.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-025-evidence-01-001500000.jpg",
+          "note": "25:00 玩家再次进入 Shatter 制作，随后回庄园推进任务并触发角色对话与奖励。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-025-evidence-02-001540000.jpg",
+          "note": "25:40 玩家再次进入 Shatter 制作，随后回庄园推进任务并触发角色对话与奖励。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-025-evidence-03-001550000.jpg",
+          "note": "25:50 玩家再次进入 Shatter 制作，随后回庄园推进任务并触发角色对话与奖励。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-026-evidence-01-001580000.jpg",
+          "timestamp": 1580.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-026-evidence-02-001600000.jpg",
+          "timestamp": 1600.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-026-evidence-03-001610000.jpg",
+          "timestamp": 1610.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 无情攀升 (Ruthless Ascent)\n用新 Enforcer 与 Cred 晋升扩充战力。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 招募/强化 Enforcer；完成战斗并提升 Cred Rank",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T7 Enforcer 成长 (招募/强化→战斗→Cred 晋升)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "新 Enforcer；Cred 新 Rank 权益",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Rank 升至16附近\nPower 约72k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Torch 发消息自我介绍并表示愿意协助。\n目的：在数值晋升后引入新的势力联系人。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-ruthless-ascent",
+        "name": "P7 Chapter 6 无情攀升",
+        "start": 1380.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "多系统成长共振形成阶段高点，虽然核心战斗仍重复。"
+      },
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-026-evidence-01-001580000.jpg",
+          "note": "26:20 玩家处理 Enforcer 招募/养成，战斗后 Cred 升至新 Rank，并收到 Torch 的自我介绍消息。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-026-evidence-02-001600000.jpg",
+          "note": "26:40 玩家处理 Enforcer 招募/养成，战斗后 Cred 升至新 Rank，并收到 Torch 的自我介绍消息。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-026-evidence-03-001610000.jpg",
+          "note": "26:50 玩家处理 Enforcer 招募/养成，战斗后 Cred 升至新 Rank，并收到 Torch 的自我介绍消息。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-027-evidence-01-001630000.jpg",
+          "timestamp": 1630.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-027-evidence-02-001640000.jpg",
+          "timestamp": 1640.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 营救 Scorpia (Rescue Scorpia)\n建立限时救援目标并把后续成长任务绑定到危机。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Unlock: 开启 Rescue Scorpia；推进 Assault 3-5、Cred 25、Order 80",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[New] T8 限时救援 (危机→多线成长门槛→领取角色/资源)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Rescue Scorpia 限时活动与三项进度门槛",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.17",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Torch 告知 Scorpia 被绑架，Jack 要求立刻采取行动。\n目的：用人质危机为接下来的战斗、Cred 与订单刷取提供统一动机。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-rescue-scorpia",
+        "name": "P8 营救 Scorpia",
+        "start": 1620.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-027-evidence-01-001630000.jpg",
+          "note": "27:10 Torch 消息转为 Scorpia 被绑架的危机，限时 Rescue Scorpia 活动开放并列出三项门槛。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-027-evidence-02-001640000.jpg",
+          "note": "27:20 Torch 消息转为 Scorpia 被绑架的危机，限时 Rescue Scorpia 活动开放并列出三项门槛。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-028-evidence-01-001680000.jpg",
+          "timestamp": 1680.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-028-evidence-02-001730000.jpg",
+          "timestamp": 1730.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 营救 Scorpia (Rescue Scorpia)\n用重复生产与设施成长积累救援所需进度。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 继续生产/领奖；升级 Bunkhouse 内部设施",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T8 多线成长 (生产→领奖→设施升级)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Bunkhouse 家具级别与舒适度升级",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.17\nPower 约72k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-rescue-scorpia",
+        "name": "P8 营救 Scorpia",
+        "start": 1620.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.88,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-028-evidence-01-001680000.jpg",
+          "note": "28:00 玩家在 Shatter、庄园任务、奖励与活动入口间往返，随后进入 Bunkhouse 内部家具升级。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-028-evidence-02-001730000.jpg",
+          "note": "28:50 玩家在 Shatter、庄园任务、奖励与活动入口间往返，随后进入 Bunkhouse 内部家具升级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-029-evidence-01-001750000.jpg",
+          "timestamp": 1750.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-029-evidence-02-001760000.jpg",
+          "timestamp": 1760.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-029-evidence-03-001790000.jpg",
+          "timestamp": 1790.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 营救 Scorpia (Rescue Scorpia)\n补齐设施与战力，继续推进救援门槛。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 配置 Clinic；升级 Enforcer；继续 Assault",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T8 多线成长 (设施→角色→突袭)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Clinic 病床配置与治愈率",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.17\nPower 约77k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-rescue-scorpia",
+        "name": "P8 营救 Scorpia",
+        "start": 1620.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.91,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-029-evidence-01-001750000.jpg",
+          "note": "29:10 玩家继续配置 Clinic/Bunkhouse、升级 Enforcer，并从活动/任务面板返回突袭战斗。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-029-evidence-02-001760000.jpg",
+          "note": "29:20 玩家继续配置 Clinic/Bunkhouse、升级 Enforcer，并从活动/任务面板返回突袭战斗。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-029-evidence-03-001790000.jpg",
+          "note": "29:50 玩家继续配置 Clinic/Bunkhouse、升级 Enforcer，并从活动/任务面板返回突袭战斗。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 2100.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-030-main-001950000.jpg",
+        "timestamp": 1950.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-030-evidence-01-001800000.jpg",
+          "timestamp": 1800.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-030-evidence-02-001840000.jpg",
+          "timestamp": 1840.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-030-evidence-03-001900000.jpg",
+          "timestamp": 1900.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8→P9. 救援刷取与阴谋章节 (Rescue Grind to Schemes)\n用高频突袭抬升救援进度，并切入 Chapter 7。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 连续推进 Assault 2-7 至3区；强化 Enforcer；进入 Chapter 7",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Loop] T8/T9 突袭推进 (自动战斗→胜利/星级→养成→下一关)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Chapter 7 Schemes & Betrayals；Enforcer 技能升级入口；首购/VIP付费入口",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "Assault 进入第3区",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Power 约126k→148k\nCred Lv.17→19",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "Chapter 7 标题为「Schemes & Betrayals」，继续以被绑架的 Scorpia 作为章节悬念。\n目的：在长段刷关中提供新的章节包装。",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-to-p9-transition",
+        "name": "P8救援刷取→P9阴谋章节",
+        "start": 1800.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-030-evidence-01-001800000.jpg",
+          "note": "30:00 30-35分钟以连续 Assault 为主，从2区推进到3区；其间穿插付费礼包、Chapter 7 章节卡、Enforcer 晋升与技能升级。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-030-evidence-02-001840000.jpg",
+          "note": "30:40 30-35分钟以连续 Assault 为主，从2区推进到3区；其间穿插付费礼包、Chapter 7 章节卡、Enforcer 晋升与技能升级。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-030-evidence-03-001900000.jpg",
+          "note": "31:40 30-35分钟以连续 Assault 为主，从2区推进到3区；其间穿插付费礼包、Chapter 7 章节卡、Enforcer 晋升与技能升级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 31,
+      "start": 2100.0,
+      "end": 2400.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-031-main-002250000.jpg",
+        "timestamp": 2250.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-031-evidence-01-002200000.jpg",
+          "timestamp": 2200.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-031-evidence-02-002240000.jpg",
+          "timestamp": 2240.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-031-evidence-03-002320000.jpg",
+          "timestamp": 2320.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 阴谋与背叛 (Schemes & Betrayals)\n继续刷取关卡与订单，扩充四人编队并向4区推进。",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "Main: 推进 Assault 3-7至4区；Deliver 订单；提升 Cred/Enforcer",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[Cont] T9 多线刷取 (突袭→养成/订单→再突袭)",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "Olivia Ramirez/Scorpia 加入四人编队；VIP1 权益预览",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "Assault Block 4: Uptown",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "Cred Lv.19\nPower 约149k→175k",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "p9-schemes-betrayals",
+        "name": "P9 Chapter 7 阴谋与背叛",
+        "start": 2100.0,
+        "end": 2400.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.89,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-031-evidence-01-002200000.jpg",
+          "note": "36:40 35-40分钟继续在订单地图、Enforcer/Cred 成长与 Assault 3-7至4区之间往返；Olivia 加入编队，期间插入 VIP1 付费页。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-031-evidence-02-002240000.jpg",
+          "note": "37:20 35-40分钟继续在订单地图、Enforcer/Cred 成长与 Assault 3-7至4区之间往返；Olivia 加入编队，期间插入 VIP1 付费页。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-031-evidence-03-002320000.jpg",
+          "note": "38:40 35-40分钟继续在订单地图、Enforcer/Cred 成长与 Assault 3-7至4区之间往返；Olivia 加入编队，期间插入 VIP1 付费页。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 32,
+      "start": 2400.0,
+      "end": 2700.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-032-main-002550000.jpg",
+        "timestamp": 2550.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-032-evidence-01-002470000.jpg",
+          "timestamp": 2470.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-032-evidence-02-002580000.jpg",
+          "timestamp": 2580.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-032-evidence-03-002680000.jpg",
+          "timestamp": 2680.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 复合养成重复加深 (Compound Routine)\n通过生产、建筑、执行者和战斗交替堆高战力。",
+          "inference": "系统数量较多，但目标仍是同一套数值成长。"
+        },
+        "任务链": {
+          "fact": "Main: 建造 Amber Lab；升级种植设施并继续 Assault 推关。",
+          "inference": "任务链以升级门槛牵引玩家跨系统往返。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T32 据点复合养成 (生产/升级/编队/战斗/领奖)",
+          "inference": "多个短循环被任务链串联，但操作结构已明显重复。"
+        },
+        "渐进体验": {
+          "fact": "Produce Leaf 加工小游戏；Amber Lab 建造入口。",
+          "inference": "加工小游戏提供短时操作变化。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "玩家等级 26\n战力 249,223\nMata Field Lv.4\nAngel Morales Lv.4",
+          "inference": "成长主要表现为持续数值抬升。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "compound-routine",
+        "name": "P8. 复合养成重复加深 (Compound Routine)",
+        "start": 2400.0,
+        "end": 3000.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-032-evidence-01-002470000.jpg",
+          "note": "41:10 玩家在据点、执行者、生产和自动战斗之间频繁切换。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-032-evidence-02-002580000.jpg",
+          "note": "43:00 可见 Mata Field Lv.4 的设施升级、Produce Leaf 加工小游戏、执行者升级以及 4-6 关卡编队。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-032-evidence-03-002680000.jpg",
+          "note": "44:40 Amber Lab 建造任务持续推进；本片仍以既有系统的升级和领取反馈为主，新鲜感被重复操作稀释。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 33,
+      "start": 2700.0,
+      "end": 3000.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-033-main-002850000.jpg",
+        "timestamp": 2850.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-033-evidence-01-002800000.jpg",
+          "timestamp": 2800.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-033-evidence-02-002920000.jpg",
+          "timestamp": 2920.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-033-evidence-03-002990000.jpg",
+          "timestamp": 2990.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 复合养成重复加深 (Compound Routine)\n完成高次数生产、订单与战斗要求，继续抬升 Cred 和据点等级。",
+          "inference": "长计数任务强化留存目标，也显著放大疲劳。"
+        },
+        "任务链": {
+          "fact": "Main: Take down Alberto；升级 Mess Hall 至 Lv.6；完成订单与 Assault 次数目标。",
+          "inference": "任务链从章节目标转为多系统累计刷取。"
+        },
+        "核心循环": {
+          "fact": "[Cont] T33 复合刷取 (Deliver/Assault/Promote/建筑加速)",
+          "inference": "循环成熟但变化有限，重复疲劳达到本段低点。"
+        },
+        "渐进体验": {
+          "fact": "Power Trials 长线任务页。",
+          "inference": "新增的是目标聚合与奖励展示，不是新的核心玩法。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "玩家等级 30\n战力 278,488\nSteps of Power: Emilio Cred 30",
+          "inference": "成长速度快，但主要通过重复任务和晋升实现。"
+        },
+        "剧情轴": {
+          "fact": "围绕 Alberto 的对抗任务继续推进。\n目的：为后续建设机场、外出扩张提供章节理由。",
+          "inference": "剧情只承担任务串联，片内没有重大转折。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "compound-routine",
+        "name": "P8. 复合养成重复加深 (Compound Routine)",
+        "start": 2400.0,
+        "end": 3000.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-033-evidence-01-002800000.jpg",
+          "note": "46:40 玩家继续自动战斗、城市订单 Deliver、Steps of Power 晋升、建筑升级和加速。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-033-evidence-02-002920000.jpg",
+          "note": "48:40 Power Trials 明示累计进度：Assault 41/60、Order 110/120、Produce Leaf 2,223/2,500，证明后期大量重复刷取。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-033-evidence-03-002990000.jpg",
+          "note": "49:50 系统反馈仍频繁，但本片绝大多数行为是对既有循环的重复强化。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 34,
+      "start": 3000.0,
+      "end": 3300.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-034-main-003150000.jpg",
+        "timestamp": 3150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-034-evidence-01-003180000.jpg",
+          "timestamp": 3180.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-034-evidence-02-003199500.jpg",
+          "timestamp": 3199.5
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-034-evidence-03-003236000.jpg",
+          "timestamp": 3236.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 从据点转入世界扩张 (World Expansion Entry)\n建成机场并前往 West Coast，开启世界节点争夺。",
+          "inference": "这是录屏前 60 分钟最重要的玩法层级跃迁。"
+        },
+        "任务链": {
+          "fact": "Unlock: Build Airstrip；Main: 完成战斗并乘机前往 West Coast。",
+          "inference": "机场是从据点养成转向世界扩张的明确门槛。"
+        },
+        "核心循环": {
+          "fact": "[End] T34 据点扩建 (Manor Lv.9/机场)\n[New] T35 世界交易与据点争夺 (选点/行军/交战)",
+          "inference": "旧据点循环暂时收束，新世界循环开始。"
+        },
+        "渐进体验": {
+          "fact": "Airstrip；West Coast 世界节点玩法。",
+          "inference": "开放的是新地图层级与其任务结构。"
+        },
+        "地图体验": {
+          "fact": "SLG 世界大地图：等级据点、资源节点、点状行军路线。",
+          "inference": "后续坐标、Outpost Raid、Nation 聊天与 Alliance UI 进一步交叉验证。"
+        },
+        "经济体验": {
+          "fact": "Manor Lv.9\nSteps of Power 多名角色 Cred 62/45",
+          "inference": "高 Cred 与 Manor Lv.9 构成进入世界扩张前的成长快照。"
+        },
+        "剧情轴": {
+          "fact": "Jack 与 Wayne 在机场对话后乘机前往 West Coast，并在当地开始第一笔交易。\n目的：用跨区行动把玩家从本地据点带入更大的势力争夺。",
+          "inference": "剧情服务于地图层级切换。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "airstrip-world-transition",
+        "name": "P9. 从据点转入世界扩张 (World Expansion Entry)",
+        "start": 3000.0,
+        "end": 3300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-034-evidence-01-003180000.jpg",
+          "note": "53:00 据点推进至 Manor Lv.9，并出现 Build Airstrip 目标与前置条件。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-034-evidence-02-003199500.jpg",
+          "note": "53:19.5 玩家完成一轮 Assault 后观看机场对话和飞机出发演出，首次离开据点前往 West Coast。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-034-evidence-03-003236000.jpg",
+          "note": "53:56 54:00 左右进入可交互的大范围节点地图，可见等级据点、资源节点和绿色点状行军路线；后续同一系统出现世界坐标和 Outpost Raid，确认这是真正的传统 SLG 世界大地图入口，而非仅镜头拉远。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 35,
+      "start": 3300.0,
+      "end": 3600.0,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-035-main-003450000.jpg",
+        "timestamp": 3450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/narco-empire/frames/slice-035-evidence-01-003420000.jpg",
+          "timestamp": 3420.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-035-evidence-02-003480000.jpg",
+          "timestamp": 3480.0
+        },
+        {
+          "path": "screenshots/narco-empire/frames/slice-035-evidence-03-003570000.jpg",
+          "timestamp": 3570.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P10. 世界节点扩张 (World Operations)\n完成 Dealer 与 Outpost 目标，并接入联盟功能。",
+          "inference": "系统已进入传统 SLG 世界经营与战斗框架。"
+        },
+        "任务链": {
+          "fact": "Main: 推进 Dealer 进度；Attack Outpost Raid Lv.2；Unlock: 建造 Alliance Center。",
+          "inference": "世界任务将战斗、地盘进度和联盟建设串联。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T35 世界扩张 (选据点/编队/战斗/领奖/下一节点)\n[New] T36 联盟协作 (建造 Alliance Center)",
+          "inference": "世界循环建立很快，但战斗本身仍沿用既有自动战斗。"
+        },
+        "渐进体验": {
+          "fact": "Alliance Center；Outpost Raid；Nation 聊天；Alliance 入口。",
+          "inference": "传统 SLG 社交与世界据点功能在本片集中显形。"
+        },
+        "地图体验": {
+          "fact": "SLG 世界大地图：#4 (2105, 991)、Outpost Raid Lv.2、31km 距离、多个世界节点。",
+          "inference": "坐标、距离、据点和联盟入口共同排除普通关卡地图的可能。"
+        },
+        "经济体验": {
+          "fact": "玩家等级 48\n战力 300,780-301,220\nManor Lv.9",
+          "inference": "进入世界阶段后战力仍通过战斗和据点奖励小幅增长。"
+        },
+        "剧情轴": {
+          "fact": "Jack 与 Emilio 接触 West Coast 的 Dealer，开始通过交易与清剿建立当地关系。\n目的：为世界节点扩张赋予势力经营语境。",
+          "inference": "剧情承担节点引导，随后让位于系统循环。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "world-operations",
+        "name": "P10. 世界节点扩张 (World Operations)",
+        "start": 3300.0,
+        "end": 3600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-035-evidence-01-003420000.jpg",
+          "note": "57:00 玩家在 West Coast 的交易/地盘地图、世界大地图、自动战斗和据点之间往返。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-035-evidence-02-003480000.jpg",
+          "note": "58:00 可见 Smuggler's Express、The Fixer 等节点奖励，以及多个 Dealer 的区域进度。"
+        },
+        {
+          "frame": "screenshots/narco-empire/frames/slice-035-evidence-03-003570000.jpg",
+          "note": "59:30 Alliance Center 在 Manor Lv.9 条件下开放；58:00 世界地图明确显示 X:2105 Y:991、Outpost Raid Lv.2、31km、Nation 聊天、Alliance 和 Compound 入口，满足传统 SLG 世界坐标/据点/联盟证据。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 36,
+      "start": 3600.0,
+      "end": 3600.066667,
+      "main_frame": {
+        "path": "screenshots/narco-empire/frames/slice-036-main-003600033.jpg",
+        "timestamp": 3600.0333335
+      },
+      "evidence_frames": [],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "",
+          "inference": ""
+        },
+        "任务链": {
+          "fact": "",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "",
+          "inference": ""
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "recording-tail",
+        "name": "录屏尾帧",
+        "start": 3600.0,
+        "end": 3600.066667
+      },
+      "narrative_climax": {
+        "judgement": "low",
+        "reason": "录屏尾片仅有瞬时背景帧，无可辨识剧情或玩法反馈。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "frame": "screenshots/narco-empire/frames/slice-036-main-003600033.jpg",
+          "note": "60:00.0 尾片仅保留一帧绿色调人物背景画面，没有可读 UI、操作反馈或新事件。"
+        }
+      ],
+      "open_questions": []
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 2.0,
+          "intensity": 2.0,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "urgency"
+          ],
+          "event": "坏批次持续冒烟，Emilio警告烟雾会暴露给警察。",
+          "reason": "人物冲突和执法威胁形成中等紧张，但尚未出现直接追捕或重大损失。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "前约28秒为不可操作对话，之后进入连续手势制作，注意力由观看切到执行。",
+            "feedback_density": "配方图标、手势、进度条与材料状态持续反馈，制作段反馈较密。",
+            "goal_challenge": "目标明确为接手并修好坏批次；操作门槛低，以跟随提示为主。",
+            "interruption": "开场对话较长，但直接承担制作动机，不是无关打断。"
+          },
+          "summary": "剧情动机清楚，后半段连续制作操作带来中等偏上的投入。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Amber制作小游戏；点击与持续操作手势"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "full_break",
+            "reason": "核心操作结构发生完整变化，建立新的主导体验层。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 4.0,
+          "supporting_score": 5.0,
+          "intensity": 4.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "environment_pressure",
+            "progression_reward"
+          ],
+          "event": "制品完成后立刻遭警车夹击，房车翻覆起火。",
+          "reason": "制作成功的短暂正反馈与高强度追逐、翻车损失连续叠加，是本段最强转折。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "前17秒仍有制作操作；其后主要观看追逐和翻车演出，主动操作显著减少。",
+            "feedback_density": "制作完成、×10成品和99%纯度提供密集结算，追逐阶段视觉事件密集但系统反馈少。",
+            "goal_challenge": "制作目标被明确完成；逃离警察虽紧迫，但本片未见玩家可控驾驶或决策。",
+            "interruption": "约40秒连续演出中断核心操作，张力高但玩法投入下降。"
+          },
+          "summary": "强转折提高情绪刺激，但长段不可操作追逐压低玩法沉浸。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：过滤与包装步骤"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.6,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 4.0,
+          "supporting_score": 3.0,
+          "intensity": 4.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "relief",
+            "progression_reward"
+          ],
+          "event": "二人逃离燃烧房车后被Wayne训斥，随后进入可操作聚落并领取任务奖励。",
+          "reason": "重大资产损失和责罚维持高剧情张力，进入聚落与解锁功能提供有限缓解。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "前42秒以逃离、对话和镜头巡览为主；最后18秒才进入聚落点击与派工。",
+            "feedback_density": "地图入口后连续出现HUD、任务完成、金条+10、田地面板和生产倒计时，尾段反馈密集。",
+            "goal_challenge": "重建方向和“收获1次”目标明确，但本片只完成派工，尚未看到完整收获结果。",
+            "interruption": "长剧情演出和镜头巡览延迟系统接管；任务面板多次覆盖地图。"
+          },
+          "summary": "系统入口清晰且奖励集中，但大部分时间不可操作，生产闭环尚未完成。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：可操作聚落HUD；Story任务面板；Wayne's Order；Bud Field Lv.1"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.5,
+          "intensity": 1.8,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "Leaf Shack建成、首次加工完成并连续获得金条。",
+          "reason": "剧情仅提供轻度订单动机，主要唤起来自系统解锁和高频完成反馈。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "连续收割、建造、加工，主动操作高且目标集中。",
+            "feedback_density": "建筑完成、任务勾选、产品飞出、金条递增和进度条形成秒级反馈。",
+            "goal_challenge": "低门槛教学由1次增至2次，挑战在理解流程。",
+            "interruption": "短对话和任务面板会中断操作，但直接解释产出。"
+          },
+          "summary": "高密度生产教学高点，操作—反馈闭合快。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Leaf Shack建造；Produce Leaf交互式加工界面"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "partial_break",
+            "reason": "开放新的功能层，但仍与既有经营或战斗链共享资源和目标。"
+          },
+          "effective_score": 4.8,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 2.2,
+          "supporting_score": 2.0,
+          "intensity": 2.2,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "订单结算后首次出货，警车跟随并出现风险警告。",
+          "reason": "奖励先释放正向情绪，警方出现又转为轻度紧张。"
+        },
+        "experience": {
+          "score": 2.1,
+          "basis": {
+            "gameplay_concentration": "前19秒有领取和短信选择，之后多为自动行车与对白。",
+            "feedback_density": "订单、50金条和章节反馈集中；出发后主要是镜头反馈。",
+            "goal_challenge": "目标清楚且有警方风险，但无躲避、路线或失败条件。",
+            "interruption": "连续剧情约占后40秒，主动操作少。"
+          },
+          "summary": "叙事风险上升，但控制权明显下降。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 3.5,
+          "supporting_score": 3.0,
+          "intensity": 3.5,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "environment_pressure",
+            "urgency",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "交易后遭盘问，脱身后获得25k并开启Cop Crackdown。",
+          "reason": "警方逼近形成叙事峰值；脱身和收益提供释放，但新章节保留威胁。"
+        },
+        "experience": {
+          "score": 2.3,
+          "basis": {
+            "gameplay_concentration": "前46秒基本为剧情，末段才恢复点田派工。",
+            "feedback_density": "25k、220金条、章节卡和任务恢复提供集中反馈。",
+            "goal_challenge": "盘问有风险但无可操作对抗；收割低难度。",
+            "interruption": "长剧情、黑屏和章节卡连续中断玩法。"
+          },
+          "summary": "情绪张力高于操作强度，片尾才短暂恢复玩法。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Chapter 2: Cop Crackdown开启；未见独立警方功能界面"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 2.8,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 3.5,
+          "intensity": 3.1,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "environment_pressure"
+          ],
+          "event": "警车与持枪警察包围庄园，Cop Crackdown 倒计时启动。",
+          "reason": "连续剧情明确建立警察威胁，倒计时与三项需求进一步强化紧迫感。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "先完成短促的加工操作，随后注意力转向警察事件与目标面板。",
+            "feedback_density": "收获、包装进度、奖励、警车到场、倒计时和需求列表连续反馈。",
+            "goal_challenge": "生产操作低难度；警察需求首次形成清晰限时复合目标。",
+            "interruption": "约 24 秒连续剧情演出打断主动操作，但用于建立后续任务因果。"
+          },
+          "summary": "操作教学与危机导入衔接紧密，体验强度中高。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Produce Leaf 加工小游戏\nCop Crackdown 倒计时与 Police Demands"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "reinforcement",
+            "reason": "首次出现生产与客户销售，但本片主要仍服务既有主线，未形成完整玩法断点。"
+          },
+          "effective_score": 4.1,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 2.5,
+          "supporting_score": 3.0,
+          "intensity": 2.7,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "倒计时下连续完成三栋建筑升级，随后贿赂警察并达成交易。",
+          "reason": "前半段有倒计时压力，后半段通过交付、奖励和警察接受交易形成明显缓解。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "连续执行前置升级、施工、生产和需求核对，主动操作占比高。",
+            "feedback_density": "施工倒计时、等级变化、任务勾选、资源奖励和 Bribe Police 反馈密集。",
+            "goal_challenge": "复合目标清晰，主要挑战是按依赖顺序完成建筑与交货，机械难度较低。",
+            "interruption": "末段交付剧情约十余秒中断操作，但完成了危机闭环。"
+          },
+          "summary": "本段是清晰的限时建设—交货—危机解除闭环，体验强度较高。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：建筑升级施工与加速\nBribe Police 结算"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 2.5,
+          "intensity": 2.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "警察离开、章节结算并进入 Chapter 3，新员工抵达后开始岗位分配。",
+          "reason": "危机解除带来缓解，章节切换、建筑落成和人员加入提供连续成长奖励。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "快速建设两座设施，并进入明确的 Crew 分配与状态教学。",
+            "feedback_density": "章节完成、Power 增长、建筑落成、人员到场、岗位生效与状态面板连续反馈。",
+            "goal_challenge": "目标明确且步骤连续，主要是教学执行，决策空间尚有限。",
+            "interruption": "章节卡和两段对话造成短中断，但都直接解释新阶段与人员来源。"
+          },
+          "summary": "从章节收束平滑转入员工系统，反馈丰富但仍以引导式操作为主。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Mess Hall\nBunkhouse\nCrew 岗位分配\nCrew Status 与 Optimize"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "partial_break",
+            "reason": "开放新的功能层，但仍与既有经营或战斗链共享资源和目标。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 2.0,
+          "intensity": 1.0,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "员工在多个岗位实际工作，Mess Hall 与 Bunkhouse 连续升级。",
+          "reason": "剧情仅作轻度正向确认，主要情绪来自员工生效和设施成长奖励。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "在 Crew 状态检查与多项建筑/设施升级之间连续操作。",
+            "feedback_density": "工人动画、属性面板、设施等级、施工与完成提示较密集。",
+            "goal_challenge": "升级路径清楚但高度引导，资源与时间门槛未形成明显失败压力。",
+            "interruption": "开头有约九秒观察式对话，后续大多为连续菜单与建设操作。"
+          },
+          "summary": "员工系统从教学转入可见产出，建设反馈稳定，但重复升级使强度略回落。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Crew 属性与需求\nMess Hall Lv.2 设施\nBunkhouse Lv.2 设施"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 2.0,
+          "intensity": 1.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "领取首批产品后立刻收到外出拓客指令。",
+          "reason": "产出奖励带来正反馈，夜间任务转场增加轻度紧迫感。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "生产点击、领奖和短信任务连续发生，操作目标明确。",
+            "feedback_density": "产物数量、奖励弹窗、电话动画和场景切换反馈密集。",
+            "goal_challenge": "目标清楚但操作门槛低。",
+            "interruption": "对话与手机界面短暂打断基地操作。"
+          },
+          "summary": "短时间内完成生产闭环并抛出新任务，节奏紧凑。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Produce Leaf 制作操作；手机短信任务入口"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 4.0,
+          "supporting_score": 4.0,
+          "intensity": 4.0,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency",
+            "relief"
+          ],
+          "event": "多方街头枪战升级，Wayne 最终击倒 Jax。",
+          "reason": "连续枪火、伤亡和身份对峙构成强叙事冲突，结尾提供危机解除。"
+        },
+        "experience": {
+          "score": 2.7,
+          "basis": {
+            "gameplay_concentration": "主要为自动播放的剧情枪战，主动操作较少。",
+            "feedback_density": "枪火、车辆、倒地、血迹和对话反馈非常密集。",
+            "goal_challenge": "剧情风险高，但未见玩家承担明确操作挑战。",
+            "interruption": "整片基本由不可操作演出占据。"
+          },
+          "summary": "叙事刺激强，但玩法沉浸受长演出限制。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "首次出现剧情冲突与 Assault 推关，但本片主要仍服务既有主线，未形成完整玩法断点。"
+          },
+          "effective_score": 2.7,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.0,
+          "intensity": 1.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "新章节开启并连续晋升、领取资源。",
+          "reason": "前一场危机解除后立即给出多次成长奖励，形成明显释放感。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "晋升目标与点击路径单一但清楚。",
+            "feedback_density": "节点亮起、Cred 变化、金条和现金奖励连续出现。",
+            "goal_challenge": "主要是理解成长门槛，挑战较低。",
+            "interruption": "章节卡和多次领奖造成短暂停顿。"
+          },
+          "summary": "成长反馈密集，快速建立 Cred 长线目标。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Steps of Power；Cred 晋升奖励"
+          },
+          "repetition_context": {
+            "loop_family_id": "power-progression",
+            "variation": "reinforcement",
+            "reason": "首次出现Cred 与组织权力晋升，但本片主要仍服务既有主线，未形成完整玩法断点。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 2.0,
+          "intensity": 1.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "首次派送完成并获得现金/Cred。",
+          "reason": "轻度扩张叙事叠加订单结算正反馈。"
+        },
+        "experience": {
+          "score": 3.7,
+          "basis": {
+            "gameplay_concentration": "客户选择、收益比较、派送等待和结算构成完整操作链。",
+            "feedback_density": "售价、奖励、倒计时、任务勾选与资源变化都可见。",
+            "goal_challenge": "存在轻度客户选择，但尚无明显风险或资源压力。",
+            "interruption": "派送等待和 Emilio 对话短暂中断操作。"
+          },
+          "summary": "首次销售闭环完整，系统理解和收益反馈都较强。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：客户销售地图；派送倒计时；客户差异售价"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "partial_break",
+            "reason": "开放新的功能层，但仍与既有经营或战斗链共享资源和目标。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.0,
+          "intensity": 0.6,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "多个生产配件连续安装，建筑等级与属性提升。",
+          "reason": "纯系统成长反馈稳定，但没有剧情刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "连续在两座生产建筑中选择升级项，操作集中。",
+            "feedback_density": "等级、百分比、属性增量、资源扣除和建造进度持续反馈。",
+            "goal_challenge": "需要在资源消耗与长任务目标之间规划，挑战中等偏低。",
+            "interruption": "频繁开关建筑面板，流程略碎。"
+          },
+          "summary": "建设深度首次展开，虽然重复点击较多，但成长反馈充分。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Leaf Shack Setup；Bud Field Setup；First Move 长任务"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.0,
+          "intensity": 0.6,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "生产配员完成，基地等级升到 8，并开始扩建宿舍。",
+          "reason": "多项成长数字上升，但刺激来源仍是纯系统进展。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "生产配员、Cred 查看和宿舍建造连续衔接。",
+            "feedback_density": "生产速率、成员上限、基地等级和资源变化明确。",
+            "goal_challenge": "资源与容量形成轻度约束。",
+            "interruption": "Steps of Power 与多建筑面板切换较频繁。"
+          },
+          "summary": "生产与人口容量开始形成互相供给的建设链。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：生产建筑 Crew 配员；Bunkhouse 2"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.1,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "宿舍、Clinic、销售与 Cred 10 在一分钟内连续完成。",
+          "reason": "多系统目标集中结算，成长释放感明显。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "建设、扩容、销售和晋升目标形成连续任务链。",
+            "feedback_density": "建筑完成、容量增加、资源增长、任务勾选与 Cred 变化高度密集。",
+            "goal_challenge": "多个前置和资源门槛并行，形成中等规划压力。",
+            "interruption": "不同系统间切换快，但都服务同一扩张目标。"
+          },
+          "summary": "本阶段建设与销售闭环集中收束，是系统成长高点。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Clinic；宿舍设施升级"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 6
+          }
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 4.0,
+          "intensity": 3.3,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency",
+            "environment_pressure"
+          ],
+          "event": "庆祝生意兴隆后基地突遭武装冲突，多人倒地。",
+          "reason": "从安全建设骤转为袭击现场，反差和威胁都很强。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "前段仍是成长结算，后段以不可操作剧情为主。",
+            "feedback_density": "任务完成、角色对话、车辆入场、倒地与章节卡连续出现。",
+            "goal_challenge": "明确建立战斗威胁，但挑战尚未真正交给玩家。",
+            "interruption": "长剧情过场明显中断基地玩法。"
+          },
+          "summary": "强转折有效制造战斗动机，但主动玩法直到片尾才恢复。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Chapter 5；Formation 入口"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "首名英雄连续击倒敌人并推进三场战斗。",
+          "reason": "剧情只提供轻度延续，主要强度来自连续战斗与即时胜利反馈。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "编队、开战、观察攻击、等待技能并释放，注意力持续集中。",
+            "feedback_density": "伤害数字、血条、技能充能、击倒、关卡切换密集。",
+            "goal_challenge": "前几关敌人较弱，但技能时机与阵位教学提供轻度挑战。",
+            "interruption": "每关之间反复回到 Formation，节奏略被切碎。"
+          },
+          "summary": "首次正式战斗形成清晰、高反馈的推关闭环。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Assault 关卡；Formation；Quick Deploy；英雄主动技能"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "full_break",
+            "reason": "核心操作结构发生完整变化，建立新的主导体验层。"
+          },
+          "effective_score": 4.8,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 4.0,
+          "intensity": 2.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "1-3 获胜后连续发放战利品、开放招募并提升英雄与基地战力。",
+          "reason": "冲突解决带来叙事释放，多重成长系统连续结算。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "战斗结算后立即进入招募、英雄属性理解和升级操作。",
+            "feedback_density": "Victory 奖励、建筑完成、免费招募、英雄卡面、战力跃升连续出现。",
+            "goal_challenge": "操作挑战降低，但阵容成长目标和资源用途迅速展开。",
+            "interruption": "剧情祝贺较短；系统跳转多但因奖励链保持连贯。"
+          },
+          "summary": "战斗、招募、英雄成长和基地建设形成强烈的跨系统奖励链。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Enforcer 招募；英雄详情；英雄升级；Uno Bar"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "partial_break",
+            "reason": "开放新的功能层，但仍与既有经营或战斗链共享资源和目标。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "建筑升级完成后紧接突袭胜利与多项资源奖励",
+          "reason": "没有剧情推进，战斗结算与成长反馈形成中等正向刺激。"
+        },
+        "experience": {
+          "score": 3.5,
+          "basis": {
+            "gameplay_concentration": "升级条件判断与短战斗连续发生，操作目标明确。",
+            "feedback_density": "建筑完成、战斗伤害、Victory 与资源奖励反馈密集。",
+            "goal_challenge": "材料不足可用黄金补齐，战斗优势明显，挑战中低。",
+            "interruption": "建筑面板与战斗切换短促，未形成长时间打断。"
+          },
+          "summary": "成长—战斗—奖励闭环完整，但已是成熟模板的再次执行。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "1-9 连战与胜利结算",
+          "reason": "连续命中和胜利提供即时刺激，但剧情刺激为零。"
+        },
+        "experience": {
+          "score": 3.3,
+          "basis": {
+            "gameplay_concentration": "主要观看自动战斗，主动决策有限。",
+            "feedback_density": "伤害数字、技能图标与胜利页持续反馈。",
+            "goal_challenge": "战力接近但仍稳定获胜，风险感一般。",
+            "interruption": "关卡间返回庄园与结算页造成轻微节奏切割。"
+          },
+          "summary": "反馈仍顺畅，但同构战斗的主动性不足开始显出疲劳。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 3.0,
+          "intensity": 2.3,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "combat"
+          ],
+          "event": "Sergio 施压并要求 Emilio 服从，玩家选择战斗回应",
+          "reason": "直接威胁与选择提高叙事张力，随后战斗提供中等冲突刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "需要阅读冲突、比较战斗与付费选项，再进入战斗。",
+            "feedback_density": "对话、选择成本、战斗结果连续给出。",
+            "goal_challenge": "选择具有资源与战斗取舍，但战斗本身仍偏轻。",
+            "interruption": "剧情对话暂时中断常规经营，但承担了情境化作用。"
+          },
+          "summary": "叙事选择为高频突袭提供明显变化，是本段短暂的体验抬升。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：会面二选一：战斗或支付现金"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.0,
+          "intensity": 1.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "新章节、订单地图与 Shatter 生产连续开放",
+          "reason": "剧情仅做功能引导，新系统开放和成长预期是主要刺激。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "玩家从章节卡、订单目标切换到新的制作交互。",
+            "feedback_density": "章节标题、地图奖励、角色说明和制作进度连续出现。",
+            "goal_challenge": "首次理解生产步骤与供销关系，认知挑战中等。",
+            "interruption": "多次界面切换较密，但都服务于新循环建立。"
+          },
+          "summary": "新供销循环形成结构性变化，显著缓解此前战斗同质化。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Chapter 6；城区 Deliver 订单图；Produce Shatter 制作玩法"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "partial_break",
+            "reason": "开放新的功能层，但仍与既有经营或战斗链共享资源和目标。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.0,
+          "intensity": 0.6,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "多步制作进度条逐项完成",
+          "reason": "没有剧情或风险，主要来自首次掌握生产步骤的轻度成就感。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "连续按步骤操作设备，注意力较集中。",
+            "feedback_density": "每一步有进度条、设备状态和阶段切换。",
+            "goal_challenge": "步骤直观且容错高，挑战偏低但新鲜。",
+            "interruption": "整段维持在同一制作场景，打断少。"
+          },
+          "summary": "首次微操作制作是对自动战斗的完整换型，但玩法深度有限。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：Shatter 分步制作交互"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 2.0,
+          "intensity": 1.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward"
+          ],
+          "event": "重复生产后获得任务奖励并确认计划推进",
+          "reason": "轻量剧情收束叠加成长奖励，刺激温和。"
+        },
+        "experience": {
+          "score": 3.2,
+          "basis": {
+            "gameplay_concentration": "再做同一制作步骤，注意需求下降。",
+            "feedback_density": "生产进度、任务对话与领奖仍保持连续反馈。",
+            "goal_challenge": "步骤已熟悉，几乎没有新增判断。",
+            "interruption": "制作、庄园、对话频繁切换但停留都较短。"
+          },
+          "summary": "第二次生产迅速暴露模板重复，靠任务收束维持节奏。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "招募、战斗、Cred 新 Rank 与新联系人连续出现",
+          "reason": "叙事很轻，但多层成长奖励构成本段较强正向刺激。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "需要在招募、角色成长与战斗间做连续操作。",
+            "feedback_density": "角色获得、战斗、New Rank、权益与消息反馈高度密集。",
+            "goal_challenge": "养成选择增加，但战斗仍稳定。",
+            "interruption": "弹窗较多，因奖励层层叠加而尚未形成明显负担。"
+          },
+          "summary": "多系统成长共振形成阶段高点，虽然核心战斗仍重复。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：新 Enforcer；Cred 新 Rank 权益"
+          },
+          "repetition_context": {
+            "loop_family_id": "enforcer-growth",
+            "variation": "reinforcement",
+            "reason": "首次出现Enforcer 招募成长，但本片主要仍服务既有主线，未形成完整玩法断点。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 3.0,
+          "intensity": 3.0,
+          "valence": "negative",
+          "drivers": [
+            "narrative",
+            "urgency"
+          ],
+          "event": "Scorpia 被绑架，救援活动显示约2小时倒计时",
+          "reason": "明确的人身危机与限时目标构成本段最强叙事压力。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "需要理解三条救援进度及其对应系统。",
+            "feedback_density": "手机消息、角色对话、限时卡和任务进度连续揭示。",
+            "goal_challenge": "目标量较大，形成中期追赶压力。",
+            "interruption": "以剧情和活动面板为主，主动操作暂时降低。"
+          },
+          "summary": "危机把分散刷取目标重新聚合，目标清晰但也显露长期数值门槛。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：Rescue Scorpia 限时活动与三项进度门槛"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 2.0,
+          "intensity": 0.6,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "重复生产与设施升级带来多次小额成长反馈",
+          "reason": "危机没有继续演出，情绪主要来自低强度成长奖励。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "在多个红点和任务入口间点选，操作碎片化。",
+            "feedback_density": "奖励和数值变化多，但单次反馈价值较低。",
+            "goal_challenge": "主要检查门槛并消耗资源，决策深度有限。",
+            "interruption": "弹窗、活动卡、生产与建筑面板频繁切换。"
+          },
+          "summary": "系统很多但目标执行碎片化，同质化与红点疲劳开始明显。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：Bunkhouse 家具级别与舒适度升级"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Clinic 与 Enforcer 数值成长后重新进入突袭",
+          "reason": "设施和角色强化提供小幅正向刺激，战斗延续但没有剧情推进。"
+        },
+        "experience": {
+          "score": 3.3,
+          "basis": {
+            "gameplay_concentration": "设施配置与角色升级需要查看属性，随后进入战斗。",
+            "feedback_density": "治愈率、战力、任务进度和战斗反馈较密。",
+            "goal_challenge": "系统门槛多，但每一步多为资源足够即升级。",
+            "interruption": "多个面板之间来回跳转，连续性一般。"
+          },
+          "summary": "新设施细节提供局部变化，但很快又回到熟悉的自动战斗。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：Clinic 病床配置与治愈率"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 2100.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 4.0,
+          "intensity": 2.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "连续跨区战斗、Chapter 7 开启与多次角色成长",
+          "reason": "章节悬念提供有限叙事刺激，主要强度来自密集战斗和成长结算。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "长时间观看自动战斗，仅在关卡、角色和技能界面做间歇操作。",
+            "feedback_density": "胜利、星级、伤害数字、晋升和技能升级非常密集。",
+            "goal_challenge": "战力持续领先，关卡数值提升但缺少失败压力。",
+            "interruption": "首购弹窗、商店、资源来源与角色面板多次打断战斗链。"
+          },
+          "summary": "反馈量很高，但同一战场与自动战斗占比过大，已进入明显同质化疲劳区。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Chapter 7 Schemes & Betrayals；Enforcer 技能升级入口；首购/VIP付费入口"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 2100.0,
+        "end": 2400.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "Cred/角色成长、Olivia 入队并推进至Block 4",
+          "reason": "没有新剧情演出，成长与跨区进度提供较强但纯系统性的正向刺激。"
+        },
+        "experience": {
+          "score": 3.0,
+          "basis": {
+            "gameplay_concentration": "多数时间在熟悉菜单和自动战斗间切换，Olivia 入队短暂提升关注。",
+            "feedback_density": "订单奖励、Cred、角色战力、星级和Block 4进度持续反馈。",
+            "goal_challenge": "敌方战力接近但仍未见失败，主要挑战是长期刷取量。",
+            "interruption": "资源来源弹窗、VIP付费页和角色面板反复打断。"
+          },
+          "summary": "新队员和新区只形成局部变化，无法抵消第30次以上同构突袭带来的疲劳。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Olivia Ramirez/Scorpia 加入四人编队；VIP1 权益预览"
+          },
+          "repetition_context": {
+            "loop_family_id": "power-progression",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 2400.0,
+        "end": 2700.0,
+        "emotion": {
+          "narrative_score": 0.5,
+          "supporting_score": 3.5,
+          "intensity": 1.4,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "连续升级、加工和战斗带来密集成长反馈，但剧情刺激很弱。",
+          "reason": "奖励频繁但结构重复，兴奋主要来自数值与战斗反馈。"
+        },
+        "experience": {
+          "score": 2.8,
+          "basis": {
+            "gameplay_concentration": "生产小游戏和战斗能形成短时专注，但界面切换频繁。",
+            "feedback_density": "建筑、角色和战斗均持续给出升级或奖励反馈。",
+            "goal_challenge": "目标清楚，主要挑战是满足数值门槛而非策略判断。",
+            "interruption": "任务弹窗、养成页和奖励页多次打断连续操作。"
+          },
+          "summary": "反馈密集但重复疲劳已出现，体验维持中等。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：Produce Leaf 加工小游戏；Amber Lab 建造入口。"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
+        }
+      },
+      {
+        "start": 2700.0,
+        "end": 3000.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.0,
+          "intensity": 1.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "连续战斗、订单和晋升带来奖励，同时高次数进度暴露刷取压力。",
+          "reason": "正向成长反馈与负向重复疲劳并存。"
+        },
+        "experience": {
+          "score": 2.3,
+          "basis": {
+            "gameplay_concentration": "战斗多为自动进行，订单和晋升主要是菜单操作。",
+            "feedback_density": "奖励、Cred、建筑进度与加速反馈非常密集。",
+            "goal_challenge": "目标明确，但主要是累计次数和资源门槛。",
+            "interruption": "Power Trials、晋升、加速和奖励页面持续切断主流程。"
+          },
+          "summary": "反馈仍强，但重复任务和菜单往返造成明显后期疲劳。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：Power Trials 长线任务页。"
+          },
+          "repetition_context": {
+            "loop_family_id": "production-sales",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 2.7,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 3000.0,
+        "end": 3300.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 4.0,
+          "intensity": 3.3,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "建成机场、乘机跨区并首次进入世界节点地图。",
+          "reason": "剧情转场与重大系统开放叠加，显著缓解此前刷取疲劳。"
+        },
+        "experience": {
+          "score": 4.1,
+          "basis": {
+            "gameplay_concentration": "从建设、战斗到跨区探索形成明确连续目标。",
+            "feedback_density": "Manor、机场、跨区演出和世界节点连续给出新反馈。",
+            "goal_challenge": "目标由数值刷取升级为建立交易并处理地图节点。",
+            "interruption": "仍有养成页和演出中断，但都服务于关键转场。"
+          },
+          "summary": "机场与世界大地图开放形成强烈的新鲜感和阶段跃迁。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Airstrip；West Coast 世界节点玩法。"
+          },
+          "repetition_context": {
+            "loop_family_id": "assault",
+            "variation": "full_break",
+            "reason": "首次进入 SLG 世界大地图，核心空间与后续目标发生完整变化。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 3300.0,
+        "end": 3600.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.5,
+          "intensity": 2.1,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "世界据点、坐标、Outpost Raid 和 Alliance Center 集中开放。",
+          "reason": "系统开放和战斗奖励很强，剧情刺激较弱。"
+        },
+        "experience": {
+          "score": 3.7,
+          "basis": {
+            "gameplay_concentration": "世界选点、编队和战斗目标清晰，但战斗仍以自动进行为主。",
+            "feedback_density": "Dealer 进度、节点奖励、坐标据点和联盟开放连续出现。",
+            "goal_challenge": "开始出现距离、据点等级和世界目标选择，但策略深度尚未充分展示。",
+            "interruption": "VIP、奖励、活动、编队和联盟建筑弹窗仍造成较多菜单中断。"
+          },
+          "summary": "真正进入传统 SLG 世界层，但新鲜感很快被自动战斗和弹窗稀释。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：Alliance Center；Outpost Raid；Nation 聊天；Alliance 入口。"
+          },
+          "repetition_context": {
+            "loop_family_id": "compound-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化既有核心行为，未改变主要操作结构。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 3600.0,
+        "end": 3600.066667,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 0.0,
+          "intensity": 0.0,
+          "valence": "neutral",
+          "drivers": [],
+          "event": "",
+          "reason": ""
+        },
+        "experience": {
+          "score": 0.0,
+          "basis": {
+            "gameplay_concentration": "尾片不足 0.1 秒，无可观察操作。",
+            "feedback_density": "无可读反馈。",
+            "goal_challenge": "无可辨识目标或挑战。",
+            "interruption": "录屏在静态背景帧处结束。"
+          },
+          "summary": "尾片无有效体验信息，按事实记 0 分。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "",
+            "variation": "reinforcement",
+            "reason": "线性剧情、转场或录屏尾帧不构成主导重复 LOOP。"
+          },
+          "effective_score": 0.0,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 0
+          }
+        }
+      }
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 3199.5,
+      "end_label": "53:19.5 进入 SLG 世界大地图",
+      "outside_exit_label": "大地图内的后续扩张与战斗"
+    },
+    "macro_loops": [
+      {
+        "id": "compound",
+        "title": "庄园经营",
+        "accent": "settlement",
+        "summary": "建设、生产、销售与组织晋升。"
+      },
+      {
+        "id": "assault",
+        "title": "冲突远征",
+        "accent": "expedition",
+        "summary": "剧情冲突、编队和 Assault 推关。"
+      },
+      {
+        "id": "enforcers",
+        "title": "Enforcer 成长",
+        "accent": "hero_growth",
+        "summary": "招募、升级并强化战斗阵容。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "compound-growth",
+        "title": "庄园建设与员工运营",
+        "summary": "建造、升级并配置员工，使庄园持续扩张。",
+        "accent": "building_growth"
+      },
+      {
+        "id": "production-sales",
+        "title": "生产与客户销售",
+        "summary": "生产产品、选择客户并派送，获得现金与 Cred。",
+        "accent": "building_production"
+      },
+      {
+        "id": "assault",
+        "title": "剧情冲突与 Assault 推关",
+        "summary": "编队进入冲突场景，以连续胜利推进章节。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "enforcer-growth",
+        "title": "Enforcer 招募成长",
+        "summary": "招募、升级和编组英雄，提升后续战斗能力。",
+        "accent": "hero_growth"
+      },
+      {
+        "id": "power-progression",
+        "title": "Cred 与组织权力晋升",
+        "summary": "积累 Cred、完成晋升并领取组织成长奖励。",
+        "accent": "law_system"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "entry",
+        "type": "transition",
+        "title": "从庄园起步",
+        "summary": "通过开场生产教学进入庄园经营主线。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "m01",
+        "type": "micro_loop",
+        "title": "修复坏批次并制作Amber",
+        "summary": "修复坏批次并制作Amber：1:17获得制品图标×10；1:18 Jack称批次99%纯；2:46后Chapter任务显示“Produce Amber in RV 1x”已完成并可领取10金条。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          0,
+          1
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Jack的批次冒烟并可能招来警察，Emilio需要接手按Wayne配方完成可用制品。",
+        "behaviors": [
+          "点击配方入口",
+          "按提示混合材料",
+          "加热并搅拌",
+          "过滤、敲击并包装成品"
+        ],
+        "reward": "1:17获得制品图标×10；1:18 Jack称批次99%纯；2:46后Chapter任务显示“Produce Amber in RV 1x”已完成并可领取10金条。",
+        "next_motivation": "制作完成后警察追上房车；翻车损失迫使角色前往聚落重建生产。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m02",
+        "type": "micro_loop",
+        "title": "收获并加工 Leaf",
+        "summary": "收获并加工 Leaf：包装成品与资源奖励结算。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          6
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-006-evidence-01-000366000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成 Harvest Buds 教学并把原料转为可用产品。",
+        "behaviors": [
+          "收取 Bud Field 的 buds",
+          "进入 Produce Leaf",
+          "倒入原料",
+          "按键完成包装"
+        ],
+        "reward": "包装成品与资源奖励结算。",
+        "next_motivation": "继续生产，并应对产品走红带来的外部压力。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m03",
+        "type": "micro_loop",
+        "title": "完成警察要求并贿赂离场",
+        "summary": "完成警察要求并贿赂离场：警察接受交易并离场，倒计时解除，Chapter 2 完成并发放章节奖励。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          6,
+          7,
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-007-evidence-02-000462000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Cop Crackdown 倒计时要求升级生产设施并交付 20 Leaf。",
+        "behaviors": [
+          "读取三项 Police Demands",
+          "完成建筑升级与 Leaf 交付",
+          "点击 Bribe Police",
+          "观看交付与警车离场"
+        ],
+        "reward": "警察接受交易并离场，倒计时解除，Chapter 2 完成并发放章节奖励。",
+        "next_motivation": "在危机解除后扩大产能，进入 Raising the Crew。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m04",
+        "type": "micro_loop",
+        "title": "升级 Manor 解锁生产升级",
+        "summary": "升级 Manor 解锁生产升级：Manor 升级完成并解除 Bud Field 的前置门槛。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          6,
+          7
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-007-evidence-01-000428000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Bud Field 界面显示 Manor Lv.2 是继续升级的前置。",
+        "behaviors": [
+          "查看 Manor 升级条件",
+          "投入资源启动施工",
+          "等待短倒计时"
+        ],
+        "reward": "Manor 升级完成并解除 Bud Field 的前置门槛。",
+        "next_motivation": "升级 Bud Field 以满足 Police Demands。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m05",
+        "type": "micro_loop",
+        "title": "升级 Bud Field",
+        "summary": "升级 Bud Field：Bud Field Lv.2、任务进度与升级奖励。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          7
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-007-evidence-01-000428000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Police Demands 要求 Bud Field 达到 Lv.2。",
+        "behaviors": [
+          "打开 Bud Field 升级界面",
+          "确认升级",
+          "等待施工完成"
+        ],
+        "reward": "Bud Field Lv.2、任务进度与升级奖励。",
+        "next_motivation": "继续升级 Leaf Shack 并补足交货产品。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m06",
+        "type": "micro_loop",
+        "title": "升级 Leaf Shack",
+        "summary": "升级 Leaf Shack：Leaf Shack Lv.2、任务 2/2 完成与升级反馈。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          7
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-007-main-000450000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Police Demands 要求 Leaf Shack 达到 Lv.2。",
+        "behaviors": [
+          "升级 Packager 等内部设施",
+          "确认 Leaf Shack 升级",
+          "等待施工完成"
+        ],
+        "reward": "Leaf Shack Lv.2、任务 2/2 完成与升级反馈。",
+        "next_motivation": "核对完整 Police Demands 并执行 Bribe Police。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m07",
+        "type": "micro_loop",
+        "title": "建造 Mess Hall",
+        "summary": "建造 Mess Hall：Mess Hall Lv.1 落成且 Build Mess Hall 任务完成。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-008-main-000510000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Chapter 3 要求为扩充团队建设生活设施。",
+        "behaviors": [
+          "打开 Mess Hall 建设界面",
+          "确认建设",
+          "等待建筑成形"
+        ],
+        "reward": "Mess Hall Lv.1 落成且 Build Mess Hall 任务完成。",
+        "next_motivation": "继续建造 Bunkhouse 以接纳员工。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m08",
+        "type": "micro_loop",
+        "title": "建造 Bunkhouse",
+        "summary": "建造 Bunkhouse：Bunkhouse Lv.1 落成，新员工随后进入庄园。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-008-evidence-02-000520000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "为新员工提供住宿并推进 Raising the Crew。",
+        "behaviors": [
+          "打开 Bunkhouse 建设界面",
+          "确认建设",
+          "等待建筑落成"
+        ],
+        "reward": "Bunkhouse Lv.1 落成，新员工随后进入庄园。",
+        "next_motivation": "招募并为生产建筑分配 Crew。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m09",
+        "type": "micro_loop",
+        "title": "招募并分配 Crew",
+        "summary": "招募并分配 Crew：岗位从 Vacant 变为 1/1，工人在 Bud Field、Leaf Shack 和 Mess Hall 实际作业。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          8,
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-008-evidence-03-000527000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "本地员工抵达，生产设备需要合适人员操作。",
+        "behaviors": [
+          "与本地员工达成合作",
+          "进入 Bud Field Crew 页",
+          "将 Carlos 分配到空缺岗位",
+          "查看 Crew Status"
+        ],
+        "reward": "岗位从 Vacant 变为 1/1，工人在 Bud Field、Leaf Shack 和 Mess Hall 实际作业。",
+        "next_motivation": "通过属性与生活设施升级维持并提高 Crew 效率。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m10",
+        "type": "micro_loop",
+        "title": "升级 Mess Hall",
+        "summary": "升级 Mess Hall：Mess Hall 升至 Lv.2，多项设施属性提高并获得完成反馈。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-009-main-000570000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Crew 属性教学后，玩家被引导改善供餐设施。",
+        "behaviors": [
+          "升级 Kitchen 与 Long Table",
+          "确认 Mess Hall 建筑升级",
+          "使用 Gold 加速",
+          "继续升级 Lv.2 设施"
+        ],
+        "reward": "Mess Hall 升至 Lv.2，多项设施属性提高并获得完成反馈。",
+        "next_motivation": "继续升级 Bunkhouse 改善员工住宿。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m11",
+        "type": "micro_loop",
+        "title": "升级 Bunkhouse",
+        "summary": "升级 Bunkhouse：Bunkhouse 升至 Lv.2，设施等级提高并获得完成反馈。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-009-evidence-03-000590000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续改善 Crew 生活设施与属性。",
+        "behaviors": [
+          "升级 Bed/Table 等设施",
+          "确认 Bunkhouse 建筑升级",
+          "等待施工完成",
+          "查看 Lv.2 设施"
+        ],
+        "reward": "Bunkhouse 升至 Lv.2，设施等级提高并获得完成反馈。",
+        "next_motivation": "进入 10:00 后的新对话与后续团队任务。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m12",
+        "type": "micro_loop",
+        "title": "制作 Leaf 并领取产物",
+        "summary": "制作 Leaf 并领取产物：获得 11 单位袋装 Leaf。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          10
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-010-evidence-01-000610000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "为订单准备可销售产品。",
+        "behaviors": [
+          "进入 Produce Leaf 操作并完成制作。"
+        ],
+        "reward": "获得 11 单位袋装 Leaf。",
+        "next_motivation": "继续完成订单或向客户销售产品。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m13",
+        "type": "micro_loop",
+        "title": "执行 Northside 冲突任务",
+        "summary": "执行 Northside 冲突任务：Wayne 现身解决 Jax，Chapter 4 开启。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          10,
+          11
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-011-main-000690000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Wayne 要求前往 Northside 派对拓展客户。",
+        "behaviors": [
+          "接收短信、抵达夜间街区并经历持续枪战与对峙。"
+        ],
+        "reward": "Wayne 现身解决 Jax，Chapter 4 开启。",
+        "next_motivation": "凭 Cred 晋升并扩大生意。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m14",
+        "type": "micro_loop",
+        "title": "Cred 晋升领奖",
+        "summary": "Cred 晋升领奖：获得现金与金条，Emilio 的 Cred 从 1 提升到 5。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "power-progression",
+        "slice_indices": [
+          12
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-012-main-000750000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Chapter 4 要求提升组织地位。",
+        "behaviors": [
+          "打开 Steps of Power，消耗/提交 Cred 并连续 Promote。"
+        ],
+        "reward": "获得现金与金条，Emilio 的 Cred 从 1 提升到 5。",
+        "next_motivation": "通过销售、建设等行为积累更多 Cred。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m15",
+        "type": "micro_loop",
+        "title": "选择客户并派送订单",
+        "summary": "选择客户并派送订单：获得现金与 Cred，Complete Order 任务结算。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          12,
+          13
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-013-main-000810000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把库存产品卖给客户并推进订单目标。",
+        "behaviors": [
+          "进入客户地图、比较客户价格、选择客户并等待 Deliver。"
+        ],
+        "reward": "获得现金与 Cred，Complete Order 任务结算。",
+        "next_motivation": "继续生产和派送以达成更多订单、提高 Cred。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m16",
+        "type": "micro_loop",
+        "title": "强化 Leaf Shack 生产线",
+        "summary": "强化 Leaf Shack 生产线：Leaf Shack 达到 Lv4，生产显示 42/min，订单产能提高。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          13,
+          14,
+          15
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-014-evidence-01-000845000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "First Move 要求完成更多订单并把 Leaf Shack 升到 Lv5。",
+        "behaviors": [
+          "升级建筑等级，逐项安装 Packer、货架、垃圾桶并配置两名成员。"
+        ],
+        "reward": "Leaf Shack 达到 Lv4，生产显示 42/min，订单产能提高。",
+        "next_motivation": "继续升至 Lv5 并支撑更高频销售。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m17",
+        "type": "micro_loop",
+        "title": "强化 Bud Field 种植线",
+        "summary": "强化 Bud Field 种植线：Bud Field 升到 Lv2，手动产量属性提高。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          14,
+          15
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-015-evidence-01-000905000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提高原料产出以支撑产品生产。",
+        "behaviors": [
+          "升级 Bud Field，并安装 Fence、风车等 Setup。"
+        ],
+        "reward": "Bud Field 升到 Lv2，手动产量属性提高。",
+        "next_motivation": "继续生产原料并完成后续订单。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m18",
+        "type": "micro_loop",
+        "title": "建造并升级 Bunkhouse 2",
+        "summary": "建造并升级 Bunkhouse 2：成员容量由 4/4 扩展到 5/6，建筑 Power 与舒适属性提升。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          15,
+          16
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-016-evidence-01-000970000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "扩充成员容量并推进基地任务。",
+        "behaviors": [
+          "建造 Bunkhouse 2，安装床、洗手盆等设施并升级到 Lv3。"
+        ],
+        "reward": "成员容量由 4/4 扩展到 5/6，建筑 Power 与舒适属性提升。",
+        "next_motivation": "容纳更多成员并继续扩张基地。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m19",
+        "type": "micro_loop",
+        "title": "建造 Clinic",
+        "summary": "建造 Clinic：Clinic 建成，医疗功能加入基地。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          16
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-016-evidence-02-000995000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "任务要求 Build Clinic，基地成员需要疾病/不适处理设施。",
+        "behaviors": [
+          "查看 Manor Lv4 与现金前置，确认 Build。"
+        ],
+        "reward": "Clinic 建成，医疗功能加入基地。",
+        "next_motivation": "继续提升 Manor 与基地功能建筑。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m20",
+        "type": "micro_loop",
+        "title": "再次派送客户订单",
+        "summary": "再次派送客户订单：现金继续上升，Cred 进度达到 10。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          16
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-016-evidence-03-001015000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续通过销售取得现金和 Cred。",
+        "behaviors": [
+          "打开客户地图、选择客户并完成派送。"
+        ],
+        "reward": "现金继续上升，Cred 进度达到 10。",
+        "next_motivation": "达到 Cred 10 后推进新章节。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m21",
+        "type": "micro_loop",
+        "title": "Assault 1-1 至 1-3 推关",
+        "summary": "Assault 1-1 至 1-3 推关：连续 Victory，获得金条、Leaf、材料、经验与英雄碎片。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          17,
+          18,
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-018-evidence-02-001115000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "Chapter 5 的社区冲突需要以战斗解决。",
+        "behaviors": [
+          "编入 John Rojas，依次挑战 1-1、1-2、1-3，手动释放技能。"
+        ],
+        "reward": "连续 Victory，获得金条、Leaf、材料、经验与英雄碎片。",
+        "next_motivation": "用战利品强化英雄并推进后续战斗。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m22",
+        "type": "micro_loop",
+        "title": "招募并强化 Enforcer",
+        "summary": "招募并强化 Enforcer：获得/展示新 Enforcer，John Rojas 战力与属性可提升。",
+        "macro_loop_id": "enforcers",
+        "loop_family_id": "enforcer-growth",
+        "slice_indices": [
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-019-main-001170000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "战斗奖励引导补充和强化出战英雄。",
+        "behaviors": [
+          "进入招募页进行 Basic Recruit，查看 John Rojas 与新英雄详情并执行升级教学。"
+        ],
+        "reward": "获得/展示新 Enforcer，John Rojas 战力与属性可提升。",
+        "next_motivation": "以更强阵容应对后续 Assault 关卡。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m23",
+        "type": "micro_loop",
+        "title": "循环 23",
+        "summary": "循环 23：Victory资源、经验与碎片。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          20
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-020-evidence-01-001210000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "升级Bunkhouse后继续提升章节进度。",
+        "behaviors": [
+          "补齐升级材料",
+          "完成建筑升级",
+          "进入Assault战斗"
+        ],
+        "reward": "Victory资源、经验与碎片。",
+        "next_motivation": "继续推进下一突袭关卡。",
+        "confidence": 0.93
+      },
+      {
+        "id": "m24",
+        "type": "micro_loop",
+        "title": "循环 24",
+        "summary": "循环 24：关卡胜利与章节推进。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          21
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-021-main-001290000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成Chapter 6前置关卡。",
+        "behaviors": [
+          "进入1-9",
+          "观看三人自动战斗",
+          "触发技能"
+        ],
+        "reward": "关卡胜利与章节推进。",
+        "next_motivation": "处理新的地盘会面。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m25",
+        "type": "micro_loop",
+        "title": "循环 25",
+        "summary": "循环 25：解除当次威胁并返回庄园。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          22
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-022-evidence-01-001340000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "回应Sergio对地盘规则的威胁。",
+        "behaviors": [
+          "阅读会面对话",
+          "在战斗与支付现金间选择",
+          "进入战斗"
+        ],
+        "reward": "解除当次威胁并返回庄园。",
+        "next_motivation": "进入Ruthless Ascent新章节。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m26",
+        "type": "micro_loop",
+        "title": "循环 26",
+        "summary": "循环 26：界面预示现金与皇冠声望奖励。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          23
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-023-evidence-01-001390000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把庄园产品卖给城区买家以获得现金和声望。",
+        "behaviors": [
+          "打开城区订单地图",
+          "选择买家",
+          "点击Deliver"
+        ],
+        "reward": "界面预示现金与皇冠声望奖励。",
+        "next_motivation": "建立可持续的Shatter生产来源。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m27",
+        "type": "micro_loop",
+        "title": "循环 27",
+        "summary": "循环 27：完成首批Shatter并返回庄园。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          23,
+          24
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-023-evidence-01-001390000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "为城区订单生产Shatter。",
+        "behaviors": [
+          "混合原料",
+          "加热烹制",
+          "粉碎成品"
+        ],
+        "reward": "完成首批Shatter并返回庄园。",
+        "next_motivation": "重复生产以完成订单与章节任务。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m28",
+        "type": "micro_loop",
+        "title": "循环 28",
+        "summary": "循环 28：任务奖励与章节推进确认。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          25
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-025-evidence-01-001500000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "补充任务所需产品和进度。",
+        "behaviors": [
+          "再次进入制作台",
+          "重复设备步骤",
+          "返回庄园领奖"
+        ],
+        "reward": "任务奖励与章节推进确认。",
+        "next_motivation": "扩充Enforcer和Cred。",
+        "confidence": 0.9
+      },
+      {
+        "id": "m29",
+        "type": "micro_loop",
+        "title": "循环 29",
+        "summary": "循环 29：新角色/战力及Cred新Rank奖励。",
+        "macro_loop_id": "enforcers",
+        "loop_family_id": "enforcer-growth",
+        "slice_indices": [
+          26
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-026-evidence-01-001580000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提高队伍战力并满足章节门槛。",
+        "behaviors": [
+          "招募或领取Enforcer",
+          "投入养成资源",
+          "用强化阵容完成战斗"
+        ],
+        "reward": "新角色/战力及Cred新Rank奖励。",
+        "next_motivation": "响应Torch带来的新事件。",
+        "confidence": 0.91
+      },
+      {
+        "id": "m30",
+        "type": "micro_loop",
+        "title": "循环 30",
+        "summary": "循环 30：完成后可获得Scorpia、碎片、技能材料与经验。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          27
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-027-evidence-01-001630000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "在倒计时内救出被绑架的Scorpia。",
+        "behaviors": [
+          "查看救援活动",
+          "确认Assault/Cred/Order三项进度",
+          "转入对应系统刷取"
+        ],
+        "reward": "完成后可获得Scorpia、碎片、技能材料与经验。",
+        "next_motivation": "持续推进三条成长门槛。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m31",
+        "type": "micro_loop",
+        "title": "循环 31",
+        "summary": "循环 31：舒适度和建筑属性提升。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          28
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-028-evidence-01-001680000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提高Bunkhouse舒适度并积累救援成长进度。",
+        "behaviors": [
+          "进入Bunkhouse内部",
+          "选择Cabinet",
+          "消耗现金升级"
+        ],
+        "reward": "舒适度和建筑属性提升。",
+        "next_motivation": "继续升级Clinic和Enforcer。",
+        "confidence": 0.88
+      },
+      {
+        "id": "m32",
+        "type": "micro_loop",
+        "title": "循环 32",
+        "summary": "循环 32：Victory、星级、资源和跨区进度。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          29,
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-029-evidence-01-001750000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成Rescue Scorpia要求的Assault进度。",
+        "behaviors": [
+          "强化Enforcer",
+          "进入连续关卡",
+          "自动战斗并结算"
+        ],
+        "reward": "Victory、星级、资源和跨区进度。",
+        "next_motivation": "继续从2区刷到3区。",
+        "confidence": 0.9
+      },
+      {
+        "id": "m33",
+        "type": "micro_loop",
+        "title": "循环 33",
+        "summary": "循环 33：治愈率、恢复属性与战力提升。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          29
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-029-evidence-01-001750000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提升伤员恢复能力并补足庄园成长。",
+        "behaviors": [
+          "进入Clinic",
+          "选择病床",
+          "消耗现金建造"
+        ],
+        "reward": "治愈率、恢复属性与战力提升。",
+        "next_motivation": "回到Assault推进救援门槛。",
+        "confidence": 0.91
+      },
+      {
+        "id": "m34",
+        "type": "micro_loop",
+        "title": "循环 34",
+        "summary": "循环 34：多关资源、经验、角色碎片与Block推进。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-030-evidence-01-001800000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "快速推进Assault区域与救援任务。",
+        "behaviors": [
+          "连续点击下一关",
+          "观看2倍速自动战斗",
+          "在胜利/星级页结算"
+        ],
+        "reward": "多关资源、经验、角色碎片与Block推进。",
+        "next_motivation": "用奖励继续强化角色并开启Chapter 7。",
+        "confidence": 0.9
+      },
+      {
+        "id": "m35",
+        "type": "micro_loop",
+        "title": "循环 35",
+        "summary": "循环 35：角色属性和技能倍率提升。",
+        "macro_loop_id": "enforcers",
+        "loop_family_id": "enforcer-growth",
+        "slice_indices": [
+          30
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-030-evidence-01-001800000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "补足后续关卡战力。",
+        "behaviors": [
+          "查看角色属性",
+          "晋升或升级技能",
+          "检查碎片来源"
+        ],
+        "reward": "角色属性和技能倍率提升。",
+        "next_motivation": "返回3区突袭。",
+        "confidence": 0.9
+      },
+      {
+        "id": "m36",
+        "type": "micro_loop",
+        "title": "循环 36",
+        "summary": "循环 36：Cred 19、黄金与现金奖励。",
+        "macro_loop_id": "enforcers",
+        "loop_family_id": "power-progression",
+        "slice_indices": [
+          31
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-031-evidence-01-002200000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "提升Cred以解锁权益并满足救援门槛。",
+        "behaviors": [
+          "积累成长行为",
+          "打开Steps of Power",
+          "执行Promote"
+        ],
+        "reward": "Cred 19、黄金与现金奖励。",
+        "next_motivation": "继续突袭与订单以冲击下一Cred等级。",
+        "confidence": 0.89
+      },
+      {
+        "id": "m37",
+        "type": "micro_loop",
+        "title": "循环 37",
+        "summary": "循环 37：星级奖励、Block 4进度与Cyclops碎片。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          31
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-031-evidence-01-002200000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "用扩充后的四人阵容推进Block 4。",
+        "behaviors": [
+          "获得并查看Olivia",
+          "将其加入编队",
+          "连续挑战3-9至4区关卡"
+        ],
+        "reward": "星级奖励、Block 4进度与Cyclops碎片。",
+        "next_motivation": "挑战Block 4后续关卡。",
+        "confidence": 0.89
+      },
+      {
+        "id": "m38",
+        "type": "micro_loop",
+        "title": "完成 Assault 4-6",
+        "summary": "完成 Assault 4-6：获得关卡奖励和后续关卡进度。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "assault",
+        "slice_indices": [
+          32
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-032-evidence-01-002470000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "击败当前敌人并推进 Assault 关卡。",
+        "behaviors": [
+          "配置五名执行者后启动自动战斗。"
+        ],
+        "reward": "获得关卡奖励和后续关卡进度。",
+        "next_motivation": "强化执行者并挑战更高关卡。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m39",
+        "type": "micro_loop",
+        "title": "升级种植设施并推进 Amber Lab",
+        "summary": "升级种植设施并推进 Amber Lab：产能属性、战力和任务进度提升。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          32
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-032-evidence-01-002470000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成 Amber Lab 与种植设施任务，继续提升据点。",
+        "behaviors": [
+          "进入 Mata Field 升级配置，投入资源升级；返回据点推进 Amber Lab 建造。"
+        ],
+        "reward": "产能属性、战力和任务进度提升。",
+        "next_motivation": "满足下一建筑和章节任务门槛。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m40",
+        "type": "micro_loop",
+        "title": "Produce Leaf 加工",
+        "summary": "Produce Leaf 加工：获得成品及生产任务进度。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          32
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-032-evidence-01-002470000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "取得加工产品并推进 Produce Leaf 累计任务。",
+        "behaviors": [
+          "在加工台完成投料、装置操作与包装进度。"
+        ],
+        "reward": "获得成品及生产任务进度。",
+        "next_motivation": "继续生产或将成品用于订单交付。",
+        "confidence": 0.94
+      },
+      {
+        "id": "m41",
+        "type": "micro_loop",
+        "title": "完成城市 Deliver 订单",
+        "summary": "完成城市 Deliver 订单：获得现金 57.1k、皇冠 730 及订单进度。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "production-sales",
+        "slice_indices": [
+          33
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-033-evidence-01-002800000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把生产物转化为成长资源并推进订单次数。",
+        "behaviors": [
+          "在城市订单地图选择客户并执行 Deliver。"
+        ],
+        "reward": "获得现金 57.1k、皇冠 730 及订单进度。",
+        "next_motivation": "补充产品并继续高次数订单任务。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m42",
+        "type": "micro_loop",
+        "title": "晋升 Steps of Power",
+        "summary": "晋升 Steps of Power：提高角色 Cred，获得现金、黄金和加速道具。",
+        "macro_loop_id": "enforcers",
+        "loop_family_id": "enforcer-growth",
+        "slice_indices": [
+          33,
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-033-evidence-01-002800000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "满足战斗和机场前置所需的 Cred/战力。",
+        "behaviors": [
+          "在 Steps of Power 选择角色并执行 Promote。"
+        ],
+        "reward": "提高角色 Cred，获得现金、黄金和加速道具。",
+        "next_motivation": "解锁更高战斗目标和机场建设条件。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m43",
+        "type": "micro_loop",
+        "title": "升级 Manor 并建造机场",
+        "summary": "升级 Manor 并建造机场：机场开放，触发乘机跨区演出。",
+        "macro_loop_id": "compound",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-034-main-003150000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成 Build Airstrip 并前往 West Coast。",
+        "behaviors": [
+          "把 Manor 推进至 Lv.9，满足机场前置并完成建造。"
+        ],
+        "reward": "机场开放，触发乘机跨区演出。",
+        "next_motivation": "在 West Coast 建立第一笔交易并扩张势力。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m44",
+        "type": "micro_loop",
+        "title": "完成首个 West Coast Deal",
+        "summary": "完成首个 West Coast Deal：获得 Dealer 进度、节点奖励与新的目标标记。",
+        "macro_loop_id": "assault",
+        "loop_family_id": "compound-growth",
+        "slice_indices": [
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-034-main-003150000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "在新区域找到 Dealer 并建立势力联系。",
+        "behaviors": [
+          "选择地图节点，沿点状路线前往目标，完成交易/清剿任务。"
+        ],
+        "reward": "获得 Dealer 进度、节点奖励与新的目标标记。",
+        "next_motivation": "转向下一名 Dealer 或更高等级区域节点。",
+        "confidence": 0.97
+      },
+      {
+        "id": "end",
+        "type": "end",
+        "title": "进入 SLG 世界大地图",
+        "summary": "飞机转场后首次出现世界节点，随后开放坐标与联盟界面。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          34
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-034-evidence-02-003199500.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "outside",
+        "type": "outside_exit",
+        "title": "大地图后续任务",
+        "summary": "录屏继续展示世界节点、联盟与后续 Assault。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          35
+        ],
+        "evidence_frames": [
+          "screenshots/narco-empire/frames/slice-035-main-003450000.jpg"
+        ],
+        "status": "confirmed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "entry",
+        "to": "m01",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m01",
+        "to": "m02",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m02",
+        "to": "m03",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m03",
+        "to": "m04",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m04",
+        "to": "m05",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m05",
+        "to": "m06",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m06",
+        "to": "m07",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m07",
+        "to": "m08",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m08",
+        "to": "m09",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m09",
+        "to": "m10",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m10",
+        "to": "m11",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m11",
+        "to": "m12",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m12",
+        "to": "m13",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m13",
+        "to": "m14",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m14",
+        "to": "m15",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m15",
+        "to": "m16",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m16",
+        "to": "m17",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m17",
+        "to": "m18",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m18",
+        "to": "m19",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m19",
+        "to": "m20",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m20",
+        "to": "m21",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m21",
+        "to": "m22",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m22",
+        "to": "m23",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m23",
+        "to": "m24",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m24",
+        "to": "m25",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m25",
+        "to": "m26",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m26",
+        "to": "m27",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m27",
+        "to": "m28",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m28",
+        "to": "m29",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m29",
+        "to": "m30",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m30",
+        "to": "m31",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m31",
+        "to": "m32",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m32",
+        "to": "m33",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m33",
+        "to": "m34",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m34",
+        "to": "m35",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m35",
+        "to": "m36",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m36",
+        "to": "m37",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m37",
+        "to": "m38",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m38",
+        "to": "m39",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m39",
+        "to": "m40",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m40",
+        "to": "m41",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m41",
+        "to": "m42",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m42",
+        "to": "m43",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m43",
+        "to": "m44",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m44",
+        "to": "end",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "end",
+        "to": "outside",
+        "kind": "conditional",
+        "label": "进入大地图后续"
+      },
+      {
+        "from": "m12",
+        "to": "m13",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m13",
+        "to": "m14",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m20",
+        "to": "m21",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m21",
+        "to": "m22",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m22",
+        "to": "m23",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m25",
+        "to": "m26",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m28",
+        "to": "m29",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m29",
+        "to": "m30",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m31",
+        "to": "m32",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m32",
+        "to": "m33",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m33",
+        "to": "m34",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m34",
+        "to": "m35",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m36",
+        "to": "m37",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m38",
+        "to": "m39",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m41",
+        "to": "m42",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m42",
+        "to": "m43",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m43",
+        "to": "m44",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m12",
+        "to": "m14",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m13",
+        "to": "m21",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m21",
+        "to": "m23",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m20",
+        "to": "m26",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m22",
+        "to": "m29",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m28",
+        "to": "m30",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m25",
+        "to": "m32",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m31",
+        "to": "m33",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m32",
+        "to": "m34",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m29",
+        "to": "m35",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m34",
+        "to": "m37",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m33",
+        "to": "m39",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m36",
+        "to": "m42",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m41",
+        "to": "m43",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m38",
+        "to": "m44",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      }
+    ]
+  },
+  "timeline_milestones": [
+    {
+      "id": "narco-slg-entry",
+      "type": "slg_entry",
+      "label": "进入 SLG 世界大地图",
+      "timestamp": 3199.5,
+      "slice_index": 34,
+      "note": "53:19.5 飞机转场后首次呈现世界节点地图；随后界面明确显示世界坐标、联盟入口与其他据点。"
+    }
+  ]
+}
