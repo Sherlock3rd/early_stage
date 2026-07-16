@@ -178,6 +178,11 @@ class SkillDocumentStructureTests(unittest.TestCase):
         self.assertIn("不展示“事实：”“推断：”", self.reference)
         self.assertIn("不显示“高潮/低谷：无”", self.reference)
 
+    def test_only_opening_cg_end_is_recorded(self):
+        combined = self.skill + self.reference
+        self.assertIn("只统计开场 CG 的结束点", combined)
+        self.assertIn("不记录中后段剧情演出结束", combined)
+
     def test_map_layers_and_key_story_beats_require_functional_evidence(self):
         combined = self.skill + self.reference
         for phrase in (

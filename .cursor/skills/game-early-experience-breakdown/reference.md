@@ -328,8 +328,8 @@ viewer/
 - 根节点可包含 `timeline_milestones`，每项固定为
   `{id, type, label, timestamp, slice_index, note}`；`type` 支持 `slg_entry`、`map_entry` 和
   `cg_end`。`slg_entry` 仅用于出现世界坐标、据点/城镇、行军、联盟或同等 SLG 功能证据的
-  正式世界大地图入口；普通跨区开放地图使用 `map_entry`；无 HUD 的明确剧情演出结束并恢复
-  可操作 HUD/界面使用 `cg_end`。只有 `slg_entry` 截断体验趋势。
+  正式世界大地图入口；普通跨区开放地图使用 `map_entry`；`cg_end` 只记录开场 CG 结束并
+  首次进入选角或可操作状态的时间，不记录中后段剧情演出结束。只有 `slg_entry` 截断体验趋势。
   `timestamp` 必须落在所属 `slice_index` 内。总览时间轴用高对比竖线、名称和精确 `M:SS`
   标出里程碑，点击后跳转到对应时间片。
 - 时间片详情只展示截图、置信度、维度描述和待确认项；不展示推断、证据路径、
