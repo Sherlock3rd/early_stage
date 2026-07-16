@@ -595,6 +595,19 @@ class AnalysisModelTests(unittest.TestCase):
         ):
             analysis_model.validate_analysis(data)
 
+    def test_global_loop_end_may_mark_an_exact_exit_inside_its_slice(self):
+        data = valid_analysis(120.0)
+        data["global_loops"]["scope"]["end"] = 119.0
+
+        analysis_model.validate_analysis(data)
+
+        data = valid_analysis(120.0)
+        data["global_loops"]["scope"]["end"] = 119.0
+        core_loop = data["global_loops"]["nodes"][1]
+        core_loop["slice_indices"] = [0, 1]
+
+        analysis_model.validate_analysis(data)
+
         data = valid_analysis()
         data["global_loops"]["nodes"].insert(
             -1,
@@ -707,6 +720,8 @@ class AnalysisModelTests(unittest.TestCase):
                 / "data"
                 / "frost.json"
             )
+        if not frost_path.exists():
+            frost_path = ROOT.parents[2] / "data" / "frost.json"
         data = json.loads(frost_path.read_text(encoding="utf-8"))
         self.assertEqual(1500, data["global_loops"]["scope"]["end"])
         micro_loops = [
@@ -805,6 +820,66 @@ class AnalysisModelTests(unittest.TestCase):
         )
         analysis_model.validate_analysis(data)
 
+    def test_aoo_records_titan_plan_unlock_from_visible_main_frame(self):
+        aoo_path = (
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "aoo.json"
+        )
+        if not aoo_path.exists():
+            aoo_path = ROOT.parents[2] / "data" / "aoo.json"
+        data = json.loads(aoo_path.read_text(encoding="utf-8"))
+        target_slice = data["slices"][6]
+        dimension_facts = "\n".join(
+            value["fact"] for value in target_slice["dimensions"].values()
+        )
+
+        self.assertEqual(1738.5, data["global_loops"]["scope"]["end"])
+        self.assertEqual(386.0, target_slice["main_frame"]["timestamp"])
+        self.assertIn("泰坦", dimension_facts)
+        self.assertTrue(
+            any(
+                385.0 <= frame["timestamp"] <= 400.0
+                for frame in target_slice["evidence_frames"]
+            )
+        )
+        self.assertTrue(
+            any(
+                "泰坦" in f"{node['title']} {node['summary']}"
+                and 6 in node["slice_indices"]
+                for node in data["global_loops"]["nodes"]
+                if node["type"] == "micro_loop"
+            )
+        )
+
+    def test_aoo_does_not_collapse_slice_nineteen_battle_into_building_loop(self):
+        aoo_path = (
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "aoo.json"
+        )
+        if not aoo_path.exists():
+            aoo_path = ROOT.parents[2] / "data" / "aoo.json"
+        data = json.loads(aoo_path.read_text(encoding="utf-8"))
+        target_slice = data["slices"][19]
+        core_loop_fact = target_slice["dimensions"]["核心循环"]["fact"]
+
+        self.assertIn("战斗", core_loop_fact)
+        self.assertTrue(
+            any(
+                node["loop_family_id"] == "expedition_progression"
+                and 19 in node["slice_indices"]
+                for node in data["global_loops"]["nodes"]
+                if node["type"] == "micro_loop"
+            )
+        )
+
     def test_sanbing_records_mother_death_as_exact_second_climax(self):
         sanbing_path = (
             ROOT.parents[2]
@@ -830,6 +905,8 @@ class AnalysisModelTests(unittest.TestCase):
                 / "data"
                 / "sanbing.json"
             )
+        if not sanbing_path.exists():
+            sanbing_path = ROOT.parents[2] / "data" / "sanbing.json"
         data = json.loads(sanbing_path.read_text(encoding="utf-8"))
         target_slice = data["slices"][7]
         target_curve = data["global_curves"]["points"][7]

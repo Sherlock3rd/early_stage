@@ -427,7 +427,20 @@ def _validate_global_loops(
             or float(item["end"]) > scope_end
             for item in referenced_slices
         ):
-            _fail(f"{location} 主体节点的时间片不得越过 global_loops.scope")
+            overrunning_slices = [
+                item
+                for item in referenced_slices
+                if float(item["end"]) > scope_end
+            ]
+            exact_end_inside_final_slice = (
+                all(float(item["start"]) >= scope_start for item in referenced_slices)
+                and len(overrunning_slices) == 1
+                and overrunning_slices[0] is referenced_slices[-1]
+                and float(overrunning_slices[0]["start"]) < scope_end
+                <= float(overrunning_slices[0]["end"])
+            )
+            if not exact_end_inside_final_slice:
+                _fail(f"{location} 主体节点的时间片不得越过 global_loops.scope")
 
         evidence_frames = node["evidence_frames"]
         if not isinstance(evidence_frames, list) or not evidence_frames:
