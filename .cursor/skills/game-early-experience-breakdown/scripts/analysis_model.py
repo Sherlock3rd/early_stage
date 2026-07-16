@@ -11,9 +11,14 @@ from pathlib import Path
 from typing import Any
 
 try:
+    from .experience_adjustment import (
+        expected_experience_fields,
+        load_locked_parameters,
+    )
     from .runtime_utils import atomic_write_text, emit_json_error
     from .video_timeline import generate_timeline
 except ImportError:
+    from experience_adjustment import expected_experience_fields, load_locked_parameters
     from runtime_utils import atomic_write_text, emit_json_error
     from video_timeline import generate_timeline
 
@@ -64,6 +69,8 @@ GLOBAL_LOOP_EDGE_KINDS = (
     "conditional",
 )
 TIMELINE_MILESTONE_TYPES = ("slg_entry", "map_entry", "cg_end")
+EXPERIENCE_VARIATIONS = ("reinforcement", "partial_break", "full_break")
+EXPERIENCE_MODEL_VERSION = "progression-repetition-v1"
 
 
 class AnalysisValidationError(ValueError):
@@ -137,9 +144,35 @@ def expected_emotion_intensity(
     return math.floor(raw * 10 + 0.5) / 10
 
 
-def _validate_global_curves(value: Any, slices: list[Any]) -> None:
+def _locked_experience_model() -> dict[str, Any]:
+    parameters = load_locked_parameters()
+    return {
+        "version": EXPERIENCE_MODEL_VERSION,
+        "parameters": {
+            "progression_weight": parameters.progression_weight,
+            "penalty_step": parameters.penalty_step,
+            "penalty_cap": parameters.penalty_cap,
+            "partial_recovery": parameters.partial_recovery,
+        },
+    }
+
+
+def _validate_global_curves(
+    value: Any, slices: list[Any], family_ids: set[str]
+) -> None:
     curves = _require_object(value, "global_curves")
-    _require_keys(curves, ("scale", "points"), "global_curves")
+    _require_keys(
+        curves, ("scale", "points", "experience_model"), "global_curves"
+    )
+    model = _require_object(
+        curves["experience_model"], "global_curves.experience_model"
+    )
+    expected_model = _locked_experience_model()
+    if model != expected_model:
+        _fail(
+            "global_curves.experience_model 必须使用版本 "
+            f"{EXPERIENCE_MODEL_VERSION} 及锁定参数"
+        )
     scale = _require_object(curves["scale"], "global_curves.scale")
     _require_keys(scale, ("min", "max"), "global_curves.scale")
     actual_scale = (
@@ -249,9 +282,84 @@ def _validate_global_curves(value: Any, slices: list[Any]) -> None:
         experience_location = f"{location}.experience"
         experience = _require_object(point["experience"], experience_location)
         _require_keys(
-            experience, ("score", "basis", "summary"), experience_location
+            experience,
+            (
+                "score",
+                "progression_pull",
+                "repetition_context",
+                "effective_score",
+                "adjustments",
+                "basis",
+                "summary",
+            ),
+            experience_location,
         )
         _curve_score(experience["score"], f"{experience_location}.score")
+        progression_location = f"{experience_location}.progression_pull"
+        progression = _require_object(
+            experience["progression_pull"], progression_location
+        )
+        _require_keys(progression, ("score", "reason"), progression_location)
+        _curve_score(progression["score"], f"{progression_location}.score")
+        _nonempty_text(progression["reason"], f"{progression_location}.reason")
+
+        repetition_location = f"{experience_location}.repetition_context"
+        repetition = _require_object(
+            experience["repetition_context"], repetition_location
+        )
+        _require_keys(
+            repetition,
+            ("loop_family_id", "variation", "reason"),
+            repetition_location,
+        )
+        family_id = repetition["loop_family_id"]
+        if not isinstance(family_id, str):
+            _fail(f"{repetition_location}.loop_family_id 必须是文本")
+        if family_id and family_id not in family_ids:
+            _fail(
+                f"{repetition_location}.loop_family_id 必须引用现有小 LOOP 类型"
+            )
+        if repetition["variation"] not in EXPERIENCE_VARIATIONS:
+            _fail(
+                f"{repetition_location}.variation 只允许: "
+                f"{', '.join(EXPERIENCE_VARIATIONS)}"
+            )
+        _nonempty_text(repetition["reason"], f"{repetition_location}.reason")
+        _curve_score(
+            experience["effective_score"],
+            f"{experience_location}.effective_score",
+        )
+        adjustments_location = f"{experience_location}.adjustments"
+        adjustments = _require_object(
+            experience["adjustments"], adjustments_location
+        )
+        _require_keys(
+            adjustments,
+            (
+                "progression_bonus",
+                "repetition_penalty",
+                "effective_repeat_count",
+            ),
+            adjustments_location,
+        )
+        _number(
+            adjustments["progression_bonus"],
+            f"{adjustments_location}.progression_bonus",
+        )
+        _number(
+            adjustments["repetition_penalty"],
+            f"{adjustments_location}.repetition_penalty",
+        )
+        repeat_count = adjustments["effective_repeat_count"]
+        if (
+            isinstance(repeat_count, bool)
+            or not isinstance(repeat_count, int)
+            or repeat_count < 0
+        ):
+            _fail(
+                f"{adjustments_location}.effective_repeat_count "
+                "必须是非负整数"
+            )
         basis = _require_object(
             experience["basis"], f"{experience_location}.basis"
         )
@@ -265,6 +373,36 @@ def _validate_global_curves(value: Any, slices: list[Any]) -> None:
         _nonempty_text(
             experience["summary"], f"{experience_location}.summary"
         )
+    expected_fields = expected_experience_fields(
+        points, load_locked_parameters()
+    )
+    for index, (point, expected) in enumerate(zip(points, expected_fields)):
+        experience = point["experience"]
+        actual = {
+            **experience["adjustments"],
+            "effective_score": experience["effective_score"],
+        }
+        for field in (
+            "progression_bonus",
+            "repetition_penalty",
+            "effective_repeat_count",
+            "effective_score",
+        ):
+            matches = (
+                actual[field] == expected[field]
+                if field == "effective_repeat_count"
+                else math.isclose(
+                    float(actual[field]),
+                    float(expected[field]),
+                    rel_tol=0.0,
+                    abs_tol=1e-9,
+                )
+            )
+            if not matches:
+                _fail(
+                    f"global_curves.points[{index}].experience.{field} "
+                    f"必须与算法派生值 {expected[field]:g} 一致"
+                )
 
 
 def _validate_loop_families(value: Any) -> dict[str, dict[str, Any]]:
@@ -296,7 +434,7 @@ def _validate_loop_families(value: Any) -> dict[str, dict[str, Any]]:
 
 def _validate_global_loops(
     value: Any, slices: list[Any], duration: float
-) -> None:
+) -> set[str]:
     graph = _require_object(value, "global_loops")
     _require_keys(
         graph,
@@ -606,6 +744,7 @@ def _validate_global_loops(
             _fail(
                 "outside_exit 必须且只能由主体终点通过一条 conditional 连线进入"
             )
+    return set(family_by_id)
 
 
 def _validate_timeline_milestones(
@@ -851,8 +990,8 @@ def validate_analysis(data: Any) -> None:
         _fail("最后阶段范围 end 必须等于该阶段末片 end")
     if "timeline_milestones" in root:
         _validate_timeline_milestones(root["timeline_milestones"], slices, duration)
-    _validate_global_curves(root["global_curves"], slices)
-    _validate_global_loops(root["global_loops"], slices, duration)
+    family_ids = _validate_global_loops(root["global_loops"], slices, duration)
+    _validate_global_curves(root["global_curves"], slices, family_ids)
 
 
 def loads_and_validate(text: str) -> dict[str, Any]:

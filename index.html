@@ -363,7 +363,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         <div><p class="eyebrow">EMOTION & EXPERIENCE</p><h2 id="emotion-curve-title">全局情绪与体验曲线</h2></div>
         <div id="emotion-curve-legend" class="emotion-curve-legend" aria-label="情绪曲线图例"></div>
       </div>
-      <p id="curve-reading-guide" class="curve-reading-guide">情绪曲线以剧情为主体，并补充环境压力等其他刺激；体验曲线用于判断玩法沉浸与心流强度；趋势线用于观察前期体验是否整体提升。</p>
+      <p id="curve-reading-guide" class="curve-reading-guide">情绪曲线以剧情为主体，并补充环境压力等其他刺激；体验曲线展示计入渐进奖励与重复惩罚后的有效体验强度；趋势线按阶段有效体验均值等权回归，用于观察前期体验是否整体提升。</p>
       <div id="experience-trend-summary" class="experience-trend-summary" aria-label="体验整体趋势"></div>
       <div class="emotion-curve-canvas">
         <div id="emotion-curve-svg" aria-label="情绪强度、体验强度与体验趋势曲线"></div>
@@ -371,7 +371,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       </div>
       <p id="emotion-curve-error" class="emotion-curve-error" hidden></p>
       <details id="emotion-algorithm-details" class="emotion-algorithm-details">
-        <summary>双曲线评分口径</summary>
+        <summary>双曲线与有效体验评分口径</summary>
         <div id="emotion-algorithm-content"></div>
       </details>
     </section>
@@ -700,6 +700,9 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     return 0;
   }
 
+  const effectiveExperienceScore = (point) =>
+    Number(point.experience.effective_score);
+
   function stageAverageExperienceObservations(
     slices,
     curvePoints,
@@ -719,7 +722,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         });
       }
       const stage = stages.get(stageId);
-      stage.total += Number(curvePoints[index].experience.score);
+      stage.total += effectiveExperienceScore(curvePoints[index]);
       stage.count += 1;
     });
     return [...stages.entries()].map(([stageId, stage]) => ({
@@ -838,6 +841,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
     trendSummary.sampleBasis = "stage_average";
     trendSummary.sampleCount = stageObservations.length;
     trendSummary.endTime = trendEndTime;
+    trendSummary.endLabel = slgMilestone ? "大地图入口" : "录屏结束";
     const predictTrend = (time) => Math.min(
       max,
       Math.max(min, trendSummary.slope * Number(time) + trendSummary.intercept)
@@ -859,7 +863,15 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         valence: point.emotion.valence,
         emotionEvent: point.emotion.event,
         emotionReason: point.emotion.reason,
-        experienceScore: Number(point.experience.score),
+        experienceScore: effectiveExperienceScore(point),
+        experienceBaseScore: Number(point.experience.score),
+        progressionPull: { ...point.experience.progression_pull },
+        progressionBonus: Number(point.experience.adjustments.progression_bonus),
+        repetitionPenalty: Number(point.experience.adjustments.repetition_penalty),
+        effectiveRepeatCount: Number(
+          point.experience.adjustments.effective_repeat_count
+        ),
+        repetitionContext: { ...point.experience.repetition_context },
         experienceTrend,
         experienceBasis: { ...point.experience.basis },
         experienceSummary: point.experience.summary,
@@ -868,7 +880,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         x: timeX(midpoint),
         y: {
           emotion: scoreY(point.emotion.intensity),
-          experience: scoreY(point.experience.score),
+          experience: scoreY(effectiveExperienceScore(point)),
           trend: experienceTrend === null ? null : scoreY(experienceTrend)
         }
       };
@@ -1007,9 +1019,18 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       ? `回归预测 ${Number(point.experienceTrend).toFixed(2)}`
       : "已超出大地图入口回归范围";
     return `<strong>${formatTime(point.start)}–${formatTime(point.end)}</strong>
-      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>体验强度 ${Number(point.experienceScore).toFixed(1)} · ${trendText}</span></div>
+      <div class="curve-tooltip-head"><span>情绪强度 ${Number(point.emotionIntensity).toFixed(1)} · ${escapeHtml(valenceLabels[point.valence] || point.valence)}</span><span>有效体验 ${Number(point.experienceScore).toFixed(1)} · ${trendText}</span></div>
       <div class="emotion-tooltip-scores"><span>剧情刺激 ${Number(point.narrativeScore).toFixed(1)}</span><span>其他刺激 ${Number(point.supportingScore).toFixed(1)}</span>${drivers ? `<span>刺激来源 ${drivers}</span>` : ""}</div>
       ${point.emotionEvent ? `<p><b>主要刺激：</b>${escapeHtml(point.emotionEvent)}<br><b>评分原因：</b>${escapeHtml(point.emotionReason)}</p>` : ""}
+      <div class="experience-adjustments">
+        <span><b>原始即时分：</b>${Number(point.experienceBaseScore).toFixed(1)}</span>
+        <span><b>渐进期待：</b>${Number(point.progressionPull.score).toFixed(1)} · 渐进奖励 +${Number(point.progressionBonus).toFixed(1)}</span>
+        <span><b>重复疲劳：</b>重复惩罚 -${Number(point.repetitionPenalty).toFixed(1)} · 有效重复 ${Number(point.effectiveRepeatCount)} 次</span>
+        <span><b>重复变化：</b>${escapeHtml(point.repetitionContext.variation)}</span>
+        <span><b>重复依据：</b>${escapeHtml(point.repetitionContext.reason)}</span>
+        <span><b>有效体验：</b>${Number(point.experienceScore).toFixed(1)}</span>
+        <span><b>期待依据：</b>${escapeHtml(point.progressionPull.reason)}</span>
+      </div>
       <div class="experience-basis">
         <span><b>玩法浓度：</b>${escapeHtml(point.experienceBasis.gameplay_concentration)}</span>
         <span><b>反馈密度：</b>${escapeHtml(point.experienceBasis.feedback_density)}</span>
@@ -1053,7 +1074,16 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
   }
 
   function globalCurvesGuideMarkup() {
-    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>体验强度 0～5：</strong>人工综合玩法浓度、反馈密度、目标/挑战与打断情况，判断玩法沉浸和心流强度。</p><p><strong>体验整体趋势：</strong>统计范围从录屏开始到首次进入SLG大地图，包含入口所在时间片；先计算范围内各阶段的体验平均分，再让每个阶段以相同权重参与真实时间线性回归。入口后的实际折线继续保留，但不参与回归。</p>`;
+    return `<p><strong>情绪强度 0～5：</strong>以剧情为主体，最终分由70%剧情刺激与30%较高刺激计算；其他刺激包含环境压力、紧迫目标、战斗、成长奖励和危机缓解。</p><p><strong>有效体验强度 0～5：</strong>体验线展示已经计入渐进期待奖励和重复疲劳惩罚的有效体验强度；原始即时分保留在 Tooltip 中。前 20 分钟或同类玩法前 5 次不衰减；partial_break 部分恢复重复计数，full_break 完全重置重复计数。</p><p><strong>体验整体趋势：</strong>统计范围从录屏开始到首次进入SLG大地图，包含入口所在时间片；先计算范围内各阶段的有效体验平均分，再让每个阶段以相同权重参与真实时间线性回归。入口后的实际折线继续保留，但不参与回归。</p>`;
+  }
+
+  function experienceTrendSummaryMarkup(trend) {
+    const labels = { rising: "上升", flat: "持平", falling: "下降" };
+    return `
+        <span>回归起点 <strong>${trend.openingPrediction.toFixed(2)}</strong></span>
+        <span>${escapeHtml(trend.endLabel)} ${formatTime(trend.endTime)} <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
+        <span>变化 <strong>${trend.delta >= 0 ? "+" : ""}${trend.delta.toFixed(2)}</strong></span>
+        <b class="trend-${trend.direction}">${labels[trend.direction]}</b>`;
   }
 
   function loadInitialData(fetcher, onData, onError) {
@@ -1422,6 +1452,7 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
       detailViewModel,
       dimensionTabs,
       encodeAssetPath,
+      experienceTrendSummaryMarkup,
       firstVisibleIndexInStage,
       formatTime,
       globalCurvesGuideMarkup,
@@ -1497,12 +1528,8 @@ main { display: grid; grid-template-columns: minmax(0, 1fr); gap: 22px; }
         )?.focus();
       }
       const trend = state.curveModel.trendSummary;
-      const labels = { rising: "上升", flat: "持平", falling: "下降" };
-      byId("experience-trend-summary").innerHTML = `
-        <span>回归起点 <strong>${trend.openingPrediction.toFixed(2)}</strong></span>
-        <span>大地图入口 ${formatTime(trend.endTime)} <strong>${trend.endingPrediction.toFixed(2)}</strong></span>
-        <span>变化 <strong>${trend.delta >= 0 ? "+" : ""}${trend.delta.toFixed(2)}</strong></span>
-        <b class="trend-${trend.direction}">${labels[trend.direction]}</b>`;
+      byId("experience-trend-summary").innerHTML =
+        experienceTrendSummaryMarkup(trend);
       byId("emotion-curve-error").hidden = true;
     } catch (error) {
       state.curveModel = null;

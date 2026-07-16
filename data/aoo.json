@@ -2714,7 +2714,22 @@
             "goal_challenge": "目标清晰度与挑战 2.7/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "射击、拾取和结算密度很高；标题与怪物演出造成短时中断，但持续导向下一场战斗。"
+          "summary": "射击、拾取和结算密度很高；标题与怪物演出造成短时中断，但持续导向下一场战斗。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "首次连续开放载具射击、战场增益与地面小队战斗，并明确后续强敌目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入战斗远征玩法层。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2742,7 +2757,22 @@
             "goal_challenge": "目标清晰度与挑战 3.1/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.6/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "两种战斗模式衔接紧密，主体持续可操作，任务结算中断很短。"
+          "summary": "两种战斗模式衔接紧密，主体持续可操作，任务结算中断很短。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "从载具射击切换到多单位、多路敌群的地面战术战斗，并继续指向下一关。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "partial_break",
+            "reason": "地面小队战斗是新核心行为，但仍属于既有战斗远征层。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2770,7 +2800,22 @@
             "goal_challenge": "目标清晰度与挑战 3.3/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.1/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "两次战斗结算与角色展示带来高反馈，末段对白和界面切换略微打断操作。"
+          "summary": "两次战斗结算与角色展示带来高反馈，末段对白和界面切换略微打断操作。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "连续清场后展示蕾拉角色能力，提供普通队伍成长牵引。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续同类地面小队清场，角色展示未改变核心行为。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2796,7 +2841,22 @@
             "goal_challenge": "目标清晰度与挑战 4.4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.4/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "操作高度集中且挑战显著上升；失败反馈明确，但连续重试降低正向奖励密度。"
+          "summary": "操作高度集中且挑战显著上升；失败反馈明确，但连续重试降低正向奖励密度。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "高压敌群与失败重试给出明确近期挑战，但没有新系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "失败与重试仍是同一地面战斗核心。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2825,7 +2885,22 @@
             "goal_challenge": "目标清晰度与挑战 4.2/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.2/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "失败、成功、剧情和模式切换高度密集；反馈强，但操作连续性被多次打断。"
+          "summary": "失败、成功、剧情和模式切换高度密集；反馈强，但操作连续性被多次打断。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "通过高压关卡后进入巨型变异体 Boss 挑战，形成新的近期目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "Boss与载具切换扩展战斗内容，但未形成新玩法层。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -2853,7 +2928,22 @@
             "goal_challenge": "目标清晰度与挑战 4.1/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "近一分钟持续Boss战，目标和反馈稳定，是本段最连贯的玩法投入高点。"
+          "summary": "近一分钟持续Boss战，目标和反馈稳定，是本段最连贯的玩法投入高点。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "Boss战完成并进入受损城市，结算奖励承接城市修复目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续并结算既有战斗远征。"
+          },
+          "effective_score": 4.8,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
         }
       },
       {
@@ -2881,7 +2971,22 @@
             "goal_challenge": "目标清晰度与挑战 1.8/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 4.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "主动战斗占比下降，但修复、尸体回收、泰坦解锁和任务展开形成极高系统反馈。"
+          "summary": "主动战斗占比下降，但修复、尸体回收、泰坦解锁和任务展开形成极高系统反馈。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "城市建筑修复、泰坦计划与限时目标链连续开放，显著扩大基地经营选择。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "full_break",
+            "reason": "首次进入城市修复与基地建设玩法层。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2909,7 +3014,22 @@
             "goal_challenge": "目标清晰度与挑战 1.9/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "战斗很快结束，随后连续获得建筑修复、战力提升和招募结果，成长反馈极密集。"
+          "summary": "战斗很快结束，随后连续获得建筑修复、战力提升和招募结果，成长反馈极密集。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "副官任命、技能与招募首次开放，并明确主城府升级目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "full_break",
+            "reason": "首次完整进入副官招募与养成玩法层。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2937,7 +3057,22 @@
             "goal_challenge": "目标清晰度与挑战 4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 0.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "升级反馈极短，随后近五十秒连续战斗；目标清晰、反馈密集、打断很少。"
+          "summary": "升级反馈极短，随后近五十秒连续战斗；目标清晰、反馈密集、打断很少。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "中央主建筑升至 Lv.2 后再次出战，提供常规建设与战斗反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "继续既有基地升级核心行为。"
+          },
+          "effective_score": 4.8,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2965,7 +3100,22 @@
             "goal_challenge": "目标清晰度与挑战 3.1/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.7/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "本段反馈数量最高，但菜单教学频繁打断，强度主要来自连续成长兑现。"
+          "summary": "本段反馈数量最高，但菜单教学频繁打断，强度主要来自连续成长兑现。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "单位训练队列首次启动，并衔接高级招募、英雄编队与下一场战斗。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "partial_break",
+            "reason": "单位训练是新核心生产行为，但仍服务既有基地与战斗层。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2993,7 +3143,22 @@
             "goal_challenge": "目标清晰度与挑战 3.8/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "首领战、结算和短对白快速衔接，保持较高投入并清楚铺设下一目标。"
+          "summary": "首领战、结算和短对白快速衔接，保持较高投入并清楚铺设下一目标。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "关卡结算与任务交付只提供常规奖励和下一战入口。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续既有道路战斗与结算。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3021,7 +3186,22 @@
             "goal_challenge": "目标清晰度与挑战 4.1/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 0.4/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "持续炮塔协同战形成本段最稳定的战斗心流高点。"
+          "summary": "持续炮塔协同战形成本段最稳定的战斗心流高点。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "固定炮塔重火力首次实际投入战斗，并完成关卡后指向基地修复。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "partial_break",
+            "reason": "固定炮塔支援是新核心战斗行为，但未形成独立玩法层。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3047,7 +3227,22 @@
             "goal_challenge": "目标清晰度与挑战 2.4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.1/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "成长反馈强于操作挑战，体验重心是建筑升级和科技入口教学。"
+          "summary": "成长反馈强于操作挑战，体验重心是建筑升级和科技入口教学。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "科技树与四类研究入口开放，建立长期研究目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "technology_research",
+            "variation": "reinforcement",
+            "reason": "本片仅查看研究入口，尚未执行新的研究核心行为。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3074,7 +3269,22 @@
             "goal_challenge": "目标清晰度与挑战 3.3/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.9/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "二倍速战斗保持较高投入，末段以泰坦目标和生产系统扩展成长预期。"
+          "summary": "二倍速战斗保持较高投入，末段以泰坦目标和生产系统扩展成长预期。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "生产加速首次实际使用并兑现建筑完成，形成明确效率成长反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "partial_break",
+            "reason": "生产加速是新核心效率行为，但仍属于基地生产层。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3101,7 +3311,22 @@
             "goal_challenge": "目标清晰度与挑战 2.3/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.5/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "强度主要来自即时数值兑现，频繁菜单切换削弱连续操作感。"
+          "summary": "强度主要来自即时数值兑现，频繁菜单切换削弱连续操作感。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "再次加速并将建筑升至 Lv.4，属于常规建设成长。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "重复既有生产加速与建筑升级。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3129,7 +3354,22 @@
             "goal_challenge": "目标清晰度与挑战 3.6/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "首领战、泰坦恢复、四类奖励和新长期目标连续兑现，形成战斗与系统成长结合最完整的一片。"
+          "summary": "首领战、泰坦恢复、四类奖励和新长期目标连续兑现，形成战斗与系统成长结合最完整的一片。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "泰坦要塞恢复并开放组装候选页面，继续展示解锁首个泰坦的目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "titan_growth",
+            "variation": "reinforcement",
+            "reason": "兑现既有泰坦计划目标，候选尚未解锁，未产生新核心行为。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3157,7 +3397,22 @@
             "goal_challenge": "目标清晰度与挑战 3.8/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.1/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "前半段以剧情和对象展示建立动机，后半段迅速转为高密度救援战斗。"
+          "summary": "前半段以剧情和对象展示建立动机，后半段迅速转为高密度救援战斗。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "Lucy 救援提供新任务目标与人物回报，但沿用既有道路战斗。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "救援主题未改变既有编队射击核心。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3185,7 +3440,22 @@
             "goal_challenge": "目标清晰度与挑战 3.5/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.7/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "战斗结算、人物解锁、建筑升级和英雄入口连续出现，反馈极密但系统切换频繁。"
+          "summary": "战斗结算、人物解锁、建筑升级和英雄入口连续出现，反馈极密但系统切换频繁。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次实际投入资源培养英雄并获得战力提升，衔接下一轮整备。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "partial_break",
+            "reason": "英雄培养是新核心成长行为，但仍属于既有英雄玩法层。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3210,7 +3480,22 @@
             "goal_challenge": "目标清晰度与挑战 2.8/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "奖励和解锁非常密集，但菜单、弹窗与教学多次打断直接操作。"
+          "summary": "奖励和解锁非常密集，但菜单、弹窗与教学多次打断直接操作。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "永久第二建筑队列解锁，明确提高后续建设并行效率。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "partial_break",
+            "reason": "第二建筑队列改变建设效率行为，但未形成新玩法层。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3237,7 +3522,22 @@
             "goal_challenge": "目标清晰度与挑战 4.2/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "后半分钟为连续道路战斗，大型强敌和技能冷却形成清晰压力与操作节奏。"
+          "summary": "后半分钟为连续道路战斗，大型强敌和技能冷却形成清晰压力与操作节奏。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "暗色道路强敌战提供常规关卡挑战与推进目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "场景与敌人变化未改变既有道路射击核心。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3263,7 +3563,22 @@
             "goal_challenge": "目标清晰度与挑战 4.5/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 0.6/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "整片均为连续道路战斗，是本区段操作最集中、打断最少的体验峰值。"
+          "summary": "整片均为连续道路战斗，是本区段操作最集中、打断最少的体验峰值。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "闸门后开放明亮大道新路段并提升敌群组合压力。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "新路段继续沿用相同编队射击与清怪行为。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3290,7 +3605,22 @@
             "goal_challenge": "目标清晰度与挑战 3.2/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.7/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "由战斗结算转为升级和加速教学，反馈稳定但菜单切换明显。"
+          "summary": "由战斗结算转为升级和加速教学，反馈稳定但菜单切换明显。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "建筑加速、英雄查看与招募结果均为既有成长系统的常规反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "返回既有基地升级行为。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3315,7 +3645,22 @@
             "goal_challenge": "目标清晰度与挑战 2.7/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.4/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "英雄、建筑、奖励和泰坦连续切换，成长反馈极强但教学与菜单较碎片化。"
+          "summary": "英雄、建筑、奖励和泰坦连续切换，成长反馈极强但教学与菜单较碎片化。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次选择泰坦并投入碎片启动计时培养，建立长期成长目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "titan_growth",
+            "variation": "partial_break",
+            "reason": "实际泰坦培养是新核心成长行为，但仍属于既有泰坦系统层。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3342,7 +3687,22 @@
             "goal_challenge": "目标清晰度与挑战 3.5/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.6/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "前半片系统教学密集，后半片重新进入高操作战斗，形成清晰的成长投入回流。"
+          "summary": "前半片系统教学密集，后半片重新进入高操作战斗，形成清晰的成长投入回流。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次实际操作科技研究节点并获得反馈，随后明确下一轮出击目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "technology_research",
+            "variation": "partial_break",
+            "reason": "实际科技研究是新核心成长行为，但未形成独立玩法层。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3368,7 +3728,22 @@
             "goal_challenge": "目标清晰度与挑战 4.2/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 0.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "两轮战斗紧密衔接，操作集中且伤害反馈持续，只有短暂基地回流。"
+          "summary": "两轮战斗紧密衔接，操作集中且伤害反馈持续，只有短暂基地回流。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "连续道路战斗提高敌群门槛并给予普通关卡奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续相同道路清敌核心。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3396,7 +3771,22 @@
             "goal_challenge": "目标清晰度与挑战 4.4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.2/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "强敌收尾、任务完成和奖励连续兑现，是本区段最完整的战斗闭环之一。"
+          "summary": "强敌收尾、任务完成和奖励连续兑现，是本区段最完整的战斗闭环之一。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "战斗结算与角色指令承接下一项基地任务。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "任务交接和普通奖励未改变基地建设核心。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3423,7 +3813,22 @@
             "goal_challenge": "目标清晰度与挑战 4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "中段清敌高度集中，片头奖励和片尾回城提供明确节奏分隔。"
+          "summary": "中段清敌高度集中，片头奖励和片尾回城提供明确节奏分隔。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "再次道路清敌并查看士兵招募加速道具，只有常规推进反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "招募加速延续已有生产加速行为。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3449,7 +3854,22 @@
             "goal_challenge": "目标清晰度与挑战 3/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 2.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "系统信息密集，但菜单、基地和对话频繁切换，招募加速也缺少明确完成反馈。"
+          "summary": "系统信息密集，但菜单、基地和对话频繁切换，招募加速也缺少明确完成反馈。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "科研关联建筑与科技树正式完成教学，并继续指向外部世界。"
+          },
+          "repetition_context": {
+            "loop_family_id": "technology_research",
+            "variation": "reinforcement",
+            "reason": "继续既有科技研究目标，未出现新的研究核心行为。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3475,7 +3895,22 @@
             "goal_challenge": "目标清晰度与挑战 3.4/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3.3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "科研闭环和入图反馈明确，但多层菜单与转场造成明显中断；评分不混入入口后地图试触。"
+          "summary": "科研闭环和入图反馈明确，但多层菜单与转场造成明显中断；评分不混入入口后地图试触。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "首次进入具备世界坐标、其他城市、雷达和地图 HUD 的 SLG 世界大地图，显著扩大选择空间。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入 SLG 世界大地图玩法层。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3501,7 +3936,22 @@
             "goal_challenge": "目标清晰度与挑战 3.1/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 3/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "入口后系统新鲜感较强，但迁城试触极短且界面切换频繁，炮台战尚未闭合。"
+          "summary": "入口后系统新鲜感较强，但迁城试触极短且界面切换频繁，炮台战尚未闭合。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "入口后首次尝试世界迁城选址，并进入固定炮台瞄准防守目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "partial_break",
+            "reason": "固定炮台瞄准防守是真正的新核心行为，但位于趋势截断后的外部片段。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3528,10 +3978,34 @@
             "goal_challenge": "目标清晰度与挑战 3.5/5；依据该分钟可见事件逐项评估。",
             "interruption": "界面、对白与转场中断 1.8/5；依据该分钟可见事件逐项评估。"
           },
-          "summary": "炮台防守从操作到结算完整闭合，是入口后最集中的玩法高点。 后段：英雄升级反馈明确，末尾基地目标尚未闭合；菜单往返使体验偏碎片化。"
+          "summary": "炮台防守从操作到结算完整闭合，是入口后最集中的玩法高点。 后段：英雄升级反馈明确，末尾基地目标尚未闭合；菜单往返使体验偏碎片化。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "炮台防守完成并衔接建筑与英雄成长，继续展示基地任务。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续并结算上一片已开始的炮台防守。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       }
-    ]
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
   },
   "global_loops": {
     "scope": {

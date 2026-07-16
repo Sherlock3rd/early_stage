@@ -17,6 +17,7 @@ sys.path.insert(0, str(SCRIPTS))
 import analysis_model
 import extract_frames
 import video_timeline
+from experience_adjustment import expected_experience_fields, load_locked_parameters
 
 
 class VideoTimelineTests(unittest.TestCase):
@@ -129,8 +130,18 @@ class ExtractFramesTests(unittest.TestCase):
 
 
 def valid_global_curves(slices):
-    return {
+    locked_parameters = load_locked_parameters()
+    curves = {
         "scale": {"min": 0, "max": 5},
+        "experience_model": {
+            "version": "progression-repetition-v1",
+            "parameters": {
+                "progression_weight": locked_parameters.progression_weight,
+                "penalty_step": locked_parameters.penalty_step,
+                "penalty_cap": locked_parameters.penalty_cap,
+                "partial_recovery": locked_parameters.partial_recovery,
+            },
+        },
         "points": [
             {
                 "start": item["start"],
@@ -146,6 +157,15 @@ def valid_global_curves(slices):
                 },
                 "experience": {
                     "score": 3,
+                    "progression_pull": {
+                        "score": 2,
+                        "reason": "存在普通成长反馈",
+                    },
+                    "repetition_context": {
+                        "loop_family_id": "building_growth",
+                        "variation": "reinforcement",
+                        "reason": "继续基础建设循环",
+                    },
                     "basis": {
                         "gameplay_concentration": "存在连续有效操作",
                         "feedback_density": "操作后有明确反馈",
@@ -158,6 +178,20 @@ def valid_global_curves(slices):
             for item in slices
         ],
     }
+    expected = expected_experience_fields(
+        curves["points"], locked_parameters
+    )
+    for point, derived in zip(curves["points"], expected):
+        point["experience"]["effective_score"] = derived["effective_score"]
+        point["experience"]["adjustments"] = {
+            key: derived[key]
+            for key in (
+                "progression_bonus",
+                "repetition_penalty",
+                "effective_repeat_count",
+            )
+        }
+    return curves
 
 
 def valid_global_loops(slices):
@@ -284,6 +318,26 @@ def valid_analysis(duration=60.0):
     }
 
 
+def valid_context(data):
+    return {
+        "points": [
+            {
+                "slice_index": index,
+                "progression_pull": {
+                    "score": 3,
+                    "reason": "近期解锁目标可见",
+                },
+                "repetition_context": {
+                    "loop_family_id": "building_growth",
+                    "variation": "full_break" if index == 0 else "reinforcement",
+                    "reason": "首次建立建设玩法层" if index == 0 else "继续基础建设循环",
+                },
+            }
+            for index, _ in enumerate(data["slices"])
+        ]
+    }
+
+
 class AnalysisModelTests(unittest.TestCase):
     def test_precise_timeline_milestones_are_validated(self):
         data = valid_analysis(120.0)
@@ -342,6 +396,14 @@ class AnalysisModelTests(unittest.TestCase):
         self.assertIn("阶段目标", encoded)
         self.assertEqual(data, json.loads(encoded))
 
+    def test_experience_model_is_required(self):
+        data = valid_analysis()
+        del data["global_curves"]["experience_model"]
+        with self.assertRaisesRegex(
+            analysis_model.AnalysisValidationError, "experience_model"
+        ):
+            analysis_model.validate_analysis(data)
+
     def test_global_loops_is_required_and_valid_graph_passes(self):
         data = valid_analysis(120.0)
         analysis_model.validate_analysis(data)
@@ -361,6 +423,143 @@ class AnalysisModelTests(unittest.TestCase):
             analysis_model.AnalysisValidationError, "behaviors|行为"
         ):
             analysis_model.validate_analysis(data)
+
+    def test_experience_context_requires_existing_loop_family(self):
+        data = valid_analysis()
+        data["global_curves"]["points"][0]["experience"]["repetition_context"][
+            "loop_family_id"
+        ] = "missing"
+        with self.assertRaisesRegex(
+            analysis_model.AnalysisValidationError, "loop_family_id"
+        ):
+            analysis_model.validate_analysis(data)
+
+    def test_experience_context_allows_empty_loop_family(self):
+        data = valid_analysis()
+        experience = data["global_curves"]["points"][0]["experience"]
+        experience["repetition_context"]["loop_family_id"] = ""
+        derived = expected_experience_fields(
+            data["global_curves"]["points"],
+            load_locked_parameters(),
+        )[0]
+        experience["effective_score"] = derived["effective_score"]
+        experience["adjustments"] = {
+            key: derived[key]
+            for key in (
+                "progression_bonus",
+                "repetition_penalty",
+                "effective_repeat_count",
+            )
+        }
+
+        analysis_model.validate_analysis(data)
+        self.assertEqual(0, experience["adjustments"]["effective_repeat_count"])
+
+    def test_effective_score_must_match_derived_adjustments(self):
+        data = valid_analysis()
+        data["global_curves"]["points"][0]["experience"]["effective_score"] = 5
+        with self.assertRaisesRegex(
+            analysis_model.AnalysisValidationError, "effective_score|算法"
+        ):
+            analysis_model.validate_analysis(data)
+
+    def test_derived_experience_values_allow_only_tiny_float_noise(self):
+        data = valid_analysis()
+        experience = data["global_curves"]["points"][0]["experience"]
+        experience["effective_score"] += 5e-10
+        experience["adjustments"]["progression_bonus"] += 5e-10
+
+        analysis_model.validate_analysis(data)
+
+    def test_original_experience_score_is_not_rewritten(self):
+        import apply_experience_context
+
+        data = valid_analysis()
+        original = [
+            point["experience"]["score"]
+            for point in data["global_curves"]["points"]
+        ]
+        migrated = apply_experience_context.apply_context(data, valid_context(data))
+        self.assertEqual(
+            original,
+            [
+                point["experience"]["score"]
+                for point in migrated["global_curves"]["points"]
+            ],
+        )
+
+    def test_beboo_late_slices_use_visually_reviewed_scores_and_reasons(self):
+        beboo_path = (
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "beboo.json"
+        )
+        if not beboo_path.exists():
+            beboo_path = ROOT.parents[2] / "data" / "beboo.json"
+        data = json.loads(beboo_path.read_text(encoding="utf-8"))
+        late_experience = [
+            point["experience"]
+            for point in data["global_curves"]["points"][30:38]
+        ]
+
+        self.assertEqual(
+            [1.9, 2.4, 2.9, 2.7, 3.3, 2.5, 3.3, 3.1],
+            [experience["score"] for experience in late_experience],
+        )
+        self.assertEqual(1.8, late_experience[2]["effective_score"])
+        self.assertEqual(2.2, late_experience[6]["effective_score"])
+        self.assertEqual(
+            [1, 1, 1, 0, 1, 3, 1, 0],
+            [
+                experience["progression_pull"]["score"]
+                for experience in late_experience
+            ],
+        )
+        self.assertEqual(
+            [
+                "combat-route",
+                "combat-route",
+                "combat-route",
+                "combat-route",
+                "combat-route",
+                "camp-prepare",
+                "combat-route",
+                "combat-route",
+            ],
+            [
+                experience["repetition_context"]["loop_family_id"]
+                for experience in late_experience
+            ],
+        )
+        self.assertEqual(
+            [
+                "reinforcement",
+                "reinforcement",
+                "reinforcement",
+                "reinforcement",
+                "reinforcement",
+                "partial_break",
+                "reinforcement",
+                "reinforcement",
+            ],
+            [
+                experience["repetition_context"]["variation"]
+                for experience in late_experience
+            ],
+        )
+
+        generic_phrases = ("按该片", "人工判断", "人工评分为")
+        for experience in late_experience:
+            reason_text = "\n".join(
+                [*experience["basis"].values(), experience["summary"]]
+            )
+            self.assertFalse(
+                any(phrase in reason_text for phrase in generic_phrases),
+                reason_text,
+            )
 
     def test_global_loop_confidence_equals_lowest_referenced_slice(self):
         data = valid_analysis(120.0)
@@ -818,7 +1017,8 @@ class AnalysisModelTests(unittest.TestCase):
                 for key in ("type", "timestamp", "slice_index")
             },
         )
-        analysis_model.validate_analysis(data)
+        if "experience_model" in data["global_curves"]:
+            analysis_model.validate_analysis(data)
 
     def test_aoo_records_titan_plan_unlock_from_visible_main_frame(self):
         aoo_path = (
@@ -854,6 +1054,8 @@ class AnalysisModelTests(unittest.TestCase):
                 if node["type"] == "micro_loop"
             )
         )
+        if "experience_model" in data["global_curves"]:
+            analysis_model.validate_analysis(data)
 
     def test_aoo_does_not_collapse_slice_nineteen_battle_into_building_loop(self):
         aoo_path = (
@@ -879,6 +1081,8 @@ class AnalysisModelTests(unittest.TestCase):
                 if node["type"] == "micro_loop"
             )
         )
+        if "experience_model" in data["global_curves"]:
+            analysis_model.validate_analysis(data)
 
     def test_sanbing_records_mother_death_as_exact_second_climax(self):
         sanbing_path = (
@@ -939,6 +1143,8 @@ class AnalysisModelTests(unittest.TestCase):
                 for key in ("type", "timestamp", "slice_index")
             },
         )
+        if "experience_model" in data["global_curves"]:
+            analysis_model.validate_analysis(data)
 
     def test_invalid_json_is_rejected(self):
         with self.assertRaises(analysis_model.AnalysisValidationError):

@@ -148,3 +148,23 @@
   Beboo 22:17 只支持普通跨区开放地图，改为 `map_entry`，体验趋势恢复覆盖完整录屏；
   `cg_end` 仅保留 00:44.5 的开场 CG 结束点，不标记后续剧情演出结束。`Beboo拆解` 飞书页签
   （sheet `2PmFgY`）仍是修正前版本，待与本地终版同步；`AOO拆解` 因同名页签冲突未写入。
+- 2026-07-16：完成 Experience Repetition Decay Task 5 盲测。锁定参数 SHA-256 前后均为
+  `bbcf8ef26d1142529e08181788c6e995fba6d73cfe2e30bc29cbbc1c8cbd7d5e`，未重新校准。
+  AOO 由 `-0.221682` 变为 `-0.389849`。Beboo 经后段独立视觉质量复核后，30–37 片基础分修正为
+  `1.9/2.4/2.9/2.7/3.3/2.5/3.3/3.1`，真实 delta 由 `+1.093956` 变为 `-0.348766`；
+  两款方向均为持平。Beboo 普通捕捉、拍照、卡牌翻转、敌人换皮、界面切换、奖励和结算均保持
+  `reinforcement`，仅 55–60 分钟首次实际执行工作台制造与派遣采矿时标记 `partial_break`。
+  本次只修改 Beboo 基础体验分、basis/summary 与 context，参数、AOO、三款基准和全部 emotion 不变。
+  五款统一 viewer 已在本地重建：
+  `artifacts/early-experience/viewer/index.html`；GitHub Pages 未更新，等待用户确认。
+- 2026-07-16：最终审查修复覆盖上条参数与 delta。校准损失按设计加入
+  `0.1 × Σ((参数-先验)/网格步长)²`，锁定保守先验
+  `progression_weight=0.6`、`penalty_step=0.2`、`penalty_cap=1.2`、`partial_recovery=2`，
+  参数文件 SHA-256 为 `ffe02eb30671b1e0adc70f0ed32ea7d8374d29079399a29499094bd1cc2f33b4`。
+  五款最终 delta 依次为寒霜 `+1.246018`、三冰 `+1.395036`、Dark War `+1.503866`、
+  AOO `-0.360943`、Beboo `-0.710430`。Beboo 30–37 片有效分为
+  `0.8/1.3/1.8/1.5/2.2/2.9/2.2/1.9`，已审计基础分、context、全部 emotion 及其他游戏基础分均未改动。
+  严格契约允许空 `loop_family_id`，派生浮点值使用 `abs_tol=1e-9` 校验；Viewer 无 `slg_entry`
+  时以“录屏结束”显示回归终点，并在 Tooltip 直接展示 repetition variation/reason。
+  完整 209 项测试通过（skip 1），五款正式数据和 AOO/Beboo work 副本均严格校验通过；
+  本地 viewer 已重建，GitHub Pages 未发布，未执行 git 操作。

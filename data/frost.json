@@ -2228,7 +2228,22 @@
             "goal_challenge": "当前目标：Main: 点燃篝火，建立营地",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "以剧情和基础交互建立目标，玩法投入尚处起步阶段"
+          "summary": "以剧情和基础交互建立目标，玩法投入尚处起步阶段",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次建立严寒生存营地，并持续指向聚落建设目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "full_break",
+            "reason": "首次进入聚落建设玩法层。"
+          },
+          "effective_score": 2.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2254,7 +2269,22 @@
             "goal_challenge": "当前目标：Main: 进入首座建筑，接触幸存者",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "建筑交互提供稳定引导，但操作密度仍较低"
+          "summary": "建筑交互提供稳定引导，但操作密度仍较低",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次开放模拟聚落建筑交互并承接安置目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "继续执行聚落建设核心行为。"
+          },
+          "effective_score": 2.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2280,7 +2310,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "关键剧情与连续对话中断主动操作"
           },
-          "summary": "强剧情高点后转入图纸与建设目标"
+          "summary": "强剧情高点后转入图纸与建设目标",
+          "progression_pull": {
+            "score": 3,
+            "reason": "解锁任务系统并以避难所蓝图明确近期建设目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "partial_break",
+            "reason": "任务接取是新核心行为，但未形成独立玩法层。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2307,7 +2352,22 @@
             "goal_challenge": "当前目标：Tutorial: 升级篝火/建筑，派遣幸存者",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "建筑、任务与派遣连续开放，形成稳定操作和成长反馈"
+          "summary": "建筑、任务与派遣连续开放，形成稳定操作和成长反馈",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次组合建筑升级、领奖与幸存者派遣。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "仍以投入资源升级聚落为核心。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2334,7 +2394,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "短剧情插段后进入倒计时界面"
           },
-          "summary": "倒计时把重复建设转化为有时限的准备目标"
+          "summary": "倒计时把重复建设转化为有时限的准备目标",
+          "progression_pull": {
+            "score": 3,
+            "reason": "暴风雪倒计时给出明确近期挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "倒计时改变压力但未改变建设行为。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2359,7 +2434,22 @@
             "goal_challenge": "当前目标：Main: 建造基础设施",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "重复基础建设维持推进，但缺少新的玩法刺激"
+          "summary": "重复基础建设维持推进，但缺少新的玩法刺激",
+          "progression_pull": {
+            "score": 1,
+            "reason": "继续建造基础设施，只有常规阶段推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "重复聚落建设。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -2386,7 +2476,22 @@
             "goal_challenge": "当前目标：Main: 升级生产建筑",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "生产建筑带来新的操作目标和产出反馈"
+          "summary": "生产建筑带来新的操作目标和产出反馈",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次开放生产建筑并指向供给提升。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "partial_break",
+            "reason": "新增生产核心行为但仍属于聚落层。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2412,7 +2517,22 @@
             "goal_challenge": "当前目标：Main: 完成模拟聚落的出征准备",
             "interruption": "连续同构建筑菜单造成明显操作停滞"
           },
-          "summary": "连续同构菜单造成明显停滞，是前段体验低谷"
+          "summary": "连续同构菜单造成明显停滞，是前段体验低谷",
+          "progression_pull": {
+            "score": 2,
+            "reason": "完成首次出征准备，提供常规阶段奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "再次建设且核心行为不变。"
+          },
+          "effective_score": 1.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2439,7 +2559,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "过场和对话后进入连续战斗"
           },
-          "summary": "08:35英雄揭示后08:45立即开战，体验快速抬升"
+          "summary": "08:35英雄揭示后08:45立即开战，体验快速抬升",
+          "progression_pull": {
+            "score": 5,
+            "reason": "首次远征、英雄揭示与战斗共同打开重大玩法层。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入战斗远征玩法层。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2466,7 +2601,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "09:02–09:06强化选择及09:23返城终止连续战斗"
           },
-          "summary": "连续战斗至09:22，强化选择增加决策但短暂打断"
+          "summary": "连续战斗至09:22，强化选择增加决策但短暂打断",
+          "progression_pull": {
+            "score": 2,
+            "reason": "战中强化与返城提供常规战斗推进奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续同一远征战斗行为。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2492,7 +2642,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "召唤动画与详情教学打断主动操作"
           },
-          "summary": "正式召唤链清晰但演出和详情页占据主要时间"
+          "summary": "正式召唤链清晰但演出和详情页占据主要时间",
+          "progression_pull": {
+            "score": 4,
+            "reason": "正式英雄召唤和详情系统开放，并展示养成目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "full_break",
+            "reason": "首次进入英雄招募养成玩法层。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2518,7 +2683,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "英雄界面、弹窗与基地菜单持续至11:55"
           },
-          "summary": "奖励反馈稳定，直到11:55才恢复战斗"
+          "summary": "奖励反馈稳定，直到11:55才恢复战斗",
+          "progression_pull": {
+            "score": 2,
+            "reason": "领取英雄与宝箱奖励后再次出战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续英雄奖励整理与再投入。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2544,7 +2724,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "12:10–12:30基地菜单中断约20秒"
           },
-          "summary": "双循环成立，但基地菜单形成明显中断"
+          "summary": "双循环成立，但基地菜单形成明显中断",
+          "progression_pull": {
+            "score": 1,
+            "reason": "在已有建设与战斗间往返，无明确新解锁。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "返回既有聚落建设行为。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2571,7 +2766,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "13:20后返城，13:55强制手指教学"
           },
-          "summary": "战斗结算与奖励形成高点，建筑教学结束心流"
+          "summary": "战斗结算与奖励形成高点，建筑教学结束心流",
+          "progression_pull": {
+            "score": 2,
+            "reason": "胜利奖励回投建筑并提升大熔炉。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "再次执行建设升级。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2599,7 +2809,22 @@
             "goal_challenge": "当前目标：Main: 第二次远征",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "第二次远征提升连续操作与探索投入"
+          "summary": "第二次远征提升连续操作与探索投入",
+          "progression_pull": {
+            "score": 3,
+            "reason": "载具远征开启更深雪原挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "远征场景变化但核心战斗不变。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2624,7 +2849,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "15:25–15:55多层菜单连续切换"
           },
-          "summary": "战斗后被付费与系统菜单连续切断"
+          "summary": "战斗后被付费与系统菜单连续切断",
+          "progression_pull": {
+            "score": 3,
+            "reason": "开放试炼、VIP与背包入口。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "浏览试炼、VIP与背包入口未改变既有英雄养成核心行为。"
+          },
+          "effective_score": 2.6,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2650,7 +2890,22 @@
             "goal_challenge": "当前目标：Main: 领取宝箱并继续出战",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "奖励、养成和再次出战恢复稳定节奏"
+          "summary": "奖励、养成和再次出战恢复稳定节奏",
+          "progression_pull": {
+            "score": 2,
+            "reason": "英雄养成、铁矿升级与宝箱形成常规成长反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续既有养成行为。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -2676,7 +2931,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "未观察到主要菜单中断"
           },
-          "summary": "一整分钟连续战斗构成明确心流高点"
+          "summary": "一整分钟连续战斗构成明确心流高点",
+          "progression_pull": {
+            "score": 1,
+            "reason": "连续战斗推进，无新系统或地图。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "重复远征战斗。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2702,7 +2972,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "18:40返回聚落并转入建筑菜单"
           },
-          "summary": "胜利—新挑战闭环紧凑，18:40返城后结束"
+          "summary": "胜利—新挑战闭环紧凑，18:40返城后结束",
+          "progression_pull": {
+            "score": 3,
+            "reason": "雪原胜利后立即出现冰河新挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "新挑战仍沿用同一战斗核心。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2727,7 +3012,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "雇佣队列弹窗直接打断建设节奏"
           },
-          "summary": "建设反馈存在，但付费队列摩擦明显"
+          "summary": "建设反馈存在，但付费队列摩擦明显",
+          "progression_pull": {
+            "score": 1,
+            "reason": "第二建造队列门槛仅提供常规建设推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "再次执行建筑升级。"
+          },
+          "effective_score": 2.5,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2754,7 +3054,22 @@
             "goal_challenge": "当前目标：Tutorial: 配置生产队列",
             "interruption": "列表、生产队列与订单管理持续占据操作"
           },
-          "summary": "生产队列和订单继续拉长管理低谷"
+          "summary": "生产队列和订单继续拉长管理低谷",
+          "progression_pull": {
+            "score": 3,
+            "reason": "生产队列与临时供暖强化提供明确近期抗寒目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "heating_boost",
+            "variation": "partial_break",
+            "reason": "临时供暖是新核心行为但未形成独立玩法层。"
+          },
+          "effective_score": 1.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2781,7 +3096,22 @@
             "goal_challenge": "当前目标：Tutorial: 选择法令",
             "interruption": "未观察到持续菜单、等待或过场造成的主要打断"
           },
-          "summary": "法令选择与核心建筑升级带来短暂决策和成长反馈"
+          "summary": "法令选择与核心建筑升级带来短暂决策和成长反馈",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次开放法令治理系统并继续指向聚落管理。"
+          },
+          "repetition_context": {
+            "loop_family_id": "law_system",
+            "variation": "partial_break",
+            "reason": "治理是新核心系统但仍服务既有聚落层。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2804,7 +3134,22 @@
             "goal_challenge": "当前目标：Main: 升级建筑与生产设施",
             "interruption": "商业列表和多档入口拉长管理平台期"
           },
-          "summary": "商业入口和重复建设再次削弱沉浸"
+          "summary": "商业入口和重复建设再次削弱沉浸",
+          "progression_pull": {
+            "score": 2,
+            "reason": "建筑与生产设施升级提供普通成长奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "继续建设升级。"
+          },
+          "effective_score": 1.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2830,7 +3175,22 @@
             "goal_challenge": "当前目标：Main: 检查资源并继续升级",
             "interruption": "重复检查资源缺口，等待与菜单操作缺少节奏变化"
           },
-          "summary": "资源检查与升级等待形成经营段最低体验"
+          "summary": "资源检查与升级等待形成经营段最低体验",
+          "progression_pull": {
+            "score": 1,
+            "reason": "检查资源并继续升级，无明确新内容。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "重复聚落建设。"
+          },
+          "effective_score": 1.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2857,7 +3217,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "任务列表仅形成短暂中断"
           },
-          "summary": "城市规模、核心完成和新设施构成强成长高潮"
+          "summary": "城市规模、核心完成和新设施构成强成长高潮",
+          "progression_pull": {
+            "score": 4,
+            "reason": "完整主城区域和新设施开放，并展示长期功能目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "full_break",
+            "reason": "首次进入完整主城玩法层。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2884,7 +3259,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "25:00转场、25:20强制教学、25:40任务面板"
           },
-          "summary": "大地图新鲜感明确，但不是持续一整分钟的高心流"
+          "summary": "大地图新鲜感明确，但不是持续一整分钟的高心流",
+          "progression_pull": {
+            "score": 5,
+            "reason": "SLG大地图与地图单位交互开放，显著扩大选择空间。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入SLG大地图玩法层。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2909,7 +3299,22 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "26:30白屏与章节任务界面打断"
           },
-          "summary": "主城建设稳定但菜单重复"
+          "summary": "主城建设稳定但菜单重复",
+          "progression_pull": {
+            "score": 1,
+            "reason": "返城清理任务和升级建筑，仅有常规奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "返回既有主城建设行为。"
+          },
+          "effective_score": 2.9,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2934,10 +3339,34 @@
             "goal_challenge": "依据任务目标、战斗压力与玩家可执行行为",
             "interruption": "建筑计时与27:20黑底画面"
           },
-          "summary": "尾段以等待、任务清理和黑屏收尾"
+          "summary": "尾段以等待、任务清理和黑屏收尾",
+          "progression_pull": {
+            "score": 0,
+            "reason": "处理计时和任务收尾，没有可观察的新目标牵引。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "重复主城建设收尾。"
+          },
+          "effective_score": 1.9,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       }
-    ]
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
   },
   "global_loops": {
     "scope": {

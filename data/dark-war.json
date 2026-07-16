@@ -2869,7 +2869,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "叙事引导清晰，点火反馈建立首个安全感。"
+          "summary": "叙事引导清晰，点火反馈建立首个安全感。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次建立营火安全点并明确聚落目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "full_break",
+            "reason": "首次进入聚落建设玩法层。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2896,7 +2911,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "升级与建造反馈集中，但报告页短暂打断操作。"
+          "summary": "升级与建造反馈集中，但报告页短暂打断操作。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "设施升级、任务列表和建筑管理开放并展示扩建目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "继续聚落建设核心行为。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2922,7 +2952,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "近一分钟连续对话降低操作密度。"
+          "summary": "近一分钟连续对话降低操作密度。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "进入建筑内部并获得森林目标，属于普通目标推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "叙事交接未改变建设核心行为。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2948,7 +2993,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "目标—进度—建成反馈形成短闭环。"
+          "summary": "目标—进度—建成反馈形成短闭环。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "场景任务确认与槽位管理开放并指向设施建设。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "partial_break",
+            "reason": "新增设施管理核心行为但仍属于聚落层。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2975,7 +3035,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "侦察、制作和建设连续给出明确反馈。"
+          "summary": "侦察、制作和建设连续给出明确反馈。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "侦察、生产制作和人员指派开放并展示下一目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "继续生产设施闭环。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3002,7 +3077,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "建设后迅速切入编队和战斗，节奏显著提升。"
+          "summary": "建设后迅速切入编队和战斗，节奏显著提升。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "首次编队并进入独立战区，打开重大玩法层。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入战斗远征玩法层。"
+          },
+          "effective_score": 4.1,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3029,7 +3119,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "高密度战斗与不可逆人员损失叠加，形成首个强高潮。"
+          "summary": "高密度战斗与不可逆人员损失叠加，形成首个强高潮。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "新角色获得并以感染危机提高近期挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "继续首次战斗远征。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3056,7 +3161,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "叙事余波较强，岗位分配让玩家重新获得控制感。"
+          "summary": "叙事余波较强，岗位分配让玩家重新获得控制感。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "人员岗位分配与建筑强化提供普通恢复成长。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "返回既有聚落建设。"
+          },
+          "effective_score": 2.9,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3083,7 +3203,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "升级、地图变化和短任务反馈连续出现。"
+          "summary": "升级、地图变化和短任务反馈连续出现。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "倒计时关卡入口和林地任务区开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "扩区仍依赖建筑升级。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3109,7 +3244,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "建筑面板频繁切换，倒计时卡片造成重复中断。"
+          "summary": "建筑面板频繁切换，倒计时卡片造成重复中断。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "建造塔状设施并接近威胁点，属于普通建设推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "关联外部威胁但未形成新战斗层。"
+          },
+          "effective_score": 3.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -3135,7 +3285,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "施工展示偏长，完成光效带来延迟反馈。"
+          "summary": "施工展示偏长，完成光效带来延迟反馈。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "强化中央建筑提供普通成长反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "关联后续队伍成长但没有新玩法层。"
+          },
+          "effective_score": 2.5,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3162,7 +3327,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "建设等待后切入持续战斗，反馈密度明显提高。"
+          "summary": "建设等待后切入持续战斗，反馈密度明显提高。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "出征选择开放并指向林地持续作战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "partial_break",
+            "reason": "出征选择是新交互但仍服务既有战斗。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3189,7 +3369,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "战斗以招募奖励收束，成长反馈清楚。"
+          "summary": "战斗以招募奖励收束，成长反馈清楚。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "两次角色获得并接入后续队伍成长。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "full_break",
+            "reason": "首次完整进入英雄招募养成玩法层。"
+          },
+          "effective_score": 4.1,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3215,7 +3410,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "剧情信息密集，但主动操作较少。"
+          "summary": "剧情信息密集，但主动操作较少。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "档案与目标交接没有形成新系统奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续英雄剧情与目标整理。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3242,7 +3452,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "移动短、战斗短、奖励及时，闭环非常紧凑。"
+          "summary": "移动短、战斗短、奖励及时，闭环非常紧凑。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "短战斗完成并获得金色奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "返回既有战斗远征。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3268,7 +3493,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "建设准备、战斗、胜利和任务提交连续完成。"
+          "summary": "建设准备、战斗、胜利和任务提交连续完成。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "建设准备后再次作战，属于普通循环推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "再次执行远征战斗。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3294,7 +3534,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "资源投入和完成光效明确，但菜单往返较多。"
+          "summary": "资源投入和完成光效明确，但菜单往返较多。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "资源强化建筑并引出新人物与下一目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "战果回投但没有新玩法层。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -3321,7 +3576,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "人物交接与英雄页建立清晰成长参照。"
+          "summary": "人物交接与英雄页建立清晰成长参照。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "英雄详情与编队开放并给出新的战斗目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "partial_break",
+            "reason": "新英雄管理行为仍属于养成层。"
+          },
+          "effective_score": 3.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3347,7 +3617,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "技能、范围攻击和胜利排行构成高反馈战斗段。"
+          "summary": "技能、范围攻击和胜利排行构成高反馈战斗段。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "多英雄作战胜利提供普通验证奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续英雄战力验证。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3374,7 +3659,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "战斗高点后转入新交互教学，节奏逐步放缓。"
+          "summary": "战斗高点后转入新交互教学，节奏逐步放缓。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "胜利后出现新交互目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "仍在英雄与战斗既有循环内。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -3401,7 +3701,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "角色获得、战斗和建筑操作交替，成长方向明确。"
+          "summary": "角色获得、战斗和建筑操作交替，成长方向明确。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "新角色获得并接入编队。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续角色获得与养成。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -3427,7 +3742,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "生产升级与战斗交替，系统切换开始增多。"
+          "summary": "生产升级与战斗交替，系统切换开始增多。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "管理建筑并持续战斗，无明确新内容。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "既有系统交替推进。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
         }
       },
       {
@@ -3453,7 +3783,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "连续战斗反馈集中，回城后立即进入资源管理。"
+          "summary": "连续战斗反馈集中，回城后立即进入资源管理。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "连续战斗回收建设资源，属于普通奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "继续既有英雄战力投入。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.2,
+            "effective_repeat_count": 6
+          }
         }
       },
       {
@@ -3479,7 +3824,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "明确等级成长与剧情穿插，但操作被面板分割。"
+          "summary": "明确等级成长与剧情穿插，但操作被面板分割。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "两名角色达到五级并继续剧情。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "reinforcement",
+            "reason": "重复英雄培养。"
+          },
+          "effective_score": 2.7,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.4,
+            "effective_repeat_count": 7
+          }
         }
       },
       {
@@ -3506,7 +3866,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "战斗结算与剧情承接自然，是中段较完整反馈链。"
+          "summary": "战斗结算与剧情承接自然，是中段较完整反馈链。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "作战胜利后进入连续人物剧情。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "reinforcement",
+            "reason": "返回既有战斗远征。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3532,7 +3907,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "战前选择、大型敌人和结果反馈形成清晰挑战闭环。"
+          "summary": "战前选择、大型敌人和结果反馈形成清晰挑战闭环。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "编队配置开放并明确大型敌人挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "partial_break",
+            "reason": "编队是新核心行为但仍服务远征层。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3558,7 +3948,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "升级与养成密集，但重复菜单增加认知负担。"
+          "summary": "升级与养成密集，但重复菜单增加认知负担。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "扩建建筑并培养角色，属于普通成长反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "回到既有建设供给。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3584,7 +3989,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "大型敌人、胜利横幅和后续升级连续出现。"
+          "summary": "大型敌人、胜利横幅和后续升级连续出现。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "高强度战斗后返回建设，未开放新内容。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "既有供给循环继续。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -3611,7 +4031,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "商店首次出现后快速回到战斗，反馈仍较集中。"
+          "summary": "商店首次出现后快速回到战斗，反馈仍较集中。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "商店礼包入口开放并承接战力提升目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "浏览商店与礼包入口未改变既有资源供给核心行为。"
+          },
+          "effective_score": 4.1,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -3637,7 +4072,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "成长结果明确，但任务、剧情和配置界面连续切换。"
+          "summary": "成长结果明确，但任务、剧情和配置界面连续切换。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "角色达到十级并继续任务配置。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "仍在既有资源周转中。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -3663,7 +4113,22 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "标题加载和连续建筑面板造成明显中断。"
+          "summary": "标题加载和连续建筑面板造成明显中断。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "密集升级建筑与角色，没有明确新解锁。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "重复建设供给。"
+          },
+          "effective_score": 2.7,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
         }
       },
       {
@@ -3690,7 +4155,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "战斗—胜利—强光奖励链完整，前后管理略显重复。"
+          "summary": "战斗—胜利—强光奖励链完整，前后管理略显重复。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "建筑升级后完成战斗奖励链。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_production",
+            "variation": "reinforcement",
+            "reason": "继续建设与战斗供给循环。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.2,
+            "effective_repeat_count": 6
+          }
         }
       },
       {
@@ -3717,7 +4197,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "路线、增益和持续战斗显著提升决策与反馈密度。"
+          "summary": "路线、增益和持续战斗显著提升决策与反馈密度。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "关卡路线和三选一增益开放并指向精英战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "partial_break",
+            "reason": "路线选择是新核心行为但尚非大地图层。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3744,7 +4239,22 @@
             "goal_challenge": "跟随雷达热气球并完成大地图目标",
             "interruption": "存在短结算与基地界面，但未遮蔽大地图开放节点"
           },
-          "summary": "大地图开放形成明确体验跃迁，并快速进入地图目标与战斗反馈。"
+          "summary": "大地图开放形成明确体验跃迁，并快速进入地图目标与战斗反馈。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "SLG大地图与雷达目标开放，显著扩大选择空间。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入SLG大地图玩法层。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3771,7 +4281,22 @@
             "goal_challenge": "目标与挑战匹配清晰",
             "interruption": "中断较少"
           },
-          "summary": "地图探索、战斗和奖励连续推进，系统层级明显加深。"
+          "summary": "地图探索、战斗和奖励连续推进，系统层级明显加深。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "开放遭遇区和成长树候选出现，并展示新探索目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "expedition_progression",
+            "variation": "full_break",
+            "reason": "首次进入开放遭遇探索玩法层。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3797,7 +4322,22 @@
             "goal_challenge": "完成角色事件卡并领取英雄",
             "interruption": "连续对话与设定卡造成明显阅读中断"
           },
-          "summary": "角色获得提供成长反馈，但连续阅读与界面操作降低玩法集中度。"
+          "summary": "角色获得提供成长反馈，但连续阅读与界面操作降低玩法集中度。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "新英雄获得、编队与培养连续开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero_growth",
+            "variation": "partial_break",
+            "reason": "新英雄成长行为扩展既有养成层。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3822,10 +4362,34 @@
             "goal_challenge": "目标可见但挑战或操作密度有限",
             "interruption": "存在对话、菜单、加载或等待中断"
           },
-          "summary": "约30秒近静止等待后完成建筑升级，录屏在基地结束。"
+          "summary": "约30秒近静止等待后完成建筑升级，录屏在基地结束。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "返城处理奖励和建筑升级，仅为常规收尾。"
+          },
+          "repetition_context": {
+            "loop_family_id": "building_growth",
+            "variation": "reinforcement",
+            "reason": "返回既有聚落建设。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       }
-    ]
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
   },
   "global_loops": {
     "scope": {

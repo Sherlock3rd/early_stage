@@ -2739,7 +2739,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 1.5/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.5/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "角色选择建立身份，但尚未开放可重复核心玩法。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "身份确认是线性入口，不构成新玩法层。"
+          },
+          "effective_score": 1.7,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2766,7 +2781,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 1.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.0/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "剧情危机只建立后续探索动机，没有系统奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "剧情引导是线性过渡，不构成核心行为变化。"
+          },
+          "effective_score": 1.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2792,7 +2822,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.3/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.3/5。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "首次开放移动、攻击与比宝卡战斗，并明确突破路线目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "full_break",
+            "reason": "首次进入探索战斗玩法层。"
+          },
+          "effective_score": 2.8,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2817,7 +2862,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "首次战斗胜利提供普通掉落与下一段路线目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续基础探索战斗核心。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
         }
       },
       {
@@ -2842,7 +2902,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 1.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 1.8/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次获得并编组比宝卡，建立后续卡组成长目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "card-growth",
+            "variation": "reinforcement",
+            "reason": "普通卡牌获取、翻转与编组不得标记为玩法中断。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -2867,7 +2942,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "继续沿森林路线寻路接敌，没有新解锁。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "重复森林探索战斗。"
+          },
+          "effective_score": 2.9,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
         }
       },
       {
@@ -2892,7 +2982,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "清敌掉落提供普通战斗奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通掉落与结算不得标记为玩法中断。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
         }
       },
       {
@@ -2917,7 +3022,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "路线继续推进，没有可观察的新系统或新目标层。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续同类路线推进。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
         }
       },
       {
@@ -2942,7 +3062,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "场景交互扩展路线内容，但没有改变战斗行为。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通场景交互未改变探索战斗核心。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 6
+          }
         }
       },
       {
@@ -2969,7 +3104,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 4.4/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.4/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "大型敌人胜利提供普通关卡奖励并指向下一段区域。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "敌人外观与体型变化、胜利结算均不得标记为玩法中断。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 7
+          }
         }
       },
       {
@@ -2994,7 +3144,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "森林遗迹与洞穴路线开放，明确抵达停车场的区域目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "新场景仍沿用相同探索战斗行为。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 8
+          }
         }
       },
       {
@@ -3019,7 +3184,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "继续进入洞穴，没有新系统或额外玩法选择。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "重复遗迹路线推进。"
+          },
+          "effective_score": 2.9,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 9
+          }
         }
       },
       {
@@ -3044,7 +3224,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.1/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "清敌奖励属于普通战斗反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通奖励与结算不得标记为玩法中断。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 10
+          }
         }
       },
       {
@@ -3069,7 +3264,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "竞技场式空间提高战斗压力并给出明确近期挑战。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "空间与敌群压力变化未改变探索战斗核心。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 11
+          }
         }
       },
       {
@@ -3094,7 +3304,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "继续遗迹路线，没有新内容开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "重复遗迹探索。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 12
+          }
         }
       },
       {
@@ -3119,7 +3344,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "目标区域提供普通路线牵引。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续同类探索战斗。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 13
+          }
         }
       },
       {
@@ -3144,7 +3384,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "门廊机关只扩展路线内容，没有新玩法层。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通机关与界面切换不得标记为玩法中断。"
+          },
+          "effective_score": 3.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 14
+          }
         }
       },
       {
@@ -3169,7 +3424,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "继续祭坛路线，没有新解锁。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "重复遗迹探索。"
+          },
+          "effective_score": 3.3,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 15
+          }
         }
       },
       {
@@ -3194,7 +3464,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "竞技战胜利提供普通奖励并承接停车场目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通战斗与胜利结算不得标记为玩法中断。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 16
+          }
         }
       },
       {
@@ -3219,7 +3504,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "抵达停车场完成区域推进并明确车辆目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "区域过渡没有改变探索战斗核心。"
+          },
+          "effective_score": 3.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 17
+          }
         }
       },
       {
@@ -3245,7 +3545,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 4.0/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.0/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "停车场清敌提供普通战斗推进反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续同类清敌行为。"
+          },
+          "effective_score": 4.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 18
+          }
         }
       },
       {
@@ -3272,7 +3587,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "探险车启程并明确前往新区域的近期目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "车辆跨区是路线过渡，不是新的可重复核心行为。"
+          },
+          "effective_score": 1.9,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 19
+          }
         }
       },
       {
@@ -3300,7 +3630,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 4.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 4.2/5。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "探险岛开放区域与区域小地图首次出现，并展示落地后的探索目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通跨区地图开放仍沿用既有探索战斗核心。"
+          },
+          "effective_score": 3.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 20
+          }
         }
       },
       {
@@ -3326,7 +3671,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.3/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.3/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "探险岛落地后给出新目标，属于区域内常规推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续既有岛屿探索行为。"
+          },
+          "effective_score": 2.3,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 21
+          }
         }
       },
       {
@@ -3351,7 +3711,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "新区域清敌提供普通战斗与路线奖励。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续同类探索战斗。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 22
+          }
         }
       },
       {
@@ -3376,7 +3751,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "博士引导只承接岛屿目标，没有新系统反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "目标交接未改变核心行为。"
+          },
+          "effective_score": 1.7,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 23
+          }
         }
       },
       {
@@ -3401,7 +3791,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.9/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.9/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "昼夜状态与夜间区域出现，形成明确的夜间探索目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "昼夜和场景换皮未改变探索战斗核心。"
+          },
+          "effective_score": 2.1,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 24
+          }
         }
       },
       {
@@ -3426,7 +3831,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "营地周边目标提供常规路线牵引。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续岛屿探索战斗。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 25
+          }
         }
       },
       {
@@ -3451,7 +3871,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.5/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 2.5/5。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "扎营设施首次出现并承接夜间行动目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "现有 LOOP 仍将本片归于岛屿探索，未形成独立营地闭环。"
+          },
+          "effective_score": 1.7,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 26
+          }
         }
       },
       {
@@ -3476,7 +3911,22 @@
             "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
             "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。"
+          "summary": "该片玩法沉浸/心流强度人工评分为 3.2/5。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "夜间清敌提供普通战斗推进反馈。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "继续同类夜间探索战斗。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 27
+          }
         }
       },
       {
@@ -3494,14 +3944,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 3.4,
+          "score": 1.9,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "30–35分钟长时间停留在卡牌、属性与编组菜单，主动战斗操作占比很低。",
+            "feedback_density": "主要反馈是既有卡牌属性与编组结果，缺少连续战斗或新系统反馈。",
+            "goal_challenge": "目标集中于查看和整理既有卡组，没有新的操作挑战。",
+            "interruption": "连续菜单浏览取代探索战斗，玩法节奏长时间停顿。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.4/5。"
+          "summary": "卡牌与属性菜单占据主体，只有低强度的既有成长整理。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "长时间停留在既有卡牌、属性与编组菜单，仅提供普通整理目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通卡牌查看、编组和菜单切换不改变既有探索战斗核心。"
+          },
+          "effective_score": 0.8,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 28
+          }
         }
       },
       {
@@ -3521,14 +3986,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 3.8,
+          "score": 2.4,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "前半段为长时间静态引导，后半段才恢复普通战斗与拍照捕捉。",
+            "feedback_density": "后半段出现一次捕捉评价与卡牌结算，前半段反馈稀少。",
+            "goal_challenge": "拍照捕捉目标清晰但已反复出现，操作挑战有限。",
+            "interruption": "静态引导和捕捉后的卡牌界面明显切断连续探索。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.8/5。"
+          "summary": "后半段普通捕捉提供有限反馈，无法抵消前半段静态引导造成的低投入。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "静态引导后完成一次既有拍照捕捉，只提供常规路线推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通拍照与捕捉沿用既有探索战斗核心，不标记玩法中断。"
+          },
+          "effective_score": 1.3,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 29
+          }
         }
       },
       {
@@ -3548,14 +4028,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 4.3,
+          "score": 2.9,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "以普通路线战斗和三次既有拍照捕捉为主，核心操作没有变化。",
+            "feedback_density": "命中、捕捉评价与卡牌结算重复出现，反馈可见但同质。",
+            "goal_challenge": "目标仍是削弱并捕捉比宝，敌人变化未带来新机制挑战。",
+            "interruption": "多次驻足、加载和捕捉结算界面把战斗切成短段。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 4.3/5。"
+          "summary": "重复战斗与三次既有捕捉有即时反馈，但频繁停顿使持续沉浸保持在中低水平。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "普通战斗与三次既有捕捉仅提供重复的掉落和区域推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "重复捕捉、敌人变化和结算均未产生新核心行为。"
+          },
+          "effective_score": 1.8,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 30
+          }
         }
       },
       {
@@ -3573,14 +4068,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 3.0,
+          "score": 2.7,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "片内只有普通战斗捕捉，且末段转入卡组菜单。",
+            "feedback_density": "战斗和捕捉反馈间歇出现，没有新系统或高密度连续奖励。",
+            "goal_challenge": "沿用既有探索捕捉目标，挑战结构没有升级。",
+            "interruption": "约42秒外部网页窗口加上末段卡组菜单，显著打断游戏操作。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 3.0/5。"
+          "summary": "普通捕捉被外部网页和卡组菜单截断，连续体验明显受损。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "外部网页与末段卡组菜单打断普通战斗捕捉，没有新目标牵引。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "外部窗口、菜单与普通捕捉均不构成玩法中断。"
+          },
+          "effective_score": 1.5,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 31
+          }
         }
       },
       {
@@ -3600,14 +4110,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 2.7,
+          "score": 3.3,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "50–55分钟多数时间仍在岛屿探索与战斗，直到末尾才返回营地。",
+            "feedback_density": "沿途战斗、捕捉和区域推进提供稳定但既有的反馈。",
+            "goal_challenge": "岛屿路线与敌人目标保持清晰，难度和行为均未形成新层。",
+            "interruption": "主体探索较连续，仅末尾返营与界面切换中断操作。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.7/5。"
+          "summary": "主体仍是连续岛屿探索战斗，末尾返营尚未形成新的营地玩法闭环。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "多数时间仍为既有岛屿探索战斗，末尾返营只提供常规阶段推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "末尾返营尚未执行新的营地核心行为，不得标记 partial_break。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 32
+          }
         }
       },
       {
@@ -3625,14 +4150,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 2.8,
+          "score": 2.5,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "前半段首次操作工作台制造并派遣比宝采矿，后半段长时间停留菜单。",
+            "feedback_density": "制造完成与采矿派遣提供明确新反馈，但后续菜单阶段反馈稀疏。",
+            "goal_challenge": "新目标是制造物品并配置采矿派遣，操作清晰但挑战较低。",
+            "interruption": "新核心行为结束后长时间浏览卡牌和营地菜单，削弱持续投入。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.8/5。"
+          "summary": "工作台制造与派遣采矿带来真实新行为，但后半段长菜单使整片体验强度偏低。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "首次实际完成工作台制造并派遣比宝采矿，建立新的营地生产目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "camp-prepare",
+            "variation": "partial_break",
+            "reason": "工作台制造与派遣采矿是真正的新核心行为，但仍属于营地准备层。"
+          },
+          "effective_score": 2.9,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
         }
       },
       {
@@ -3652,14 +4192,29 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 4.1,
+          "score": 3.3,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "前半约4.5分钟停留营地与成长菜单，后半才恢复既有探索捕捉。",
+            "feedback_density": "营地菜单反馈零散，后半战斗和捕捉恢复常规即时反馈。",
+            "goal_challenge": "后半探索目标清晰但机制熟悉，前半菜单没有操作挑战。",
+            "interruption": "长达约4.5分钟的菜单阶段延迟了远征，连续战斗只占后半段。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 4.1/5。"
+          "summary": "后半探索捕捉恢复节奏，但前半长菜单限制了整片的持续沉浸。",
+          "progression_pull": {
+            "score": 1,
+            "reason": "前半长时间停留营地菜单，后半返回既有探索捕捉，仅有常规推进。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "营地菜单和普通捕捉未改变既有探索战斗核心。"
+          },
+          "effective_score": 2.2,
+          "adjustments": {
+            "progression_bonus": 0.1,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 31
+          }
         }
       },
       {
@@ -3677,17 +4232,41 @@
           "reason": "按剧情主体与可见战斗/成长/紧迫刺激分别评分后套用固定公式。"
         },
         "experience": {
-          "score": 2.6,
+          "score": 3.1,
           "basis": {
-            "gameplay_concentration": "按该片连续操作、移动、战斗或界面占比人工判断。",
-            "feedback_density": "按命中、胜利、掉落、任务、解锁与成长提示密度人工判断。",
-            "goal_challenge": "按目标清晰度、敌人压力和路线阻力人工判断。",
-            "interruption": "按过场、菜单、载入、等待或外部窗口切换程度人工判断。"
+            "gameplay_concentration": "主体为普通探索战斗与拍照捕捉，尾段进入图鉴查看。",
+            "feedback_density": "战斗、捕捉与图鉴解锁提供常规反馈，没有新玩法奖励。",
+            "goal_challenge": "沿用熟悉的探索捕捉目标，尾段以收集查看收束。",
+            "interruption": "捕捉结算和末尾图鉴界面中断战斗，但片段整体仍有连续操作。"
           },
-          "summary": "该片玩法沉浸/心流强度人工评分为 2.6/5。"
+          "summary": "普通探索捕捉维持基础投入，尾段图鉴收束使强度回落。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "普通探索捕捉后以图鉴收束，没有继续展示新的后续目标。"
+          },
+          "repetition_context": {
+            "loop_family_id": "combat-route",
+            "variation": "reinforcement",
+            "reason": "普通捕捉、奖励结算与图鉴界面均不构成玩法中断。"
+          },
+          "effective_score": 1.9,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 1.2,
+            "effective_repeat_count": 32
+          }
         }
       }
-    ]
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
   },
   "global_loops": {
     "scope": {

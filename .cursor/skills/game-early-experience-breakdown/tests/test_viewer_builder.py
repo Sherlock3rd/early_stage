@@ -600,6 +600,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
                 "reason": "情绪冲击" if emotion else "",
             })
             point["experience"]["score"] = experience
+            point["experience"]["effective_score"] = experience
         encoded = json.dumps(data, ensure_ascii=False)
         result = self.run_node(
             "({"
@@ -648,7 +649,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             {"stage_range": {"stage_id": "c", "start": 240, "end": 360}},
         ]
         points = [
-            {"experience": {"score": score}}
+            {"experience": {"score": score, "effective_score": score}}
             for score in (2, 2, 2, 4, 4, 2)
         ]
         result = self.run_node(
@@ -664,6 +665,82 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             result,
         )
 
+    def test_experience_line_and_trend_use_effective_score(self):
+        data = valid_analysis(180)
+        for index, point in enumerate(data["global_curves"]["points"]):
+            point["experience"]["score"] = 4
+            point["experience"]["effective_score"] = index + 1
+            timeline_slice = data["slices"][index]
+            timeline_slice["stage_range"] = {
+                "stage_id": f"stage-{index}",
+                "name": f"阶段{index}",
+                "start": timeline_slice["start"],
+                "end": timeline_slice["end"],
+            }
+        model = self.run_node(
+            f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
+        )
+        self.assertEqual(
+            [1, 2, 3],
+            [point["experienceScore"] for point in model["points"]],
+        )
+        self.assertEqual("rising", model["trendSummary"]["direction"])
+
+    def test_curve_model_passes_through_experience_adjustment_fields(self):
+        data = valid_analysis(60)
+        experience = data["global_curves"]["points"][0]["experience"]
+        experience["score"] = 1.4
+        experience["progression_pull"] = {
+            "score": 4,
+            "reason": "下一层成长目标清晰可见",
+        }
+        experience["adjustments"] = {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.9,
+            "effective_repeat_count": 8,
+        }
+        experience["effective_score"] = 1.1
+        experience["repetition_context"] = {
+            "loop_family_id": "building_growth",
+            "variation": "partial_break",
+            "reason": "首次实际执行新的生产行为",
+        }
+
+        point = self.run_node(
+            f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
+        )["points"][0]
+
+        self.assertEqual(
+            {
+                "experienceBaseScore": 1.4,
+                "progressionPull": {
+                    "score": 4,
+                    "reason": "下一层成长目标清晰可见",
+                },
+                "progressionBonus": 0.6,
+                "repetitionPenalty": 0.9,
+                "effectiveRepeatCount": 8,
+                "experienceScore": 1.1,
+                "repetitionContext": {
+                    "loop_family_id": "building_growth",
+                    "variation": "partial_break",
+                    "reason": "首次实际执行新的生产行为",
+                },
+            },
+            {
+                key: point.get(key)
+                for key in (
+                    "experienceBaseScore",
+                    "progressionPull",
+                    "progressionBonus",
+                    "repetitionPenalty",
+                    "effectiveRepeatCount",
+                    "experienceScore",
+                    "repetitionContext",
+                )
+            },
+        )
+
     def test_experience_trend_ends_at_slg_entry_milestone(self):
         data = valid_analysis(300)
         scores = (1, 2, 5, 0, 0)
@@ -677,6 +754,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
                 "end": timeline_slice["end"],
             }
             point["experience"]["score"] = score
+            point["experience"]["effective_score"] = score
         data["timeline_milestones"] = [{
             "id": "slg-entry",
             "type": "slg_entry",
@@ -690,6 +768,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         )
         self.assertEqual(150, model["trendEndTime"])
         self.assertEqual(2, model["trendEndSliceIndex"])
+        self.assertEqual("大地图入口", model["trendSummary"]["endLabel"])
         self.assertEqual(3, model["trendSummary"]["sampleCount"])
         self.assertEqual("rising", model["trendSummary"]["direction"])
         self.assertIsNotNone(model["points"][2]["experienceTrend"])
@@ -717,6 +796,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
 
         self.assertEqual(300, model["trendEndTime"])
         self.assertEqual(4, model["trendEndSliceIndex"])
+        self.assertEqual("录屏结束", model["trendSummary"]["endLabel"])
         self.assertIsNotNone(model["points"][-1]["experienceTrend"])
 
     def test_non_slg_map_entry_does_not_truncate_experience_trend(self):
@@ -736,6 +816,23 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
 
         self.assertEqual(300, model["trendEndTime"])
         self.assertEqual(4, model["trendEndSliceIndex"])
+        self.assertEqual("录屏结束", model["trendSummary"]["endLabel"])
+
+    def test_trend_summary_render_uses_actual_endpoint_kind(self):
+        recorded_end = self.run_node(
+            "viewer.experienceTrendSummaryMarkup({"
+            "openingPrediction:1.2,endingPrediction:2.3,delta:1.1,"
+            "direction:'rising',endTime:4383,endLabel:'录屏结束'})"
+        )
+        slg_end = self.run_node(
+            "viewer.experienceTrendSummaryMarkup({"
+            "openingPrediction:1.2,endingPrediction:2.3,delta:1.1,"
+            "direction:'rising',endTime:1738.5,endLabel:'大地图入口'})"
+        )
+
+        self.assertIn("录屏结束 73:03", recorded_end)
+        self.assertNotIn("大地图入口", recorded_end)
+        self.assertIn("大地图入口 28:58", slg_end)
 
     def test_curve_chart_uses_responsive_container_dimensions(self):
         data = valid_analysis(125)
@@ -1217,6 +1314,7 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             "reason": "核心关系断裂",
         })
         point["experience"]["score"] = 5
+        point["experience"]["effective_score"] = 5
         data["slices"][0]["narrative_climax"]["judgement"] = "climax"
         model = self.run_node(
             f"viewer.globalCurvesViewModel({json.dumps(data, ensure_ascii=False)})"
@@ -1292,7 +1390,11 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
             "narrativeScore:5,supportingScore:2,"
             "emotionDrivers:['narrative','environment_pressure','urgency'],"
             "valence:'<svg onload=bad()>',emotionEvent:'角色死亡',emotionReason:'关系断裂',"
-            "experienceScore:2,experienceTrend:2.5,experienceBasis:{"
+            "experienceScore:2,experienceBaseScore:3,experienceTrend:2.5,"
+            "progressionPull:{score:2,reason:'普通成长反馈'},progressionBonus:0.4,"
+            "repetitionPenalty:1.4,effectiveRepeatCount:8,"
+            "repetitionContext:{variation:'partial_break',reason:'新行为 <b>改变</b>'},"
+            "experienceBasis:{"
             "gameplay_concentration:'操作较少',feedback_density:'任务反馈',"
             "goal_challenge:'目标明确',interruption:'<img src=x onerror=bad()>'},"
             "experienceSummary:'玩法被剧情打断'})"
@@ -1307,7 +1409,13 @@ class ViewerJavascriptBehaviorTests(unittest.TestCase):
         self.assertIn("剧情", html)
         self.assertIn("环境压力", html)
         self.assertIn("紧迫目标", html)
-        self.assertIn("体验强度 2.0", html)
+        self.assertIn("有效体验 2.0", html)
+        self.assertIn("原始即时分", html)
+        self.assertIn("渐进奖励 +0.4", html)
+        self.assertIn("重复惩罚 -1.4", html)
+        self.assertIn("有效重复 8 次", html)
+        self.assertIn("partial_break", html)
+        self.assertIn("新行为 &lt;b&gt;改变&lt;/b&gt;", html)
         self.assertIn("玩法浓度", html)
         guide = self.run_node("viewer.globalCurvesGuideMarkup()")
         self.assertIn("剧情为主体", guide)

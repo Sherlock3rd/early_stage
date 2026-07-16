@@ -1,0 +1,40 @@
+{
+  "version": "progression-repetition-v1",
+  "status": "locked",
+  "reference_names": [
+    "frost",
+    "sanbing",
+    "dark-war"
+  ],
+  "constraints_passed": true,
+  "loss": 0.008799315929702695,
+  "parameters": {
+    "progression_weight": 0.6,
+    "penalty_step": 0.2,
+    "penalty_cap": 1.2,
+    "partial_recovery": 2
+  },
+  "references": [
+    {
+      "name": "frost",
+      "old_delta": 1.176,
+      "new_delta": 1.2460181783706092,
+      "direction": "rising",
+      "base_scores_unchanged": true
+    },
+    {
+      "name": "sanbing",
+      "old_delta": 1.347,
+      "new_delta": 1.3950361944157188,
+      "direction": "rising",
+      "base_scores_unchanged": true
+    },
+    {
+      "name": "dark-war",
+      "old_delta": 1.464,
+      "new_delta": 1.5038659585789618,
+      "direction": "rising",
+      "base_scores_unchanged": true
+    }
+  ]
+}
