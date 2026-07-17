@@ -11,6 +11,7 @@ import os
 import re
 import shutil
 import tempfile
+import time
 import uuid
 from pathlib import Path, PureWindowsPath
 from typing import Any
@@ -336,6 +337,21 @@ def _rollback_transaction(record: dict[str, Any], journal: Path) -> None:
     _remove_journal(journal)
 
 
+def _replace_staged_directory(
+    staged: Path,
+    output: Path,
+    attempts: int = 5,
+) -> None:
+    for attempt in range(attempts):
+        try:
+            os.replace(staged, output)
+            return
+        except PermissionError:
+            if attempt == attempts - 1:
+                raise
+            time.sleep(0.05 * (2**attempt))
+
+
 def _commit_directory(staged: Path, output: Path) -> None:
     staged = _absolute(staged)
     output = _absolute(output)
@@ -360,7 +376,7 @@ def _commit_directory(staged: Path, output: Path) -> None:
             _transaction_checkpoint("after_backup_move")
         record["state"] = "old_moved"
         _write_journal(journal, record)
-        os.replace(staged, output)
+        _replace_staged_directory(staged, output)
         _fsync_directory(output.parent)
         _transaction_checkpoint("after_new_move")
         record["state"] = "new_committed"

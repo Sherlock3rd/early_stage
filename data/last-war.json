@@ -1,0 +1,5383 @@
+{
+  "video": {
+    "path": "asset/recordings/lastwa录屏.mp4",
+    "duration_seconds": 2620.195012
+  },
+  "capture_exclusions": [
+    {
+      "start": 0.0,
+      "end": 3.0,
+      "reason": "external_capture_interruption",
+      "source": "iOS控制中心与录制启停操作"
+    },
+    {
+      "start": 2619.0,
+      "end": 2620.195012,
+      "reason": "external_capture_interruption",
+      "source": "iOS控制中心与录制停止操作"
+    }
+  ],
+  "slices": [
+    {
+      "index": 0,
+      "start": 0.0,
+      "end": 60.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-000-main-000030000.jpg",
+        "timestamp": 30.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-000-evidence-01-000017000.jpg",
+          "timestamp": 17.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-000-evidence-02-000044000.jpg",
+          "timestamp": 44.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-000-evidence-03-000055000.jpg",
+          "timestamp": 55.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P1. 跑酷射击入门 (Runner Onboarding)\n用一次短关建立横向移动、自动射击、增益选择与清街反馈。",
+          "inference": "先用强制教学和高频正反馈让玩家迅速理解广告式跑酷射击玩法，再将结果接回基地推进。"
+        },
+        "任务链": {
+          "fact": "Intro: 直升机清扫桥面僵尸\nTutorial: 完成特别行动1\nMain: 返回基地并进入特别行动2",
+          "inference": "任务从脚本化危机展示切到可操作首关，再用基地求援点串联下一关。"
+        },
+        "核心循环": {
+          "fact": "[New] T1 清街战斗 (左右移动→选增益→扩充队伍→击杀→结算)\n[New] T2 基地推进 (点击求援点→清除路障→开启下一行动)",
+          "inference": "首分钟已经展示“跑酷战斗—结算—基地推进—再战斗”的双层循环雏形。"
+        },
+        "渐进体验": {
+          "fact": "左右滑动操控\n自动射击\n数值增减门\n士兵/武器增援\n基地求援点",
+          "inference": "战斗规则按移动、选择、扩军、火力升级顺序在首关内快速叠加。"
+        },
+        "地图体验": {
+          "fact": "桥面战斗路线\n首段基地道路",
+          "inference": "44秒结算后首次从线性桥面切换到可点击推进的基地俯视区域。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "桥面遭僵尸群占据，直升机先行清场并投放玩家角色；回到基地后，沿路出现被围困者求援。\n目的：用正在发生的僵尸危机建立清街与救援动机。",
+          "inference": "这是片内实际发生的危机与救援推进，不是单独的世界观说明文字。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p1-runner-onboarding",
+        "name": "P1. 跑酷射击入门 (Runner Onboarding)",
+        "start": 0.0,
+        "end": 60.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-000-evidence-01-000017000.jpg",
+          "note": "00:17 3-7秒为游戏更新/加载画面；8-12秒展示直升机火力清扫桥面僵尸，13秒出现“开始游戏”。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-000-evidence-02-000044000.jpg",
+          "note": "00:44 17秒出现左右滑动操控教学，角色随后自动射击，并通过蓝色增益门、士兵桶和武器桶扩充队伍与火力。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-000-evidence-03-000055000.jpg",
+          "note": "00:55 44秒“特别行动1”完成，界面显示用时00:26、累计击杀50；45秒后回到基地俯视区域。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 1,
+      "start": 60.0,
+      "end": 120.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-001-main-000090000.jpg",
+        "timestamp": 90.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-001-evidence-01-000086000.jpg",
+          "timestamp": 86.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-001-evidence-02-000095000.jpg",
+          "timestamp": 95.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-001-evidence-03-000115000.jpg",
+          "timestamp": 115.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P2. 连续清街救援 (Rescue Expansion)\n重复并强化清街循环，同时把基地占领与瓶中英雄救援设为下一目标。",
+          "inference": "第二分钟通过更大敌群与更高增益数值验证已学规则，并用救援目标增加连续推进动力。"
+        },
+        "任务链": {
+          "fact": "Main: 完成特别行动2\nMain: 清除基地道路节点并继续占领基地\nMain: 进入特别行动3营救瓶中英雄",
+          "inference": "任务链以约30秒战斗关和数秒基地推进交替，形成稳定节奏。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T1 清街战斗 (增员/武器强化→清敌→结算)\n[Loop] T2 基地推进 (清节点→占领前进→触发下一行动)",
+          "inference": "相同基础循环被更大的队伍规模、敌群和武器强化重复强化。"
+        },
+        "渐进体验": {
+          "fact": "大型武器罐\n英雄救援目标\n更高数值增益门",
+          "inference": "未出现独立菜单式系统；新增内容主要嵌入跑酷关卡对象和救援目标。"
+        },
+        "地图体验": {
+          "fact": "基地道路向下一处囚笼点推进",
+          "inference": "基地仍是同一俯视区域，但道路节点被逐步清除并继续向右上方推进。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "清完街区后，抵抗军要求继续占领基地，并发现一位英雄被困在巨大水瓶中，明确发出救援请求。\n目的：把重复清街从单纯击杀转换为占领基地和营救同伴。",
+          "inference": "瓶中人物与连续对话构成片内正在发生的救援事件，不属于世界观设定卡。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p2-rescue-expansion",
+        "name": "P2. 连续清街救援 (Rescue Expansion)",
+        "start": 60.0,
+        "end": 120.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "战斗占比和反馈规模较首分钟提升，基地过渡短促，救援目标让重复清街保持方向感。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-001-evidence-01-000086000.jpg",
+          "note": "01:26 60-85秒持续进行特别行动2，队伍通过士兵桶、武器桶和增益门扩张；85秒显示达成目标。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-001-evidence-02-000095000.jpg",
+          "note": "01:35 86秒结算显示特别行动2用时00:29、累计击杀120。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-001-evidence-03-000115000.jpg",
+          "note": "01:55 87-93秒回到基地，玩家清除道路节点并收到“继续前进，佔領基地！”提示。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 2,
+      "start": 120.0,
+      "end": 180.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-002-main-000150000.jpg",
+        "timestamp": 150.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-002-evidence-01-000123000.jpg",
+          "timestamp": 123.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-002-evidence-02-000132000.jpg",
+          "timestamp": 132.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-002-evidence-03-000163000.jpg",
+          "timestamp": 163.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 英雄救援与火力升级 (Hero Recruitment)\n完成瓶中英雄救援，获得战力提升，并用新英雄与重火力连续清街。",
+          "inference": "该阶段用可见战力奖励和角色外观变化兑现前一阶段的救援承诺。"
+        },
+        "任务链": {
+          "fact": "Main: 完成特别行动3并救出英雄\nUnlock: 领取救援奖励并打开城墙入口\nMain: 完成特别行动4\nMain: 开始特别行动5",
+          "inference": "救援结果直接转化为战力增长、新角色出战和下一轮救援。"
+        },
+        "核心循环": {
+          "fact": "[End] T1 特别行动3 (救援目标→清敌破瓶→结算)\n[Upgrade] T3 英雄成长 (救援→领取战力→英雄出战)\n[Loop] T1 特别行动4 (增员→重火力升级→清敌→结算)\n[Cont] T1 特别行动5 (新求援→再次清街)",
+          "inference": "战斗循环保持不变，但主控英雄、队伍规模和武器形态显著升级。"
+        },
+        "渐进体验": {
+          "fact": "摩托车英雄出战\n战斗力奖励\n城墙入口\n火箭/炮车兵种",
+          "inference": "英雄救援首次产生可见的角色替换与战力增长，属于早期成长兑现点。"
+        },
+        "地图体验": {
+          "fact": "打开“Zombies Keep Out”城墙入口，进入墙内基地道路",
+          "inference": "门体开启和角色穿过入口共同证明基地可推进区域扩展，不只是镜头缩放。"
+        },
+        "经济体验": {
+          "fact": "战斗力 +600（可见增量）\n城墙 Lv.1",
+          "inference": "仅记录画面可辨识数值；未见玩家等级、总战力或资源余额。"
+        },
+        "剧情轴": {
+          "fact": "玩家击破水瓶救出不会游泳的英雄，英雄随后骑摩托加入队伍；紧接着另一名瓶中被困者请求消灭丧尸。\n目的：用救援—入队—再救援的连续事件，为重复清街提供人物目标。",
+          "inference": "这是连续画面、对白和出战结果闭合的实际事件；未观察到独立世界观文字。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-hero-recruitment",
+        "name": "P3. 英雄救援与火力升级 (Hero Recruitment)",
+        "start": 120.0,
+        "end": 180.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "救援承诺、成长奖励与新英雄重火力在一分钟内连续兑现，是0-3分钟中体验密度最高的片段。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-002-evidence-01-000123000.jpg",
+          "note": "02:03 120-126秒完成特别行动3，瓶中人物在123秒发出“我不会游泳啊！快点救我出去！”；127秒结算显示用时00:30、累计击杀86。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-002-evidence-02-000132000.jpg",
+          "note": "02:12 128-132秒回到基地，摩托车英雄出现；打开礼物后界面显示战斗力+600。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-002-evidence-03-000163000.jpg",
+          "note": "02:43 133-136秒基地入口“Zombies Keep Out”被打开，界面可见“城墙 Lv.1”，并引导点击英雄所在战斗点。"
+        }
+      ],
+      "open_questions": [
+        "画面只显示战斗力增量+600，无法确认领取后的总战斗力数值。"
+      ]
+    },
+    {
+      "index": 3,
+      "start": 180.0,
+      "end": 240.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-003-main-000210000.jpg",
+        "timestamp": 210.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-003-evidence-01-000197000.jpg",
+          "timestamp": 197.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-003-evidence-02-000199000.jpg",
+          "timestamp": 199.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-003-evidence-03-000237000.jpg",
+          "timestamp": 237.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 特别行动与基地回流 (Special Operations & Base Return)\n完成特别行动5，在基地领取成长反馈后立即推进特别行动6。",
+          "inference": "短基地回流把战斗奖励直接转化为下一关战力，维持连续推进。"
+        },
+        "任务链": {
+          "fact": "Main: 完成特别行动5\nTutorial: 返回基地并开启礼物/清理点\nMain: 进入特别行动6",
+          "inference": "任务链以战斗结算和强制引导点击无缝串接。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 特别行动（自动射击→扩编→清场→结算）\n[Loop] T4 基地短回流（领取→战力提升→下一战）",
+          "inference": "战斗与基地奖励已形成跨场景的小循环。"
+        },
+        "渐进体验": {
+          "fact": "特别行动6；炮兵编队",
+          "inference": "炮兵通过关内救兵/兵力门加入，属于战斗编队强化；未见独立养成界面。"
+        },
+        "地图体验": {
+          "fact": "围栏内初始基地；双车道桥梁关卡",
+          "inference": "两者是基地局部区域与线性战斗关卡，不是正式世界地图层级。"
+        },
+        "经济体验": {
+          "fact": "战力增长反馈：+600、+1,600、+600",
+          "inference": "基地礼物与清理点即时抬升战力，但画面未给出稳定可读的战力总值。"
+        },
+        "剧情轴": {
+          "fact": "莫妮卡表示玩家给了她希望，并请求称玩家为“指挥官”。\n目的：确认玩家的队伍领导身份，并把连续清敌包装为带领幸存者求生。",
+          "inference": "这是角色关系与身份确认，不是世界观设定卡。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-special-operations-base-return",
+        "name": "P3 特别行动与基地回流",
+        "start": 180.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "高密战斗反馈叠加短基地回流，形成清晰且节奏紧凑的战斗—成长—再战闭环。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-003-evidence-01-000197000.jpg",
+          "note": "03:17 03:00仍在特别行动5，己方蓝色编队自动射击并通过数值门扩充兵力；03:17出现任务完成，显示用时00:30、累计击杀100。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-003-evidence-02-000199000.jpg",
+          "note": "03:19 03:18-03:21返回围栏内基地，莫妮卡表示玩家给了她希望，并请求称玩家为“指挥官”。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-003-evidence-03-000237000.jpg",
+          "note": "03:57 03:22-03:32按引导开启礼物/清理点，连续出现经验卡、资源与战力+600、+1,600、+600反馈。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 4,
+      "start": 240.0,
+      "end": 300.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-004-main-000270000.jpg",
+        "timestamp": 270.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-004-evidence-01-000250000.jpg",
+          "timestamp": 250.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-004-evidence-02-000280000.jpg",
+          "timestamp": 280.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-004-evidence-03-000288000.jpg",
+          "timestamp": 288.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P3. 特别行动与基地回流 (Special Operations & Base Return)\n完成特别行动6、7并击败占据仓库区域的巨型怪物。",
+          "inference": "连续关卡的终点从单纯清场升级为夺回基地关键建筑。"
+        },
+        "任务链": {
+          "fact": "Main: 完成特别行动6\nMain: 特别行动7·清理街区\nMain: 击败巨型首领并处理受占建筑",
+          "inference": "行动7承担从线性战斗转入基地建设的桥接任务。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T3 特别行动（选门/救兵→扩编→清尸潮→首领→结算）\n[Cont] T4 基地回流（胜利→战力奖励→修复目标）",
+          "inference": "行动7补齐首领终点和显著战力奖励，使战斗闭环完整。"
+        },
+        "渐进体验": {
+          "fact": "特别行动7；末日精英强化；巨型首领战",
+          "inference": "强化提示与首领属于关内战斗升级，尚未看到可自由配置的独立系统。"
+        },
+        "地图体验": {
+          "fact": "城市街区关卡；围栏内基地仓库区域",
+          "inference": "“清理街区”是线性关卡主题；回基地后的受占仓库仍位于同一局部基地层。"
+        },
+        "经济体验": {
+          "fact": "特别行动7结算：战力+20,753",
+          "inference": "该次结算是本片最显著的数值跃升，但未显示可验证的战力总值。"
+        },
+        "剧情轴": {
+          "fact": "莫妮卡要求击败占据仓库上方的怪物，以便占领基地；行动7胜利后怪物被击晕并进入可处理状态。\n目的：把街区战斗结果转化为夺回据点的明确因果。",
+          "inference": "这是片内发生的目标—战斗—结果事件，不是末日背景文字。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p3-special-operations-base-return",
+        "name": "P3 特别行动与基地回流",
+        "start": 180.0,
+        "end": 300.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "双关连续推进并以首领和大额成长收束，是3:00-6:00区间的战斗体验高点。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-004-evidence-01-000250000.jpg",
+          "note": "04:10 04:00-04:07继续特别行动6，炮兵编队清空剩余敌人；04:08出现过关横幅并回到基地。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-004-evidence-02-000280000.jpg",
+          "note": "04:40 04:10莫妮卡提示击败仓库上方怪物即可占领基地；04:12目标建筑出现战斗入口。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-004-evidence-03-000288000.jpg",
+          "note": "04:48 04:13展示“特别行动7：清理街区”与“-3×2”门机制，随后连续通过数值门、救兵与炮兵扩编清除尸潮。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 5,
+      "start": 300.0,
+      "end": 360.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-005-main-000330000.jpg",
+        "timestamp": 330.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-005-evidence-01-000318000.jpg",
+          "timestamp": 318.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-005-evidence-02-000339000.jpg",
+          "timestamp": 339.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-005-evidence-03-000350000.jpg",
+          "timestamp": 350.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P4. 建立基地与建筑教学 (Base Establishment)\n升旗占领据点，修复基础设施并建成猎鹰搜救队。",
+          "inference": "体验主轴由关内扩编战斗正式切换为基地内修复与建造。"
+        },
+        "任务链": {
+          "fact": "Main: 占领并建立基地\nTutorial: 修复城墙→建筑工小屋→校场\nUnlock: 建造猎鹰搜救队\nMain: 修复第一小队",
+          "inference": "强引导任务按建筑逐一解锁基地功能。"
+        },
+        "核心循环": {
+          "fact": "[New] T5 基地修复（选择废墟→完成修复→战力/资源反馈→下一建筑）\n[New] T6 建筑建造（选建筑→放置→等待→功能实体到场）",
+          "inference": "片内已经完成多次修复小循环，并完整演示一次建造闭环。"
+        },
+        "渐进体验": {
+          "fact": "基地管理HUD；资源生产提示；建筑修复；军事建造菜单；猎鹰搜救队",
+          "inference": "英雄与世界按钮在HUD首次完整出现时可见，但是否立即可操作需单独确认。"
+        },
+        "地图体验": {
+          "fact": "围栏内基地管理区域",
+          "inference": "旗帜、建筑格与建设HUD证明基地功能层开放；右下“世界”按钮仅提示潜在入口，本片未进入世界地图。"
+        },
+        "经济体验": {
+          "fact": "资源栏首次完整显示；修复/建造反馈：战力+100、+500、+700、+500",
+          "inference": "食物、铁与金币开始成为常驻基地资源，当前总量约为1.7K-2.7K量级；具体增减受连续奖励影响。"
+        },
+        "剧情轴": {
+          "fact": "队伍进入夺回的据点并升起蓝色旗帜，随后开始修复废墟、建立基地和恢复资源生产。\n目的：把“逃生与清敌”主线转为“建立长期生存据点”。",
+          "inference": "升旗和队伍进驻是片内实际发生的据点建立事件；修复说明属于任务教学，不是额外世界观设定。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p4-base-establishment",
+        "name": "P4 建立基地与建筑教学",
+        "start": 300.0,
+        "end": 360.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-005-evidence-01-000318000.jpg",
+          "note": "05:18 05:00按扳手引导处理被怪物占据的建筑，礼物反馈后建筑恢复；05:08-05:16幸存者队伍进入据点并升起蓝色旗帜。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-005-evidence-02-000339000.jpg",
+          "note": "05:39 05:17-05:18基地管理HUD首次完整出现：顶部资源栏、左下英雄、右下世界和底部任务入口均可见，修复城墙后获得战力+100。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-005-evidence-03-000350000.jpg",
+          "note": "05:50 05:22引导文字明确要求“修复废墟、建立基地、开始生产资源”；05:23-05:24弹出游戏内五星好评请求，短暂遮挡操作。"
+        }
+      ],
+      "open_questions": [
+        "05:18首次可见的“世界”按钮是否已可自由点击，逐秒画面未实际进入该界面。",
+        "左上等级1图标的正式名称无法仅凭画面确认，不将其写为总部等级。"
+      ]
+    },
+    {
+      "index": 6,
+      "start": 360.0,
+      "end": 420.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-006-main-000390000.jpg",
+        "timestamp": 390.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-006-evidence-01-000361000.jpg",
+          "timestamp": 361.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-006-evidence-02-000366000.jpg",
+          "timestamp": 366.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-006-evidence-03-000392000.jpg",
+          "timestamp": 392.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P. 猎鹰行动入门 (Falcon Operation Onboarding)\n理解前缘突围规则并连续推进序章关卡。",
+          "inference": "以无需英雄的纯数值跑酷战斗降低新系统理解门槛，并把剩余士兵直接转化为基地成长收益。"
+        },
+        "任务链": {
+          "fact": "Unlock: 打开猎鹰行动\nTutorial: 阅读前缘突围序章规则\nMain: 完成序章第1关并进入第2关",
+          "inference": "系统说明后立即用连续短关验证放大数字、扩兵和清敌规则。"
+        },
+        "核心循环": {
+          "fact": "[New] T6 猎鹰行动·前缘突围 (选关→扩兵/强化→清敌→士兵转化→下一关)",
+          "inference": "首次形成独立于基地节点的章节式连续推关循环。"
+        },
+        "渐进体验": {
+          "fact": "猎鹰行动\n第1章节点选关\n前缘突围序章\n纯粹战斗规则",
+          "inference": "困难与恶梦页签可见但仍锁定，当前只开放序章。"
+        },
+        "地图体验": {
+          "fact": "猎鹰行动第1章章节选关图\n前缘突围线性公路战场",
+          "inference": "章节页只承担关卡选择，公路场景只承担线性战斗；两者都不是正式SLG世界大地图。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "falcon-operation-onboarding",
+        "name": "P. 猎鹰行动入门 (Falcon Operation Onboarding)",
+        "start": 360.0,
+        "end": 420.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "新系统教学短促，马上以高密度扩兵和清场完成验证，节奏集中且反馈强。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-006-evidence-01-000361000.jpg",
+          "note": "06:01 360秒由基地经云层转场，361秒首次进入“猎鹰行动”界面；画面为第1章节点式选关图，序章进行中，困难与恶梦未解锁。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-006-evidence-02-000366000.jpg",
+          "note": "06:06 362-366秒阿甘介绍玩法，并打开“前缘突围序章说明”：无需上阵英雄；避开障碍以放大门上数字；通关后按剩余士兵数量转化更多士兵。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-006-evidence-03-000392000.jpg",
+          "note": "06:32 368秒进入前缘突围序章第1关，玩家横向移动小队，通过加减门、士兵桶和武器桶扩大编队并持续清敌。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 7,
+      "start": 420.0,
+      "end": 480.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-007-main-000450000.jpg",
+        "timestamp": 450.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-007-evidence-01-000452000.jpg",
+          "timestamp": 452.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-007-evidence-02-000469000.jpg",
+          "timestamp": 469.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-007-evidence-03-000479000.jpg",
+          "timestamp": 479.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P. 基地战备提升 (Base Readiness)\n完成猎鹰行动前三关，修复第一小队并把总部升至2级，应对突发敌袭。",
+          "inference": "战斗系统的士兵收益被迅速回流到基地修复和总部成长，再用敌袭建立下一轮战斗动机。"
+        },
+        "任务链": {
+          "fact": "Main: 完成前缘突围序章第3关\nMain: 修复第一小队\nMain: 将总部升级至2级\nMain: 应对末日军团反攻",
+          "inference": "关卡收益、基地修复、总部升级和敌袭按因果顺序连续衔接。"
+        },
+        "核心循环": {
+          "fact": "[End] T6 前缘突围前三关 (清敌→士兵奖励→回图)\n[Upgrade] T7 基地战备 (修复小队→升级总部→战力提升)\n[New] T8 基地防守 (敌军入侵→触发反击)",
+          "inference": "本片把远征收益接回基地成长，并由成长完成瞬间引出防守压力。"
+        },
+        "渐进体验": {
+          "fact": "前缘突围序章节点4开放\n第一小队修复\n总部Lv.2",
+          "inference": "未看到新的世界层级；变化集中在章节节点进度与基地建筑成长。"
+        },
+        "地图体验": {
+          "fact": "基地围墙外道路被打开，敌军进入基地内部",
+          "inference": "这是同一基地局部区域的事件性开放，不是世界地图入口。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.2",
+          "inference": "画面明确展示总部从Lv.1升级并在469秒结算为等级2。"
+        },
+        "剧情轴": {
+          "fact": "玩家修复小队并升级总部后，末日军团从基地外发动反攻，巨型变异兽突破围墙进入基地。\n目的：把刚完成的战备成长立即转化为基地保卫战压力。",
+          "inference": "敌军进场、破门和持续推进构成片内实际发生的袭击，而非背景说明。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "falcon-to-hq2-and-raid",
+        "name": "P. 基地战备提升 (Base Readiness)",
+        "start": 420.0,
+        "end": 480.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "远征收益、基地成长和敌袭转折衔接紧密，虽操作难度不高，但目标与反馈持续刷新。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-007-evidence-01-000452000.jpg",
+          "note": "07:32 420秒进入前缘突围序章第3关，延续横向扩兵、武器强化和清敌；452秒显示任务完成，获得23名士兵并标注超过93.45%的玩家。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-007-evidence-02-000469000.jpg",
+          "note": "07:49 454秒返回猎鹰行动第1章图，序章节点1-3已变蓝，节点4成为下一目标。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-007-evidence-03-000479000.jpg",
+          "note": "07:59 455-459秒回到基地执行“修复：第一小队”，打开礼物后士兵出现并显示战斗力+500。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 8,
+      "start": 480.0,
+      "end": 540.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-008-main-000510000.jpg",
+        "timestamp": 510.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-008-evidence-01-000485000.jpg",
+          "timestamp": 485.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-008-evidence-02-000530000.jpg",
+          "timestamp": 530.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-008-evidence-03-000533000.jpg",
+          "timestamp": 533.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P. 敌袭反击 (Raid Counterattack)\n完成特别行动9并回防基地，阻止末日军团继续摧毁基地。",
+          "inference": "线性清街胜利只完成第一层反击，敌方对白和基地战斗继续抬高冲突。"
+        },
+        "任务链": {
+          "fact": "Main: 完成特别行动9\nMain: 返回基地抵挡末日军团反攻",
+          "inference": "任务完成并未结束敌袭，而是把战斗从公路关卡重新拉回基地。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T9 特别行动9 (扩兵/强化→清敌→达成目标→任务完成)\n[Cont] T8 基地防守 (回到基地→敌军增援→迎战)",
+          "inference": "成熟的清街闭环与脚本化基地防守在片内首尾连接。"
+        },
+        "渐进体验": {
+          "fact": "特别行动9",
+          "inference": "没有证据表明这是新系统；它是已有线性清街玩法的后续编号关卡。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "只在既有基地和线性公路关卡间切换，没有地图层级升级。"
+        },
+        "经济体验": {
+          "fact": "战斗力 60,816",
+          "inference": "484秒基地界面顶部可清楚辨识总战斗力。"
+        },
+        "剧情轴": {
+          "fact": "末日军团宣布要摧毁基地；特别行动9获胜后，敌方承认受挫但立刻命令增援继续毁掉基地，蓝盔士兵随即迎战。\n目的：把一次关卡胜利处理为局部反击，维持基地仍受威胁的连续冲突。",
+          "inference": "对白、关卡结果、敌方新命令和增援入场前后闭合，能够确认是片内发生的连续事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "special-action-nine-counterattack",
+        "name": "P. 敌袭反击 (Raid Counterattack)",
+        "start": 480.0,
+        "end": 540.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "完整清街闭环与敌方二次反扑形成胜利—再施压结构，战斗占比高且叙事衔接清楚。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-008-evidence-01-000485000.jpg",
+          "note": "08:05 480-484秒巨型变异兽已进入基地；末日军团角色对白称要摧毁基地、不能让基地落入反抗军手中。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-008-evidence-02-000530000.jpg",
+          "note": "08:50 485秒进入“特别行动9：清理街区”，玩家在公路战场扩充士兵和武器，持续消灭敌群。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-008-evidence-03-000533000.jpg",
+          "note": "08:53 529秒显示达成目标，530秒任务完成；背景可辨识通关用时00:40、累计击杀159。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 9,
+      "start": 540.0,
+      "end": 600.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-009-main-000570000.jpg",
+        "timestamp": 570.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-009-evidence-01-000552000.jpg",
+          "timestamp": 552.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-009-evidence-02-000582000.jpg",
+          "timestamp": 582.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-009-evidence-03-000590000.jpg",
+          "timestamp": 590.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P. 防守转向英雄编队 (Defense to Hero Formation)\n守住基地、建造侦察机寻找装备，并组建首支英雄队伍出战。",
+          "inference": "剧情压力先提出火力缺口，再通过侦察机和英雄编队把基地防守导向新的队伍战斗系统。"
+        },
+        "任务链": {
+          "fact": "Main: 抵挡基地围攻\nMain: 前往收集莫妮卡装备\nMain: 建造侦察机\nUnlock: 一键上阵英雄并开始关卡1",
+          "inference": "装备搜寻目标经侦察机落地，随后首次要求玩家配置英雄队伍。"
+        },
+        "核心循环": {
+          "fact": "[Cont] T8 基地防守 (迎战巨敌→暴露火力不足)\n[New] T10 侦察机 (建造→战力提升→开启装备搜寻)\n[New] T11 英雄编队 (选择英雄→一键上阵→进入战斗)",
+          "inference": "本片完成侦察机建造闭环，并把英雄编队教学推进到首次实战，但关卡奖励落在下一片。"
+        },
+        "渐进体验": {
+          "fact": "侦察机\n装备收集目标\n英雄编队五槽位\n一键上阵\n兵种筛选页签",
+          "inference": "英雄编队是本段首次清楚可确认的独立配置界面。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "基地周边与线性公路战场均为局部玩法场景，没有正式SLG世界层级证据。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.2\n战斗力 63,516",
+          "inference": "588秒基地顶部可辨识最终战斗力63,516；片内侦察机建造先后带来+2,400和+300反馈。"
+        },
+        "剧情轴": {
+          "fact": "莫妮卡在基地防守中击倒巨敌，但确认现有火力不足以突破包围，提出找回自己的武器装备；阿甘随后建议使用新建侦察机搜寻装备。\n目的：把基地围攻中的战力缺口转化为装备搜寻与英雄编队的系统动机。",
+          "inference": "战斗结果、莫妮卡对白、侦察机建成和阿甘说明连续闭合；不把单独宣传画面当作额外剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "base-defense-and-hero-formation",
+        "name": "P. 防守转向英雄编队 (Defense to Hero Formation)",
+        "start": 540.0,
+        "end": 600.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "基地危机、成长建筑和英雄编队在一分钟内完成因果串联，是系统扩展与战斗反馈都很密集的转折片。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-009-evidence-01-000552000.jpg",
+          "note": "09:12 540-559秒基地周边持续战斗；莫妮卡驾驶武装摩托发射导弹并击倒巨型敌人，随后继续射击。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-009-evidence-02-000582000.jpg",
+          "note": "09:42 560秒莫妮卡明确表示火力不足、无法突破丧尸包围；566秒提出找回武器装备就有办法突破。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-009-evidence-03-000590000.jpg",
+          "note": "09:50 570秒出现“丧尸围攻中，找回武器，即刻突围！”演出；572-577秒回到基地继续交火，任务显示“前往收集装备0/5”。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 10,
+      "start": 600.0,
+      "end": 660.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-010-main-000630000.jpg",
+        "timestamp": 630.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-010-evidence-01-000625000.jpg",
+          "timestamp": 625.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-010-evidence-02-000630000.jpg",
+          "timestamp": 630.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-010-evidence-03-000655000.jpg",
+          "timestamp": 655.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "持续清理道路敌群并在区域地图选择下一处战斗。",
+          "inference": "本阶段用极短路径和大量敌群维持连续推关动机。"
+        },
+        "任务链": {
+          "fact": "Main: 清场并返回区域地图；Main: 进入下一关卡",
+          "inference": "任务以地图节点串联连续战斗。"
+        },
+        "核心循环": {
+          "fact": "[Loop] 公路推关（进入→清敌→结算/回图→下一关）",
+          "inference": "战斗与地图切换已构成稳定重复闭环。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": "未见足够证据确认本片首次开放新系统。"
+        },
+        "地图体验": {
+          "fact": "绿色关卡区域地图",
+          "inference": "该地图用于关卡选点，不具备正式SLG世界层级证据。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": "结算画面过短，无法可靠读取资源与战力数值。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "本片以战斗推进为主，未见可确认的剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-010-evidence-01-000625000.jpg",
+          "note": "10:25 10:00-10:25连续出现公路式战场，己方蓝色小队向上推进并清理橙色敌群。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-010-evidence-02-000630000.jpg",
+          "note": "10:30 10:30切入绿色俯视区域地图；10:35为游戏内黑底转场/结算，10:40回到区域地图。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-010-evidence-03-000655000.jpg",
+          "note": "10:55 10:50再次进入公路战斗，形成“战斗—地图—再战斗”的节奏。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 11,
+      "start": 660.0,
+      "end": 720.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-011-main-000690000.jpg",
+        "timestamp": 690.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-011-evidence-01-000685000.jpg",
+          "timestamp": 685.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-011-evidence-02-000690000.jpg",
+          "timestamp": 690.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-011-evidence-03-000695000.jpg",
+          "timestamp": 695.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "完成一轮清场，并查看英雄/队伍配置后继续推进。",
+          "inference": "英雄界面被插入推关节奏，开始提示阵容成长。"
+        },
+        "任务链": {
+          "fact": "Main: 继续推关；Tutorial/Unlock: 查看英雄与队伍界面",
+          "inference": "是否为全视频首次解锁需与前段合并确认。"
+        },
+        "核心循环": {
+          "fact": "[Loop] 公路推关；[New] 英雄/队伍（查看阵容→返回推关）",
+          "inference": "英雄成长尚未看到明确升级结果，闭环只完成到阵容查看。"
+        },
+        "渐进体验": {
+          "fact": "英雄详情/英雄列表或队伍界面",
+          "inference": "本段首次清楚出现，但具体系统名称不可从接触表稳定读取。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "仍在同一关卡区域地图层级。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": "英雄属性和奖励数值不可稳定辨识。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "未见连续对话或因果闭合的剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.8,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-011-evidence-01-000685000.jpg",
+          "note": "11:25 11:00位于绿色区域地图，11:05回到公路战斗。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-011-evidence-02-000690000.jpg",
+          "note": "11:30 11:25出现游戏内暗色转场/结算，11:30进入英雄详情式界面，11:35显示多张英雄卡或队伍槽位。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-011-evidence-03-000695000.jpg",
+          "note": "11:35 11:40返回区域地图，11:45出现任务/奖励弹层，随后继续地图推进。"
+        }
+      ],
+      "open_questions": [
+        "11:30-11:35具体是英雄升级、编队还是图鉴界面，接触表文字不足以稳定确认。"
+      ]
+    },
+    {
+      "index": 12,
+      "start": 720.0,
+      "end": 780.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-012-main-000750000.jpg",
+        "timestamp": 750.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-012-evidence-01-000725000.jpg",
+          "timestamp": 725.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-012-evidence-02-000750000.jpg",
+          "timestamp": 750.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-012-evidence-03-000775000.jpg",
+          "timestamp": 775.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "连续突破多波道路敌群。",
+          "inference": "通过扩大敌群规模强化清场爽感。"
+        },
+        "任务链": {
+          "fact": "Main: 连续完成道路战斗",
+          "inference": "主要任务没有发生结构变化。"
+        },
+        "核心循环": {
+          "fact": "[Cont] 公路推关（推进→清敌→继续推进）",
+          "inference": "本片是同质战斗的集中强化。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "没有证据表明地图层级变化。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-012-evidence-01-000725000.jpg",
+          "note": "12:05 12:00仍在绿色区域地图，12:05起回到公路式战斗。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-012-evidence-02-000750000.jpg",
+          "note": "12:30 12:10-12:55连续出现多波大规模橙色敌群和己方蓝色编队。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-012-evidence-03-000775000.jpg",
+          "note": "12:55 片内没有长时间基地经营或英雄界面。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 13,
+      "start": 780.0,
+      "end": 840.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-013-main-000810000.jpg",
+        "timestamp": 810.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-013-evidence-01-000800000.jpg",
+          "timestamp": 800.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-013-evidence-02-000815000.jpg",
+          "timestamp": 815.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-013-evidence-03-000835000.jpg",
+          "timestamp": 835.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "完成当前清场并转向下一地图目标。",
+          "inference": "地图只承担短暂选点/转场功能。"
+        },
+        "任务链": {
+          "fact": "Main: 清场；Main: 在区域地图前往下一战",
+          "inference": "战斗与地图往返构成一轮完整推关。"
+        },
+        "核心循环": {
+          "fact": "[Loop] 公路推关（清敌→回图→下一战）",
+          "inference": "重复结构稳定，变化主要来自敌群数量。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "绿色区域地图未显示世界坐标或跨玩家功能。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.93,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-013-evidence-01-000800000.jpg",
+          "note": "13:20 13:00-13:20延续公路式大规模清敌。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-013-evidence-02-000815000.jpg",
+          "note": "13:35 13:25-13:35回到绿色区域地图并移动到下一目标。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-013-evidence-03-000835000.jpg",
+          "note": "13:55 13:40后再次进入公路战斗，敌群密度继续保持高位。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 14,
+      "start": 840.0,
+      "end": 900.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-014-main-000870000.jpg",
+        "timestamp": 870.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-014-evidence-01-000870000.jpg",
+          "timestamp": 870.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-014-evidence-02-000885000.jpg",
+          "timestamp": 885.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-014-evidence-03-000895000.jpg",
+          "timestamp": 895.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "在区域地图抵达目标并完成一轮奖励/角色界面结算。",
+          "inference": "本片以移动和系统结算替代持续战斗，形成节奏换气。"
+        },
+        "任务链": {
+          "fact": "Main: 沿区域地图抵达目标；Reward/Tutorial: 处理结算界面",
+          "inference": "具体奖励内容无法从接触表稳定读取。"
+        },
+        "核心循环": {
+          "fact": "[Cont] 关卡推进（地图移动→抵达目标→结算）",
+          "inference": "14:45后的界面可能连接角色成长，但证据不足以确认完整闭环。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": "出现新式界面，但不能据此确认系统首次开放。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "仍是关卡区域内部移动，不是世界地图入口。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": "奖励数值不可读。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "没有连续字幕证明新的剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.76,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-014-evidence-01-000870000.jpg",
+          "note": "14:30 14:00-14:25主要停留在绿色区域地图，镜头沿区域道路/目标移动。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-014-evidence-02-000885000.jpg",
+          "note": "14:45 14:30-14:40进入较接近定居点或任务目标的局部区域。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-014-evidence-03-000895000.jpg",
+          "note": "14:55 14:45出现游戏内暗色奖励/转场，14:50出现橙色主题角色或奖励界面，14:55为游戏内白底菜单。"
+        }
+      ],
+      "open_questions": [
+        "14:50-14:55界面的系统名称与实际奖励需要原视频高清画面确认。"
+      ]
+    },
+    {
+      "index": 15,
+      "start": 900.0,
+      "end": 960.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-015-main-000930000.jpg",
+        "timestamp": 930.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-015-evidence-01-000935000.jpg",
+          "timestamp": 935.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-015-evidence-02-000950000.jpg",
+          "timestamp": 950.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-015-evidence-03-000955000.jpg",
+          "timestamp": 955.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "领取地图目标奖励并继续下一场道路战斗。",
+          "inference": "奖励结算被用作重复战斗间的强化节点。"
+        },
+        "任务链": {
+          "fact": "Main: 区域地图推进；Reward: 领取宝箱；Main: 进入下一战",
+          "inference": "英雄界面可能是战前队伍检查。"
+        },
+        "核心循环": {
+          "fact": "[Loop] 地图目标（移动→结算/宝箱→开战）",
+          "inference": "本片把地图奖励与战斗入口连成跨系统短循环。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": "宝箱与英雄界面均可能是既有系统。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "同一关卡区域地图继续使用。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": "宝箱内容和英雄数值不可可靠读取。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.84,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-015-evidence-01-000935000.jpg",
+          "note": "15:35 15:00-15:20继续在绿色区域地图移动。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-015-evidence-02-000950000.jpg",
+          "note": "15:50 15:25出现游戏内暗色结算/转场，15:30回到地图，15:35出现红色宝箱或奖励弹层。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-015-evidence-03-000955000.jpg",
+          "note": "15:55 15:45进入公路战斗，15:50短暂出现英雄/队伍界面，15:55继续战斗。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 16,
+      "start": 960.0,
+      "end": 1020.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-016-main-000990000.jpg",
+        "timestamp": 990.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-016-evidence-01-000975000.jpg",
+          "timestamp": 975.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-016-evidence-02-000985000.jpg",
+          "timestamp": 985.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-016-evidence-03-001010000.jpg",
+          "timestamp": 1010.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "连续完成多段道路战斗并推进到下一地图节点。",
+          "inference": "对话/提示只短暂改变表现，没有改变核心玩法。"
+        },
+        "任务链": {
+          "fact": "Main: 连续清理道路敌群",
+          "inference": "任务结构延续前片。"
+        },
+        "核心循环": {
+          "fact": "[Loop] 公路推关（开战→清敌→回图→再战）",
+          "inference": "属于已建立战斗循环的再次强化。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "未发生地图功能边界变化。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "16:25单帧对话不足以确认剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-016-evidence-01-000975000.jpg",
+          "note": "16:15 16:00-16:20持续公路战斗，橙色敌群规模大。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-016-evidence-02-000985000.jpg",
+          "note": "16:25 16:25出现人物对话框或战斗内提示，随后战斗继续。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-016-evidence-03-001010000.jpg",
+          "note": "16:50 16:30短暂回到绿色区域地图，16:35-16:50再次进入公路战斗，16:55回到地图。"
+        }
+      ],
+      "open_questions": [
+        "16:25对话具体内容需原视频字幕确认。"
+      ]
+    },
+    {
+      "index": 17,
+      "start": 1020.0,
+      "end": 1080.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-017-main-001050000.jpg",
+        "timestamp": 1050.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-017-evidence-01-001035000.jpg",
+          "timestamp": 1035.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-017-evidence-02-001050000.jpg",
+          "timestamp": 1050.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-017-evidence-03-001075000.jpg",
+          "timestamp": 1075.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "完成当前长战斗段并领取结算。",
+          "inference": "本片是关卡地图循环A的集中收束。"
+        },
+        "任务链": {
+          "fact": "Main: 完成道路战斗；Reward: 结算并返回区域地图",
+          "inference": ""
+        },
+        "核心循环": {
+          "fact": "[End] 公路推关A（连续战斗→结算→回图）",
+          "inference": "结束后即将转入另一段区域。"
+        },
+        "渐进体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "17:55仍为关卡区域地图。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": "结算数值不可读。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": ""
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-a",
+        "name": "关卡地图循环A：清路与回图",
+        "start": 600.0,
+        "end": 1080.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.92,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-017-evidence-01-001035000.jpg",
+          "note": "17:15 17:00-17:45再次连续进行公路式战斗。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-017-evidence-02-001050000.jpg",
+          "note": "17:30 17:50出现游戏内暗色结算/奖励画面。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-017-evidence-03-001075000.jpg",
+          "note": "17:55 17:55回到绿色区域地图，18:00附近出现较强战斗/奖励特效后继续地图状态。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 18,
+      "start": 1080.0,
+      "end": 1140.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-018-main-001110000.jpg",
+        "timestamp": 1110.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-018-evidence-01-001085000.jpg",
+          "timestamp": 1085.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-018-evidence-02-001115000.jpg",
+          "timestamp": 1115.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-018-evidence-03-001135000.jpg",
+          "timestamp": 1135.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "进入下一关卡区段并击败强化敌人。",
+          "inference": "紫色转场标志关卡章节/区域变化，但不证明进入世界地图。"
+        },
+        "任务链": {
+          "fact": "Main: 进入新区段；Main: 连续战斗并处理强敌",
+          "inference": "敌人表现变化提供阶段升级感。"
+        },
+        "核心循环": {
+          "fact": "[Upgrade] 公路推关（区域转场→开战→强敌→继续推进）",
+          "inference": "循环结构不变，主要通过敌人和特效升级。"
+        },
+        "渐进体验": {
+          "fact": "新区段/新关卡表现",
+          "inference": "无法确认是否伴随独立系统解锁。"
+        },
+        "地图体验": {
+          "fact": "新的关卡区域段",
+          "inference": "没有世界坐标、行军或其他玩家据点，故仅为普通map_entry候选。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "紫色转场与强敌出现不足以单独证明剧情高潮。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-b",
+        "name": "关卡地图循环B：新区段与强敌",
+        "start": 1080.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "在高度重复的推关中通过新区段和强敌制造有效变化。"
+      },
+      "confidence": 0.89,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-018-evidence-01-001085000.jpg",
+          "note": "18:05 18:00处于绿色区域地图，18:05出现紫色全屏游戏内转场。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-018-evidence-02-001115000.jpg",
+          "note": "18:35 18:10-18:15回到另一段绿色区域/新目标附近，18:20起进入公路战斗。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-018-evidence-03-001135000.jpg",
+          "note": "18:55 18:45-18:55出现体型更大或表现更突出的敌人，战斗特效明显增强。"
+        }
+      ],
+      "open_questions": [
+        "18:05紫色转场的章节名或区域名不可从接触表稳定读取。"
+      ]
+    },
+    {
+      "index": 19,
+      "start": 1140.0,
+      "end": 1200.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-019-main-001170000.jpg",
+        "timestamp": 1170.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-019-evidence-01-001198750.jpg",
+          "timestamp": 1198.75
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-019-evidence-02-001199250.jpg",
+          "timestamp": 1199.25
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-019-evidence-03-001199750.jpg",
+          "timestamp": 1199.75
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "结束强敌战斗并完成从关卡区域到正式SLG世界大地图的转换。",
+          "inference": "本片前段承担关卡收束，片尾建立后续世界层长期经营与竞争目标。"
+        },
+        "任务链": {
+          "fact": "Main: 战斗结束后沿区域推进；Unlock: 进入战区 #2297世界地图",
+          "inference": "世界地图入口发生在片尾最后约1.25秒。"
+        },
+        "核心循环": {
+          "fact": "[End] 关卡推进（战斗结束→回图）；[New] SLG世界层（进入战区→识别总部/盟友/盟主及世界节点）",
+          "inference": "正式世界层已开放，但本片尚未展示行军、采集或攻击闭环。"
+        },
+        "渐进体验": {
+          "fact": "正式SLG世界大地图；战区编号；总部/盟友/盟主图例；世界节点",
+          "inference": "地图层级从线性关卡区域跃迁为多主体世界空间。"
+        },
+        "地图体验": {
+          "fact": "SLG世界大地图（战区 #2297）",
+          "inference": "多总部、敌对节点、资源节点、小地图和联盟关系图例共同构成充分的世界层级证据。"
+        },
+        "经济体验": {
+          "fact": "",
+          "inference": ""
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "世界地图开放是系统与地图里程碑，不据此推断剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "road-stage-map-loop-b",
+        "name": "关卡地图循环B：新区段与强敌",
+        "start": 1080.0,
+        "end": 1200.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.99,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-019-evidence-01-001198750.jpg",
+          "note": "19:58.8 19:00仍在公路式战斗，19:05切回绿色区域地图。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-019-evidence-02-001199250.jpg",
+          "note": "19:59.2 19:10-19:40主要在区域地图沿路线移动或处理节点。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-019-evidence-03-001199750.jpg",
+          "note": "19:59.8 19:58.75开始出现分布式世界节点；19:59.25清晰显示“战区 #2297”、小地图及“我的总部/盟友/盟主”图例，19:59.75持续显示大量总部、敌人和资源节点。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 20,
+      "start": 1200.0,
+      "end": 1260.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-020-main-001230000.jpg",
+        "timestamp": 1230.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-020-evidence-01-001200000.jpg",
+          "timestamp": 1200.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-020-evidence-02-001230000.jpg",
+          "timestamp": 1230.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-020-evidence-03-001250000.jpg",
+          "timestamp": 1250.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P7. 世界入口后完整观察与雷达承接 (Post-entry World & Radar Follow-up)\n在入口后认识世界层、雷达节点与基地返回关系。",
+          "inference": "唯一正式入口已在slice19的1199.25秒发生；slice20只记录入口后的完整观察与任务承接。"
+        },
+        "任务链": {
+          "fact": "Unlock: 进入世界并查看雷达任务\nMain: 完成雷达节点并返回基地\nUpgrade: 兵营升至3级",
+          "inference": "任务首次明确连接世界、雷达关卡与基地建设。"
+        },
+        "核心循环": {
+          "fact": "[New] T9 世界探索 (世界→雷达节点→奖励→基地)\n[Upgrade] T8 基地建设 (资源→兵营升级→战力/训练提升)",
+          "inference": "世界往返形成跨层入口，但世界行军与采集闭环在本片尚未完整展示。"
+        },
+        "渐进体验": {
+          "fact": "世界层完整观察；基地/世界切换；联盟关系图例；雷达任务",
+          "inference": "相关入口与图例已在1199.25秒首次清晰成立，本片展示其完整状态和后续使用。"
+        },
+        "地图体验": {
+          "fact": "SLG世界大地图",
+          "inference": "战区编号、其他玩家基地、联盟关系图例、世界标记及基地切换共同构成功能层级证据。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.3\n兵营 Lv.2→3\n战力约154,792→156,692",
+          "inference": "雷达奖励与基地资源立即承接建筑升级。"
+        },
+        "剧情轴": {
+          "fact": "雷达节点角色邀请玩家同行。\n目的：用轻量同伴对话包装世界任务节点。",
+          "inference": "对话短，未构成重大剧情转折。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p7-post-entry-world-radar-followup",
+        "name": "P7 世界入口后完整观察与雷达承接",
+        "start": 1200.0,
+        "end": 1260.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "正式世界层带来本段最强的新鲜感，但尚未展开完整世界出征。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-020-evidence-01-001200000.jpg",
+          "note": "20:00 正式世界入口已于19:59.25发生；20:00是入口后的首次完整采样，画面显示“战区 #2297”、我的总部/盟友/盟主图例、大量世界标记与右下“基地”返回按钮。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-020-evidence-02-001230000.jpg",
+          "note": "20:30 约20:02切入雷达任务区域；20:10-20:20出现节点对话与完成奖励，随后回到世界层。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-020-evidence-03-001250000.jpg",
+          "note": "20:50 20:30世界层可见玩家名为Commander 1cb272297的基地、玩家自身基地及17公里距离提示，之后返回基地。"
+        }
+      ],
+      "open_questions": [
+        "1198.75秒开始显现世界节点，但按当前证据标准不足以早于1199.25秒认定正式入口。"
+      ]
+    },
+    {
+      "index": 21,
+      "start": 1260.0,
+      "end": 1320.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-021-main-001290000.jpg",
+        "timestamp": 1290.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-021-evidence-01-001270000.jpg",
+          "timestamp": 1270.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-021-evidence-02-001280000.jpg",
+          "timestamp": 1280.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-021-evidence-03-001310000.jpg",
+          "timestamp": 1310.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P8. 基地成长与第11关 (Base Growth & Stage 11)\n连续升级生产/训练建筑后进入新关卡。",
+          "inference": "基地建设开始稳定承担推关前的战力补给。"
+        },
+        "任务链": {
+          "fact": "Upgrade: 医院、农田与训练基地\nMain: 进入第11关",
+          "inference": "建筑升级任务与推关入口直接串联。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T8 基地建设 (收取→升级→战力/产能)\n[Cont] T6 公路推关 (编队→自动火力→清敌)",
+          "inference": "建设奖励被立即带入下一场战斗。"
+        },
+        "渐进体验": {
+          "fact": "农田Lv.3；训练基地升级；世界按钮常驻",
+          "inference": "世界按钮不是本片新开，但首次在基地状态稳定可见。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "基地与第11关切换，不构成新的地图层级。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.3\n农田 Lv.2→3\n训练基地升级成功\n战力约156,692→159,292",
+          "inference": "生产与训练建筑升级形成清楚的战力和产能回报。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "本片以系统教学与战斗为主。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p8-base-growth-stage11",
+        "name": "P8 基地成长与第11关",
+        "start": 1260.0,
+        "end": 1320.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-021-evidence-01-001270000.jpg",
+          "note": "21:10 21:00基地界面右下已稳定显示“世界”切换按钮，并出现医院升级任务。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-021-evidence-02-001280000.jpg",
+          "note": "21:20 21:10农田由Lv.2升至3；21:20训练基地升级成功，战力增加600且产出提升。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-021-evidence-03-001310000.jpg",
+          "note": "21:50 21:30进入第11关，21:40-21:50持续进行公路式自动射击与兵团扩张。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 22,
+      "start": 1320.0,
+      "end": 1380.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-022-main-001350000.jpg",
+        "timestamp": 1350.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-022-evidence-01-001320000.jpg",
+          "timestamp": 1320.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-022-evidence-02-001350000.jpg",
+          "timestamp": 1350.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-022-evidence-03-001370000.jpg",
+          "timestamp": 1370.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 第11-12关与总部4级 (Stages 11-12 & HQ Lv.4)\n完成街区清理并推进下一关，为总部4级做准备。",
+          "inference": "关卡—街区—奖励—下一关的重复链已稳定。"
+        },
+        "任务链": {
+          "fact": "Main: 完成第11关\nMain: 清理街区NO.16\nMain: 进入第12关",
+          "inference": "街区奖励承担两场关卡之间的短暂换气。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T6 公路推关 (清敌→回基地→街区奖励→下一关)",
+          "inference": "第11与12关的操作骨架没有实质变化。"
+        },
+        "渐进体验": {
+          "fact": "第12关；街区NO.16奖励",
+          "inference": "属于既有循环的关卡编号和奖励强化。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "关卡背景和基地街区均不是新的世界层级。"
+        },
+        "经济体验": {
+          "fact": "战力约159,292→160,852\n街区奖励含钻石、金条与加速道具",
+          "inference": "清街奖励继续补给建筑和英雄成长。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "未见连续剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p9-stage11-12-hq4",
+        "name": "P9 第11-12关与总部4级",
+        "start": 1320.0,
+        "end": 1440.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-022-evidence-01-001320000.jpg",
+          "note": "22:00 22:00-22:10继续第11关并完成后段强敌清理。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-022-evidence-02-001350000.jpg",
+          "note": "22:30 22:20回基地清理街区NO.16；22:30领取包含钻石与加速道具的奖励。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-022-evidence-03-001370000.jpg",
+          "note": "22:50 22:40进入第12关，22:50继续公路战斗，敌群与技能特效明显增多。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 23,
+      "start": 1380.0,
+      "end": 1440.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-023-main-001410000.jpg",
+        "timestamp": 1410.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-023-evidence-01-001400000.jpg",
+          "timestamp": 1400.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-023-evidence-02-001420000.jpg",
+          "timestamp": 1420.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-023-evidence-03-001430000.jpg",
+          "timestamp": 1430.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P9. 第11-12关与总部4级 (Stages 11-12 & HQ Lv.4)\n完成第12关和街区NO.17，并把总部推进至4级。",
+          "inference": "总部升级作为连续推关后的阶段收束。"
+        },
+        "任务链": {
+          "fact": "Main: 完成第12关\nMain: 清理街区NO.17\nUpgrade: 总部升至4级",
+          "inference": "推关奖励转化为核心建筑等级。"
+        },
+        "核心循环": {
+          "fact": "[End] T6 第12关 (清敌→金币结算)\n[Upgrade] T8 总部 (清街/资源→升级→战力提升)",
+          "inference": "战斗与建设形成清晰供给关系。"
+        },
+        "渐进体验": {
+          "fact": "总部Lv.4",
+          "inference": "总部升级完成结果在24:00后继续显示，但启动发生于本片。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "回到同一基地范围。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.3→4\n战力约160,852→162,052",
+          "inference": "总部升级提供阶段性数值跃升。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "无可确认剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p9-stage11-12-hq4",
+        "name": "P9 第11-12关与总部4级",
+        "start": 1320.0,
+        "end": 1440.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "总部4级为重复战斗提供了明确阶段回报。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-023-evidence-01-001400000.jpg",
+          "note": "23:20 23:00-23:30持续第12关，技能火力和大量蓝色士兵覆盖画面，倒计时结算阶段出现金币。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-023-evidence-02-001420000.jpg",
+          "note": "23:40 23:40回基地清理街区NO.17。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-023-evidence-03-001430000.jpg",
+          "note": "23:50 23:50打开总部升级界面并开始Lv.3→4升级。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 24,
+      "start": 1440.0,
+      "end": 1500.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-024-main-001470000.jpg",
+        "timestamp": 1470.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-024-evidence-01-001440000.jpg",
+          "timestamp": 1440.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-024-evidence-02-001460000.jpg",
+          "timestamp": 1460.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-024-evidence-03-001480000.jpg",
+          "timestamp": 1480.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P10. 英雄技能与酒馆招募 (Hero Skill & Tavern Recruit)\n解锁英雄技能并通过酒馆扩充战力。",
+          "inference": "英雄成长首次在本段形成比单纯升级更完整的系统纵深。"
+        },
+        "任务链": {
+          "fact": "Unlock: 解锁艾爾莎技能\nUpgrade: 酒馆升至2级\nRecruit: 完成英雄招募",
+          "inference": "总部4级可能是这些成长入口的门槛。"
+        },
+        "核心循环": {
+          "fact": "[New] T5 英雄成长 (查看→解锁技能→战力)\n[New] T10 酒馆招募 (升级酒馆→招募→战力提升)",
+          "inference": "技能和招募共同为下一轮推关补强阵容。"
+        },
+        "渐进体验": {
+          "fact": "艾爾莎技能；酒馆Lv.2；英雄招募",
+          "inference": "三项均有明确界面和结果反馈。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "全片为基地及养成菜单。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.4\n酒馆 Lv.1→2\n招募后战力约175,983→200,265",
+          "inference": "招募产生本段最大单次可见战力跃升。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "英雄卡面与技能说明不构成剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p10-hero-skill-tavern",
+        "name": "P10 英雄技能与酒馆招募",
+        "start": 1440.0,
+        "end": 1500.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "flow_peak",
+        "reason": "英雄技能与招募显著缓解连续推关的重复感。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-024-evidence-01-001440000.jpg",
+          "note": "24:00 24:00总部4级升级结果显示战力增加500。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-024-evidence-02-001460000.jpg",
+          "note": "24:20 24:10进入英雄列表；24:20在艾爾莎英雄页明确弹出“解锁技能”。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-024-evidence-03-001480000.jpg",
+          "note": "24:40 24:30酒馆由Lv.1升至2并缩短免费招募冷却；24:40进行招募，战力增加23,582。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 25,
+      "start": 1500.0,
+      "end": 1560.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-025-main-001530000.jpg",
+        "timestamp": 1530.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-025-evidence-01-001510000.jpg",
+          "timestamp": 1510.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-025-evidence-02-001540000.jpg",
+          "timestamp": 1540.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-025-evidence-03-001550000.jpg",
+          "timestamp": 1550.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P11. 第13-14关连续推关 (Stages 13-14)\n完成第13关并编队进入第14关。",
+          "inference": "战斗模板不变，主要通过英雄技能和战前编队提高变化。"
+        },
+        "任务链": {
+          "fact": "Main: 完成第13关\nReward: 领取资源\nMain: 编队进入第14关",
+          "inference": "养成结果被带入连续推关。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T6 公路推关 (战斗→结算→编队→下一关)",
+          "inference": "第13关与此前关卡高度同构。"
+        },
+        "渐进体验": {
+          "fact": "第14关战前编队提示",
+          "inference": "编队系统并非首次出现，但提示强化了阵容检查。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "关卡背景不构成地图层级变化。"
+        },
+        "经济体验": {
+          "fact": "战力约200,265\n第13关奖励：英雄经验约2.8K、铁900、食物900",
+          "inference": "关卡奖励继续供给英雄和基地成长。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "战前角色提示是系统引导，不足以构成剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p11-stage13-14",
+        "name": "P11 第13-14关连续推关",
+        "start": 1500.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-025-evidence-01-001510000.jpg",
+          "note": "25:10 25:00-25:30持续第13关公路战斗，沿用自动射击、倍率桶、技能和扩兵结构。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-025-evidence-02-001540000.jpg",
+          "note": "25:40 25:40领取经验、铁与食物奖励。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-025-evidence-03-001550000.jpg",
+          "note": "25:50 25:50进入第14关战前编队界面，角色提示当前实力未完全强化，玩家可一键上阵或调整队伍。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 26,
+      "start": 1560.0,
+      "end": 1620.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-026-main-001590000.jpg",
+        "timestamp": 1590.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-026-evidence-01-001570000.jpg",
+          "timestamp": 1570.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-026-evidence-02-001590000.jpg",
+          "timestamp": 1590.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-026-evidence-03-001610000.jpg",
+          "timestamp": 1610.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P11. 第13-14关连续推关 (Stages 13-14)\n完成第14关并回基地强化城墙。",
+          "inference": "战斗胜利被转化为基地防御建设目标。"
+        },
+        "任务链": {
+          "fact": "Main: 完成第14关\nMain: 清理街区NO.19\nUpgrade: 城墙Lv.2",
+          "inference": "外围丧尸提示为城墙升级提供轻度紧迫感。"
+        },
+        "核心循环": {
+          "fact": "[End] T6 第14关 (清敌→回基地)\n[Upgrade] T8 城墙 (选中→升级引导)",
+          "inference": "推关与基地防御再次形成供给链。"
+        },
+        "渐进体验": {
+          "fact": "城墙Lv.2升级引导",
+          "inference": "城墙并非首次出现，属于既有基地建设深化。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "基地外围和雷达区域均不是新的正式世界入口。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.4\n战力约200,265\n城墙 Lv.2",
+          "inference": "本片未稳定看到城墙升级后的最终等级。"
+        },
+        "剧情轴": {
+          "fact": "角色提示外围丧尸正从四面八方逼近。\n目的：为清街和城墙升级制造紧迫理由。",
+          "inference": "属于任务压力提示，不是重大剧情转折。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p11-stage13-14",
+        "name": "P11 第13-14关连续推关",
+        "start": 1500.0,
+        "end": 1620.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-026-evidence-01-001570000.jpg",
+          "note": "26:10 26:00-26:30持续第14关，技能、毒雾、火焰和大量兵团覆盖双车道。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-026-evidence-02-001590000.jpg",
+          "note": "26:30 26:40回到基地并清理街区NO.19，角色提示外围丧尸继续逼近。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-026-evidence-03-001610000.jpg",
+          "note": "26:50 26:50选中城墙Lv.2并出现升级引导，随后切向雷达任务区域。"
+        }
+      ],
+      "open_questions": [
+        "城墙在本片是否实际完成Lv.2→3升级，10秒采样未出现明确结果画面。"
+      ]
+    },
+    {
+      "index": 27,
+      "start": 1620.0,
+      "end": 1680.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-027-main-001650000.jpg",
+        "timestamp": 1650.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-027-evidence-01-001620000.jpg",
+          "timestamp": 1620.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-027-evidence-02-001630000.jpg",
+          "timestamp": 1630.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-027-evidence-03-001660000.jpg",
+          "timestamp": 1660.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P12. 世界目标与先锋系统 (World Target & Vanguard)\n认识世界丧尸目标并查看先锋成长目标。",
+          "inference": "本片是正式世界层的再次使用，不是首次入口。"
+        },
+        "任务链": {
+          "fact": "Main: 在世界查看2级丧尸目标\nUpgrade: 查看紫罗兰成长\nUnlock: 查看先锋目标",
+          "inference": "世界目标、英雄养成和长期目标开始并列。"
+        },
+        "核心循环": {
+          "fact": "[Cont] T9 世界探索 (雷达→世界目标→返回)\n[Cont] T5 英雄成长 (查看装备/升级)\n[New] T11 先锋目标 (任务→积分→阶段奖励)",
+          "inference": "世界目标尚未看到出征完成，先锋系统也只展示入口。"
+        },
+        "渐进体验": {
+          "fact": "世界2级丧尸目标；先锋目标；紫罗兰养成页",
+          "inference": "先锋目标在本段首次清楚出现。"
+        },
+        "地图体验": {
+          "fact": "SLG世界大地图（再次进入）",
+          "inference": "“世界”标题、村庄编号、玩家基地和可交互丧尸目标进一步确认地图功能层级。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.4\n紫罗兰 Lv.1\n世界丧尸目标消耗体力10",
+          "inference": "英雄等级和世界体力门槛开始进入任务判断。"
+        },
+        "剧情轴": {
+          "fact": "世界目标描述曾经散布毒物的丧尸女郎。\n目的：为世界清剿目标补充敌人背景。",
+          "inference": "属于目标设定文本，不代表片内发生完整剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p12-world-target-vanguard",
+        "name": "P12 世界目标与先锋系统",
+        "start": 1620.0,
+        "end": 1680.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-027-evidence-01-001620000.jpg",
+          "note": "27:00 27:00位于雷达任务区域；约27:07.5重新切入正式世界层。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-027-evidence-02-001630000.jpg",
+          "note": "27:10 27:10世界层顶部明确显示“世界”和“#2297村庄”，弹窗展示2级丧尸女郎、体力消耗10和约8小时计时，周围可见玩家基地。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-027-evidence-03-001660000.jpg",
+          "note": "27:40 27:20进入紫罗兰英雄页并显示一键装备、升级、技能与军阶入口。"
+        }
+      ],
+      "open_questions": [
+        "2级丧尸目标是否在随后真正出征并击杀，需要结合30分钟后的世界行动确认。"
+      ]
+    },
+    {
+      "index": 28,
+      "start": 1680.0,
+      "end": 1740.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-028-main-001710000.jpg",
+        "timestamp": 1710.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-028-evidence-01-001690000.jpg",
+          "timestamp": 1690.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-028-evidence-02-001720000.jpg",
+          "timestamp": 1720.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-028-evidence-03-001730000.jpg",
+          "timestamp": 1730.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P13. 英雄强化与同盟互助 (Hero Growth & Alliance Help)\n提升英雄等级并建立同盟互助入口。",
+          "inference": "英雄等级门槛将玩家重新导向总部建设，同盟入口开始引入社交成长。"
+        },
+        "任务链": {
+          "fact": "Upgrade: 紫罗兰升至15级、阿恺升至20级\nUpgrade/Unlock: 同盟互助中心升至1级\nUnlock: 同盟入口",
+          "inference": "社交系统在总部4级阶段首次清楚落地。"
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T5 英雄成长 (经验→等级→战力/门槛)\n[New] T12 同盟互助 (建造互助中心→进入同盟→成员互动)",
+          "inference": "同盟循环只完成到入口和欢迎提示，互助收益尚未展示。"
+        },
+        "渐进体验": {
+          "fact": "同盟互助中心Lv.1；同盟按钮；英雄总部等级门槛",
+          "inference": "同盟相关界面是本片最重要的新系统。"
+        },
+        "地图体验": {
+          "fact": "SLG世界大地图（同盟入口出现）",
+          "inference": "世界层右侧同盟按钮与玩家基地共同强化标准SLG功能证据。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.4\n兵营 Lv.4\n紫罗兰 Lv.15\n阿恺 Lv.20\n战力约223,027→223,727",
+          "inference": "英雄成长已受到总部等级门槛约束。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "“新的战友”是社交系统欢迎提示，不是角色剧情。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p13-alliance-help-growth",
+        "name": "P13 英雄强化与同盟互助",
+        "start": 1680.0,
+        "end": 1740.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.98,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-028-evidence-01-001690000.jpg",
+          "note": "28:10 28:00英雄列表显示紫罗兰、艾爾莎、法哈德等英雄等级提升。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-028-evidence-02-001720000.jpg",
+          "note": "28:40 28:10紫罗兰达到Lv.15；28:20阿恺达到Lv.20但界面提示需提升总部等级。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-028-evidence-03-001730000.jpg",
+          "note": "28:50 28:30回基地，兵营已为Lv.4；28:40出现同盟互助中心Lv.0→1升级界面。"
+        }
+      ],
+      "open_questions": [
+        "“新的战友”是否代表自动加入同盟、NPC成员加入或仅为互助中心教学，需要后续同盟成员页确认。"
+      ]
+    },
+    {
+      "index": 29,
+      "start": 1740.0,
+      "end": 1800.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-029-main-001770000.jpg",
+        "timestamp": 1770.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-029-evidence-01-001740000.jpg",
+          "timestamp": 1740.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-029-evidence-02-001750000.jpg",
+          "timestamp": 1750.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-029-evidence-03-001790000.jpg",
+          "timestamp": 1790.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P14. 第15关 (Stage 15)\n以20级英雄编队完成第15关。",
+          "inference": "英雄成长提高了视觉火力，但战斗决策结构仍与第11-14关相同。"
+        },
+        "任务链": {
+          "fact": "Social: 祝贺其他玩家总部10级\nMain: 编队并完成第15关",
+          "inference": "社交祝贺只是短插曲，推关仍是主要任务。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T6 公路推关 (编队→倍率/扩兵→技能清敌→胜利)",
+          "inference": "第15关是同一自动推关模板的再次强化。"
+        },
+        "渐进体验": {
+          "fact": "第15关；玩家祝贺/点赞",
+          "inference": "社交祝贺入口首次清楚展示，但不是核心玩法解锁。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "公路关卡背景不构成地图层级变化。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.4\n出战英雄均为 Lv.20\n第15关后战力约223,727→247,879",
+          "inference": "英雄等级与胜利奖励共同形成明显战力增长。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "本片没有可确认剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p14-stage15",
+        "name": "P14 第15关",
+        "start": 1740.0,
+        "end": 1800.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.97,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-029-evidence-01-001740000.jpg",
+          "note": "29:00 29:00出现另一名玩家总部升至10级的祝贺/点赞卡片；该卡片不代表本玩家总部达到10级。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-029-evidence-02-001750000.jpg",
+          "note": "29:10 29:10进入第15关战前编队，五名英雄均显示20级。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-029-evidence-03-001790000.jpg",
+          "note": "29:50 29:20-29:50持续第15关公路战斗，沿用倍率桶、士兵扩张、英雄技能、毒雾与爆炸特效。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 30,
+      "start": 1800.0,
+      "end": 2100.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-030-main-001950000.jpg",
+        "timestamp": 1950.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-030-evidence-01-001840000.jpg",
+          "timestamp": 1840.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-030-evidence-02-002010000.jpg",
+          "timestamp": 2010.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-030-evidence-03-002060000.jpg",
+          "timestamp": 2060.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P10. 总部5级与世界出征展开 (HQ Lv.5 & World Expedition)\n完成基地集中升级，并在既有世界地图上展开完整丧尸出征。",
+          "inference": "正式世界地图已于1199.25秒进入；本片变化是世界层从地图展示进一步落实为完整出征玩法。"
+        },
+        "任务链": {
+          "fact": "Main: 清理街区并升级总部至5级\nTutorial: 在世界地图击杀1-3级丧尸\nMain: 进入第16关",
+          "inference": "任务由基地内升级链扩展为基地—世界出征—闯关三线并行。"
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T8 基地建设 (收取→升级→战力提升)\n[New] T9 世界出征 (选敌→编队→行军→击杀)\n[Cont] T6 公路推关 (编队→自动火力→过关)",
+          "inference": "既有世界地图在本片首次有充分证据闭合选敌、编队、行军与击杀流程，并与基地建设、公路战斗组成跨系统循环。"
+        },
+        "渐进体验": {
+          "fact": "总部Lv.5；完整出征队列与行军；城市竞赛/特殊事件入口",
+          "inference": "世界地图不是本片首次开放；新增证据集中在完整出征流程及基地功能入口扩展。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "1199.25秒已清晰出现战区编号、总部/盟友/盟主图例及其他世界节点，故本片只是回到既有SLG世界地图，没有新地图层级开放。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.5\n战力 247,879→273,847\n食物约184.0K→170.5K；铁约185.9K→185.7K；金币47.6K→55.0K",
+          "inference": "连续升级消耗资源，同时通过结算、收取与世界行动回补。"
+        },
+        "剧情轴": {
+          "fact": "设定卡说明反派组建私人武装并向世界各地散播病毒，使人变成嗜血丧尸。\n目的：在展开世界丧尸出征前补充全球灾变背景与清剿动机。",
+          "inference": "这是设定信息，不足以证明片内发生新的角色剧情事件。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p10-hq5-world-expedition",
+        "name": "P10 总部5级与世界出征展开",
+        "start": 1800.0,
+        "end": 2100.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.94,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-030-evidence-01-001840000.jpg",
+          "note": "30:40 基地持续清理街区、收取资源，并把农田、训练基地、医院等建筑由3-4级继续向4-5级提升，多次弹出战力与产能提升。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-030-evidence-02-002010000.jpg",
+          "note": "33:30 总部由4级推进至5级，画面出现特殊事件、城市竞赛等入口，基地界面由单线教学进一步扩展为多入口管理。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-030-evidence-03-002060000.jpg",
+          "note": "34:20 约33:20出现病毒来源设定卡；33:30后再次进入已开放的世界地图，完整展示出征队列、体力消耗、行军路径与倒计时，并连续击杀1-3级丧尸。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 31,
+      "start": 2100.0,
+      "end": 2400.0,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-031-main-002250000.jpg",
+        "timestamp": 2250.0
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-031-evidence-01-002160000.jpg",
+          "timestamp": 2160.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-031-evidence-02-002250000.jpg",
+          "timestamp": 2250.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-031-evidence-03-002360000.jpg",
+          "timestamp": 2360.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P11. 连续推关强化 (Campaign Reinforcement)\n连续突破第16-20关，用关卡奖励与兵团扩张强化队伍。",
+          "inference": "体验重心从系统解锁转为熟悉循环的数值和视觉强化。"
+        },
+        "任务链": {
+          "fact": "Main: 完成第16-20关\nMain: 清理街区NO.22\nUpgrade: 调整编队并继续强化",
+          "inference": "基地任务只作短暂间隔，主导任务已变为连续推关。"
+        },
+        "核心循环": {
+          "fact": "[Loop] T6 公路推关 (自动射击→选倍率/救兵→清尸潮→首领/结算)\n[Cont] T7 街区清理 (战斗→回基地→下一街区)",
+          "inference": "同一战斗模板在桥梁、城市、游乐园等场景复用，变化集中在数值、敌群和特效。"
+        },
+        "渐进体验": {
+          "fact": "第17-20关；更大士兵编队；关前一键上阵提示",
+          "inference": "未观察到新的核心系统首次开放，属于既有推关循环强化。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "关卡背景变化不构成新的功能地图层级；世界大地图也未在本片首次开放。"
+        },
+        "经济体验": {
+          "fact": "战力约273,812\n关卡结算获得金币与武装强化",
+          "inference": "战斗奖励被立即转化为下一关的兵团规模与火力，但具体单关资源量无法由采样帧稳定读取。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "本片没有可确认的角色剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p11-campaign-reinforcement-loop",
+        "name": "P11 连续推关强化循环",
+        "start": 2100.0,
+        "end": 2400.0
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-031-evidence-01-002160000.jpg",
+          "note": "36:00 玩家连续完成第16、17、18、19关并进入第20关，主要画面长期保持车队自动射击、选择倍率桶、吸收士兵与清除尸潮。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-031-evidence-02-002250000.jpg",
+          "note": "37:30 关卡之间短暂回基地清理街区NO.22，随后再次进入下一关。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-031-evidence-03-002360000.jpg",
+          "note": "39:20 第18关出现巨型首领与大量金币结算，第19关前出现编队/上阵界面和“进一步强化”提示。"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "index": 32,
+      "start": 2400.0,
+      "end": 2620.195012,
+      "main_frame": {
+        "path": "screenshots/last-war/frames/slice-032-main-002510098.jpg",
+        "timestamp": 2510.097506
+      },
+      "evidence_frames": [
+        {
+          "path": "screenshots/last-war/frames/slice-032-evidence-01-002440000.jpg",
+          "timestamp": 2440.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-032-evidence-02-002500000.jpg",
+          "timestamp": 2500.0
+        },
+        {
+          "path": "screenshots/last-war/frames/slice-032-evidence-03-002580000.jpg",
+          "timestamp": 2580.0
+        }
+      ],
+      "dimensions": {
+        "阶段目标": {
+          "fact": "P12. 英雄强化与第22关 (Hero Upgrade & Stage 22)\n用英雄等级、装备与技能强化承接第20-22关和基地外圈清理。",
+          "inference": "系统变化来自成长纵深，而非新的玩法循环。"
+        },
+        "任务链": {
+          "fact": "Main: 清理街区NO.23\nUpgrade: 解锁/升级英雄技能与装备\nMain: 完成第21-22关\nMain: 将1名英雄升至25级",
+          "inference": "推关与英雄养成开始形成更明确的互相供给。"
+        },
+        "核心循环": {
+          "fact": "[Upgrade] T5 英雄养成 (关卡资源→等级/装备/技能→战力)\n[Loop] T6 公路推关 (强化后再战→尸潮/首领→结算)\n[Cont] T7 街区清理 (回基地→清外圈→下一目标)",
+          "inference": "英雄技能开放给重复推关增加一次成长反馈，但没有改变战斗操作骨架。"
+        },
+        "渐进体验": {
+          "fact": "梅森技能解锁；英雄升级至20级；英雄25级目标",
+          "inference": "技能入口是本片唯一明确的新成长节点，其余为既有系统升级。"
+        },
+        "地图体验": {
+          "fact": "",
+          "inference": "基地外圈继续清理，但未出现新的功能地图层级；正式世界大地图早在slice19的1199.25秒已进入。"
+        },
+        "经济体验": {
+          "fact": "总部 Lv.5\n战力 273,812→317,869\n莫妮卡 Lv.20；英雄升级目标 Lv.25\n食物约187.8K→237.1K；铁约203.1K→252.3K；金币约55.2K→64.1K",
+          "inference": "推关与街区奖励持续回补资源并转化为英雄战力。"
+        },
+        "剧情轴": {
+          "fact": "",
+          "inference": "本片没有可确认的角色剧情推进。"
+        }
+      },
+      "stage_range": {
+        "stage_id": "p12-hero-skill-campaign-22",
+        "name": "P12 英雄强化与第22关",
+        "start": 2400.0,
+        "end": 2620.195012
+      },
+      "narrative_climax": {
+        "judgement": "none",
+        "reason": "未形成跨片剧情峰值。"
+      },
+      "flow": {
+        "judgement": "none",
+        "reason": "未同时形成持续挑战、专注与高密度反馈。"
+      },
+      "confidence": 0.96,
+      "evidence": [
+        {
+          "frame": "screenshots/last-war/frames/slice-032-evidence-01-002440000.jpg",
+          "note": "40:40 玩家完成第20关后回基地清理街区NO.23，随后进入英雄界面升级装备/等级。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-032-evidence-02-002500000.jpg",
+          "note": "41:40 梅森出现“解锁技能”提示；法哈德继续升级，莫妮卡达到20级且受总部等级门槛限制。"
+        },
+        {
+          "frame": "screenshots/last-war/frames/slice-032-evidence-03-002580000.jpg",
+          "note": "43:00 玩家继续完成第21关并推进第22关，战斗仍复用自动射击、倍率桶、士兵扩张、技能轰炸和首领输出结构。"
+        }
+      ],
+      "open_questions": []
+    }
+  ],
+  "global_curves": {
+    "scale": {
+      "min": 0,
+      "max": 5
+    },
+    "points": [
+      {
+        "start": 0.0,
+        "end": 60.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "直升机扫荡僵尸、玩家落地完成首场清街并立即接到基地求援。",
+          "reason": "剧情仅提供轻量危机框架；密集击杀、队伍扩张和任务完成反馈构成主要情绪刺激。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "排除0-3秒外部干扰后，17-44秒为持续可操作战斗，45秒起短暂切换基地点击推进。",
+            "feedback_density": "自动射击、加减门、士兵/武器增援、击杀表现与任务结算连续出现。",
+            "goal_challenge": "目标和操作非常清晰，容错高；主要挑战是横向选择收益路线。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "首关反馈密集、理解成本低，战斗与基地推进衔接迅速，但前置加载和演出压缩了实际操作占比。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：左右滑动操控\n自动射击\n数值增减门\n士兵/武器增援\n基地求援点"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "full_break",
+            "reason": "主导操作结构发生完整变化，建立新的体验层。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 60.0,
+        "end": 120.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 4.0,
+          "intensity": 2.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "特别行动2完成后继续占领基地，随后明确发现并尝试营救瓶中英雄。",
+          "reason": "救援对象和求援对白提高了叙事动机；大规模扩军、武器强化与高频击杀仍是主要刺激。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "约60-85秒和94-120秒均为连续跑酷射击，仅由短基地推进段分隔。",
+            "feedback_density": "队伍扩张、UP强化、武器更换、敌人计数下降、目标达成和任务结算高度密集。",
+            "goal_challenge": "敌群与负面门数值增大，但正向路线和自动火力仍明显占优，挑战偏轻。",
+            "interruption": "86-94秒结算与基地推进属于循环内过渡，时间短且直接给出下一目标。"
+          },
+          "summary": "战斗占比和反馈规模较首分钟提升，基地过渡短促，救援目标让重复清街保持方向感。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：大型武器罐\n英雄救援目标\n更高数值增益门"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 120.0,
+        "end": 180.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 5.0,
+          "intensity": 2.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "瓶中英雄获救并带来战斗力+600，随后以摩托车主控和重火力完成特别行动4。",
+          "reason": "救援兑现带来轻度叙事释然，角色替换、战力增长、队伍巨量扩张和重火力爆炸形成片段内最强刺激。"
+        },
+        "experience": {
+          "score": 4.6,
+          "basis": {
+            "gameplay_concentration": "片内完成特别行动3、短暂基地领奖与开门、完整完成特别行动4并立即进入特别行动5。",
+            "feedback_density": "救援对白、任务结算、战斗力+600、城门开启、英雄换装出战、火箭/炮车升级和爆炸反馈连续出现。",
+            "goal_challenge": "敌人数和负面门继续上升，但大规模队伍与重火力形成明显优势，难度仍以爽感展示为主。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "救援承诺、成长奖励与新英雄重火力在一分钟内连续兑现，是0-3分钟中体验密度最高的片段。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：摩托车英雄出战\n战斗力奖励\n城墙入口\n火箭/炮车兵种"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 180.0,
+        "end": 240.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 4.0,
+          "intensity": 2.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "特别行动5清场后，莫妮卡认可玩家为指挥官，随后连续奖励并开启下一场战斗。",
+          "reason": "角色认可提供中等偏低的正向剧情刺激，百人清场、战力增长和立即再战提供较强玩法刺激。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "战斗、结算、基地领奖和下一战连续衔接，注意目标始终明确。",
+            "feedback_density": "击杀、扩编、任务完成、经验卡和三次战力增长在一分钟内密集出现。",
+            "goal_challenge": "行动5顺利过关，行动6敌群与炮兵规模提升，但未见失败压力。",
+            "interruption": "莫妮卡对话和基地强制点击短暂中断战斗，持续时间较短且承担目标交接。"
+          },
+          "summary": "高密战斗反馈叠加短基地回流，形成清晰且节奏紧凑的战斗—成长—再战闭环。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：特别行动6；炮兵编队"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 240.0,
+        "end": 300.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 5.0,
+          "intensity": 2.2,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "连续完成行动6和行动7，击败巨型首领并获得战力+20,753。",
+          "reason": "占领基地只提供轻度叙事动机；双关清场、强化、首领战和大额战力反馈构成本段最强玩法刺激。"
+        },
+        "experience": {
+          "score": 4.5,
+          "basis": {
+            "gameplay_concentration": "两场战斗连续推进，行动7的首领血条使注意力在片尾进一步集中。",
+            "feedback_density": "兵力门、扩编、末日精英、爆炸、首领削血、过关和大额战力奖励持续出现。",
+            "goal_challenge": "行动7敌群与首领明显升级，但玩家最终稳定过关，挑战处于可控范围。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "双关连续推进并以首领和大额成长收束，是3:00-6:00区间的战斗体验高点。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：特别行动7；末日精英强化；巨型首领战"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 300.0,
+        "end": 360.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 4.0,
+          "intensity": 2.6,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "队伍升旗建立据点，基地HUD与修复/建造系统连续开放，救援直升机最终抵达。",
+          "reason": "建立安全据点带来轻度叙事转折和危机缓解，连续系统开放、战力增长与建筑落成提供较强正向成长刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "修复与建造目标连续明确，但大多依赖手指标记下的单点点击。",
+            "feedback_density": "升旗、HUD开放、四次战力增长、建筑变化、倒计时和直升机到场反馈密集。",
+            "goal_challenge": "主要挑战是理解新HUD与建筑顺序，数值门槛和操作难度都很低。",
+            "interruption": "05:23-05:24游戏内五星好评弹窗完全遮挡基地约2秒，构成一次明确但短暂的玩法中断。"
+          },
+          "summary": "系统展开和建造成果显著抬高新鲜感，但强制点击与评分弹窗削弱了自主操作和连续沉浸。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：基地管理HUD；资源生产提示；建筑修复；军事建造菜单；猎鹰搜救队"
+          },
+          "repetition_context": {
+            "loop_family_id": "base-growth",
+            "variation": "full_break",
+            "reason": "主导操作结构发生完整变化，建立新的体验层。"
+          },
+          "effective_score": 4.6,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 360.0,
+        "end": 420.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 5.0,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "猎鹰行动开放后连续扩充士兵、清除大群敌人，并以“+666”士兵反馈衔接下一关。",
+          "reason": "没有可确认剧情推进；新系统揭示、队伍规模快速膨胀和密集清场构成强玩法刺激。"
+        },
+        "experience": {
+          "score": 4.5,
+          "basis": {
+            "gameplay_concentration": "规则说明约占数秒，随后从第1关无缝接入第2关，主动战斗占比高。",
+            "feedback_density": "数字门、士兵与武器增援、敌群清除、士兵转化和下一关开场连续出现。",
+            "goal_challenge": "目标与路线选择清晰，负面门和障碍带来轻度判断，整体仍偏爽感展示。",
+            "interruption": "360秒云层为游戏内短转场，362-366秒说明页短暂中止操作但直接服务规则教学。"
+          },
+          "summary": "新系统教学短促，马上以高密度扩兵和清场完成验证，节奏集中且反馈强。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：猎鹰行动\n第1章节点选关\n前缘突围序章\n纯粹战斗规则"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 420.0,
+        "end": 480.0,
+        "emotion": {
+          "narrative_score": 2.0,
+          "supporting_score": 5.0,
+          "intensity": 2.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "第3关完成并获得23名士兵，总部升至2级后末日军团和巨型变异兽立即突入基地。",
+          "reason": "成长兑现带来明显正反馈，随后的真实敌袭又制造紧迫和负向压力。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "前半持续战斗，后半快速完成修复与升级，并以连续敌袭演出收尾。",
+            "feedback_density": "任务完成、士兵奖励、百分位、战力+500、总部升级和破门袭击在一分钟内连续出现。",
+            "goal_challenge": "战斗路线判断仍简单；基地任务为强引导点击，敌袭主要承担下一目标铺垫。",
+            "interruption": "关卡结算和升级庆祝均很短，且立即给出下一任务，没有无目标等待。"
+          },
+          "summary": "远征收益、基地成长和敌袭转折衔接紧密，虽操作难度不高，但目标与反馈持续刷新。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：前缘突围序章节点4开放\n第一小队修复\n总部Lv.2"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 480.0,
+        "end": 540.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 5.0,
+          "intensity": 3.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "特别行动9完成后，末日军团承认失败却立即增援反扑，基地保卫战继续。",
+          "reason": "连续敌袭和胜而未解的威胁提供中等剧情张力，高密度清场与任务完成提供强玩法刺激。"
+        },
+        "experience": {
+          "score": 4.5,
+          "basis": {
+            "gameplay_concentration": "约485-530秒为完整连续战斗，前后基地事件清楚交代动机和结果。",
+            "feedback_density": "扩兵、武器强化、敌群消灭、目标达成、通关统计和敌方反扑无长间隔出现。",
+            "goal_challenge": "特别行动9仍以正向扩兵路线和自动火力为主，基地反扑在片尾提高压力但尚未形成复杂操作。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "完整清街闭环与敌方二次反扑形成胜利—再施压结构，战斗占比高且叙事衔接清楚。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：特别行动9"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.7,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 540.0,
+        "end": 600.0,
+        "emotion": {
+          "narrative_score": 3.0,
+          "supporting_score": 5.0,
+          "intensity": 3.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward",
+            "urgency"
+          ],
+          "event": "莫妮卡在基地激战后暴露火力不足，玩家建成侦察机，并首次组建两人英雄队伍突围。",
+          "reason": "持续围攻和火力缺口提供中等剧情压力；导弹攻击、建筑完成、战力提升与编队开放提供强正向反馈。"
+        },
+        "experience": {
+          "score": 4.6,
+          "basis": {
+            "gameplay_concentration": "基地防守演出、目标更新、建筑完成和首次编队实战连续推进，几乎没有空转。",
+            "feedback_density": "导弹与击倒、火力不足提示、装备目标、两次战力增长、侦察机落成、英雄上阵和战力对比密集出现。",
+            "goal_challenge": "基地围攻提高情境压力；编队教学操作简单，己方44.9K显著高于敌方7.0K，首战配置压力低。",
+            "interruption": "564-570秒装备目标界面和演出承担任务转折；590秒编队页是新系统教学，均非无关中断。"
+          },
+          "summary": "基地危机、成长建筑和英雄编队在一分钟内完成因果串联，是系统扩展与战斗反馈都很密集的转折片。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：侦察机\n装备收集目标\n英雄编队五槽位\n一键上阵\n兵种筛选页签"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero-growth",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 5.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 600.0,
+        "end": 660.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "密集敌群被连续清除，并快速切回地图选择下一战。",
+          "reason": "纯玩法刺激较强，来自大规模清场和连续推进；没有可确认剧情刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "连续战斗与节点切换要求持续关注推进路线和敌群。",
+            "feedback_density": "敌群数量、攻击特效、清场和地图回切反馈密集。",
+            "goal_challenge": "目标清晰，敌群规模大但看不出明显失败压力。",
+            "interruption": "10:35及10:50附近有短游戏内转场，但未形成长等待。"
+          },
+          "summary": "高密度清场与快速回图维持较强沉浸，但玩法结构开始明显重复。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 660.0,
+        "end": 720.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "战斗结束后出现英雄/队伍界面与奖励弹层。",
+          "reason": "系统展开和成长提示带来正向刺激，但缺少可确认剧情。"
+        },
+        "experience": {
+          "score": 3.7,
+          "basis": {
+            "gameplay_concentration": "战斗、地图和英雄界面连续切换，目标仍可追踪。",
+            "feedback_density": "战斗特效、暗色结算、英雄卡面和任务弹层依次出现。",
+            "goal_challenge": "英雄系统增加轻度理解负担，未见实质配置压力。",
+            "interruption": "11:25-11:35界面切换暂时打断战斗节奏。"
+          },
+          "summary": "英雄系统提供变化，但未形成可确认的成长闭环。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：英雄详情/英雄列表或队伍界面"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 720.0,
+        "end": 780.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat"
+          ],
+          "event": "己方编队连续冲击高密度敌群。",
+          "reason": "敌群密度和战斗特效带来持续刺激，但刺激来源单一。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "长时间保持在同一种推进战斗中。",
+            "feedback_density": "敌人、弹道、伤害和清场反馈持续出现。",
+            "goal_challenge": "敌群规模扩大，但路径和操作变化有限。",
+            "interruption": "几乎没有界面打断。"
+          },
+          "summary": "连续性强、反馈密，但同质战斗拉长后新鲜度下降。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 780.0,
+        "end": 840.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "完成一轮密集战斗后回图并立即进入下一战。",
+          "reason": "清场和继续推进形成稳定正反馈。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "战斗与短地图导航衔接顺畅。",
+            "feedback_density": "持续清敌并快速给出下一目标。",
+            "goal_challenge": "目标明确，缺少可见的策略分支。",
+            "interruption": "回图时间短，没有明显等待。"
+          },
+          "summary": "完整推关闭环清楚，但内容变化仍较少。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 3
+          }
+        }
+      },
+      {
+        "start": 840.0,
+        "end": 900.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "长段地图移动后出现奖励/角色结算界面。",
+          "reason": "结算提供轻度释放感，但战斗刺激降低。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "主要是地图移动与菜单处理，操作强度下降。",
+            "feedback_density": "前半反馈较稀，片尾集中出现转场与奖励界面。",
+            "goal_challenge": "未见明显风险或选择压力。",
+            "interruption": "14:45-14:55连续界面切换打断地图推进。"
+          },
+          "summary": "作为战斗间歇有效，但地图移动偏长、目标反馈较弱。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.1,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 4
+          }
+        }
+      },
+      {
+        "start": 900.0,
+        "end": 960.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "combat"
+          ],
+          "event": "宝箱奖励后立即转入下一场战斗。",
+          "reason": "奖励和重新开战连续发生，系统刺激较强。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "地图、领奖、队伍检查与战斗衔接紧凑。",
+            "feedback_density": "暗色结算、宝箱、英雄界面和战斗特效连续出现。",
+            "goal_challenge": "目标清晰但选择空间有限。",
+            "interruption": "多个短界面切换使流程略碎。"
+          },
+          "summary": "奖励链改善重复感，但仍服务于相同的公路推关。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 5
+          }
+        }
+      },
+      {
+        "start": 960.0,
+        "end": 1020.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "urgency"
+          ],
+          "event": "多波敌群连续压入，战斗间仅短暂回图。",
+          "reason": "持续战斗和敌群压力保持较高玩法刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "一分钟内几乎持续处于战斗状态。",
+            "feedback_density": "大量单位、攻击特效、清场和转场连续发生。",
+            "goal_challenge": "敌群密度高，仍未看到失败或显著资源压力。",
+            "interruption": "16:25提示与16:30回图都很短。"
+          },
+          "summary": "战斗连续性强，但同类场景和操作已高度重复。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 6
+          }
+        }
+      },
+      {
+        "start": 1020.0,
+        "end": 1080.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "长段清敌后出现结算并返回地图。",
+          "reason": "持续战斗后获得明确释放和进度反馈。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "长段战斗保持注意力，结尾完成收束。",
+            "feedback_density": "战斗反馈持续，结尾奖励集中。",
+            "goal_challenge": "战斗长度增加，但可见策略变化有限。",
+            "interruption": "17:50短转场属于游戏内结算。"
+          },
+          "summary": "闭环收束明确，重复疲劳与奖励释放同时存在。",
+          "progression_pull": {
+            "score": 0,
+            "reason": "本片没有新的核心系统开放。"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.9,
+          "adjustments": {
+            "progression_bonus": 0.0,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 7
+          }
+        }
+      },
+      {
+        "start": 1080.0,
+        "end": 1140.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 5.0,
+          "intensity": 1.5,
+          "valence": "mixed",
+          "drivers": [
+            "combat",
+            "urgency",
+            "environment_pressure"
+          ],
+          "event": "紫色区域转场后遭遇更突出的强敌和高强度特效。",
+          "reason": "纯玩法刺激达到本段高位，来自新区段、强敌与持续战斗。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "新区段和强敌让注意力重新集中。",
+            "feedback_density": "转场、敌人变化、攻击特效与推进反馈高度密集。",
+            "goal_challenge": "强敌表现提高威胁感，但未见失败证据。",
+            "interruption": "18:05紫色转场短暂中断操作，并清楚分隔阶段。"
+          },
+          "summary": "在高度重复的推关中通过新区段和强敌制造有效变化。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：新区段/新关卡表现"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 8
+          }
+        }
+      },
+      {
+        "start": 1140.0,
+        "end": 1200.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "relief",
+            "progression_reward"
+          ],
+          "event": "强敌战斗结束后，片尾正式开放战区 #2297世界大地图。",
+          "reason": "前段地图移动刺激较弱，但片尾世界层解锁带来明确的规模扩张和成长奖励感；没有可确认剧情刺激。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "前段战斗收尾后为低强度地图导航，片尾世界节点密集出现并显著提升信息关注度。",
+            "feedback_density": "前段反馈较稀；19:58.75后连续出现世界节点、战区编号、关系图例和小地图。",
+            "goal_challenge": "本片尚未实际操作世界层行军或资源争夺，但新的多主体空间显著扩展后续目标。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "大部分时间是战后过渡低谷，但片尾正式SLG世界地图解锁形成关键体验跃迁。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：正式SLG世界大地图；战区编号；总部/盟友/盟主图例；世界节点"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "full_break",
+            "reason": "正式进入SLG世界层，空间、目标和后续发展结构发生完整变化。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1200.0,
+        "end": 1260.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "positive",
+          "drivers": [
+            "narrative",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "首次确认世界层、完成雷达节点并回基地升级兵营。",
+          "reason": "主要刺激来自地图层级开放与连续成长反馈，剧情只提供轻度同伴邀请。"
+        },
+        "experience": {
+          "score": 4.3,
+          "basis": {
+            "gameplay_concentration": "世界、雷达节点与基地目标连续明确，层级切换要求持续跟随引导。",
+            "feedback_density": "世界标记、任务奖励、资源入账和兵营升级连续出现。",
+            "goal_challenge": "雷达任务门槛低，但首次地图层级认知增加适度理解负担。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "正式世界层带来本段最强的新鲜感，但尚未展开完整世界出征。",
+          "progression_pull": {
+            "score": 5,
+            "reason": "本片开放或明确展示：世界层完整观察；基地/世界切换；联盟关系图例；雷达任务"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.6,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1260.0,
+        "end": 1320.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "combat"
+          ],
+          "event": "多座基地建筑升级后立刻进入第11关。",
+          "reason": "成长反馈和战斗启动连续发生，缺少剧情刺激。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "升级目标与开战目标连续，操作路径清楚。",
+            "feedback_density": "等级、战力、产能、礼物和战斗特效密集。",
+            "goal_challenge": "升级条件均已满足，第11关未见失败压力。",
+            "interruption": "建筑详情弹窗属于必要教学，未造成长等待。"
+          },
+          "summary": "基地成长与推关衔接顺畅，但建设操作以跟随点击为主。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：农田Lv.3；训练基地升级；世界按钮常驻"
+          },
+          "repetition_context": {
+            "loop_family_id": "base-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1320.0,
+        "end": 1380.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "第11关结束后领取街区奖励并立即进入第12关。",
+          "reason": "战斗与奖励反馈密集，但刺激主要来自熟悉循环。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "连续战斗和短暂基地处理保持注意力。",
+            "feedback_density": "清敌、奖励弹层和新关启动衔接紧密。",
+            "goal_challenge": "第12关敌群更多，仍未观察到失败或调整策略。",
+            "interruption": "奖励弹层短暂打断战斗，属于循环结算。"
+          },
+          "summary": "反馈仍强，但第11-12关已经显出模板复用。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：第12关；街区NO.16奖励"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1380.0,
+        "end": 1440.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 5.0,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward",
+            "relief"
+          ],
+          "event": "第12关高密度战斗结束后，总部由3级升至4级。",
+          "reason": "长战斗后的金币结算和总部跃升形成纯玩法高点。"
+        },
+        "experience": {
+          "score": 4.2,
+          "basis": {
+            "gameplay_concentration": "第12关后段火力密集，随后总部目标明确。",
+            "feedback_density": "技能、金币、清街与总部等级反馈连续。",
+            "goal_challenge": "战斗敌群规模提高，但没有可见失败风险。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "总部4级为重复战斗提供了明确阶段回报。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：总部Lv.4"
+          },
+          "repetition_context": {
+            "loop_family_id": "base-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1440.0,
+        "end": 1500.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 5.0,
+          "intensity": 1.5,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward"
+          ],
+          "event": "连续解锁英雄技能、升级酒馆并完成高战力招募。",
+          "reason": "多个新成长节点叠加，形成强烈纯系统奖励刺激。"
+        },
+        "experience": {
+          "score": 4.4,
+          "basis": {
+            "gameplay_concentration": "英雄、技能、酒馆和招募目标连续且界面指向明确。",
+            "feedback_density": "解锁、升级、招募卡牌与战力跃升高度密集。",
+            "goal_challenge": "几乎没有操作难度，主要是理解新系统入口。",
+            "interruption": "菜单切换多但均服务同一成长目标。"
+          },
+          "summary": "英雄技能与招募显著缓解连续推关的重复感。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：艾爾莎技能；酒馆Lv.2；英雄招募"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero-growth",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 4.9,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1500.0,
+        "end": 1560.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "第13关结束、资源结算并切入第14关编队。",
+          "reason": "战斗与成长反馈稳定，但关卡结构已经熟悉。"
+        },
+        "experience": {
+          "score": 3.6,
+          "basis": {
+            "gameplay_concentration": "战斗保持视觉关注，战前编队提供短暂决策。",
+            "feedback_density": "攻击特效、资源结算和编队提示连续。",
+            "goal_challenge": "提示实力未完全强化，但仍未观察到失败或强制调整。",
+            "interruption": "结算和编队界面属于关间正常切换。"
+          },
+          "summary": "编队检查提供有限变化，第13关仍明显复用既有模板。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：第14关战前编队提示"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1560.0,
+        "end": 1620.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "urgency",
+            "environment_pressure"
+          ],
+          "event": "第14关高密度战斗后，基地收到外围丧尸逼近提示。",
+          "reason": "战斗刺激叠加轻度防守压力，剧情只承担威胁提示。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "第14关持续战斗，回基地后目标迅速转为城墙。",
+            "feedback_density": "技能、清场、任务文本和升级引导密集。",
+            "goal_challenge": "画面威胁感增强，但没有实际守城失败压力。",
+            "interruption": "战斗结束后回基地属于正常循环切换。"
+          },
+          "summary": "威胁提示为重复战斗增加语境，但玩法结构未改变。",
+          "progression_pull": {
+            "score": 2,
+            "reason": "本片开放或明确展示：城墙Lv.2升级引导"
+          },
+          "repetition_context": {
+            "loop_family_id": "base-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.0,
+          "adjustments": {
+            "progression_bonus": 0.2,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1620.0,
+        "end": 1680.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 3.0,
+          "intensity": 1.6,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "urgency",
+            "progression_reward"
+          ],
+          "event": "再次进入世界并发现2级丧尸目标，随后展示先锋长期奖励。",
+          "reason": "世界目标和长期成长带来新鲜感，敌人设定提供轻度威胁。"
+        },
+        "experience": {
+          "score": 3.9,
+          "basis": {
+            "gameplay_concentration": "地图、目标弹窗、英雄页和先锋页切换频繁但引导明确。",
+            "feedback_density": "世界目标信息、英雄入口、礼物和先锋进度连续出现。",
+            "goal_challenge": "体力与敌人等级建立门槛，但未实际发起并完成世界战斗。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "世界目标再次扩展系统预期，但缺少完整出征结果使沉浸未达到峰值。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：世界2级丧尸目标；先锋目标；紫罗兰养成页"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 4.4,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1680.0,
+        "end": 1740.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "progression_reward",
+            "relief"
+          ],
+          "event": "英雄连续升级后，同盟互助中心与同盟入口开放。",
+          "reason": "成长与社交入口提供正向系统刺激，无剧情情绪。"
+        },
+        "experience": {
+          "score": 4.0,
+          "basis": {
+            "gameplay_concentration": "英雄升级、门槛提示和同盟建设目标连续。",
+            "feedback_density": "等级、战力、建筑和社交弹窗反馈密集。",
+            "goal_challenge": "总部门槛首次明确阻止英雄继续成长，形成可见长期目标。",
+            "interruption": "英雄菜单与世界弹窗较多，但均属于系统开放流程。"
+          },
+          "summary": "同盟系统和总部门槛扩展长期目标，短暂缓解关卡重复疲劳。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：同盟互助中心Lv.1；同盟按钮；英雄总部等级门槛"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero-growth",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 4.5,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 1740.0,
+        "end": 1800.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 4.0,
+          "intensity": 1.2,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "20级英雄编队完成第15关并获得大额战力增长。",
+          "reason": "战斗与胜利回报强，但刺激来自已高度熟悉的模板。"
+        },
+        "experience": {
+          "score": 3.4,
+          "basis": {
+            "gameplay_concentration": "密集敌群和技能特效维持视觉关注，主动决策仍有限。",
+            "feedback_density": "倍率、扩兵、技能、伤害和片尾胜利反馈持续。",
+            "goal_challenge": "敌群和数值更高，但未见失败或必须改变阵容。",
+            "interruption": "开头祝贺卡片很短，未显著打断第15关流程。"
+          },
+          "summary": "第15关爽感仍在，但连续五关复用同一骨架，重复疲劳已经明确。",
+          "progression_pull": {
+            "score": 3,
+            "reason": "本片开放或明确展示：第15关；玩家祝贺/点赞"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.8,
+          "adjustments": {
+            "progression_bonus": 0.4,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 1800.0,
+        "end": 2100.0,
+        "emotion": {
+          "narrative_score": 1.0,
+          "supporting_score": 4.0,
+          "intensity": 1.9,
+          "valence": "mixed",
+          "drivers": [
+            "narrative",
+            "combat",
+            "progression_reward"
+          ],
+          "event": "总部5级、完整世界出征流程与连续升级奖励叠加，病毒设定卡补充轻度威胁。",
+          "reason": "情绪主要来自出征玩法展开和高密度成长反馈，剧情仅承担背景说明。"
+        },
+        "experience": {
+          "score": 3.8,
+          "basis": {
+            "gameplay_concentration": "基地升级、世界选敌与出征目标连续明确，操作关注点虽多但仍由任务箭头串联。",
+            "feedback_density": "建筑等级、战力、资源、出征队列、行军与击杀反馈密集，完整世界出征流程带来结构变化。",
+            "goal_challenge": "建筑门槛与1-3级世界丧尸提供轻度递进，整体难度仍低。",
+            "interruption": "设定卡和界面弹窗短暂切断操作，但均属于游戏内教学与解锁展示。"
+          },
+          "summary": "基地重复升级因完整世界出征流程展开而获得明显提振，但这不是正式世界地图的首次入口。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：总部Lv.5；完整出征队列与行军；城市竞赛/特殊事件入口"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 4.3,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      },
+      {
+        "start": 2100.0,
+        "end": 2400.0,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "连续尸潮、巨型首领、兵团扩张与金币结算制造高密度战斗刺激。",
+          "reason": "纯玩法刺激较强，但缺少剧情情绪支撑，重复模板使后半的新鲜感下降。"
+        },
+        "experience": {
+          "score": 3.1,
+          "basis": {
+            "gameplay_concentration": "连续关卡目标清晰，战斗期间视觉注意力集中，但多数火力与推进自动完成。",
+            "feedback_density": "伤害数字、倍率选择、士兵加入、技能特效和过关结算持续出现。",
+            "goal_challenge": "关卡编号和敌群规模递增，但采样中未见失败或需要改变策略的硬门槛。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "即时反馈仍密集，但16-20关连续复用同一模板，开始出现明显的后期重复疲劳。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：第17-20关；更大士兵编队；关前一键上阵提示"
+          },
+          "repetition_context": {
+            "loop_family_id": "campaign-combat",
+            "variation": "reinforcement",
+            "reason": "继续强化同一主要循环，变化集中在数值、敌群或奖励。"
+          },
+          "effective_score": 3.6,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 2
+          }
+        }
+      },
+      {
+        "start": 2400.0,
+        "end": 2620.195012,
+        "emotion": {
+          "narrative_score": 0.0,
+          "supporting_score": 3.0,
+          "intensity": 0.9,
+          "valence": "positive",
+          "drivers": [
+            "combat",
+            "progression_reward"
+          ],
+          "event": "技能解锁、英雄升级、战力上涨与第20-22关连续胜利提供成长刺激。",
+          "reason": "成长回报明确，但主要刺激仍来自已熟悉的战斗与数值反馈，外部控制中心已排除。"
+        },
+        "experience": {
+          "score": 2.9,
+          "basis": {
+            "gameplay_concentration": "英雄升级目标明确，战斗仍能维持短时专注，但连续自动推关的主动决策有限。",
+            "feedback_density": "技能解锁、装备强化、战力增长、关卡特效与基地资源结算频繁。",
+            "goal_challenge": "总部等级限制英雄继续提升，形成门槛；战斗本身仍未见失败或策略调整。",
+            "interruption": "仅依据有效游戏内容，未观察到游戏内长时间中断。"
+          },
+          "summary": "技能解锁短暂缓解疲劳，但第21-22关继续复用相同推关结构，体验强度较上一片小幅回落。",
+          "progression_pull": {
+            "score": 4,
+            "reason": "本片开放或明确展示：梅森技能解锁；英雄升级至20级；英雄25级目标"
+          },
+          "repetition_context": {
+            "loop_family_id": "hero-growth",
+            "variation": "partial_break",
+            "reason": "新增功能层或系统组合，但仍承接既有战斗、基地或英雄目标。"
+          },
+          "effective_score": 3.4,
+          "adjustments": {
+            "progression_bonus": 0.5,
+            "repetition_penalty": 0.0,
+            "effective_repeat_count": 1
+          }
+        }
+      }
+    ],
+    "experience_model": {
+      "version": "progression-repetition-v1",
+      "parameters": {
+        "progression_weight": 0.6,
+        "penalty_step": 0.2,
+        "penalty_cap": 1.2,
+        "partial_recovery": 2
+      }
+    }
+  },
+  "global_loops": {
+    "scope": {
+      "start": 0.0,
+      "end": 1199.25,
+      "end_label": "19:59.25 进入战区 #2297 世界大地图",
+      "outside_exit_label": "世界入口后的基地、出征与章节发展"
+    },
+    "macro_loops": [
+      {
+        "id": "settlement",
+        "title": "基地建设",
+        "accent": "settlement",
+        "summary": "救援、修复、建造与总部成长。"
+      },
+      {
+        "id": "expedition",
+        "title": "战斗远征",
+        "accent": "expedition",
+        "summary": "跑酷清场、章节推关与世界入口。"
+      },
+      {
+        "id": "hero-growth",
+        "title": "英雄养成",
+        "accent": "hero_growth",
+        "summary": "英雄救援、招募、编队与强化。"
+      }
+    ],
+    "loop_families": [
+      {
+        "id": "campaign-combat",
+        "title": "公路清场与章节战斗",
+        "summary": "选关后扩充兵团、自动射击、清场并结算。",
+        "accent": "expedition_progression"
+      },
+      {
+        "id": "base-growth",
+        "title": "基地建设成长",
+        "summary": "修复、建造和升级建筑，将资源转化为战力。",
+        "accent": "building_growth"
+      },
+      {
+        "id": "hero-growth",
+        "title": "英雄招募与编组",
+        "summary": "救援、招募、编组并强化英雄阵容。",
+        "accent": "hero_growth"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "entry",
+        "type": "transition",
+        "title": "开始清街行动",
+        "summary": "排除录制启停画面后，从桥面跑酷射击进入游戏。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "m01",
+        "type": "micro_loop",
+        "title": "特别行动1首轮清街",
+        "summary": "特别行动1首轮清街：特别行动1完成，用时00:26，累计击杀50。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-000-main-000030000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "按教学清理桥面僵尸。",
+        "behaviors": [
+          "左右移动避开负面门，选择正向增益、士兵桶和武器桶并自动射击。"
+        ],
+        "reward": "特别行动1完成，用时00:26，累计击杀50。",
+        "next_motivation": "返回基地处理沿路求援点。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m02",
+        "type": "micro_loop",
+        "title": "首个基地求援节点",
+        "summary": "首个基地求援节点：节点显示胜利，开放特别行动2入口。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          0
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-000-evidence-03-000055000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "回应基地道路上的求援并继续推进。",
+        "behaviors": [
+          "在俯视基地道路点击发光战斗点并清除节点。"
+        ],
+        "reward": "节点显示胜利，开放特别行动2入口。",
+        "next_motivation": "进入特别行动2清理街区。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m03",
+        "type": "micro_loop",
+        "title": "特别行动2强化清街",
+        "summary": "特别行动2强化清街：特别行动2完成，用时00:29，累计击杀120。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          0,
+          1
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-001-evidence-01-000086000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续清理被僵尸占据的街区。",
+        "behaviors": [
+          "选择增益路线，扩充士兵并获得更强武器，持续消灭敌群。"
+        ],
+        "reward": "特别行动2完成，用时00:29，累计击杀120。",
+        "next_motivation": "返回基地并继续占领前方区域。",
+        "confidence": 0.95
+      },
+      {
+        "id": "m04",
+        "type": "micro_loop",
+        "title": "占领基地道路节点",
+        "summary": "占领基地道路节点：道路节点显示胜利，解锁特别行动3。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          1
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-001-main-000090000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续前进并占领基地。",
+        "behaviors": [
+          "在基地道路清除战斗节点并点击下一处求援点。"
+        ],
+        "reward": "道路节点显示胜利，解锁特别行动3。",
+        "next_motivation": "营救被困在水瓶中的英雄。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m05",
+        "type": "micro_loop",
+        "title": "特别行动3营救英雄",
+        "summary": "特别行动3营救英雄：特别行动3完成，用时00:30，累计击杀86，瓶中英雄获救。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          1,
+          2
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-002-evidence-01-000123000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "救出被困在巨大水瓶中的英雄。",
+        "behaviors": [
+          "扩充队伍、获得武器强化、消灭沿途僵尸并推进至水瓶。"
+        ],
+        "reward": "特别行动3完成，用时00:30，累计击杀86，瓶中英雄获救。",
+        "next_motivation": "返回基地领取救援后的成长奖励。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m06",
+        "type": "micro_loop",
+        "title": "领取英雄与开墙推进",
+        "summary": "领取英雄与开墙推进：战斗力+600，摩托车英雄成为下一关主控，城墙显示Lv.1。",
+        "macro_loop_id": "hero-growth",
+        "loop_family_id": "hero-growth",
+        "slice_indices": [
+          2
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-002-evidence-02-000132000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "兑现救援奖励并进入基地下一段。",
+        "behaviors": [
+          "领取礼物，打开“Zombies Keep Out”入口并点击新英雄战斗点。"
+        ],
+        "reward": "战斗力+600，摩托车英雄成为下一关主控，城墙显示Lv.1。",
+        "next_motivation": "使用新英雄完成特别行动4。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m07",
+        "type": "micro_loop",
+        "title": "特别行动4重火力清街",
+        "summary": "特别行动4重火力清街：特别行动4完成，用时00:25，累计击杀144。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          2
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-002-evidence-03-000163000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "以新加入的摩托车英雄继续清理街区。",
+        "behaviors": [
+          "扩充士兵、选择正向门并把队伍武器升级为火箭/炮车，消灭大批僵尸。"
+        ],
+        "reward": "特别行动4完成，用时00:25，累计击杀144。",
+        "next_motivation": "回应新的瓶中求援并进入特别行动5。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m08",
+        "type": "micro_loop",
+        "title": "特别行动5清场",
+        "summary": "特别行动5清场：任务完成，用时00:30、累计击杀100。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          3
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-003-evidence-01-000197000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成特别行动5并消灭剩余尸潮。",
+        "behaviors": [
+          "自动射击、通过数值门扩编并持续推进。"
+        ],
+        "reward": "任务完成，用时00:30、累计击杀100。",
+        "next_motivation": "返回基地领取成长并准备下一次行动。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m09",
+        "type": "micro_loop",
+        "title": "基地领奖再出击",
+        "summary": "基地领奖再出击：获得经验卡、资源及连续战力增长。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          3
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-003-main-000210000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把刚取得的胜利转化为队伍成长。",
+        "behaviors": [
+          "返回基地，按引导开启礼物与清理点。"
+        ],
+        "reward": "获得经验卡、资源及连续战力增长。",
+        "next_motivation": "以强化后的队伍进入特别行动6。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m10",
+        "type": "micro_loop",
+        "title": "特别行动6炮兵扩编",
+        "summary": "特别行动6炮兵扩编：特别行动6完成，保留大规模炮兵编队。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          3,
+          4
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-004-evidence-01-000250000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续清理通往基地目标的敌群。",
+        "behaviors": [
+          "在双车道桥面自动射击、吸收炮兵并清空多波敌人。"
+        ],
+        "reward": "特别行动6完成，保留大规模炮兵编队。",
+        "next_motivation": "返回基地并攻击仓库上方的占领怪物。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m11",
+        "type": "micro_loop",
+        "title": "特别行动7首领战",
+        "summary": "特别行动7首领战：特别行动7完成并获得战力+20,753。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          4
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-004-evidence-02-000280000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "击败怪物并取得基地占领权。",
+        "behaviors": [
+          "进入清理街区关卡，通过数值门和救兵扩编，击杀尸潮与巨型首领。"
+        ],
+        "reward": "特别行动7完成并获得战力+20,753。",
+        "next_motivation": "回基地处理被怪物占据的建筑。",
+        "confidence": 0.98
+      },
+      {
+        "id": "m12",
+        "type": "micro_loop",
+        "title": "夺回受占建筑",
+        "summary": "夺回受占建筑：怪物消失、建筑区域恢复，基地空间被清出。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          4,
+          5
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-004-evidence-03-000288000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "清除仓库区域威胁并恢复据点设施。",
+        "behaviors": [
+          "按扳手引导处理眩晕怪物及受占建筑，领取礼物反馈。"
+        ],
+        "reward": "怪物消失、建筑区域恢复，基地空间被清出。",
+        "next_motivation": "让幸存者进驻并正式建立基地。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m13",
+        "type": "micro_loop",
+        "title": "升旗建立基地",
+        "summary": "升旗建立基地：基地HUD、资源栏、任务、英雄与世界按钮完整出现，修复城墙获得战力+100。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          5
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-005-evidence-01-000318000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把夺回的据点转化为可长期经营的基地。",
+        "behaviors": [
+          "幸存者队伍进入据点并升起蓝色旗帜。"
+        ],
+        "reward": "基地HUD、资源栏、任务、英雄与世界按钮完整出现，修复城墙获得战力+100。",
+        "next_motivation": "修复废墟并开始生产资源。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m14",
+        "type": "micro_loop",
+        "title": "连续修复基础设施",
+        "summary": "连续修复基础设施：获得战力+500、+700及资源回收，校场恢复。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          5
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-005-evidence-02-000339000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "恢复基地基础功能与生产能力。",
+        "behaviors": [
+          "依次修复建筑工小屋和校场并领取完成反馈。"
+        ],
+        "reward": "获得战力+500、+700及资源回收，校场恢复。",
+        "next_motivation": "建造首个新功能建筑猎鹰搜救队。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m15",
+        "type": "micro_loop",
+        "title": "建造猎鹰搜救队",
+        "summary": "建造猎鹰搜救队：建筑完成、战力+500，黄色救援直升机抵达停机坪。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          5
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-005-evidence-02-000339000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "按任务建造可执行特别行动的猎鹰搜救队。",
+        "behaviors": [
+          "打开军事建造菜单、选择猎鹰搜救队、确认位置并等待3秒建造。"
+        ],
+        "reward": "建筑完成、战力+500，黄色救援直升机抵达停机坪。",
+        "next_motivation": "继续修复第一小队，扩展基地军事能力。",
+        "confidence": 0.96
+      },
+      {
+        "id": "m16",
+        "type": "micro_loop",
+        "title": "前缘突围序章第1关",
+        "summary": "前缘突围序章第1关：首关完成并显示+666士兵转化反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          6
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-006-main-000390000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "按猎鹰行动教学完成前缘突围首关。",
+        "behaviors": [
+          "横向移动避开负面门，选择正向数字门、士兵桶和武器桶，扩大编队并清敌。"
+        ],
+        "reward": "首关完成并显示+666士兵转化反馈。",
+        "next_motivation": "立即进入序章第2关继续扩大士兵收益。",
+        "confidence": 0.98
+      },
+      {
+        "id": "m17",
+        "type": "micro_loop",
+        "title": "前缘突围序章第2关",
+        "summary": "前缘突围序章第2关：第2关结束并切入序章第3关开场。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          6
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-006-evidence-03-000392000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续推进前缘突围序章。",
+        "behaviors": [
+          "再次通过增减门和增援物扩充蓝盔编队，持续清除道路敌群。"
+        ],
+        "reward": "第2关结束并切入序章第3关开场。",
+        "next_motivation": "完成序章第3关以推进章节节点。",
+        "confidence": 0.98
+      },
+      {
+        "id": "m18",
+        "type": "micro_loop",
+        "title": "前缘突围序章第3关",
+        "summary": "前缘突围序章第3关：任务完成，获得23名士兵并显示超过93.45%的玩家；章节图开放节点4。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          7
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-007-main-000450000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成序章前三关并推进猎鹰行动第1章。",
+        "behaviors": [
+          "在第3关持续扩兵、强化武器并清除道路敌群。"
+        ],
+        "reward": "任务完成，获得23名士兵并显示超过93.45%的玩家；章节图开放节点4。",
+        "next_motivation": "返回基地使用新增士兵修复第一小队。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m19",
+        "type": "micro_loop",
+        "title": "修复第一小队并升级总部",
+        "summary": "修复第一小队并升级总部：显示战斗力+500与+2,324，总部从Lv.1升至Lv.2。",
+        "macro_loop_id": "settlement",
+        "loop_family_id": "base-growth",
+        "slice_indices": [
+          7
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-007-evidence-02-000469000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "把猎鹰行动获得的士兵转化为基地战备。",
+        "behaviors": [
+          "打开修复礼物恢复第一小队，领取资源并按引导升级总部。"
+        ],
+        "reward": "显示战斗力+500与+2,324，总部从Lv.1升至Lv.2。",
+        "next_motivation": "使用新战备应对突然闯入基地的末日军团。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m20",
+        "type": "micro_loop",
+        "title": "基地遇袭与特别行动9反击",
+        "summary": "基地遇袭与特别行动9反击：特别行动9达成目标并完成，背景显示用时00:40、累计击杀159。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          7,
+          8
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-008-evidence-01-000485000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "阻止末日军团和巨型变异兽摧毁基地。",
+        "behaviors": [
+          "在敌军破门后进入特别行动9，通过扩兵与武器强化连续清街。"
+        ],
+        "reward": "特别行动9达成目标并完成，背景显示用时00:40、累计击杀159。",
+        "next_motivation": "返回基地继续抵挡敌方增援和巨型敌人。",
+        "confidence": 0.97
+      },
+      {
+        "id": "m21",
+        "type": "micro_loop",
+        "title": "建造侦察机搜索装备",
+        "summary": "建造侦察机搜索装备：侦察机建成，战斗力先后+2,400与+300；阿甘确认可用它搜寻装备。",
+        "macro_loop_id": "hero-growth",
+        "loop_family_id": "hero-growth",
+        "slice_indices": [
+          9
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-009-evidence-02-000582000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "莫妮卡火力不足，需要找回武器装备突破丧尸包围。",
+        "behaviors": [
+          "按引导返回基地建造侦察机并完成建筑。"
+        ],
+        "reward": "侦察机建成，战斗力先后+2,400与+300；阿甘确认可用它搜寻装备。",
+        "next_motivation": "组建英雄队伍，进入关卡搜索莫妮卡装备。",
+        "confidence": 0.98
+      },
+      {
+        "id": "m22",
+        "type": "micro_loop",
+        "title": "道路清场后回到区域地图",
+        "summary": "道路清场后回到区域地图：敌群被清空并切回绿色区域地图。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          10
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-010-main-000630000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "清除道路上的大批敌人并向下一个目标推进。",
+        "behaviors": [
+          "率领蓝色编队沿公路前进，持续攻击橙色敌群。"
+        ],
+        "reward": "敌群被清空并切回绿色区域地图。",
+        "next_motivation": "在区域地图选择或前往下一处战斗。",
+        "confidence": 0.9
+      },
+      {
+        "id": "m23",
+        "type": "micro_loop",
+        "title": "区域选点后再次开战",
+        "summary": "区域选点后再次开战：开启新一轮敌群清理并获得推进反馈。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          10,
+          11
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-011-evidence-01-000685000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "继续推进关卡区域。",
+        "behaviors": [
+          "在绿色区域地图移动到目标并进入公路战斗。"
+        ],
+        "reward": "开启新一轮敌群清理并获得推进反馈。",
+        "next_motivation": "完成当前战斗并继续清路。",
+        "confidence": 0.8
+      },
+      {
+        "id": "m24",
+        "type": "micro_loop",
+        "title": "战斗后查看英雄队伍",
+        "summary": "战斗后查看英雄队伍：看见英雄与队伍配置入口。",
+        "macro_loop_id": "hero-growth",
+        "loop_family_id": "hero-growth",
+        "slice_indices": [
+          11
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-011-evidence-03-000695000.jpg"
+        ],
+        "status": "pending_confirmation",
+        "motivation": "在后续推关前检查或强化出战阵容。",
+        "behaviors": [
+          "战斗结算后进入英雄详情和英雄卡/队伍界面。"
+        ],
+        "reward": "看见英雄与队伍配置入口。",
+        "next_motivation": "返回地图继续推进。",
+        "confidence": 0.8
+      },
+      {
+        "id": "m25",
+        "type": "micro_loop",
+        "title": "连续大群道路清场",
+        "summary": "连续大群道路清场：道路持续向前开放。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          12,
+          13
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-013-evidence-01-000800000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "突破区域内的长段敌群。",
+        "behaviors": [
+          "从地图进入公路，连续攻击多波高密度敌人。"
+        ],
+        "reward": "道路持续向前开放。",
+        "next_motivation": "完成剩余敌群并返回地图。",
+        "confidence": 0.93
+      },
+      {
+        "id": "m26",
+        "type": "micro_loop",
+        "title": "回图选点并进入下一战",
+        "summary": "回图选点并进入下一战：开启下一轮高密度清敌。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          13
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-013-evidence-03-000835000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成前一战后继续推进关卡路线。",
+        "behaviors": [
+          "回到绿色区域地图，移动到下一节点并重新进入公路战斗。"
+        ],
+        "reward": "开启下一轮高密度清敌。",
+        "next_motivation": "击穿新一波敌人。",
+        "confidence": 0.93
+      },
+      {
+        "id": "m27",
+        "type": "micro_loop",
+        "title": "地图目标结算",
+        "summary": "地图目标结算：出现游戏内奖励或角色结果界面。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          14
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-014-evidence-02-000885000.jpg"
+        ],
+        "status": "pending_confirmation",
+        "motivation": "沿区域路线抵达当前任务目标。",
+        "behaviors": [
+          "在绿色区域地图持续移动并触发片尾结算/角色界面。"
+        ],
+        "reward": "出现游戏内奖励或角色结果界面。",
+        "next_motivation": "返回地图并追踪下一处目标。",
+        "confidence": 0.76
+      },
+      {
+        "id": "m28",
+        "type": "micro_loop",
+        "title": "领取宝箱后进入战斗",
+        "summary": "领取宝箱后进入战斗：获得宝箱反馈并开启下一关。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          15
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-015-evidence-03-000955000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "结算地图目标并继续推进。",
+        "behaviors": [
+          "在地图触发暗色结算，领取红色宝箱，短暂查看队伍后开战。"
+        ],
+        "reward": "获得宝箱反馈并开启下一关。",
+        "next_motivation": "利用当前阵容完成新战斗。",
+        "confidence": 0.84
+      },
+      {
+        "id": "m29",
+        "type": "micro_loop",
+        "title": "两段连续道路战斗",
+        "summary": "两段连续道路战斗：两段道路被依次清理并返回区域地图。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          16
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-016-evidence-03-001010000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "清除当前区域的连续敌群。",
+        "behaviors": [
+          "进行长段公路战斗，短暂回图后立即进入第二段战斗。"
+        ],
+        "reward": "两段道路被依次清理并返回区域地图。",
+        "next_motivation": "继续处理下一批关卡敌人。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m30",
+        "type": "micro_loop",
+        "title": "长战斗段结算回图",
+        "summary": "长战斗段结算回图：出现结算特效并回到绿色区域地图。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          17
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-017-evidence-03-001075000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "完成当前长段清场。",
+        "behaviors": [
+          "持续攻击高密度敌群直至游戏内结算。"
+        ],
+        "reward": "出现结算特效并回到绿色区域地图。",
+        "next_motivation": "进入下一关卡区段。",
+        "confidence": 0.92
+      },
+      {
+        "id": "m31",
+        "type": "micro_loop",
+        "title": "新区段强敌战",
+        "summary": "新区段强敌战：强敌战推进到收束，随后回到区域地图。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          18,
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-018-evidence-03-001135000.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "穿过区域转场并突破新的强敌。",
+        "behaviors": [
+          "经历紫色转场，在新区域进入战斗并持续攻击强化敌人。"
+        ],
+        "reward": "强敌战推进到收束，随后回到区域地图。",
+        "next_motivation": "沿新区段寻找下一任务目标。",
+        "confidence": 0.89
+      },
+      {
+        "id": "m32",
+        "type": "micro_loop",
+        "title": "关卡收束并进入SLG世界",
+        "summary": "关卡收束并进入SLG世界：正式开放包含总部、盟友、盟主、敌人与资源节点的SLG世界空间。",
+        "macro_loop_id": "expedition",
+        "loop_family_id": "campaign-combat",
+        "slice_indices": [
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-019-evidence-01-001198750.jpg"
+        ],
+        "status": "confirmed",
+        "motivation": "战斗结束后继续推进并打开更大地图层级。",
+        "behaviors": [
+          "从战斗回到区域地图沿路线移动，片尾切入战区 #2297世界地图。"
+        ],
+        "reward": "正式开放包含总部、盟友、盟主、敌人与资源节点的SLG世界空间。",
+        "next_motivation": "识别世界节点并准备后续行军、发展或联盟交互。",
+        "confidence": 0.99
+      },
+      {
+        "id": "end",
+        "type": "end",
+        "title": "进入战区 #2297 世界大地图",
+        "summary": "世界节点、关系图例和战区编号同时出现，完成正式SLG入口。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          19
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-019-evidence-02-001199250.jpg"
+        ],
+        "status": "confirmed"
+      },
+      {
+        "id": "outside",
+        "type": "outside_exit",
+        "title": "入口后的基地与世界发展",
+        "summary": "后续继续基地升级、英雄成长、世界出征和章节推关。",
+        "macro_loop_id": "",
+        "slice_indices": [
+          20
+        ],
+        "evidence_frames": [
+          "screenshots/last-war/frames/slice-020-main-001230000.jpg"
+        ],
+        "status": "confirmed"
+      }
+    ],
+    "edges": [
+      {
+        "from": "entry",
+        "to": "m01",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m01",
+        "to": "m02",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m02",
+        "to": "m03",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m03",
+        "to": "m04",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m04",
+        "to": "m05",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m05",
+        "to": "m06",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m06",
+        "to": "m07",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m07",
+        "to": "m08",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m08",
+        "to": "m09",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m09",
+        "to": "m10",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m10",
+        "to": "m11",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m11",
+        "to": "m12",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m12",
+        "to": "m13",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m13",
+        "to": "m14",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m14",
+        "to": "m15",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m15",
+        "to": "m16",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m16",
+        "to": "m17",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m17",
+        "to": "m18",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m18",
+        "to": "m19",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m19",
+        "to": "m20",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m20",
+        "to": "m21",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m21",
+        "to": "m22",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m22",
+        "to": "m23",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m23",
+        "to": "m24",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m24",
+        "to": "m25",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m25",
+        "to": "m26",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m26",
+        "to": "m27",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m27",
+        "to": "m28",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m28",
+        "to": "m29",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m29",
+        "to": "m30",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m30",
+        "to": "m31",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m31",
+        "to": "m32",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "m32",
+        "to": "end",
+        "kind": "primary",
+        "label": "继续"
+      },
+      {
+        "from": "end",
+        "to": "outside",
+        "kind": "conditional",
+        "label": "进入世界后续"
+      },
+      {
+        "from": "m01",
+        "to": "m02",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m02",
+        "to": "m03",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m03",
+        "to": "m04",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m04",
+        "to": "m05",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m05",
+        "to": "m06",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m06",
+        "to": "m07",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m08",
+        "to": "m09",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m09",
+        "to": "m10",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m11",
+        "to": "m12",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m15",
+        "to": "m16",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m18",
+        "to": "m19",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m19",
+        "to": "m20",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m20",
+        "to": "m21",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m21",
+        "to": "m22",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m23",
+        "to": "m24",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m24",
+        "to": "m25",
+        "kind": "cross_macro",
+        "label": "奖励供给下一循环"
+      },
+      {
+        "from": "m01",
+        "to": "m03",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m02",
+        "to": "m04",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m03",
+        "to": "m05",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m05",
+        "to": "m07",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m04",
+        "to": "m09",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m08",
+        "to": "m10",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m09",
+        "to": "m12",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m11",
+        "to": "m16",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m15",
+        "to": "m19",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m18",
+        "to": "m20",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m06",
+        "to": "m21",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m20",
+        "to": "m22",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m21",
+        "to": "m24",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      },
+      {
+        "from": "m23",
+        "to": "m25",
+        "kind": "macro_return",
+        "label": "回到同类主循环"
+      }
+    ]
+  },
+  "timeline_milestones": [
+    {
+      "id": "last-war-opening-control-end",
+      "type": "cg_end",
+      "label": "开场演示结束并进入操作",
+      "timestamp": 17.0,
+      "slice_index": 0,
+      "note": "录制启停画面排除后，直升机清场演示结束，左右滑动操作教学开始。"
+    },
+    {
+      "id": "last-war-slg-entry",
+      "type": "slg_entry",
+      "label": "进入战区 #2297 世界大地图",
+      "timestamp": 1199.25,
+      "slice_index": 19,
+      "note": "19:59.25首次同时清晰显示战区编号、小地图、我的总部/盟友/盟主关系图例，以及其他总部、敌人与资源节点。"
+    }
+  ]
+}

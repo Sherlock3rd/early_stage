@@ -93,6 +93,11 @@ def excel_width_for_pixels(pixels: int | float) -> float:
     return max(0.0, float(pixels) / 8.0)
 
 
+def excel_height_for_pixels(pixels: int | float) -> float:
+    """Approximate Feishu's fixedSize row pixels in exported Excel points."""
+    return max(0.0, float(pixels) * 0.75 - 1.0)
+
+
 def a1_bounds(cell_range: str) -> tuple[int, int, int, int]:
     raw = cell_range.split("!", 1)[-1]
     match = re.fullmatch(r"([A-Z]+)(\d+)(?::([A-Z]+)(\d+))?", raw, re.I)
@@ -653,7 +658,7 @@ def verify_export_xlsx(
         }
         for row, pixels in layout["row_heights"].items():
             actual = worksheet.row_dimensions[row].height
-            expected_points = pixels * (2 / 3)
+            expected_points = excel_height_for_pixels(pixels)
             drift = None if actual is None else float(actual) - expected_points
             if drift is None or drift < -2 or drift > 6:
                 label = "长文本行高" if row in long_text_rows else "行高"

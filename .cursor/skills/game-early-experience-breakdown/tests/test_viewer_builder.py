@@ -320,6 +320,38 @@ class ViewerBuilderTests(unittest.TestCase):
             self.assertEqual("old", marker.read_text(encoding="utf-8"))
             self.assertEqual(["old.txt"], [path.name for path in output.iterdir()])
 
+    def test_commit_retries_transient_windows_directory_replace_denial(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            analysis, _ = self.make_input(root)
+            output = root / "viewer"
+            output.mkdir()
+            (output / "old.txt").write_text("old", encoding="utf-8")
+            real_replace = build_viewer.os.replace
+            denied_once = False
+
+            def transient_replace(source, destination):
+                nonlocal denied_once
+                source_path = Path(source)
+                destination_path = Path(destination)
+                if (
+                    not denied_once
+                    and source_path.name.startswith(".viewer-build-")
+                    and destination_path == output
+                ):
+                    denied_once = True
+                    raise PermissionError("transient Windows directory lock")
+                return real_replace(source, destination)
+
+            with mock.patch(
+                "build_viewer.os.replace", side_effect=transient_replace
+            ):
+                build_viewer.build_package(analysis, output)
+
+            self.assertTrue(denied_once)
+            self.assertTrue((output / "index.html").is_file())
+            self.assertFalse((output / "old.txt").exists())
+
     def test_backup_cleanup_failure_is_nonfatal_after_new_package_is_committed(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

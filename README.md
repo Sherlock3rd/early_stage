@@ -10,6 +10,7 @@
 - AOO：<https://sherlock3rd.github.io/early_stage/?dataset=aoo>
 - Beboo Bash：<https://sherlock3rd.github.io/early_stage/?dataset=beboo>
 - Narco Empire：<https://sherlock3rd.github.io/early_stage/?dataset=narco-empire>
+- Last War：<https://sherlock3rd.github.io/early_stage/?dataset=last-war>
 
 共享 `index.html` 只负责展示。每个拆解独占
 `data/<dataset-id>.json` 与 `screenshots/<dataset-id>/`，避免不同游戏的数据和截图互相覆盖。
@@ -24,6 +25,8 @@
 - Beboo Bash：73:03.1、38 个时间片；22:17 进入普通开放探索地图，体验趋势覆盖完整录屏。
 - Narco Empire：60:00.1、37 个时间片；53:19.5 首次进入 SLG 世界大地图，
   后续画面确认世界坐标、联盟入口与其他据点。
+- Last War：43:40.1、33 个时间片；19:59.25 首次进入战区 #2297 世界大地图；
+  录制启停产生的系统控制中心画面已从玩法证据与体验评分中排除。
 
 ## 内容
 

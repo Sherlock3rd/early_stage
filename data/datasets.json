@@ -23,6 +23,10 @@
     {
       "id": "narco-empire",
       "label": "Narco Empire"
+    },
+    {
+      "id": "last-war",
+      "label": "Last War"
     }
   ]
 }

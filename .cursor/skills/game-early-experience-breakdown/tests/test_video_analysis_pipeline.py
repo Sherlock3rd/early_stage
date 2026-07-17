@@ -594,6 +594,43 @@ class AnalysisModelTests(unittest.TestCase):
         self.assertIn("坐标", slg_entries[0]["note"])
         self.assertIn("联盟", slg_entries[0]["note"])
 
+    def test_last_war_excludes_external_capture_interruptions(self):
+        last_war_path = (
+            ROOT.parents[2]
+            / "artifacts"
+            / "early-experience"
+            / "viewer"
+            / "data"
+            / "last-war.json"
+        )
+        if not last_war_path.exists():
+            last_war_path = ROOT.parents[2] / "data" / "last-war.json"
+
+        self.assertTrue(last_war_path.exists(), last_war_path)
+        data = json.loads(last_war_path.read_text(encoding="utf-8"))
+        analysis_model.validate_analysis(data)
+
+        self.assertEqual(33, len(data["slices"]))
+        self.assertEqual(
+            "progression-repetition-v1",
+            data["global_curves"]["experience_model"]["version"],
+        )
+        exclusions = data["capture_exclusions"]
+        self.assertEqual(2, len(exclusions))
+        self.assertEqual(0.0, exclusions[0]["start"])
+        self.assertLessEqual(exclusions[0]["end"], 3.5)
+        self.assertGreaterEqual(exclusions[1]["start"], 2618.0)
+        self.assertGreater(exclusions[1]["end"], exclusions[1]["start"])
+        self.assertTrue(
+            all(item["reason"] == "external_capture_interruption" for item in exclusions)
+        )
+        interruption_text = " ".join(
+            point["experience"]["basis"]["interruption"]
+            for point in data["global_curves"]["points"]
+        )
+        self.assertNotIn("控制中心", interruption_text)
+        self.assertNotIn("录屏", interruption_text)
+
     def test_global_loop_confidence_equals_lowest_referenced_slice(self):
         data = valid_analysis(120.0)
         micro = data["global_loops"]["nodes"][1]

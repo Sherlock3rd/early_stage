@@ -96,7 +96,9 @@ def make_export_workbook(path, sheet_title, layout):
     for cell_range in layout["merges"]:
         worksheet.merge_cells(cell_range)
     for row, pixels in layout["row_heights"].items():
-        worksheet.row_dimensions[row].height = pixels * (2 / 3)
+        worksheet.row_dimensions[row].height = (
+            write_feishu_sheet.excel_height_for_pixels(pixels)
+        )
     for column, pixels in layout["column_widths"].items():
         worksheet.column_dimensions[
             write_feishu_sheet.column_letter(column)
@@ -592,7 +594,34 @@ class WriteWorkflowTests(unittest.TestCase):
             make_export_workbook(path, "前期体验拆解", layout)
             workbook = load_workbook(path)
             worksheet = workbook["前期体验拆解"]
-            worksheet.row_dimensions[1].height = layout["row_heights"][1] * (2 / 3) + 5.5
+            worksheet.row_dimensions[1].height = (
+                write_feishu_sheet.excel_height_for_pixels(
+                    layout["row_heights"][1]
+                )
+                + 5.5
+            )
+            workbook.save(path)
+            workbook.close()
+            result = write_feishu_sheet.verify_export_xlsx(
+                path, "前期体验拆解", layout
+            )
+
+        self.assertTrue(result["passed"])
+
+    def test_export_verification_accepts_feishu_tall_row_pixel_conversion(self):
+        from openpyxl import load_workbook
+
+        analysis = valid_analysis()
+        analysis["slices"][0]["dimensions"]["渐进体验"]["fact"] = "长文本" * 120
+        layout = write_feishu_sheet.build_sheet_layout(analysis)
+        row = layout["rows"]["渐进体验"]
+        layout["row_heights"][row] = 100
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "export.xlsx"
+            make_export_workbook(path, "前期体验拆解", layout)
+            workbook = load_workbook(path)
+            worksheet = workbook["前期体验拆解"]
+            worksheet.row_dimensions[row].height = 74.0
             workbook.save(path)
             workbook.close()
             result = write_feishu_sheet.verify_export_xlsx(
